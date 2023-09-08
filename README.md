@@ -1,4 +1,4 @@
-![transparent](https://capsule-render.vercel.app/api?type=transparent&fontColor=0000FF&text=Somaz&height=150&fontSize=60&desc=Devops%20Engineers&descAlignY=75&descAlign=60)
+![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20Somaz%20%20&fontAlign=30&fontSize=30&textBg=true&desc=Devops%20%20Engineer%20&descAlign=60&descAlignY=50)
 
 <!--
 ### Hi there 👋
