@@ -21,8 +21,6 @@
 ### Monitoring
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)![Loki](https://img.shields.io/badge/-Loki-FF4500?style=flat-square&logo=loki&logoColor=white)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94ID&show_icons=true&theme=radical)
-
 <!--
 ### Hi there 👋
 
