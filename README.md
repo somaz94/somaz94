@@ -1,6 +1,6 @@
 ![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20Somaz%20%20&fontAlign=30&fontSize=30&textBg=true&desc=Devops%20%20Engineer%20&descAlign=60&descAlignY=50)
 
-####  🐩 SNS 🦮 
+##  🐩 SNS 🦮 
 [![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)
 
 <!--
