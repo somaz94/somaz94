@@ -7,6 +7,21 @@
 ##  SNS  
 [![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)[![Wiki](https://img.shields.io/badge/Wiki-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/somaz94/DevOps-Engineer/wiki)
 
+## Custom Resources & Tools
+
+### Kubernetes CRD
+[![k8s-namespace-sync](https://img.shields.io/github/v/tag/somaz94/k8s-namespace-sync?label=k8s-namespace-sync&logo=kubernetes&logoColor=white)](https://github.com/somaz94/k8s-namespace-sync)
+
+### GitHub Actions
+[![Ternary Operator](https://img.shields.io/badge/GitHub_Actions-Ternary_Operator-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/marketplace/actions/ternary-operator-action)
+[![Extract Commit](https://img.shields.io/badge/GitHub_Actions-Extract_Commit-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/marketplace/actions/extract-commit-action)
+[![Image Tag Updater](https://img.shields.io/badge/GitHub_Actions-Image_Tag_Updater-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/marketplace/actions/image-tag-updater)
+[![Compress/Decompress](https://img.shields.io/badge/GitHub_Actions-Compress_Decompress-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/marketplace/actions/compress-decompress)
+[![Env Output Setter](https://img.shields.io/badge/GitHub_Actions-Env_Output_Setter-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/somaz94/env-output-setter)
+
+### Ansible Galaxy
+[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)
+
 ## Tech Stack
 
 ### CSP
