@@ -48,7 +48,7 @@
 ![Rancher Local Path Provisioner](https://img.shields.io/badge/-Rancher%20Local%20Path%20Provisioner-0075A8?style=flat-square&logo=rancher&logoColor=white)![NFS Subdir External Provisioner](https://img.shields.io/badge/-NFS%20Subdir%20External%20Provisioner-326CE5?style=flat-square&logo=kubernetes&logoColor=white)![Ceph CSI Provisioner](https://img.shields.io/badge/-Ceph%20CSI%20Provisioner-EA76CB?style=flat-square&logo=ceph&logoColor=white)
 
 ### Language
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
 ---
 ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=omni)
