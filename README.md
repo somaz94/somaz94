@@ -17,7 +17,7 @@
 ](https://img.shields.io/badge/GitHub_Actions-Go%20Docs%20Generator%20Action-blue?logo=github)](https://github.com/marketplace/actions/go-docs-generator)
 
 ### Ansible Galaxy
-[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)
+[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)[![Ansible Kubectl Krew](https://img.shields.io/badge/Ansible_Galaxy-Kubectl_Krew-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_kubectl_krew/)[![Ansible User Management](https://img.shields.io/badge/Ansible_Galaxy-User_Management-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_user_management/)
 
 ### Chrome Extensions
 [![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
