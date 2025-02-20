@@ -7,6 +7,8 @@
 ##  SNS  
 [![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)[![Wiki](https://img.shields.io/badge/Wiki-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/somaz94/DevOps-Engineer/wiki)[![English Blog](https://img.shields.io/badge/English%20Blog-%23000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://somaz94.github.io)
 
+<br/>
+
 ## Custom Resources & Tools
 
 ### Kubernetes CRD
@@ -21,6 +23,8 @@
 
 ### Chrome Extensions
 [![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
+
+<br/>
 
 ## Tech Stack
 
@@ -53,6 +57,8 @@
 
 ### Language
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+
+<br/>
 
 ---
 ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=omni)
