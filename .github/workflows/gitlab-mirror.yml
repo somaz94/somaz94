@@ -1,0 +1,21 @@
+name: Backup GitHub to GitLab
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치 변경 시 동기화
+    paths-ignore:
+      - .github/workflows/*
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@v4
+
+      - name: Push to GitLab Mirror
+        run: |
+          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.com/backup6695808/somaz94.git
+          git push --mirror gitlab
