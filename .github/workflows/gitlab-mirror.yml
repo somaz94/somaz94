@@ -28,6 +28,6 @@ jobs:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
           git remote add gitlab https://oauth2:${GITLAB_TOKEN}@gitlab.com/backup6695808/somaz94.git
-          git push --all gitlab  # 모든 브랜치 푸시 (하지만 강제 덮어쓰지는 않음)
-          git push --tags gitlab  # 모든 태그 푸시
+          git push -f --all gitlab  # 모든 브랜치 푸시 (하지만 강제 덮어쓰지는 않음)
+          git push -f --tags gitlab  # 모든 태그 푸시
         continue-on-error: true
