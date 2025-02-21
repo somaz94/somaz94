@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 전체 히스토리를 가져오도록 설정
+          lfs: true      # Git LFS 파일도 가져오기
           
       - name: Configure Git
         run: |
@@ -27,5 +28,6 @@ jobs:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
           git remote add gitlab https://oauth2:${GITLAB_TOKEN}@gitlab.com/backup6695808/somaz94.git
-          git push --prune gitlab refs/remotes/origin/*:refs/heads/* refs/tags/*
+          git push --all gitlab  # 모든 브랜치 푸시 (하지만 강제 덮어쓰지는 않음)
+          git push --tags gitlab  # 모든 태그 푸시
         continue-on-error: true
