@@ -14,8 +14,24 @@ jobs:
     steps:
       - name: Checkout GitHub Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 전체 히스토리를 가져오도록 설정
+          lfs: true      # Git LFS 파일도 가져오기
+          
+      - name: Fetch all history and tags
+        run: |
+          git fetch --prune --unshallow
+          git fetch --tags
+          
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
 
       - name: Push to GitLab Mirror
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.com/backup6695808/somaz94.git
+          git remote add gitlab https://oauth2:${GITLAB_TOKEN}@gitlab.com/backup6695808/somaz94.git
           git push --mirror gitlab
+        continue-on-error: true
