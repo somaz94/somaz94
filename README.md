@@ -61,5 +61,9 @@
 <br/>
 
 ---
+
+### 📈 **GitHub Stats**
+
 ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=omni)
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=somaz94&layout=compact&theme=dark)
