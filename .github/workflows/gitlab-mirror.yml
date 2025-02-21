@@ -18,11 +18,6 @@ jobs:
           fetch-depth: 0  # 전체 히스토리를 가져오도록 설정
           lfs: true      # Git LFS 파일도 가져오기
           
-      - name: Fetch all history and tags
-        run: |
-          git fetch --prune --unshallow
-          git fetch --tags
-          
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
