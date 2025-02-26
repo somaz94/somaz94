@@ -6,7 +6,7 @@
 <br/>
 
 ##  SNS  
-[![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)[![Wiki](https://img.shields.io/badge/Wiki-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/somaz94/DevOps-Engineer/wiki)[![English Blog](https://img.shields.io/badge/English%20Blog-%23000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://somaz94.github.io)
+[![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)[![Wiki](https://img.shields.io/badge/Wiki-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/somaz94/DevOps-Engineer/wiki)[![English Blog](https://img.shields.io/badge/English%20Blog-%23000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://somaz94.github.io)[![Go Wiki](https://img.shields.io/badge/Go%20Wiki-%23007EC6?style=for-the-badge&logo=go&logoColor=white)](https://github.com/somaz94/go-study/wiki)
 
 <br/>
 
