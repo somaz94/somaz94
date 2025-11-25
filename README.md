@@ -62,7 +62,7 @@
 
 ---
 
-### 📈 **GitHub Stats**
+### GitHub Stats
 
 ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=omni)
 
