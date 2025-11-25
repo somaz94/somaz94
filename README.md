@@ -63,8 +63,7 @@
 ---
 
 ### GitHub Stats
-
-# ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=radical)
+<!-- ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=radical) -->
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=somaz94&theme=tokyonight)
 
