@@ -74,7 +74,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=somaz94&theme=tokyonight)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=somaz94&theme=omni)
+![GitHub Streak](https://streak-stats.demolab.com/?user=somaz94&theme=omni)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=somaz94&layout=compact&theme=dark&exclude_repo=somaz94.github.io)
 
