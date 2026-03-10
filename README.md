@@ -1,12 +1,19 @@
-![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20Somaz%20%20&fontAlign=30&fontSize=30&textBg=true&desc=Devops%20%20Engineer%20&descAlign=60&descAlignY=50)
+![waving](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Somaz&fontSize=42&fontAlignY=36&desc=DevOps%20Engineer&descAlignY=55&descSize=18&animation=fadeIn)
 
-
-![somaz badge](https://img.shields.io/badge/somaz-DevOps%20Engineer-blue)
+DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and **Automation**. Building open-source tools for the DevOps community.
 
 <br/>
 
 ##  SNS  
 [![Tistory](https://img.shields.io/badge/Tistory-%23FF0000?style=for-the-badge&logo=tistory&logoColor=white)](https://somaz.tistory.com)[![Gmail](https://img.shields.io/badge/Gmail-%230D58A6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:genius5711@gmail.com)[![Wiki](https://img.shields.io/badge/Wiki-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/somaz94/DevOps-Engineer/wiki)[![English Blog](https://img.shields.io/badge/English%20Blog-%23000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://somaz94.github.io)[![Go Wiki](https://img.shields.io/badge/Go%20Wiki-%23007EC6?style=for-the-badge&logo=go&logoColor=white)](https://github.com/somaz94/go-study/wiki)[![Python Wiki](https://img.shields.io/badge/Python%20Wiki-%233776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/somaz94/python-study/wiki)
+
+<br/>
+
+## Featured Projects
+
+| Project | Description | Stars |
+|---------|------------|-------|
+| [compress-decompress](https://github.com/somaz94/compress-decompress) | GitHub Action for file compression/decompression | ![Stars](https://img.shields.io/github/stars/somaz94/compress-decompress?style=flat-square&color=yellow) |
 
 <br/>
 
@@ -66,5 +73,7 @@
 
 ![Somaz's GitHub stats](https://github-readme-stats.vercel.app/api?username=somaz94&show_icons=true&theme=omni)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=somaz94&layout=compact&theme=dark&exclude_repo=somaz94.github.io,repo2,repo3)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=somaz94&theme=omni)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=somaz94&layout=compact&theme=dark&exclude_repo=somaz94.github.io)
 
