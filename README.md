@@ -4,7 +4,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 
 <br/>
 
-### Portfolio
+## Portfolio
 [![Resume](https://img.shields.io/badge/Resume-%234285F4?style=for-the-badge&logo=googledocs&logoColor=white)](https://somaz.blog/resume)[![Career](https://img.shields.io/badge/Career-%2300C853?style=for-the-badge&logo=readme&logoColor=white)](https://somaz.blog/career)[![Resume & Career](https://img.shields.io/badge/Resume%20%26%20Career-%23FF6F00?style=for-the-badge&logo=readdotcv&logoColor=white)](https://somaz.blog/resume-career)
 
 <br/>
