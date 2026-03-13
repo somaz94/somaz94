@@ -34,10 +34,10 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 [![git-bridge](https://img.shields.io/github/v/tag/somaz94/git-bridge?label=git-bridge&logo=git&logoColor=white)](https://github.com/somaz94/git-bridge)[![slack-qr-bot](https://img.shields.io/github/v/tag/somaz94/slack-qr-bot?label=slack-qr-bot&logo=slack&logoColor=white)](https://github.com/somaz94/slack-qr-bot)
 
 ### Ansible Galaxy
-[![ansible-k8s-iac-tool](https://img.shields.io/github/v/tag/somaz94/ansible-k8s-iac-tool?label=ansible-k8s-iac-tool&logo=ansible&logoColor=white)](https://github.com/somaz94/ansible-k8s-iac-tool)[![ansible_kubectl_krew](https://img.shields.io/github/v/tag/somaz94/ansible_kubectl_krew?label=ansible_kubectl_krew&logo=ansible&logoColor=white)](https://github.com/somaz94/ansible_kubectl_krew)[![ansible_user_management](https://img.shields.io/github/v/tag/somaz94/ansible_user_management?label=ansible_user_management&logo=ansible&logoColor=white)](https://github.com/somaz94/ansible_user_management)
+[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)[![Ansible Kubectl Krew](https://img.shields.io/badge/Ansible_Galaxy-Kubectl_Krew-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_kubectl_krew/)[![Ansible User Management](https://img.shields.io/badge/Ansible_Galaxy-User_Management-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_user_management/)
 
 ### Chrome Extensions
-[![dev-toolkit-google-extension](https://img.shields.io/github/v/tag/somaz94/dev-toolkit-google-extension?label=dev-toolkit&logo=googlechrome&logoColor=white)](https://github.com/somaz94/dev-toolkit-google-extension)[![qrify-google-extension](https://img.shields.io/github/v/tag/somaz94/qrify-google-extension?label=qrify&logo=googlechrome&logoColor=white)](https://github.com/somaz94/qrify-google-extension)
+[![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
 
 <br/>
 
