@@ -66,6 +66,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 Merged contributions to external open-source projects.
 
 [![Meshery](https://img.shields.io/badge/Meshery-Contributor-00B39F?style=for-the-badge&logo=meshery&logoColor=white)](https://github.com/meshery/meshery/pull/19835)
+[![kubeconform](https://img.shields.io/badge/kubeconform-Contributor-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://github.com/yannh/kubeconform/pull/356)
 <!-- Official Layer5 Cloud badge embed goes here once granted: https://cloud.layer5.io/user/cc700bfe-a61d-4797-85a6-6acbd41e9e86?tab=badges -->
 
 <br/>
