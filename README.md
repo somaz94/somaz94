@@ -1,8 +1,16 @@
 ![waving](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Somaz&fontSize=42&fontAlignY=36&desc=DevOps%20Engineer&descAlignY=55&descSize=18&animation=fadeIn)
 
-![Profile Views](https://komarev.com/ghpvc/?username=somaz94&label=Profile+Views&color=0e75b6&style=flat-square)
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=0E75B6&center=true&vCenter=true&width=520&lines=DevOps+Engineer;Kubernetes+Operators+%26+Controllers;GitHub+Actions+Author;Open+Source+Contributor)](https://github.com/somaz94)
+
+</div>
+
+![Profile Views](https://komarev.com/ghpvc/?username=somaz94&label=Profile+Views&color=0e75b6&style=flat-square) [![Follow](https://img.shields.io/github/followers/somaz94?label=Follow&style=social)](https://github.com/somaz94?tab=followers) [![Stars](https://img.shields.io/github/stars/somaz94?label=Stars&style=social)](https://github.com/somaz94)
 
 DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and **Automation**. Building open-source tools for the DevOps community.
+
+⭐ **Follow** for new Kubernetes operators, GitHub Actions, and OSS contribution updates.
 
 <br/>
 
