@@ -1,0 +1,40 @@
+name: Update OSS Contributions
+
+# Regenerates the "Open Source Contributions" section of README.md from live
+# GitHub data (merged + open PRs the owner opened against external repos).
+# Curated summaries live in scripts/oss_contributions_overrides.json.
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 07:00 KST daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-oss-contributions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate OSS contributions section
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/oss_contributions.py
+
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain README.md)" ]; then
+            echo "OSS section already up to date — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: auto-update OSS contributions section"
+          git push

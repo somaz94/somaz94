@@ -1,0 +1,19 @@
+{
+  "yannh/kubeconform#356": { "summary": "Avoid SIGSEGV panic on null-decoding schema" },
+  "meshery/meshery#19835": { "summary": "Fix typos, function names & license header" },
+  "meshery/meshery#19866": { "summary": "Fix export flag validation + tests" },
+  "apache/airflow#67675": { "summary": "Gateway API HTTPRoute for API server" },
+  "apache/gravitino#11308": { "summary": "Gateway API HTTPRoute in Helm charts" },
+  "aquasecurity/trivy#10770": { "summary": "Add `--color` flag for table output" },
+  "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },
+  "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
+  "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
+  "jaegertracing/helm-charts#758": { "summary": "Query UI HTTPRoute support" },
+  "falcosecurity/charts#1026": { "summary": "falcosidekick HTTPRoute support" },
+  "percona/percona-helm-charts#862": { "summary": "pmm gRPC ClusterIP nodePort fix" },
+  "helm/helm-www#2129": { "summary": "Enable `@docusaurus/faster` build" },
+  "helm/chart-testing#841": { "summary": "Honor `--release-name` instead of generating one" },
+  "open-telemetry/opentelemetry-helm-charts#2246": { "summary": "collector Gateway API HTTPRoute support" },
+  "losisin/helm-values-schema-json#355": { "summary": "Add `lint` subcommand" },
+  "losisin/helm-values-schema-json#354": { "summary": "Add `bundle` subcommand" }
+}
