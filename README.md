@@ -67,7 +67,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-2-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-15-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-13-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (17)</b></summary>
@@ -78,6 +78,8 @@ Contributions to external open-source projects.
 |---|---|---|---|
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
+| prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | 🔵 In review |
 | open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 In review |
 | jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | 🔵 In review |
@@ -85,13 +87,11 @@ Contributions to external open-source projects.
 | falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick HTTPRoute support | 🔵 In review |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 In review |
 | helm/helm-www | [#2129](https://github.com/helm/helm-www/pull/2129) | Enable `@docusaurus/faster` build | 🔵 In review |
-| prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | 🔵 In review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 In review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 In review |
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | 🔵 In review |
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | 🔵 In review |
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 In review |
-| prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | 🔵 In review |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | 🔵 In review |
 
 </details>
