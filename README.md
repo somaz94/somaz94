@@ -1,4 +1,4 @@
-![waving](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Somaz&fontSize=42&fontAlignY=36&desc=DevOps%20Engineer&descAlignY=55&descSize=18&animation=fadeIn)
+![waving](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Somaz&fontSize=44&fontAlignY=42&animation=fadeIn)
 
 <div align="center">
 
