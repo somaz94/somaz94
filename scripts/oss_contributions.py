@@ -36,7 +36,7 @@ MARKER_START = "<!-- OSS:START -->"
 MARKER_END = "<!-- OSS:END -->"
 
 MERGED_BADGE = "https://img.shields.io/badge/Merged-{n}-2EA44F?style=for-the-badge"
-REVIEW_BADGE = "https://img.shields.io/badge/In_Review-{n}-0969DA?style=for-the-badge"
+REVIEW_BADGE = "https://img.shields.io/badge/Review-{n}-0969DA?style=for-the-badge"
 
 # Peel a leading "[scope]" tag and/or a Conventional-Commit "type:" prefix off
 # a PR title when no curated override exists.
@@ -98,7 +98,7 @@ def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
         MARKER_START,
         "",
         f"![Merged]({MERGED_BADGE.format(n=len(merged))}) "
-        f"![In Review]({REVIEW_BADGE.format(n=len(review))})",
+        f"![Review]({REVIEW_BADGE.format(n=len(review))})",
         "",
         "<details>",
         f"<summary><b>View all contributions ({len(merged) + len(review)})</b></summary>",
@@ -109,7 +109,7 @@ def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
         "|---|---|---|---|",
     ]
     lines += [row(p, "✅ Merged", overrides) for p in merged]
-    lines += [row(p, "🔵 In review", overrides) for p in review]
+    lines += [row(p, "🔵 Review", overrides) for p in review]
     lines += ["", "</details>", "", MARKER_END]
     return "\n".join(lines)
 
