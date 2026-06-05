@@ -23,5 +23,6 @@
   "losisin/helm-values-schema-json#354": { "summary": "Add `bundle` subcommand" },
   "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" },
   "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" },
-  "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" }
+  "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
+  "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" }
 }
