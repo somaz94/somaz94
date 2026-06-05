@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-13-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-14-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (17)</b></summary>
+<summary><b>View all contributions (18)</b></summary>
 
 <br/>
 
@@ -55,6 +55,7 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
+| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | 🔵 In review |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | 🔵 In review |
 | open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 In review |
 | jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | 🔵 In review |
