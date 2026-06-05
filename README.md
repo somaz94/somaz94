@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-14-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-15-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (18)</b></summary>
+<summary><b>View all contributions (19)</b></summary>
 
 <br/>
 
@@ -69,6 +69,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | 🔵 Review |
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 Review |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | 🔵 Review |
+| apache/superset | [#40785](https://github.com/apache/superset/pull/40785) | Gateway API HTTPRoute support in Helm chart | 🔵 Review |
 
 </details>
 
