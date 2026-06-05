@@ -18,5 +18,6 @@
   "argoproj/argo-helm#3914": { "summary": "argo-rollouts dashboard Gateway API HTTPRoute support" },
   "losisin/helm-values-schema-json#355": { "summary": "Add `lint` subcommand" },
   "losisin/helm-values-schema-json#354": { "summary": "Add `bundle` subcommand" },
-  "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" }
+  "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" },
+  "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" }
 }
