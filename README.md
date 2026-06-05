@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-14-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![In Review](https://img.shields.io/badge/In_Review-13-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (18)</b></summary>
+<summary><b>View all contributions (17)</b></summary>
 
 <br/>
 
@@ -62,7 +62,6 @@ Contributions to external open-source projects.
 | percona/percona-helm-charts | [#862](https://github.com/percona/percona-helm-charts/pull/862) | pmm gRPC ClusterIP nodePort fix | 🔵 In review |
 | falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick HTTPRoute support | 🔵 In review |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 In review |
-| helm/helm-www | [#2129](https://github.com/helm/helm-www/pull/2129) | Enable `@docusaurus/faster` build | 🔵 In review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 In review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 In review |
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | 🔵 In review |
