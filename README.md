@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-22-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-5-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-21-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (26)</b></summary>
@@ -51,6 +51,7 @@ Contributions to external open-source projects.
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
@@ -64,7 +65,6 @@ Contributions to external open-source projects.
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | 🔵 Review |
 | apache/superset | [#40785](https://github.com/apache/superset/pull/40785) | Add Gateway API HTTPRoute support | 🔵 Review |
 | twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
-| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | 🔵 Review |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 Review |
 | jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | 🔵 Review |
