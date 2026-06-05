@@ -5,6 +5,7 @@
   "apache/airflow#67675": { "summary": "Gateway API HTTPRoute for API server" },
   "apache/gravitino#11308": { "summary": "Gateway API HTTPRoute in Helm charts" },
   "apache/amoro#4243": { "summary": "Add Gateway API HTTPRoute support to the Amoro Helm chart" },
+  "1Password/op-scim-helm#171": { "summary": "Gateway API HTTPRoute support for the 1Password SCIM bridge chart" },
   "aquasecurity/trivy#10770": { "summary": "Add `--color` flag for table output" },
   "grafana/cloudcost-exporter#1006": { "summary": "Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter" },
   "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },

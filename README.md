@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-20-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-4-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-21-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (24)</b></summary>
+<summary><b>View all contributions (25)</b></summary>
 
 <br/>
 
@@ -55,6 +55,7 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
+| 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
 | grafana/cloudcost-exporter | [#1006](https://github.com/grafana/cloudcost-exporter/pull/1006) | Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter | 🔵 Review |
 | helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
