@@ -6,6 +6,7 @@
   "apache/gravitino#11308": { "summary": "Gateway API HTTPRoute in Helm charts" },
   "apache/amoro#4243": { "summary": "Add Gateway API HTTPRoute support to the Amoro Helm chart" },
   "aquasecurity/trivy#10770": { "summary": "Add `--color` flag for table output" },
+  "grafana/cloudcost-exporter#1006": { "summary": "Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter" },
   "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },
   "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
   "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
@@ -20,5 +21,6 @@
   "losisin/helm-values-schema-json#355": { "summary": "Add `lint` subcommand" },
   "losisin/helm-values-schema-json#354": { "summary": "Add `bundle` subcommand" },
   "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" },
-  "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" }
+  "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" },
+  "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" }
 }
