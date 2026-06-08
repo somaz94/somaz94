@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-7-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-19-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-7-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-18-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (26)</b></summary>
+<summary><b>View all contributions (25)</b></summary>
 
 <br/>
 
@@ -61,7 +61,6 @@ Contributions to external open-source projects.
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
-| grafana/cloudcost-exporter | [#1006](https://github.com/grafana/cloudcost-exporter/pull/1006) | Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter | 🔵 Review |
 | helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | 🔵 Review |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | 🔵 Review |
