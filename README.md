@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-7-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-18-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-17-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (25)</b></summary>
@@ -57,6 +57,7 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | ✅ Merged |
+| losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
@@ -73,7 +74,6 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 Review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
-| losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | 🔵 Review |
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 Review |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | 🔵 Review |
 
