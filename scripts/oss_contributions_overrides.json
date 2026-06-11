@@ -39,5 +39,6 @@
   "danny-avila/LibreChat#13671": { "summary": "LibreChat chart Gateway API HTTPRoute support" },
   "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" },
   "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" },
-  "vectordotdev/vector#25607": { "summary": "host_metrics temperature collector (sysinfo Components)" }
+  "vectordotdev/vector#25607": { "summary": "host_metrics temperature collector (sysinfo Components)" },
+  "cloudposse/github-action-setup-atmos#110": { "summary": "Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file" }
 }
