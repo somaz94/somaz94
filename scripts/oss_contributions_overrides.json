@@ -31,6 +31,7 @@
   "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
   "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
   "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },
+  "Azure/setup-helm#281": { "summary": "Add `version-file` input to read the Helm version from a `.tool-versions` file" },
   "hashicorp/terraform-provider-kubernetes#2905": { "summary": "Add `env_from_map` provider-defined function" },
   "getmoto/moto#10062": { "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)" },
   "danny-avila/LibreChat#13671": { "summary": "LibreChat chart Gateway API HTTPRoute support" },
