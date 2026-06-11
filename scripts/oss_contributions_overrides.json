@@ -28,5 +28,6 @@
   "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
   "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
   "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },
-  "hashicorp/terraform-provider-kubernetes#2905": { "summary": "Add `env_from_map` provider-defined function" }
+  "hashicorp/terraform-provider-kubernetes#2905": { "summary": "Add `env_from_map` provider-defined function" },
+  "getmoto/moto#10062": { "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)" }
 }
