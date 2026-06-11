@@ -12,6 +12,7 @@
   "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
   "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
   "jaegertracing/helm-charts#758": { "summary": "Query UI HTTPRoute support" },
+  "jaegertracing/helm-charts#761": { "summary": "Restore extraVolumes/extraVolumeMounts on the all-in-one deployment" },
   "falcosecurity/charts#1026": { "summary": "falcosidekick HTTPRoute support" },
   "percona/percona-helm-charts#862": { "summary": "pmm gRPC ClusterIP nodePort fix" },
   "helm/helm-www#2129": { "summary": "Enable `@docusaurus/faster` build" },
