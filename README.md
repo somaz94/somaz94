@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-33-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-9-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-32-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (41)</b></summary>
@@ -51,6 +51,7 @@ Contributions to external open-source projects.
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
 | argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | ✅ Merged |
@@ -80,7 +81,6 @@ Contributions to external open-source projects.
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
 | helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | 🔵 Review |
-| apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | 🔵 Review |
 | apache/superset | [#40785](https://github.com/apache/superset/pull/40785) | Add Gateway API HTTPRoute support | 🔵 Review |
 | twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | 🔵 Review |
