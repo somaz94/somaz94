@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-18-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-19-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (26)</b></summary>
+<summary><b>View all contributions (27)</b></summary>
 
 <br/>
 
@@ -59,6 +59,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | ✅ Merged |
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
+| firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | 🔵 Review |
 | losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | 🔵 Review |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
