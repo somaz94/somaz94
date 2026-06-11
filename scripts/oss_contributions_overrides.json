@@ -29,6 +29,7 @@
   "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" },
   "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" },
   "nginx/nginx-gateway-fabric#5438": { "summary": "Refactor listener port-conflict resolver to remove a gocyclo exception" },
+  "nginx/nginx-gateway-fabric#5439": { "summary": "Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253)" },
   "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
   "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
   "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },
