@@ -19,6 +19,7 @@
   "helm/chart-testing#841": { "summary": "Honor `--release-name` instead of generating one" },
   "helm/chart-testing-action#210": { "summary": "Report a clear error when blob verification fails" },
   "open-telemetry/opentelemetry-helm-charts#2246": { "summary": "collector Gateway API HTTPRoute support" },
+  "open-telemetry/opentelemetry-helm-charts#2258": { "summary": "Honor schedulerName in daemonset and statefulset collector modes" },
   "argoproj/argo-helm#3914": { "summary": "argo-rollouts dashboard Gateway API HTTPRoute support" },
   "losisin/helm-values-schema-json#355": { "summary": "Add `lint` subcommand" },
   "losisin/helm-values-schema-json#357": { "summary": "Deduplicate bundle flag registration via shared helper" },
@@ -36,5 +37,6 @@
   "getmoto/moto#10062": { "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)" },
   "danny-avila/LibreChat#13671": { "summary": "LibreChat chart Gateway API HTTPRoute support" },
   "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" },
-  "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" }
+  "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" },
+  "vectordotdev/vector#25607": { "summary": "host_metrics temperature collector (sysinfo Components)" }
 }
