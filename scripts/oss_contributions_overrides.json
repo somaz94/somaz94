@@ -31,5 +31,6 @@
   "hashicorp/terraform-provider-kubernetes#2905": { "summary": "Add `env_from_map` provider-defined function" },
   "getmoto/moto#10062": { "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)" },
   "danny-avila/LibreChat#13671": { "summary": "LibreChat chart Gateway API HTTPRoute support" },
-  "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" }
+  "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" },
+  "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" }
 }

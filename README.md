@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-24-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-8-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-25-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (32)</b></summary>
+<summary><b>View all contributions (33)</b></summary>
 
 <br/>
 
@@ -59,6 +59,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | ✅ Merged |
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
+| mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | 🔵 Review |
