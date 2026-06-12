@@ -40,5 +40,7 @@
   "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" },
   "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" },
   "vectordotdev/vector#25607": { "summary": "host_metrics temperature collector (sysinfo Components)" },
-  "cloudposse/github-action-setup-atmos#110": { "summary": "Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file" }
+  "cloudposse/github-action-setup-atmos#110": { "summary": "Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file" },
+  "astral-sh/ruff-action#379": { "summary": "Add `uv.lock` as a supported `version-file` format" },
+  "actions/setup-dotnet#743": { "summary": "Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459)" }
 }
