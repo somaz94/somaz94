@@ -52,5 +52,6 @@
   "terraform-linters/setup-tflint#448": { "summary": "Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file" },
   "helm/kind-action#162": { "summary": "Add version_file input to load the kind version from an asdf .tool-versions or plain version file" },
   "kiali/helm-charts#419": { "summary": "Add Gateway API HTTPRoute support to the kiali-server Helm chart" },
-  "sigstore/cosign-installer#242": { "summary": "Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file)" }
+  "sigstore/cosign-installer#242": { "summary": "Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file)" },
+  "losisin/helm-values-schema-json#365": { "summary": "Add shorthand for the const and default schema annotations to reuse the field's own YAML value" }
 }

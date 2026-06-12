@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-10-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-43-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-10-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-44-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (53)</b></summary>
+<summary><b>View all contributions (54)</b></summary>
 
 <br/>
 
@@ -61,6 +61,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| losisin/helm-values-schema-json | [#365](https://github.com/losisin/helm-values-schema-json/pull/365) | Add shorthand for the const and default schema annotations to reuse the field's own YAML value | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441) | Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253) | 🔵 Review |
 | sigstore/cosign-installer | [#242](https://github.com/sigstore/cosign-installer/pull/242) | Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file) | 🔵 Review |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | 🔵 Review |
