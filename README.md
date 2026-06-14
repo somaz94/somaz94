@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-11-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-44-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-14-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-41-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (55)</b></summary>
@@ -51,6 +51,9 @@ Contributions to external open-source projects.
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
+| getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
+| losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
 | argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
@@ -82,13 +85,10 @@ Contributions to external open-source projects.
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | 🔵 Review |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | 🔵 Review |
-| jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | 🔵 Review |
 | losisin/helm-values-schema-json | [#360](https://github.com/losisin/helm-values-schema-json/pull/360) | Add nullable schema annotation | 🔵 Review |
 | mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
-| getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | 🔵 Review |
-| losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | 🔵 Review |
 | losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | 🔵 Review |
