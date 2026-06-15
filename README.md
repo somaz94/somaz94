@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-15-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-43-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-42-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (58)</b></summary>
@@ -55,6 +55,7 @@ Contributions to external open-source projects.
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
 | losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
+| losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
 | argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
@@ -94,7 +95,6 @@ Contributions to external open-source projects.
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
-| losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
 | helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
