@@ -55,5 +55,6 @@
   "kiali/helm-charts#419": { "summary": "Add Gateway API HTTPRoute support to the kiali-server Helm chart" },
   "sigstore/cosign-installer#242": { "summary": "Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file)" },
   "losisin/helm-values-schema-json#365": { "summary": "Add shorthand for the const and default schema annotations to reuse the field's own YAML value" },
-  "dexidp/dex#4831": { "summary": "Add EdDSA (Ed25519) signing algorithm support to the local token signer" }
+  "dexidp/dex#4831": { "summary": "Add EdDSA (Ed25519) signing algorithm support to the local token signer" },
+  "hashicorp/setup-packer#177": { "summary": "Add `version-file` input to read the Packer version from a `.tool-versions` file" }
 }

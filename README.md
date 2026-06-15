@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-14-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-43-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-15-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-43-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (57)</b></summary>
+<summary><b>View all contributions (58)</b></summary>
 
 <br/>
 
@@ -54,6 +54,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
 | losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | ✅ Merged |
+| firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
 | argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
@@ -65,6 +66,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
 | getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | 🔵 Review |
 | apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
@@ -92,7 +94,6 @@ Contributions to external open-source projects.
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
-| firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | 🔵 Review |
 | losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
