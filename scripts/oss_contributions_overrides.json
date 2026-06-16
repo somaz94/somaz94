@@ -8,6 +8,7 @@
   "1Password/op-scim-helm#171": { "summary": "Gateway API HTTPRoute support for the 1Password SCIM bridge chart" },
   "aquasecurity/trivy#10770": { "summary": "Add `--color` flag for table output" },
   "grafana/cloudcost-exporter#1006": { "summary": "Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter" },
+  "grafana/cloudcost-exporter#1051": { "summary": "Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls" },
   "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },
   "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
   "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
