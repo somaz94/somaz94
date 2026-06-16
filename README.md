@@ -42,7 +42,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-53-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-18-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-51-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (69)</b></summary>
@@ -51,6 +51,8 @@ Contributions to external open-source projects.
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
 | losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | ✅ Merged |
@@ -96,10 +98,8 @@ Contributions to external open-source projects.
 | actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | 🔵 Review |
 | cloudposse/github-action-setup-atmos | [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110) | Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | 🔵 Review |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | 🔵 Review |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | 🔵 Review |
 | losisin/helm-values-schema-json | [#360](https://github.com/losisin/helm-values-schema-json/pull/360) | Add nullable schema annotation | 🔵 Review |
 | mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
