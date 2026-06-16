@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-52-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-53-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (68)</b></summary>
+<summary><b>View all contributions (69)</b></summary>
 
 <br/>
 
@@ -67,6 +67,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| dragonflydb/dragonfly-operator | [#550](https://github.com/dragonflydb/dragonfly-operator/pull/550) | Add optional PodDisruptionBudget to the operator Helm chart | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | getmoto/moto | [#10068](https://github.com/getmoto/moto/pull/10068) | Omit unset optional fields from Transfer describe responses | 🔵 Review |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | 🔵 Review |

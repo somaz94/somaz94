@@ -66,5 +66,6 @@
   "hashicorp/setup-packer#177": { "summary": "Add `version-file` input to read the Packer version from a `.tool-versions` file" },
   "pgadmin-org/pgadmin4#10095": { "summary": "Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart" },
   "external-secrets/external-secrets#6481": { "summary": "Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart" },
-  "tj-actions/changed-files#2884": { "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)." }
+  "tj-actions/changed-files#2884": { "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)." },
+  "dragonflydb/dragonfly-operator#550": { "summary": "Add optional PodDisruptionBudget to the operator Helm chart" }
 }
