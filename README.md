@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-44-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-45-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (60)</b></summary>
+<summary><b>View all contributions (61)</b></summary>
 
 <br/>
 
@@ -67,6 +67,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453) | Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
