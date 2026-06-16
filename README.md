@@ -67,7 +67,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
-| getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Firehose: Add Iceberg destination support | 🔵 Review |
+| getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Add Kinesis Firehose Iceberg destination support | 🔵 Review |
 | pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454) | Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception | 🔵 Review |
