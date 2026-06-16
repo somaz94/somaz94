@@ -32,6 +32,7 @@
   "nginx/nginx-gateway-fabric#5439": { "summary": "Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253)" },
   "nginx/nginx-gateway-fabric#5440": { "summary": "Refactor secret deprovisioning to remove gocyclo lint debt (#5253)" },
   "nginx/nginx-gateway-fabric#5441": { "summary": "Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253)" },
+  "nginx/nginx-gateway-fabric#5452": { "summary": "Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers" },
   "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
   "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
   "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },

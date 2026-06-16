@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-42-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-16-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-43-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (58)</b></summary>
+<summary><b>View all contributions (59)</b></summary>
 
 <br/>
 
@@ -67,6 +67,7 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
 | getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | 🔵 Review |
 | apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | 🔵 Review |
