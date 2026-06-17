@@ -37,6 +37,7 @@
   "nginx/nginx-gateway-fabric#5453": { "summary": "Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception" },
   "nginx/nginx-gateway-fabric#5454": { "summary": "Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception" },
   "nginx/nginx-gateway-fabric#5455": { "summary": "Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception" },
+  "nginx/nginx-gateway-fabric#5461": { "summary": "Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup" },
   "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
   "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
   "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },
