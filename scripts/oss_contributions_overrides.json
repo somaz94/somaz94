@@ -73,5 +73,6 @@
   "padok-team/burrito#927": { "summary": "Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart" },
   "open-policy-agent/conftest#1354": { "summary": "Add per-test names to successful test cases in `conftest verify --output junit` output" },
   "open-policy-agent/conftest#1355": { "summary": "Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315)" },
-  "ClementTsang/bottom#2086": { "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)" }
+  "ClementTsang/bottom#2086": { "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)" },
+  "mindersec/minder#6520": { "summary": "Use the image config creation time for OCI artifacts instead of the time.Now() fallback" }
 }
