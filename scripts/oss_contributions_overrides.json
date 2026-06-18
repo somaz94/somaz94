@@ -70,5 +70,8 @@
   "tj-actions/changed-files#2884": { "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)." },
   "dragonflydb/dragonfly-operator#550": { "summary": "Add optional PodDisruptionBudget to the operator Helm chart" },
   "openobserve/openobserve-helm-chart#222": { "summary": "Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart" },
-  "padok-team/burrito#927": { "summary": "Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart" }
+  "padok-team/burrito#927": { "summary": "Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart" },
+  "open-policy-agent/conftest#1354": { "summary": "Add per-test names to successful test cases in `conftest verify --output junit` output" },
+  "open-policy-agent/conftest#1355": { "summary": "Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315)" },
+  "ClementTsang/bottom#2086": { "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)" }
 }
