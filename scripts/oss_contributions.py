@@ -49,6 +49,25 @@ CONV_RE = re.compile(
 
 JSON_FIELDS = "number,title,url,repository,createdAt"
 
+# Ordered display sections. compress=True collapses still-in-review PRs to a
+# single "+N in review" line (used for the big repeating campaigns so a section
+# grows per-campaign, not per-PR); merged PRs are always listed individually.
+# compress=False lists every PR (the diverse, high-signal one-off work).
+# A PR's section comes from its override "category"; if absent, the three
+# largest campaigns are inferred from the summary, else it lands in "misc".
+DEFAULT_CATEGORY = "misc"
+# Cap how many still-in-review PR links a compressed section lists, so the line
+# stays bounded no matter how large a campaign grows.
+IN_REVIEW_PREVIEW = 10
+CATEGORIES: list[tuple[str, str, bool]] = [
+    ("misc", "⭐ Notable and one-off contributions", False),
+    ("httproute", "🌐 Gateway API HTTPRoute support · Helm charts", True),
+    ("ngf-gocyclo", "🔧 nginx-gateway-fabric cyclomatic-complexity refactors · #5253", True),
+    ("action-version-file", "⚙️ GitHub Action `version-file` inputs", True),
+    ("schema-json", "📐 helm-values-schema-json features", True),
+    ("moto-aws", "☁️ moto AWS API mocks", True),
+]
+
 
 def gh_search(*extra: str) -> list[dict]:
     """Run `gh search prs` for the author and return the parsed JSON array."""
@@ -84,16 +103,81 @@ def clean_title(title: str) -> str:
     return s or title.strip()
 
 
-def row(pr: dict, status: str, overrides: dict) -> str:
+def key_of(pr: dict) -> str:
+    return f"{pr['repository']['nameWithOwner']}#{pr['number']}"
+
+
+def summary_of(pr: dict, overrides: dict) -> str:
+    return overrides.get(key_of(pr), {}).get("summary") or clean_title(pr["title"])
+
+
+def category_of(pr: dict, summary: str, overrides: dict) -> str:
+    """Resolve a PR's section: explicit override "category" wins, else infer the
+    big repeating campaigns from the summary, else fall back to the catch-all."""
+    explicit = overrides.get(key_of(pr), {}).get("category")
+    if explicit:
+        return explicit
+    s = summary.lower()
     repo = pr["repository"]["nameWithOwner"]
-    key = f"{repo}#{pr['number']}"
-    override = overrides.get(key, {})
-    project = override.get("project", repo)
-    summary = override.get("summary") or clean_title(pr["title"])
+    if "httproute" in s:
+        return "httproute"
+    if repo == "nginx/nginx-gateway-fabric" and ("gocyclo" in s or "cyclomatic" in s):
+        return "ngf-gocyclo"
+    if "version-file" in s or "version_file" in s or ".tool-versions" in s:
+        return "action-version-file"
+    return DEFAULT_CATEGORY
+
+
+def table_row(pr: dict, summary: str, status: str, overrides: dict) -> str:
+    project = overrides.get(key_of(pr), {}).get("project", pr["repository"]["nameWithOwner"])
     return f"| {project} | [#{pr['number']}]({pr['url']}) | {summary} | {status} |"
 
 
+def group_by_category(
+    merged: list[dict], review: list[dict], overrides: dict
+) -> dict[str, dict[str, list]]:
+    """Bucket each PR into its section, preserving the (date-sorted) input order
+    and the merged/review split."""
+    groups: dict[str, dict[str, list]] = {
+        key: {"merged": [], "review": []} for key, _, _ in CATEGORIES
+    }
+    for bucket, prs in (("merged", merged), ("review", review)):
+        for pr in prs:
+            summary = summary_of(pr, overrides)
+            cat = category_of(pr, summary, overrides)
+            groups[cat if cat in groups else DEFAULT_CATEGORY][bucket].append((pr, summary))
+    return groups
+
+
+def section_lines(
+    heading: str, compress: bool, group: dict[str, list], overrides: dict
+) -> list[str]:
+    merged, review = group["merged"], group["review"]
+    if not merged and not review:
+        return []
+
+    total = len(merged) + len(review)
+    suffix = f"{len(merged)} merged" if merged else "in review"
+    lines = [f"#### {heading} ({total} · {suffix})", ""]
+
+    listed = [(pr, s, "✅ Merged") for pr, s in merged]
+    if not compress:
+        listed += [(pr, s, "🔵 Review") for pr, s in review]
+    if listed:
+        lines += ["| Project | PR | Contribution | Status |", "|---|---|---|---|"]
+        lines += [table_row(pr, s, status, overrides) for pr, s, status in listed]
+        lines.append("")
+
+    if compress and review:
+        shown = ", ".join(f"[#{pr['number']}]({pr['url']})" for pr, _ in review[:IN_REVIEW_PREVIEW])
+        if len(review) > IN_REVIEW_PREVIEW:
+            shown += ", …"
+        lines += [f"_In review ({len(review)}): {shown}_", ""]
+    return lines
+
+
 def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
+    groups = group_by_category(merged, review, overrides)
     lines = [
         MARKER_START,
         "",
@@ -105,12 +189,10 @@ def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
         "",
         "<br/>",
         "",
-        "| Project | PR | Contribution | Status |",
-        "|---|---|---|---|",
     ]
-    lines += [row(p, "✅ Merged", overrides) for p in merged]
-    lines += [row(p, "🔵 Review", overrides) for p in review]
-    lines += ["", "</details>", "", MARKER_END]
+    for key, heading, compress in CATEGORIES:
+        lines += section_lines(heading, compress, groups[key], overrides)
+    lines += ["</details>", "", MARKER_END]
     return "\n".join(lines)
 
 
