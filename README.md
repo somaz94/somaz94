@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-20-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-57-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-20-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-59-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (77)</b></summary>
+<summary><b>View all contributions (79)</b></summary>
 
 <br/>
 
@@ -71,8 +71,10 @@ Contributions to external open-source projects.
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | 🔵 Review |
+| open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | 🔵 Review |
-| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Use the image config creation time for OCI artifacts instead of the time.Now() fallback | 🔵 Review |
+| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | 🔵 Review |
 | ClementTsang/bottom | [#2086](https://github.com/ClementTsang/bottom/pull/2086) | Add an opt-in natural sort config option for string table columns (closes #1147) | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
