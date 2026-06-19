@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-20-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-61-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-21-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-61-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (81)</b></summary>
+<summary><b>View all contributions (82)</b></summary>
 
 <br/>
 
@@ -117,9 +117,13 @@ _In review (7): [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480)
 
 <br/>
 
-#### GitHub Action `version-file` inputs (10 · in review)
+#### GitHub Action `version-file` inputs (11 · 1 merged)
 
-_In review (10): [#177](https://github.com/hashicorp/setup-packer/pull/177), [#242](https://github.com/sigstore/cosign-installer/pull/242), [#918](https://github.com/astral-sh/setup-uv/pull/918), [#162](https://github.com/helm/kind-action/pull/162), [#448](https://github.com/terraform-linters/setup-tflint/pull/448), [#29](https://github.com/extractions/setup-just/pull/29), [#743](https://github.com/actions/setup-dotnet/pull/743), [#379](https://github.com/astral-sh/ruff-action/pull/379), [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110), [#281](https://github.com/Azure/setup-helm/pull/281)_
+| Project | PR | Contribution | Status |
+|---|---|---|---|
+| astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+
+_In review (10): [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98), [#177](https://github.com/hashicorp/setup-packer/pull/177), [#242](https://github.com/sigstore/cosign-installer/pull/242), [#162](https://github.com/helm/kind-action/pull/162), [#448](https://github.com/terraform-linters/setup-tflint/pull/448), [#29](https://github.com/extractions/setup-just/pull/29), [#743](https://github.com/actions/setup-dotnet/pull/743), [#379](https://github.com/astral-sh/ruff-action/pull/379), [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110), [#281](https://github.com/Azure/setup-helm/pull/281)_
 
 <br/>
 
