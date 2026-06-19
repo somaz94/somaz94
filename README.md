@@ -84,7 +84,9 @@ Contributions to external open-source projects.
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
 
-#### 🌐 Gateway API HTTPRoute support · Helm charts (21 · 9 merged)
+<br/>
+
+#### Gateway API HTTPRoute support · Helm charts (21 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -100,7 +102,9 @@ Contributions to external open-source projects.
 
 _In review (12): [#927](https://github.com/padok-team/burrito/pull/927), [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095), [#68552](https://github.com/apache/airflow/pull/68552), [#419](https://github.com/kiali/helm-charts/pull/419), [#522](https://github.com/mattermost/mattermost-helm/pull/522), [#234](https://github.com/RocketChat/helm-charts/pull/234), [#13671](https://github.com/danny-avila/LibreChat/pull/13671), [#171](https://github.com/1Password/op-scim-helm/pull/171), [#40785](https://github.com/apache/superset/pull/40785), [#199](https://github.com/twuni/docker-registry.helm/pull/199), …_
 
-#### 🔧 nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (10 · 3 merged)
+<br/>
+
+#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (10 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -110,11 +114,15 @@ _In review (12): [#927](https://github.com/padok-team/burrito/pull/927), [#10095
 
 _In review (7): [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480), [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461), [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455), [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454), [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453), [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452), [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441)_
 
-#### ⚙️ GitHub Action `version-file` inputs (10 · in review)
+<br/>
+
+#### GitHub Action `version-file` inputs (10 · in review)
 
 _In review (10): [#177](https://github.com/hashicorp/setup-packer/pull/177), [#242](https://github.com/sigstore/cosign-installer/pull/242), [#918](https://github.com/astral-sh/setup-uv/pull/918), [#162](https://github.com/helm/kind-action/pull/162), [#448](https://github.com/terraform-linters/setup-tflint/pull/448), [#29](https://github.com/extractions/setup-just/pull/29), [#743](https://github.com/actions/setup-dotnet/pull/743), [#379](https://github.com/astral-sh/ruff-action/pull/379), [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110), [#281](https://github.com/Azure/setup-helm/pull/281)_
 
-#### 📐 helm-values-schema-json features (6 · 4 merged)
+<br/>
+
+#### helm-values-schema-json features (6 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -125,7 +133,9 @@ _In review (10): [#177](https://github.com/hashicorp/setup-packer/pull/177), [#2
 
 _In review (2): [#365](https://github.com/losisin/helm-values-schema-json/pull/365), [#360](https://github.com/losisin/helm-values-schema-json/pull/360)_
 
-#### ☁️ moto AWS API mocks (4 · 1 merged)
+<br/>
+
+#### moto AWS API mocks (4 · 1 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
