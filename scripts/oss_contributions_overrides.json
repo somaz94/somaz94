@@ -78,5 +78,6 @@
   "elastic/elasticsearch#151614": { "summary": "S3 snapshot repository: EKS Pod Identity credential support" },
   "open-telemetry/opentelemetry-collector-contrib#49146": { "summary": "Add opt-in TLS support to the memcached receiver" },
   "pypa/pipx#1842": { "summary": "Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config" },
-  "vmware-tanzu/helm-charts#740": { "summary": "Add optional PodDisruptionBudget to the Velero Helm chart" }
+  "vmware-tanzu/helm-charts#740": { "summary": "Add optional PodDisruptionBudget to the Velero Helm chart" },
+  "jenkins-infra/helm-charts#1972": { "summary": "Add an opt-in PodDisruptionBudget to the httpd Helm chart" }
 }
