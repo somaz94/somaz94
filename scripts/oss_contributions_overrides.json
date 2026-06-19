@@ -80,5 +80,6 @@
   "pypa/pipx#1842": { "summary": "Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config" },
   "vmware-tanzu/helm-charts#740": { "summary": "Add optional PodDisruptionBudget to the Velero Helm chart" },
   "jenkins-infra/helm-charts#1972": { "summary": "Add an opt-in PodDisruptionBudget to the httpd Helm chart" },
-  "yokawasa/action-setup-kube-tools#98": { "summary": "Add a version-file (.tool-versions) input to pin tool versions from a file" }
+  "yokawasa/action-setup-kube-tools#98": { "summary": "Add a version-file (.tool-versions) input to pin tool versions from a file" },
+  "stern/stern#373": { "summary": "Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343)" }
 }

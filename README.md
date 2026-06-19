@@ -42,20 +42,21 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-21-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-61-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-21-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-62-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (82)</b></summary>
+<summary><b>View all contributions (83)</b></summary>
 
 <br/>
 
-#### ⭐ Notable and one-off contributions (31 · 3 merged)
+#### ⭐ Notable and one-off contributions (32 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | 🔵 Review |
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | 🔵 Review |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | 🔵 Review |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | 🔵 Review |
