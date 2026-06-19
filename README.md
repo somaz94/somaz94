@@ -64,7 +64,34 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### ⭐ Notable and one-off contributions (33 · 3 merged)
+#### Gateway API HTTPRoute support · Helm charts (20 · 9 merged)
+
+| Project | PR | Contribution | Status |
+|---|---|---|---|
+| firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
+| pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
+| apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
+| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
+| jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | ✅ Merged |
+| falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick HTTPRoute support | ✅ Merged |
+| prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
+| prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
+| apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | 🔵 Review |
+| pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | 🔵 Review |
+| apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | 🔵 Review |
+| mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
+| RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
+| danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
+| 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
+| apache/superset | [#40785](https://github.com/apache/superset/pull/40785) | Add Gateway API HTTPRoute support | 🔵 Review |
+| twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
+| open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 Review |
+| apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 Review |
+
+<br/>
+
+#### Standalone contributions (33 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -104,21 +131,21 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (20 · 9 merged)
+#### GitHub Action `version-file` inputs (11 · 1 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
-| firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
-| pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
-| apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
-| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
-| jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | ✅ Merged |
-| falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick HTTPRoute support | ✅ Merged |
-| prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
-| prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
-| apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
-
-_In review (11): [#927](https://github.com/padok-team/burrito/pull/927), [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095), [#68552](https://github.com/apache/airflow/pull/68552), [#522](https://github.com/mattermost/mattermost-helm/pull/522), [#234](https://github.com/RocketChat/helm-charts/pull/234), [#13671](https://github.com/danny-avila/LibreChat/pull/13671), [#171](https://github.com/1Password/op-scim-helm/pull/171), [#40785](https://github.com/apache/superset/pull/40785), [#199](https://github.com/twuni/docker-registry.helm/pull/199), [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246), …_
+| astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+| yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | 🔵 Review |
+| hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
+| sigstore/cosign-installer | [#242](https://github.com/sigstore/cosign-installer/pull/242) | Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file) | 🔵 Review |
+| helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | 🔵 Review |
+| terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | 🔵 Review |
+| extractions/setup-just | [#29](https://github.com/extractions/setup-just/pull/29) | Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file | 🔵 Review |
+| actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
+| astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | 🔵 Review |
+| cloudposse/github-action-setup-atmos | [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110) | Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file | 🔵 Review |
+| Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | 🔵 Review |
 
 <br/>
 
@@ -129,18 +156,13 @@ _In review (11): [#927](https://github.com/padok-team/burrito/pull/927), [#10095
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
-
-_In review (7): [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480), [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461), [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455), [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454), [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453), [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452), [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441)_
-
-<br/>
-
-#### GitHub Action `version-file` inputs (11 · 1 merged)
-
-| Project | PR | Contribution | Status |
-|---|---|---|---|
-| astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
-
-_In review (10): [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98), [#177](https://github.com/hashicorp/setup-packer/pull/177), [#242](https://github.com/sigstore/cosign-installer/pull/242), [#162](https://github.com/helm/kind-action/pull/162), [#448](https://github.com/terraform-linters/setup-tflint/pull/448), [#29](https://github.com/extractions/setup-just/pull/29), [#743](https://github.com/actions/setup-dotnet/pull/743), [#379](https://github.com/astral-sh/ruff-action/pull/379), [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110), [#281](https://github.com/Azure/setup-helm/pull/281)_
+| nginx/nginx-gateway-fabric | [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480) | Refactor createHTTPFilters to remove gocyclo nolint | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461) | Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454) | Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453) | Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | 🔵 Review |
+| nginx/nginx-gateway-fabric | [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441) | Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253) | 🔵 Review |
 
 <br/>
 
@@ -152,8 +174,8 @@ _In review (10): [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/
 | losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | ✅ Merged |
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | ✅ Merged |
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
-
-_In review (2): [#365](https://github.com/losisin/helm-values-schema-json/pull/365), [#360](https://github.com/losisin/helm-values-schema-json/pull/360)_
+| losisin/helm-values-schema-json | [#365](https://github.com/losisin/helm-values-schema-json/pull/365) | Add shorthand for the const and default schema annotations to reuse the field's own YAML value | 🔵 Review |
+| losisin/helm-values-schema-json | [#360](https://github.com/losisin/helm-values-schema-json/pull/360) | Add nullable schema annotation | 🔵 Review |
 
 <br/>
 
@@ -162,8 +184,9 @@ _In review (2): [#365](https://github.com/losisin/helm-values-schema-json/pull/3
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
-
-_In review (3): [#10068](https://github.com/getmoto/moto/pull/10068), [#10067](https://github.com/getmoto/moto/pull/10067), [#10065](https://github.com/getmoto/moto/pull/10065)_
+| getmoto/moto | [#10068](https://github.com/getmoto/moto/pull/10068) | Omit unset optional fields from Transfer describe responses | 🔵 Review |
+| getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Add Kinesis Firehose Iceberg destination support | 🔵 Review |
+| getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | 🔵 Review |
 
 </details>
 

@@ -50,9 +50,11 @@ CONV_RE = re.compile(
 JSON_FIELDS = "number,title,url,repository,createdAt"
 
 # Ordered display sections. compress=True collapses still-in-review PRs to a
-# single "+N in review" line (used for the big repeating campaigns so a section
-# grows per-campaign, not per-PR); merged PRs are always listed individually.
-# compress=False lists every PR (the diverse, high-signal one-off work).
+# single "+N in review" line; merged PRs are always listed individually.
+# compress=False lists every PR as its own table row. Every section is currently
+# compress=False so each PR — merged or in-review — is a discrete row, which
+# keeps the table machine-reconcilable; the compress mechanism is retained for
+# any future campaign that grows large enough to warrant collapsing.
 # A PR's section comes from its override "category"; if absent, the three
 # largest campaigns are inferred from the summary, else it lands in "misc".
 DEFAULT_CATEGORY = "misc"
@@ -60,12 +62,12 @@ DEFAULT_CATEGORY = "misc"
 # stays bounded no matter how large a campaign grows.
 IN_REVIEW_PREVIEW = 10
 CATEGORIES: list[tuple[str, str, bool]] = [
-    ("misc", "⭐ Notable and one-off contributions", False),
-    ("httproute", "Gateway API HTTPRoute support · Helm charts", True),
-    ("ngf-gocyclo", "nginx-gateway-fabric cyclomatic-complexity refactors · #5253", True),
-    ("action-version-file", "GitHub Action `version-file` inputs", True),
-    ("schema-json", "helm-values-schema-json features", True),
-    ("moto-aws", "moto AWS API mocks", True),
+    ("httproute", "Gateway API HTTPRoute support · Helm charts", False),
+    ("misc", "Standalone contributions", False),
+    ("action-version-file", "GitHub Action `version-file` inputs", False),
+    ("ngf-gocyclo", "nginx-gateway-fabric cyclomatic-complexity refactors · #5253", False),
+    ("schema-json", "helm-values-schema-json features", False),
+    ("moto-aws", "moto AWS API mocks", False),
 ]
 
 
