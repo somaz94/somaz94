@@ -61,11 +61,11 @@ DEFAULT_CATEGORY = "misc"
 IN_REVIEW_PREVIEW = 10
 CATEGORIES: list[tuple[str, str, bool]] = [
     ("misc", "⭐ Notable and one-off contributions", False),
-    ("httproute", "🌐 Gateway API HTTPRoute support · Helm charts", True),
-    ("ngf-gocyclo", "🔧 nginx-gateway-fabric cyclomatic-complexity refactors · #5253", True),
-    ("action-version-file", "⚙️ GitHub Action `version-file` inputs", True),
-    ("schema-json", "📐 helm-values-schema-json features", True),
-    ("moto-aws", "☁️ moto AWS API mocks", True),
+    ("httproute", "Gateway API HTTPRoute support · Helm charts", True),
+    ("ngf-gocyclo", "nginx-gateway-fabric cyclomatic-complexity refactors · #5253", True),
+    ("action-version-file", "GitHub Action `version-file` inputs", True),
+    ("schema-json", "helm-values-schema-json features", True),
+    ("moto-aws", "moto AWS API mocks", True),
 ]
 
 
@@ -190,8 +190,15 @@ def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
         "<br/>",
         "",
     ]
-    for key, heading, compress in CATEGORIES:
-        lines += section_lines(heading, compress, groups[key], overrides)
+    rendered = [
+        sec
+        for key, heading, compress in CATEGORIES
+        if (sec := section_lines(heading, compress, groups[key], overrides))
+    ]
+    for i, sec in enumerate(rendered):
+        if i > 0:  # space each heading section from the previous one
+            lines += ["<br/>", ""]
+        lines += sec
     lines += ["</details>", "", MARKER_END]
     return "\n".join(lines)
 
