@@ -57,17 +57,18 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-21-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-64-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-22-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-64-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (85)</b></summary>
+<summary><b>View all contributions (86)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (19 · 9 merged)
+#### Gateway API HTTPRoute support · Helm charts (20 · 10 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |

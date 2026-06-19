@@ -7,9 +7,15 @@ collapsible table, and replaces whatever sits between the OSS markers in
 README.md. Closed-unmerged PRs are intentionally excluded — the public profile
 shows positive signal only, and a closed PR simply drops off the table.
 
-Data source: `gh search prs` (two queries: --merged and --state open).
-Curated one-line summaries come from oss_contributions_overrides.json; any PR
-without an override falls back to a cleaned-up PR title.
+One exception: a PR a maintainer squash-merges under a fresh commit SHA stays
+CLOSED (not MERGED) on GitHub, so `gh search prs --merged` can't see it and it
+would silently vanish despite being a real merge. Flag such a PR `"merged": true`
+in oss_contributions_overrides.json to re-include it as merged.
+
+Data source: `gh search prs` (two queries: --merged and --state open), plus
+`gh pr view` for any forced-merged override. Curated one-line summaries come
+from oss_contributions_overrides.json; any PR without an override falls back to
+a cleaned-up PR title.
 
 Usage:
     python3 scripts/oss_contributions.py          # rewrite README.md in place
@@ -107,6 +113,32 @@ def clean_title(title: str) -> str:
 
 def key_of(pr: dict) -> str:
     return f"{pr['repository']['nameWithOwner']}#{pr['number']}"
+
+
+def forced_merged(overrides: dict) -> list[dict]:
+    """Synthesize PR records for entries flagged `"merged": true` in overrides.
+
+    Some maintainers land a PR by squashing it onto their default branch under a
+    fresh commit SHA. GitHub then can't auto-close the original PR, so it stays
+    in the CLOSED (not MERGED) state and `gh search prs --merged` never returns
+    it — the contribution would silently vanish. Flagging the PR `"merged": true`
+    re-includes it; its metadata is pulled with `gh pr view`, since the search
+    queries won't surface a closed PR.
+    """
+    records: list[dict] = []
+    for key, meta in overrides.items():
+        if not meta.get("merged"):
+            continue
+        repo, num = key.rsplit("#", 1)
+        result = subprocess.run(
+            ["gh", "pr", "view", num, "--repo", repo,
+             "--json", "number,title,url,createdAt"],
+            capture_output=True, text=True, check=True,
+        )
+        pr = json.loads(result.stdout)
+        pr["repository"] = {"nameWithOwner": repo}
+        records.append(pr)
+    return records
 
 
 def summary_of(pr: dict, overrides: dict) -> str:
@@ -218,6 +250,17 @@ def main() -> int:
 
     merged = external(gh_search("--merged"))
     review = external(gh_search("--state", "open"))
+
+    # Re-include PRs a maintainer squash-merged under a new SHA: GitHub leaves
+    # them CLOSED so `--merged` misses them. They are flagged "merged": true in
+    # the overrides and must not also appear in the in-review list.
+    merged_keys = {key_of(p) for p in merged}
+    for pr in forced_merged(overrides):
+        if key_of(pr) not in merged_keys:
+            merged.append(pr)
+            merged_keys.add(key_of(pr))
+    review = [p for p in review if key_of(p) not in merged_keys]
+
     merged.sort(key=lambda p: p["createdAt"], reverse=True)
     review.sort(key=lambda p: p["createdAt"], reverse=True)
 
