@@ -1,4 +1,5 @@
 {
+  "buildpacks/github-actions#428": { "summary": "Add pack-version-file input and default-on SHA256 download verification to the setup-pack action" },
   "yannh/kubeconform#356": { "summary": "Avoid SIGSEGV panic on null-decoding schema" },
   "meshery/meshery#19835": { "summary": "Fix typos, function names & license header" },
   "meshery/meshery#19866": { "summary": "Fix export flag validation + tests" },
