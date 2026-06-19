@@ -42,10 +42,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-20-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-61-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-20-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-60-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (81)</b></summary>
+<summary><b>View all contributions (80)</b></summary>
 
 <br/>
 
@@ -86,7 +86,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (21 · 9 merged)
+#### Gateway API HTTPRoute support · Helm charts (20 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -100,7 +100,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
 
-_In review (12): [#927](https://github.com/padok-team/burrito/pull/927), [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095), [#68552](https://github.com/apache/airflow/pull/68552), [#419](https://github.com/kiali/helm-charts/pull/419), [#522](https://github.com/mattermost/mattermost-helm/pull/522), [#234](https://github.com/RocketChat/helm-charts/pull/234), [#13671](https://github.com/danny-avila/LibreChat/pull/13671), [#171](https://github.com/1Password/op-scim-helm/pull/171), [#40785](https://github.com/apache/superset/pull/40785), [#199](https://github.com/twuni/docker-registry.helm/pull/199), …_
+_In review (11): [#927](https://github.com/padok-team/burrito/pull/927), [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095), [#68552](https://github.com/apache/airflow/pull/68552), [#522](https://github.com/mattermost/mattermost-helm/pull/522), [#234](https://github.com/RocketChat/helm-charts/pull/234), [#13671](https://github.com/danny-avila/LibreChat/pull/13671), [#171](https://github.com/1Password/op-scim-helm/pull/171), [#40785](https://github.com/apache/superset/pull/40785), [#199](https://github.com/twuni/docker-registry.helm/pull/199), …_
 
 <br/>
 
