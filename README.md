@@ -57,7 +57,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-22-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-64-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-63-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (86)</b></summary>
@@ -91,10 +91,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (34 · 3 merged)
+#### Standalone contributions (34 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
@@ -113,7 +114,6 @@ Contributions to external open-source projects.
 | openobserve/openobserve-helm-chart | [#222](https://github.com/openobserve/openobserve-helm-chart/pull/222) | Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart | 🔵 Review |
 | dragonflydb/dragonfly-operator | [#550](https://github.com/dragonflydb/dragonfly-operator/pull/550) | Add optional PodDisruptionBudget to the operator Helm chart | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
-| external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | 🔵 Review |
