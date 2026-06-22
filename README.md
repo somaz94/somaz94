@@ -57,14 +57,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-72-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-73-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (95)</b></summary>
+<summary><b>View all contributions (96)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (20 · 10 merged)
+#### Gateway API HTTPRoute support · Helm charts (21 · 10 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -78,6 +78,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| requarks/wiki | [#8035](https://github.com/requarks/wiki/pull/8035) | Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart | 🔵 Review |
 | padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | 🔵 Review |
 | apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | 🔵 Review |
 | mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
