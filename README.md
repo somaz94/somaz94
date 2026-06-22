@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (92)</b></summary>
+<summary><b>View all contributions (93)</b></summary>
 
 <br/>
 
@@ -138,11 +138,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (12 · 1 merged)
+#### GitHub Action `version-file` inputs (13 · 1 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+| aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | 🔵 Review |
 | yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |

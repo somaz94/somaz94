@@ -89,5 +89,6 @@
   "fluent/fluentd#5390": { "summary": "Add umask option to the <system> directive" },
   "metallb/metallb#3076": { "summary": "Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade" },
   "amacneil/dbmate#803": { "summary": "Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait`" },
-  "anchore/grype#3519": { "summary": "Add vulnerable version ranges to the CycloneDX output format (closes #3512)" }
+  "anchore/grype#3519": { "summary": "Add vulnerable version ranges to the CycloneDX output format (closes #3512)" },
+  "aquasecurity/setup-trivy#39": { "summary": "Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file" }
 }
