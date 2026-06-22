@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-63-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-64-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (86)</b></summary>
+<summary><b>View all contributions (87)</b></summary>
 
 <br/>
 
@@ -91,7 +91,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (34 · 4 merged)
+#### Standalone contributions (35 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -129,6 +129,7 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 Review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
+| vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add a typed `HTTPHeaders.retryAfter` accessor (RetryAfter .seconds/.date) for the Retry-After response header | 🔵 Review |
 
 <br/>
 
