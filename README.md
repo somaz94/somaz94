@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-72-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (93)</b></summary>
+<summary><b>View all contributions (95)</b></summary>
 
 <br/>
 
@@ -91,7 +91,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (40 · 4 merged)
+#### Standalone contributions (42 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -99,6 +99,8 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
+| kedacore/charts | [#881](https://github.com/kedacore/charts/pull/881) | Make the KEDA operator gRPC metrics service port configurable (#511) | 🔵 Review |
 | anchore/grype | [#3519](https://github.com/anchore/grype/pull/3519) | Add vulnerable version ranges to the CycloneDX output format (closes #3512) | 🔵 Review |
 | amacneil/dbmate | [#803](https://github.com/amacneil/dbmate/pull/803) | Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait` | 🔵 Review |
 | metallb/metallb | [#3076](https://github.com/metallb/metallb/pull/3076) | Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade | 🔵 Review |
