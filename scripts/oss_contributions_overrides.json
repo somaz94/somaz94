@@ -84,5 +84,6 @@
   "yokawasa/action-setup-kube-tools#98": { "summary": "Add a version-file (.tool-versions) input to pin tool versions from a file" },
   "stern/stern#373": { "summary": "Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343)" },
   "kedacore/charts#880": { "summary": "Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces)" },
-  "kudobuilder/kuttl#694": { "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)" }
+  "kudobuilder/kuttl#694": { "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)" },
+  "ray-project/kuberay#4934": { "summary": "Add optional PodDisruptionBudget to the ray-cluster Helm chart" }
 }

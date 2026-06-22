@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-64-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-65-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (87)</b></summary>
+<summary><b>View all contributions (88)</b></summary>
 
 <br/>
 
@@ -91,7 +91,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (35 · 4 merged)
+#### Standalone contributions (36 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -99,6 +99,8 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
+| vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | 🔵 Review |
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
 | stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | 🔵 Review |
@@ -129,7 +131,6 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 Review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
-| vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add a typed `HTTPHeaders.retryAfter` accessor (RetryAfter .seconds/.date) for the Retry-After response header | 🔵 Review |
 
 <br/>
 
