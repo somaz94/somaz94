@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-67-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-23-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-68-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (90)</b></summary>
+<summary><b>View all contributions (91)</b></summary>
 
 <br/>
 
@@ -91,7 +91,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (38 · 4 merged)
+#### Standalone contributions (39 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -99,6 +99,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| amacneil/dbmate | [#803](https://github.com/amacneil/dbmate/pull/803) | Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait` | 🔵 Review |
 | metallb/metallb | [#3076](https://github.com/metallb/metallb/pull/3076) | Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade | 🔵 Review |
 | fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add umask option to the <system> directive | 🔵 Review |
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |

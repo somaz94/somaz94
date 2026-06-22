@@ -87,5 +87,6 @@
   "kudobuilder/kuttl#694": { "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)" },
   "ray-project/kuberay#4934": { "summary": "Add optional PodDisruptionBudget to the ray-cluster Helm chart" },
   "fluent/fluentd#5390": { "summary": "Add umask option to the <system> directive" },
-  "metallb/metallb#3076": { "summary": "Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade" }
+  "metallb/metallb#3076": { "summary": "Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade" },
+  "amacneil/dbmate#803": { "summary": "Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait`" }
 }
