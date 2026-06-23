@@ -57,10 +57,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-24-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-75-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-24-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (99)</b></summary>
+<summary><b>View all contributions (101)</b></summary>
 
 <br/>
 
@@ -92,7 +92,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (45 · 5 merged)
+#### Standalone contributions (47 · 5 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -101,9 +101,11 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | 🔵 Review |
+| redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | 🔵 Review |
+| kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | 🔵 Review |
-| kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
 | kedacore/charts | [#881](https://github.com/kedacore/charts/pull/881) | Make the KEDA operator gRPC metrics service port configurable (#511) | 🔵 Review |
 | anchore/grype | [#3519](https://github.com/anchore/grype/pull/3519) | Add vulnerable version ranges to the CycloneDX output format (closes #3512) | 🔵 Review |
