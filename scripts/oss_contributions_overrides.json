@@ -95,5 +95,6 @@
   "aquasecurity/setup-trivy#39": { "summary": "Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file" },
   "requarks/wiki#8035": { "summary": "Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart" },
   "longhorn/longhorn#13378": { "summary": "Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart" },
+  "kubernetes-sigs/descheduler#1885": { "summary": "Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode)" },
   "robinraju/release-downloader#952": { "summary": "Fix path traversal (CWE-22) when saving release assets" }
 }
