@@ -53,6 +53,8 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter Gateway API HTTPRoute support |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema |
+| external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
+| getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Read the pinned uv version from `uv.lock` for deterministic CI |
 
 <!-- OSS:START -->
