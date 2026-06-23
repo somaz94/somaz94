@@ -59,10 +59,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-24-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-24-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (102)</b></summary>
+<summary><b>View all contributions (104)</b></summary>
 
 <br/>
 
@@ -94,7 +94,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (48 · 5 merged)
+#### Standalone contributions (49 · 5 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -103,6 +103,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |
 | goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | 🔵 Review |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | 🔵 Review |
 | redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | 🔵 Review |
@@ -169,13 +170,14 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (10 · 3 merged)
+#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480) | Refactor createHTTPFilters to remove gocyclo nolint | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461) | Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | 🔵 Review |

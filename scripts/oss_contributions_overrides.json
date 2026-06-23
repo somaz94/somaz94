@@ -99,5 +99,6 @@
   "kubernetes-sigs/descheduler#1885": { "summary": "Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode)" },
   "robinraju/release-downloader#952": { "summary": "Fix path traversal (CWE-22) when saving release assets" },
   "kubernetes-sigs/headlamp#6148": { "summary": "Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend" },
-  "goauthentik/helm#483": { "summary": "Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting)" }
+  "goauthentik/helm#483": { "summary": "Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting)" },
+  "argoproj/argo-helm#3943": { "summary": "Add envFrom to the argo-workflows controller and argo-server containers" }
 }
