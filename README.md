@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (119)</b></summary>
+<summary><b>View all contributions (121)</b></summary>
 
 <br/>
 
@@ -104,7 +104,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (55 · 8 merged)
+#### Standalone contributions (57 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -116,6 +116,8 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | 🔵 Review |
+| actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets input propagated to Swatinem/rust-cache | 🔵 Review |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | 🔵 Review |
 | metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |

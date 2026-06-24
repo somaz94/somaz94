@@ -115,5 +115,6 @@
   "woodpecker-ci/helm#498": { "summary": "Add topologySpreadConstraints to the Woodpecker server (parity with the agent)" },
   "VictoriaMetrics/helm-charts#3016": { "summary": "Add runtimeClassName option to pod specs across all VictoriaMetrics charts" },
   "valkey-io/valkey-helm#195": { "summary": "Add optional topologySpreadConstraints to the valkey-operator chart Deployment" },
+  "valkey-io/valkey-helm#196": { "summary": "Add optional Prometheus ServiceMonitor to the valkey-operator chart" },
   "kubereboot/charts#141": { "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet" }
 }
