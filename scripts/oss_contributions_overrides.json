@@ -1,5 +1,6 @@
 {
   "redpanda-data/helm-charts#1754": { "summary": "Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet)" },
+  "redpanda-data/helm-charts#1756": { "summary": "kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet)" },
   "buildpacks/github-actions#428": { "summary": "Add pack-version-file input and default-on SHA256 download verification to the setup-pack action" },
   "yannh/kubeconform#356": { "summary": "Avoid SIGSEGV panic on null-decoding schema" },
   "meshery/meshery#19835": { "summary": "Fix typos, function names & license header" },
