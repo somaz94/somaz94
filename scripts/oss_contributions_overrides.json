@@ -14,6 +14,7 @@
   "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },
   "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
   "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
+  "prometheus-community/helm-charts#7022": { "summary": "Add Gateway API HTTPRoute support to the prometheus-json-exporter chart" },
   "jaegertracing/helm-charts#758": { "summary": "Query UI HTTPRoute support" },
   "jaegertracing/helm-charts#761": { "summary": "Restore extraVolumes/extraVolumeMounts on the all-in-one deployment" },
   "falcosecurity/charts#1026": { "summary": "falcosidekick HTTPRoute support" },
