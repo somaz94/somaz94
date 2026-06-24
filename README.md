@@ -60,19 +60,20 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-31-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-40-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (128)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 13 merged)
+#### Gateway API HTTPRoute support · Helm charts (30 · 14 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
@@ -86,7 +87,6 @@ Contributions to external open-source projects.
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
@@ -104,13 +104,14 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (63 · 8 merged)
+#### Standalone contributions (63 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | ✅ Merged |
 | goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
+| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | ✅ Merged |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
@@ -147,7 +148,6 @@ Contributions to external open-source projects.
 | stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | 🔵 Review |
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | 🔵 Review |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | 🔵 Review |
-| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | 🔵 Review |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | 🔵 Review |
 | ClementTsang/bottom | [#2086](https://github.com/ClementTsang/bottom/pull/2086) | Add an opt-in natural sort config option for string table columns (closes #1147) | 🔵 Review |
@@ -195,21 +195,21 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 3 merged)
+#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| nginx/nginx-gateway-fabric | [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480) | Refactor createHTTPFilters to remove gocyclo nolint | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461) | Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454) | Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453) | Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441) | Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480) | Refactor createHTTPFilters to remove gocyclo nolint | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461) | Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454) | Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453) | Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441) | Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253) | 🔵 Review |
 
 <br/>
 
@@ -226,12 +226,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### moto AWS API mocks (4 · 1 merged)
+#### moto AWS API mocks (4 · 2 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| getmoto/moto | [#10068](https://github.com/getmoto/moto/pull/10068) | Omit unset optional fields from Transfer describe responses | ✅ Merged |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
-| getmoto/moto | [#10068](https://github.com/getmoto/moto/pull/10068) | Omit unset optional fields from Transfer describe responses | 🔵 Review |
 | getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Add Kinesis Firehose Iceberg destination support | 🔵 Review |
 | getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | 🔵 Review |
 
