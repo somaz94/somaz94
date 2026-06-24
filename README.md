@@ -59,18 +59,17 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-24-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-27-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (106)</b></summary>
+<summary><b>View all contributions (105)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (21 · 10 merged)
+#### Gateway API HTTPRoute support · Helm charts (20 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
-| pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
@@ -94,7 +93,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (51 · 5 merged)
+#### Standalone contributions (51 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -103,10 +102,11 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | 🔵 Review |
+| VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | ✅ Merged |
+| goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | ✅ Merged |
+| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
 | argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |
-| goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | 🔵 Review |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | 🔵 Review |
 | redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
@@ -127,7 +127,6 @@ Contributions to external open-source projects.
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | 🔵 Review |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | 🔵 Review |
-| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | 🔵 Review |
 | ClementTsang/bottom | [#2086](https://github.com/ClementTsang/bottom/pull/2086) | Add an opt-in natural sort config option for string table columns (closes #1147) | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
@@ -152,11 +151,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (13 · 1 merged)
+#### GitHub Action `version-file` inputs (13 · 2 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+| Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | 🔵 Review |
 | yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | 🔵 Review |
@@ -168,7 +168,6 @@ Contributions to external open-source projects.
 | actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | 🔵 Review |
 | cloudposse/github-action-setup-atmos | [#110](https://github.com/cloudposse/github-action-setup-atmos/pull/110) | Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file | 🔵 Review |
-| Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | 🔵 Review |
 
 <br/>
 
