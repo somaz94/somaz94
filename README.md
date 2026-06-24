@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (108)</b></summary>
+<summary><b>View all contributions (107)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (21 · 10 merged)
+#### Gateway API HTTPRoute support · Helm charts (20 · 10 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -88,7 +88,6 @@ Contributions to external open-source projects.
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
-| apache/superset | [#40785](https://github.com/apache/superset/pull/40785) | Add Gateway API HTTPRoute support | 🔵 Review |
 | twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 Review |
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 Review |
