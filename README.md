@@ -60,17 +60,19 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-30-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (121)</b></summary>
+<summary><b>View all contributions (124)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 10 merged)
+#### Gateway API HTTPRoute support · Helm charts (30 · 12 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
 | pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
@@ -81,8 +83,6 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
-| prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | 🔵 Review |
@@ -104,7 +104,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (57 · 8 merged)
+#### Standalone contributions (59 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -116,8 +116,10 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | 🔵 Review |
+| argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | 🔵 Review |
-| actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets input propagated to Swatinem/rust-cache | 🔵 Review |
+| actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | 🔵 Review |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | 🔵 Review |
 | metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
@@ -168,12 +170,13 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (13 · 2 merged)
+#### GitHub Action `version-file` inputs (14 · 2 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
+| google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | 🔵 Review |
 | yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | 🔵 Review |
