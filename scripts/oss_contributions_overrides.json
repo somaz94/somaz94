@@ -120,5 +120,6 @@
   "kubereboot/charts#141": { "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet" },
   "actions-rust-lang/setup-rust-toolchain#96": { "summary": "Add cache-targets passthrough to rust-cache" },
   "google-github-actions/setup-gcloud#736": { "summary": "Add version_file input to resolve gcloud version from a file" },
-  "argoproj/argo-cd#28406": { "summary": "Persist Applications search bar text across navigation (view preferences)" }
+  "argoproj/argo-cd#28406": { "summary": "Persist Applications search bar text across navigation (view preferences)" },
+  "terraform-aws-modules/terraform-aws-elasticache#74": { "summary": "Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning" }
 }
