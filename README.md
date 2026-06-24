@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-31-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-31-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (125)</b></summary>
+<summary><b>View all contributions (126)</b></summary>
 
 <br/>
 
@@ -104,7 +104,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (60 · 8 merged)
+#### Standalone contributions (61 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -116,6 +116,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-elasticache | [#74](https://github.com/terraform-aws-modules/terraform-aws-elasticache/pull/74) | Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning | 🔵 Review |
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
