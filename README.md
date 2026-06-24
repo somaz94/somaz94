@@ -59,10 +59,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-28-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (107)</b></summary>
+<summary><b>View all contributions (108)</b></summary>
 
 <br/>
 
@@ -94,7 +94,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (52 · 8 merged)
+#### Standalone contributions (53 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -106,6 +106,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | 🔵 Review |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
 | argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |

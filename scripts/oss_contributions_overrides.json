@@ -103,5 +103,6 @@
   "argoproj/argo-helm#3943": { "summary": "Add envFrom to the argo-workflows controller and argo-server containers" },
   "woodpecker-ci/helm#498": { "summary": "Add topologySpreadConstraints to the Woodpecker server (parity with the agent)" },
   "VictoriaMetrics/helm-charts#3016": { "summary": "Add runtimeClassName option to pod specs across all VictoriaMetrics charts" },
-  "valkey-io/valkey-helm#195": { "summary": "Add optional topologySpreadConstraints to the valkey-operator chart Deployment" }
+  "valkey-io/valkey-helm#195": { "summary": "Add optional topologySpreadConstraints to the valkey-operator chart Deployment" },
+  "kubereboot/charts#141": { "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet" }
 }
