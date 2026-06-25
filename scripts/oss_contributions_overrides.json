@@ -124,5 +124,6 @@
   "terraform-aws-modules/terraform-aws-elasticache#74": { "summary": "Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning" },
   "terraform-aws-modules/terraform-aws-iam#651": { "summary": "Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649" },
   "terraform-aws-modules/terraform-aws-eks#3726": { "summary": "Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724" },
-  "terraform-aws-modules/terraform-aws-secrets-manager#26": { "summary": "Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24" }
+  "terraform-aws-modules/terraform-aws-secrets-manager#26": { "summary": "Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24" },
+  "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": { "summary": "Restore broker log delivery for MSK Express brokers" }
 }

@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (128)</b></summary>
+<summary><b>View all contributions (129)</b></summary>
 
 <br/>
 
@@ -104,7 +104,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (63 · 9 merged)
+#### Standalone contributions (64 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -117,6 +117,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-secrets-manager | [#26](https://github.com/terraform-aws-modules/terraform-aws-secrets-manager/pull/26) | Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
@@ -126,7 +127,7 @@ Contributions to external open-source projects.
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | 🔵 Review |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | 🔵 Review |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | 🔵 Review |
-| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status reconcile (#3063) | 🔵 Review |
+| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status and ServiceBGPStatus reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | 🔵 Review |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
@@ -204,11 +205,11 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5454](https://github.com/nginx/nginx-gateway-fabric/pull/5454) | Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5453](https://github.com/nginx/nginx-gateway-fabric/pull/5453) | Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5441](https://github.com/nginx/nginx-gateway-fabric/pull/5441) | Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
-| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | 🔵 Review |
 
 <br/>
