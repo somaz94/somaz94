@@ -60,7 +60,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-40-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (128)</b></summary>
@@ -195,7 +195,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 9 merged)
+#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 10 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -208,8 +208,8 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5452](https://github.com/nginx/nginx-gateway-fabric/pull/5452) | Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers | 🔵 Review |
 
 <br/>
 
