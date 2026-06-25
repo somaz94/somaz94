@@ -60,7 +60,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-46-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (132)</b></summary>
@@ -104,13 +104,17 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (67 · 9 merged)
+#### Standalone contributions (67 · 13 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
+| valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | ✅ Merged |
 | VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | ✅ Merged |
 | goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | ✅ Merged |
+| redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
+| vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | ✅ Merged |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | ✅ Merged |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
@@ -128,15 +132,12 @@ Contributions to external open-source projects.
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | 🔵 Review |
-| actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | 🔵 Review |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | 🔵 Review |
 | metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status and ServiceBGPStatus reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
-| valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | 🔵 Review |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
 | argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | 🔵 Review |
-| redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | 🔵 Review |
@@ -151,7 +152,6 @@ Contributions to external open-source projects.
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
 | stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | 🔵 Review |
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | 🔵 Review |
-| vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | 🔵 Review |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | 🔵 Review |
 | ClementTsang/bottom | [#2086](https://github.com/ClementTsang/bottom/pull/2086) | Add an opt-in natural sort config option for string table columns (closes #1147) | 🔵 Review |
@@ -199,10 +199,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 10 merged)
+#### nginx-gateway-fabric cyclomatic-complexity refactors · #5253 (11 · 11 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5480](https://github.com/nginx/nginx-gateway-fabric/pull/5480) | Refactor createHTTPFilters to remove gocyclo nolint | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5461](https://github.com/nginx/nginx-gateway-fabric/pull/5461) | Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5455](https://github.com/nginx/nginx-gateway-fabric/pull/5455) | Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception | ✅ Merged |
@@ -213,7 +214,6 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5440](https://github.com/nginx/nginx-gateway-fabric/pull/5440) | Refactor secret deprovisioning to remove gocyclo lint debt (#5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5439](https://github.com/nginx/nginx-gateway-fabric/pull/5439) | Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253) | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5438](https://github.com/nginx/nginx-gateway-fabric/pull/5438) | Refactor listener port-conflict resolver to remove a gocyclo exception | ✅ Merged |
-| nginx/nginx-gateway-fabric | [#5491](https://github.com/nginx/nginx-gateway-fabric/pull/5491) | Simplify registerSecretInGatewayConfig to reduce cyclomatic complexity | 🔵 Review |
 
 <br/>
 
