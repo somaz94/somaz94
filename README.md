@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-41-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-90-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (130)</b></summary>
+<summary><b>View all contributions (131)</b></summary>
 
 <br/>
 
@@ -104,7 +104,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (65 · 9 merged)
+#### Standalone contributions (66 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -117,6 +117,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| terraform-aws-modules/terraform-aws-eks | [#3729](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3729) | Ignore server-side desired_capacity_type drift on self-managed node group ASG (fixes apply failure) | 🔵 Review |
 | terraform-google-modules/terraform-google-bastion-host | [#246](https://github.com/terraform-google-modules/terraform-google-bastion-host/pull/246) | Add allow_stopping_for_update variable to the GCP bastion host VM | 🔵 Review |
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-secrets-manager | [#26](https://github.com/terraform-aws-modules/terraform-aws-secrets-manager/pull/26) | Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24 | 🔵 Review |
