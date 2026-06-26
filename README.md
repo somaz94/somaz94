@@ -60,19 +60,20 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-46-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-55-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (132)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 14 merged)
+#### Gateway API HTTPRoute support · Helm charts (30 · 15 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
@@ -86,7 +87,6 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
@@ -104,20 +104,25 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (67 · 13 merged)
+#### Standalone contributions (67 · 18 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | ✅ Merged |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
+| redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | ✅ Merged |
 | valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | ✅ Merged |
 | VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | ✅ Merged |
 | goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | ✅ Merged |
+| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | ✅ Merged |
 | redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | ✅ Merged |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | ✅ Merged |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
+| opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | ✅ Merged |
+| open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
@@ -129,15 +134,12 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-elasticache | [#74](https://github.com/terraform-aws-modules/terraform-aws-elasticache/pull/74) | Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning | 🔵 Review |
-| valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | 🔵 Review |
-| redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | 🔵 Review |
 | metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status and ServiceBGPStatus reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
 | argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |
-| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | 🔵 Review |
@@ -162,9 +164,7 @@ Contributions to external open-source projects.
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
-| opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | 🔵 Review |
 | hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
-| open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | 🔵 Review |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
@@ -217,27 +217,27 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### helm-values-schema-json features (6 · 4 merged)
+#### helm-values-schema-json features (6 · 5 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| losisin/helm-values-schema-json | [#360](https://github.com/losisin/helm-values-schema-json/pull/360) | Add nullable schema annotation | ✅ Merged |
 | losisin/helm-values-schema-json | [#359](https://github.com/losisin/helm-values-schema-json/pull/359) | Add `--bundle-cache-min` flag to override min schema cache duration | ✅ Merged |
 | losisin/helm-values-schema-json | [#357](https://github.com/losisin/helm-values-schema-json/pull/357) | Deduplicate bundle flag registration via shared helper | ✅ Merged |
 | losisin/helm-values-schema-json | [#355](https://github.com/losisin/helm-values-schema-json/pull/355) | Add `lint` subcommand | ✅ Merged |
 | losisin/helm-values-schema-json | [#354](https://github.com/losisin/helm-values-schema-json/pull/354) | Add `bundle` subcommand | ✅ Merged |
 | losisin/helm-values-schema-json | [#365](https://github.com/losisin/helm-values-schema-json/pull/365) | Add shorthand for the const and default schema annotations to reuse the field's own YAML value | 🔵 Review |
-| losisin/helm-values-schema-json | [#360](https://github.com/losisin/helm-values-schema-json/pull/360) | Add nullable schema annotation | 🔵 Review |
 
 <br/>
 
-#### moto AWS API mocks (4 · 2 merged)
+#### moto AWS API mocks (4 · 4 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | getmoto/moto | [#10068](https://github.com/getmoto/moto/pull/10068) | Omit unset optional fields from Transfer describe responses | ✅ Merged |
+| getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Add Kinesis Firehose Iceberg destination support | ✅ Merged |
+| getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | ✅ Merged |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) | ✅ Merged |
-| getmoto/moto | [#10067](https://github.com/getmoto/moto/pull/10067) | Add Kinesis Firehose Iceberg destination support | 🔵 Review |
-| getmoto/moto | [#10065](https://github.com/getmoto/moto/pull/10065) | Add AppMesh VirtualGateway and GatewayRoute API support | 🔵 Review |
 
 </details>
 
