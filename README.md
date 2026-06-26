@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-46-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-46-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (132)</b></summary>
+<summary><b>View all contributions (133)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 14 merged)
+#### Gateway API HTTPRoute support · Helm charts (31 · 14 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -101,6 +101,7 @@ Contributions to external open-source projects.
 | twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 Review |
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | 🔵 Review |
+| redpanda-data/redpanda-operator | [#1628](https://github.com/redpanda-data/redpanda-operator/pull/1628) | Gateway API HTTPRoute support for the Console Helm chart | 🔵 Review |
 
 <br/>
 
