@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-55-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-58-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (133)</b></summary>
+<summary><b>View all contributions (134)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 15 merged)
+#### Gateway API HTTPRoute support · Helm charts (31 · 15 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -86,6 +86,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | 🔵 Review |
@@ -104,7 +105,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (68 · 18 merged)
+#### Standalone contributions (68 · 20 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -116,6 +117,7 @@ Contributions to external open-source projects.
 | goauthentik/helm | [#483](https://github.com/goauthentik/helm/pull/483) | Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting) | ✅ Merged |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend | ✅ Merged |
 | redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | ✅ Merged |
+| kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | ✅ Merged |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | ✅ Merged |
@@ -123,6 +125,7 @@ Contributions to external open-source projects.
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | ✅ Merged |
 | open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | ✅ Merged |
+| vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
@@ -141,7 +144,6 @@ Contributions to external open-source projects.
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | 🔵 Review |
 | argoproj/argo-helm | [#3943](https://github.com/argoproj/argo-helm/pull/3943) | Add envFrom to the argo-workflows controller and argo-server containers | 🔵 Review |
-| kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
@@ -166,7 +168,6 @@ Contributions to external open-source projects.
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
 | hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
-| vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
 | FairwindsOps/polaris | [#1201](https://github.com/FairwindsOps/polaris/pull/1201) | Add SARIF output format to audit CLI | 🔵 Review |
 | helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
@@ -179,11 +180,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (14 · 2 merged)
+#### GitHub Action `version-file` inputs (14 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+| terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
@@ -192,7 +194,6 @@ Contributions to external open-source projects.
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
 | sigstore/cosign-installer | [#242](https://github.com/sigstore/cosign-installer/pull/242) | Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file) | 🔵 Review |
 | helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | 🔵 Review |
-| terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | 🔵 Review |
 | extractions/setup-just | [#29](https://github.com/extractions/setup-just/pull/29) | Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file | 🔵 Review |
 | actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | 🔵 Review |
