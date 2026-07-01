@@ -128,6 +128,7 @@
   "terraform-aws-modules/terraform-aws-secrets-manager#26": { "summary": "Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24" },
   "terraform-aws-modules/terraform-aws-eventbridge#203": { "summary": "Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201" },
   "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": { "summary": "Restore broker log delivery for MSK Express brokers" },
+  "terraform-aws-modules/terraform-aws-lambda#761": { "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region" },
   "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
   "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
   "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" }
