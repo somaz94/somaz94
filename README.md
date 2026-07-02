@@ -60,7 +60,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-60-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (142)</b></summary>
@@ -106,10 +106,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (75 · 20 merged)
+#### Standalone contributions (75 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | ✅ Merged |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | ✅ Merged |
@@ -134,7 +135,6 @@ Contributions to external open-source projects.
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | 🔵 Review |
-| inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn when secret files are excluded from the push | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#761](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/761) | Add region variable to alias submodule for AWS provider v6 resource-level region | 🔵 Review |
 | istio/istio | [#60723](https://github.com/istio/istio/pull/60723) | Add terminationGracePeriodSeconds option to the istiod Helm chart | 🔵 Review |
