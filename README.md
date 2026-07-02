@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-59-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-60-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (139)</b></summary>
+<summary><b>View all contributions (141)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (30 · 16 merged)
+#### Gateway API HTTPRoute support · Helm charts (31 · 17 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -76,6 +76,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
+| pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
@@ -104,7 +105,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (74 · 20 merged)
+#### Standalone contributions (75 · 20 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -128,6 +129,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | 🔵 Review |
