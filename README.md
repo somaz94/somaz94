@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-60-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-60-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (141)</b></summary>
+<summary><b>View all contributions (142)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (31 · 17 merged)
+#### Gateway API HTTPRoute support · Helm charts (32 · 17 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -88,6 +88,7 @@ Contributions to external open-source projects.
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| nextcloud/helm | [#866](https://github.com/nextcloud/helm/pull/866) | Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect) | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
