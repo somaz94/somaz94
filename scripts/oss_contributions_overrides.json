@@ -131,5 +131,6 @@
   "terraform-aws-modules/terraform-aws-lambda#761": { "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region" },
   "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
   "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
-  "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" }
+  "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" },
+  "inference-gateway/cli#713": { "summary": "Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races" }
 }
