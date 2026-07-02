@@ -89,6 +89,7 @@
   "ClementTsang/bottom#2086": { "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)" },
   "mindersec/minder#6520": { "summary": "Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490)" },
   "elastic/elasticsearch#151614": { "summary": "S3 snapshot repository: EKS Pod Identity credential support" },
+  "elastic/docs-content#7182": { "summary": "Documented EKS Pod Identity setup for the S3 snapshot repository" },
   "open-telemetry/opentelemetry-collector-contrib#49146": { "summary": "Add opt-in TLS support to the memcached receiver" },
   "pypa/pipx#1842": { "summary": "Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config" },
   "vmware-tanzu/helm-charts#740": { "summary": "Add optional PodDisruptionBudget to the Velero Helm chart" },

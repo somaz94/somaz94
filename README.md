@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-59-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-59-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (137)</b></summary>
+<summary><b>View all contributions (138)</b></summary>
 
 <br/>
 
@@ -105,7 +105,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (71 · 20 merged)
+#### Standalone contributions (72 · 20 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -129,6 +129,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | 🔵 Review |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn when secret files are excluded from the push | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#761](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/761) | Add region variable to alias submodule for AWS provider v6 resource-level region | 🔵 Review |
