@@ -134,6 +134,7 @@
   "terraform-aws-modules/terraform-aws-eventbridge#203": { "summary": "Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201" },
   "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": { "summary": "Restore broker log delivery for MSK Express brokers" },
   "terraform-aws-modules/terraform-aws-lambda#761": { "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region" },
+  "terraform-aws-modules/terraform-aws-app-runner#20": { "summary": "Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute" },
   "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
   "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
   "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" },
