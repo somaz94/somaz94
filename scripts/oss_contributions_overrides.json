@@ -149,5 +149,6 @@
   "terraform-aws-modules/terraform-aws-security-group#361": { "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README" },
   "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" },
   "ory/k8s#888": { "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)" },
-  "supabase-community/supabase-kubernetes#214": { "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart" }
+  "supabase-community/supabase-kubernetes#214": { "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart" },
+  "prometheus-community/helm-charts#7060": { "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart" }
 }
