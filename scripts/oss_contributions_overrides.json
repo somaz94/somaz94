@@ -141,6 +141,7 @@
   "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" },
   "inference-gateway/cli#713": { "summary": "Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races" },
   "nextcloud/helm#866": { "summary": "Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect)" },
+  "nextcloud/helm#868": { "summary": "Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs" },
   "kubernetes-sigs/kueue#12736": { "summary": "Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex)." },
   "goharbor/harbor-helm#2386": { "summary": "Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route)" },
   "Digitalist-Open-Cloud/matomo-kubernetes#71": { "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)" },

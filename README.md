@@ -60,14 +60,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (153)</b></summary>
+<summary><b>View all contributions (154)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (36 · 17 merged)
+#### Gateway API HTTPRoute support · Helm charts (37 · 17 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -88,6 +88,7 @@ Contributions to external open-source projects.
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | 🔵 Review |
 | keephq/helm-charts | [#198](https://github.com/keephq/helm-charts/pull/198) | Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183) | 🔵 Review |
 | BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | 🔵 Review |
 | Digitalist-Open-Cloud/matomo-kubernetes | [#71](https://github.com/Digitalist-Open-Cloud/matomo-kubernetes/pull/71) | Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker) | 🔵 Review |
