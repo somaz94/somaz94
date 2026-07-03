@@ -144,5 +144,6 @@
   "goharbor/harbor-helm#2386": { "summary": "Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route)" },
   "Digitalist-Open-Cloud/matomo-kubernetes#71": { "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)" },
   "BorisPolonsky/dify-helm#419": { "summary": "Add opt-in Gateway API HTTPRoute support to the Dify Helm chart" },
-  "terraform-aws-modules/terraform-aws-security-group#361": { "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README" }
+  "terraform-aws-modules/terraform-aws-security-group#361": { "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README" },
+  "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" }
 }
