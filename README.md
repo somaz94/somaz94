@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (142)</b></summary>
+<summary><b>View all contributions (143)</b></summary>
 
 <br/>
 
@@ -106,7 +106,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (75 · 21 merged)
+#### Standalone contributions (76 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -131,6 +131,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | 🔵 Review |
 | guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
