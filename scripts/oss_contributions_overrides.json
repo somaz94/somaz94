@@ -134,6 +134,7 @@
   "terraform-aws-modules/terraform-aws-eventbridge#203": { "summary": "Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201" },
   "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": { "summary": "Restore broker log delivery for MSK Express brokers" },
   "terraform-aws-modules/terraform-aws-lambda#761": { "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region" },
+  "terraform-aws-modules/terraform-aws-lambda#762": { "summary": "Clarify lambda_role is ignored when create_role is true (docs)" },
   "terraform-aws-modules/terraform-aws-app-runner#20": { "summary": "Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute" },
   "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
   "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
@@ -145,5 +146,6 @@
   "Digitalist-Open-Cloud/matomo-kubernetes#71": { "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)" },
   "BorisPolonsky/dify-helm#419": { "summary": "Add opt-in Gateway API HTTPRoute support to the Dify Helm chart" },
   "terraform-aws-modules/terraform-aws-security-group#361": { "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README" },
-  "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" }
+  "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" },
+  "ory/k8s#888": { "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)" }
 }
