@@ -60,10 +60,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-61-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (155)</b></summary>
+<summary><b>View all contributions (156)</b></summary>
 
 <br/>
 
@@ -201,13 +201,14 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (14 · 3 merged)
+#### GitHub Action `version-file` inputs (15 · 3 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
 | terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
+| opentofu/setup-opentofu | [#131](https://github.com/opentofu/setup-opentofu/pull/131) | Support asdf `.tool-versions` format in the `tofu_version_file` input | 🔵 Review |
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | 🔵 Review |
