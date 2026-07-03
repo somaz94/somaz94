@@ -57,6 +57,7 @@ Contributions to external open-source projects.
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Read the pinned uv version from `uv.lock` for deterministic CI |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
+| vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
 
 <!-- OSS:START -->
 
