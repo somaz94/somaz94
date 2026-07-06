@@ -145,6 +145,7 @@
   "nextcloud/helm#866": { "summary": "Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect)" },
   "nextcloud/helm#868": { "summary": "Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs" },
   "kubernetes-sigs/kueue#12736": { "summary": "Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex)." },
+  "kubernetes-sigs/kueue#12797": { "summary": "Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort" },
   "goharbor/harbor-helm#2386": { "summary": "Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route)" },
   "Digitalist-Open-Cloud/matomo-kubernetes#71": { "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)" },
   "BorisPolonsky/dify-helm#419": { "summary": "Add opt-in Gateway API HTTPRoute support to the Dify Helm chart" },
