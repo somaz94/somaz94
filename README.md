@@ -61,10 +61,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-66-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (162)</b></summary>
+<summary><b>View all contributions (163)</b></summary>
 
 <br/>
 
@@ -114,10 +114,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (87 · 23 merged)
+#### Standalone contributions (87 · 24 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | ✅ Merged |
@@ -145,7 +146,6 @@ Contributions to external open-source projects.
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9229](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9229) | Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046) | 🔵 Review |
 | valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | 🔵 Review |
-| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
 | ory/k8s | [#888](https://github.com/ory/k8s/pull/888) | Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
@@ -208,7 +208,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (15 · 5 merged)
+#### GitHub Action `version-file` inputs (16 · 5 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -217,6 +217,7 @@ Contributions to external open-source projects.
 | terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
+| fluxcd/flux2 | [#5975](https://github.com/fluxcd/flux2/pull/5975) | Add opt-in version-file input to the Flux CLI GitHub Action | 🔵 Review |
 | opentofu/setup-opentofu | [#131](https://github.com/opentofu/setup-opentofu/pull/131) | Support asdf `.tool-versions` format in the `tofu_version_file` input | 🔵 Review |
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
