@@ -61,10 +61,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-66-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-90-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-66-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (156)</b></summary>
+<summary><b>View all contributions (159)</b></summary>
 
 <br/>
 
@@ -113,7 +113,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (82 · 23 merged)
+#### Standalone contributions (85 · 23 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -140,6 +140,9 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| open-telemetry/opentelemetry-go-contrib | [#9229](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9229) | Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046) | 🔵 Review |
+| valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | 🔵 Review |
+| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
 | ory/k8s | [#888](https://github.com/ory/k8s/pull/888) | Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |

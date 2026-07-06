@@ -123,6 +123,7 @@
   "valkey-io/valkey-helm#196": { "summary": "Add optional Prometheus ServiceMonitor to the valkey-operator chart" },
   "valkey-io/valkey-helm#197": { "summary": "Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart" },
   "valkey-io/valkey-helm#217": { "summary": "Add configurable health probes (startup/liveness/readiness) to the Valkey chart" },
+  "valkey-io/valkey-helm#218": { "summary": "Add optional priorityClassName to the valkey-operator Deployment" },
   "kubereboot/charts#141": { "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet" },
   "actions-rust-lang/setup-rust-toolchain#96": { "summary": "Add cache-targets passthrough to rust-cache" },
   "google-github-actions/setup-gcloud#736": { "summary": "Add version_file input to resolve gcloud version from a file" },
@@ -151,5 +152,6 @@
   "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" },
   "ory/k8s#888": { "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)" },
   "supabase-community/supabase-kubernetes#214": { "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart" },
-  "prometheus-community/helm-charts#7060": { "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart" }
+  "prometheus-community/helm-charts#7060": { "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart" },
+  "open-telemetry/opentelemetry-go-contrib#9229": { "summary": "Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046)" }
 }
