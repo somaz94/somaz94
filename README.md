@@ -61,14 +61,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-66-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-66-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (159)</b></summary>
+<summary><b>View all contributions (160)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (38 · 18 merged)
+#### Gateway API HTTPRoute support · Helm charts (39 · 18 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -90,6 +90,7 @@ Contributions to external open-source projects.
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| community-charts/helm-charts | [#533](https://github.com/community-charts/helm-charts/pull/533) | Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS | 🔵 Review |
 | prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | 🔵 Review |
 | nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | 🔵 Review |
 | keephq/helm-charts | [#198](https://github.com/keephq/helm-charts/pull/198) | Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183) | 🔵 Review |
