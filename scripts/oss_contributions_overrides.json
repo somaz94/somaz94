@@ -111,6 +111,7 @@
   "longhorn/longhorn#13378": { "summary": "Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart" },
   "kubernetes-sigs/descheduler#1885": { "summary": "Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode)" },
   "kubernetes-sigs/descheduler#1890": { "summary": "Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart" },
+  "kubernetes-sigs/descheduler#1892": { "summary": "Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart" },
   "kyverno/kyverno#16428": { "summary": "Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart" },
   "guerzon/vaultwarden#234": { "summary": "Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec" },
   "robinraju/release-downloader#952": { "summary": "Fix path traversal (CWE-22) when saving release assets" },
@@ -161,5 +162,6 @@
   "fluxcd/flux2#5975": { "summary": "Add opt-in version-file input to the Flux CLI GitHub Action" },
   "element-hq/ess-helm#1438": { "summary": "Add priorityClassName support to matrix-stack component workloads" },
   "terraform-aws-modules/terraform-aws-dynamodb-table#123": { "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle" },
-  "terraform-docs/terraform-docs#947": { "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output" }
+  "terraform-docs/terraform-docs#947": { "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output" },
+  "open-feature/go-sdk#522": { "summary": "Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix)" }
 }
