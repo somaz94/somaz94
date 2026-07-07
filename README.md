@@ -61,10 +61,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-104-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (170)</b></summary>
+<summary><b>View all contributions (171)</b></summary>
 
 <br/>
 
@@ -115,7 +115,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (93 · 24 merged)
+#### Standalone contributions (94 · 24 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -143,6 +143,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |
 | open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1892](https://github.com/kubernetes-sigs/descheduler/pull/1892) | Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart | 🔵 Review |
 | terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | 🔵 Review |
