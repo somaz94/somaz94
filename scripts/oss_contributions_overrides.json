@@ -158,6 +158,7 @@
   "supabase-community/supabase-kubernetes#214": { "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart" },
   "prometheus-community/helm-charts#7060": { "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart" },
   "open-telemetry/opentelemetry-go-contrib#9229": { "summary": "Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046)" },
+  "open-telemetry/opentelemetry-go-contrib#9238": { "summary": "Fix otelslog dropping error attributes nested inside a slog.Group" },
   "community-charts/helm-charts#533": { "summary": "Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS" },
   "community-charts/helm-charts#534": { "summary": "Add opt-in Gateway API HTTPRoute support to the n8n Helm chart" },
   "fluxcd/flux2#5975": { "summary": "Add opt-in version-file input to the Flux CLI GitHub Action" },
