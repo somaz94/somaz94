@@ -61,10 +61,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (166)</b></summary>
+<summary><b>View all contributions (167)</b></summary>
 
 <br/>
 
@@ -115,7 +115,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (89 · 24 merged)
+#### Standalone contributions (90 · 24 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -143,6 +143,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | terraform-aws-modules/terraform-aws-fsx | [#11](https://github.com/terraform-aws-modules/terraform-aws-fsx/pull/11) | FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage | 🔵 Review |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | 🔵 Review |
 | kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | 🔵 Review |

@@ -159,5 +159,6 @@
   "community-charts/helm-charts#533": { "summary": "Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS" },
   "community-charts/helm-charts#534": { "summary": "Add opt-in Gateway API HTTPRoute support to the n8n Helm chart" },
   "fluxcd/flux2#5975": { "summary": "Add opt-in version-file input to the Flux CLI GitHub Action" },
-  "element-hq/ess-helm#1438": { "summary": "Add priorityClassName support to matrix-stack component workloads" }
+  "element-hq/ess-helm#1438": { "summary": "Add priorityClassName support to matrix-stack component workloads" },
+  "terraform-aws-modules/terraform-aws-dynamodb-table#123": { "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle" }
 }
