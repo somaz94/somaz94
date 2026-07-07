@@ -54,17 +54,19 @@ Contributions to external open-source projects.
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the `time.Now()` fallback |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the dashboard frontend |
+| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
+| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add a --dry-run flag to `pipx ensurepath` to preview PATH changes without writing shell config |
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Read the pinned uv version from `uv.lock` for deterministic CI |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-67-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (172)</b></summary>
+<summary><b>View all contributions (173)</b></summary>
 
 <br/>
 
@@ -115,7 +117,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (95 · 24 merged)
+#### Standalone contributions (96 · 24 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -143,6 +145,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | 🔵 Review |
 | apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |
 | open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | 🔵 Review |
