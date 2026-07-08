@@ -39,7 +39,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 ## Custom Resources & Tools
 
 ### Kubernetes CRD
-[![k8s-namespace-sync](https://img.shields.io/badge/Kubernetes_CRD-k8s--namespace--sync-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/k8s-namespace-sync)[![helios-lb](https://img.shields.io/badge/Kubernetes_CRD-helios--lb-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/helios-lb)[![network-policy-generator](https://img.shields.io/badge/Kubernetes_CRD-network--policy--generator-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/network-policy-generator)
+[![k8s-namespace-sync](https://img.shields.io/badge/Kubernetes_CRD-k8s--namespace--sync-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/k8s-namespace-sync)[![helios-lb](https://img.shields.io/badge/Kubernetes_CRD-helios--lb-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/helios-lb)[![network-policy-generator](https://img.shields.io/badge/Kubernetes_CRD-network--policy--generator-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/network-policy-generator)[![kube-drift](https://img.shields.io/badge/Kubernetes_CRD-kube--drift-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/kube-drift)
 
 ### GitHub Actions
 
