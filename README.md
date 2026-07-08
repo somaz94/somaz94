@@ -63,14 +63,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-68-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-69-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (173)</b></summary>
+<summary><b>View all contributions (174)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (40 · 18 merged)
+#### Gateway API HTTPRoute support · Helm charts (40 · 19 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -86,6 +86,7 @@ Contributions to external open-source projects.
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
 | apache/amoro | [#4243](https://github.com/apache/amoro/pull/4243) | Add Gateway API HTTPRoute support to the Amoro Helm chart | ✅ Merged |
 | argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support | ✅ Merged |
+| open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | ✅ Merged |
 | jaegertracing/helm-charts | [#758](https://github.com/jaegertracing/helm-charts/pull/758) | Query UI HTTPRoute support | ✅ Merged |
 | falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick HTTPRoute support | ✅ Merged |
 | prometheus-community/helm-charts | [#6961](https://github.com/prometheus-community/helm-charts/pull/6961) | blackbox-exporter HTTPRoute support | ✅ Merged |
@@ -113,11 +114,10 @@ Contributions to external open-source projects.
 | danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
 | 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 | twuni/docker-registry.helm | [#199](https://github.com/twuni/docker-registry.helm/pull/199) | docker-registry chart Gateway API HTTPRoute support | 🔵 Review |
-| open-telemetry/opentelemetry-helm-charts | [#2246](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2246) | collector Gateway API HTTPRoute support | 🔵 Review |
 
 <br/>
 
-#### Standalone contributions (96 · 25 merged)
+#### Standalone contributions (97 · 25 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -146,7 +146,7 @@ Contributions to external open-source projects.
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
+| stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | 🔵 Review |
 | apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |

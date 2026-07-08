@@ -166,5 +166,6 @@
   "terraform-aws-modules/terraform-aws-dynamodb-table#123": { "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle" },
   "terraform-docs/terraform-docs#947": { "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output" },
   "open-feature/go-sdk#522": { "summary": "Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix)" },
-  "kubeshark/kubeshark#1949": { "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services" }
+  "kubeshark/kubeshark#1949": { "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services" },
+  "stakater/Reloader#1181": { "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment" }
 }
