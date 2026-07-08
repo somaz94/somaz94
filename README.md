@@ -36,6 +36,39 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 
 <br/>
 
+## Custom Resources & Tools
+
+### Kubernetes CRD
+[![k8s-namespace-sync](https://img.shields.io/badge/Kubernetes_CRD-k8s--namespace--sync-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/k8s-namespace-sync)[![helios-lb](https://img.shields.io/badge/Kubernetes_CRD-helios--lb-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/helios-lb)[![network-policy-generator](https://img.shields.io/badge/Kubernetes_CRD-network--policy--generator-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/network-policy-generator)
+
+### GitHub Actions
+
+#### Helm & K8s Actions
+[![kube-diff-action](https://img.shields.io/badge/GitHub_Action-kube--diff--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kube-diff-action)[![kube-events-action](https://img.shields.io/badge/GitHub_Action-kube--events--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kube-events-action)[![helm-oci-push-action](https://img.shields.io/badge/GitHub_Action-helm--oci--push--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-oci-push-action)[![helm-chart-release-action](https://img.shields.io/badge/GitHub_Action-helm--chart--release--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-chart-release-action)[![helm-kustomize-lint-action](https://img.shields.io/badge/GitHub_Action-helm--kustomize--lint--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-kustomize-lint-action)[![kind-e2e-test-action](https://img.shields.io/badge/GitHub_Action-kind--e2e--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kind-e2e-test-action)[![go-kubebuilder-test-action](https://img.shields.io/badge/GitHub_Action-go--kubebuilder--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-kubebuilder-test-action)
+
+#### Go / Docker Action CI
+[![go-git-commit-action](https://img.shields.io/badge/GitHub_Action-go--git--commit--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-git-commit-action)[![go-changelog-action](https://img.shields.io/badge/GitHub_Action-go--changelog--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-changelog-action)[![contributors-action](https://img.shields.io/badge/GitHub_Action-contributors--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/contributors-action)[![major-tag-action](https://img.shields.io/badge/GitHub_Action-major--tag--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/major-tag-action)[![env-output-setter](https://img.shields.io/badge/GitHub_Action-env--output--setter-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/env-output-setter)[![go-docker-action-ci-action](https://img.shields.io/badge/GitHub_Action-go--docker--action--ci--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-docker-action-ci-action)
+
+#### Ansible Actions
+[![ansible-molecule-test-action](https://img.shields.io/badge/GitHub_Action-ansible--molecule--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ansible-molecule-test-action)[![ansible-galaxy-publish-action](https://img.shields.io/badge/GitHub_Action-ansible--galaxy--publish--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ansible-galaxy-publish-action)
+
+#### Utilities
+[![ternary-operator](https://img.shields.io/badge/GitHub_Action-ternary--operator-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ternary-operator)[![commit-info-extractor](https://img.shields.io/badge/GitHub_Action-commit--info--extractor-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/commit-info-extractor)[![image-tag-updater](https://img.shields.io/badge/GitHub_Action-image--tag--updater-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/image-tag-updater)[![compress-decompress](https://img.shields.io/badge/GitHub_Action-compress--decompress-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/compress-decompress)[![multi-git-mirror](https://img.shields.io/badge/GitHub_Action-multi--git--mirror-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/multi-git-mirror)
+
+### Helm Charts
+[![helm-charts](https://img.shields.io/badge/Helm_Chart-helm--charts-0F1689?style=flat-square&logo=helm&logoColor=white)](https://github.com/somaz94/helm-charts)
+
+### DevOps Tools
+[![bash-pilot](https://img.shields.io/badge/DevOps_Tool-bash--pilot-6E5494?style=flat-square&logo=gnu-bash&logoColor=white)](https://github.com/somaz94/bash-pilot)[![git-bridge](https://img.shields.io/badge/DevOps_Tool-git--bridge-6E5494?style=flat-square&logo=git&logoColor=white)](https://github.com/somaz94/git-bridge)[![kube-diff](https://img.shields.io/badge/DevOps_Tool-kube--diff-6E5494?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/kube-diff)[![kube-events](https://img.shields.io/badge/DevOps_Tool-kube--events-6E5494?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/kube-events)[![slack-qr-bot](https://img.shields.io/badge/DevOps_Tool-slack--qr--bot-6E5494?style=flat-square&logo=slack&logoColor=white)](https://github.com/somaz94/slack-qr-bot)[![static-file-server](https://img.shields.io/badge/DevOps_Tool-static--file--server-6E5494?style=flat-square&logo=go&logoColor=white)](https://github.com/somaz94/static-file-server)
+
+### Ansible Galaxy
+[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)[![Ansible Kubectl Krew](https://img.shields.io/badge/Ansible_Galaxy-Kubectl_Krew-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_kubectl_krew/)[![Ansible User Management](https://img.shields.io/badge/Ansible_Galaxy-User_Management-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_user_management/)
+
+### Chrome Extensions
+[![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
+
+<br/>
+
 ## Open Source Contributions
 
 Contributions to external open-source projects.
@@ -288,39 +321,6 @@ Contributions to external open-source projects.
 <!-- OSS:END -->
 
 <!-- Official Layer5 Cloud badge embed goes here once granted: https://cloud.layer5.io/user/cc700bfe-a61d-4797-85a6-6acbd41e9e86?tab=badges -->
-
-<br/>
-
-## Custom Resources & Tools
-
-### Kubernetes CRD
-[![k8s-namespace-sync](https://img.shields.io/badge/Kubernetes_CRD-k8s--namespace--sync-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/k8s-namespace-sync)[![helios-lb](https://img.shields.io/badge/Kubernetes_CRD-helios--lb-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/helios-lb)[![network-policy-generator](https://img.shields.io/badge/Kubernetes_CRD-network--policy--generator-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/network-policy-generator)
-
-### GitHub Actions
-
-#### Helm & K8s Actions
-[![kube-diff-action](https://img.shields.io/badge/GitHub_Action-kube--diff--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kube-diff-action)[![kube-events-action](https://img.shields.io/badge/GitHub_Action-kube--events--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kube-events-action)[![helm-oci-push-action](https://img.shields.io/badge/GitHub_Action-helm--oci--push--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-oci-push-action)[![helm-chart-release-action](https://img.shields.io/badge/GitHub_Action-helm--chart--release--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-chart-release-action)[![helm-kustomize-lint-action](https://img.shields.io/badge/GitHub_Action-helm--kustomize--lint--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/helm-kustomize-lint-action)[![kind-e2e-test-action](https://img.shields.io/badge/GitHub_Action-kind--e2e--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/kind-e2e-test-action)[![go-kubebuilder-test-action](https://img.shields.io/badge/GitHub_Action-go--kubebuilder--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-kubebuilder-test-action)
-
-#### Go / Docker Action CI
-[![go-git-commit-action](https://img.shields.io/badge/GitHub_Action-go--git--commit--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-git-commit-action)[![go-changelog-action](https://img.shields.io/badge/GitHub_Action-go--changelog--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-changelog-action)[![contributors-action](https://img.shields.io/badge/GitHub_Action-contributors--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/contributors-action)[![major-tag-action](https://img.shields.io/badge/GitHub_Action-major--tag--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/major-tag-action)[![env-output-setter](https://img.shields.io/badge/GitHub_Action-env--output--setter-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/env-output-setter)[![go-docker-action-ci-action](https://img.shields.io/badge/GitHub_Action-go--docker--action--ci--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/go-docker-action-ci-action)
-
-#### Ansible Actions
-[![ansible-molecule-test-action](https://img.shields.io/badge/GitHub_Action-ansible--molecule--test--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ansible-molecule-test-action)[![ansible-galaxy-publish-action](https://img.shields.io/badge/GitHub_Action-ansible--galaxy--publish--action-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ansible-galaxy-publish-action)
-
-#### Utilities
-[![ternary-operator](https://img.shields.io/badge/GitHub_Action-ternary--operator-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/ternary-operator)[![commit-info-extractor](https://img.shields.io/badge/GitHub_Action-commit--info--extractor-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/commit-info-extractor)[![image-tag-updater](https://img.shields.io/badge/GitHub_Action-image--tag--updater-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/image-tag-updater)[![compress-decompress](https://img.shields.io/badge/GitHub_Action-compress--decompress-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/compress-decompress)[![multi-git-mirror](https://img.shields.io/badge/GitHub_Action-multi--git--mirror-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/somaz94/multi-git-mirror)
-
-### Helm Charts
-[![helm-charts](https://img.shields.io/badge/Helm_Chart-helm--charts-0F1689?style=flat-square&logo=helm&logoColor=white)](https://github.com/somaz94/helm-charts)
-
-### DevOps Tools
-[![bash-pilot](https://img.shields.io/badge/DevOps_Tool-bash--pilot-6E5494?style=flat-square&logo=gnu-bash&logoColor=white)](https://github.com/somaz94/bash-pilot)[![git-bridge](https://img.shields.io/badge/DevOps_Tool-git--bridge-6E5494?style=flat-square&logo=git&logoColor=white)](https://github.com/somaz94/git-bridge)[![kube-diff](https://img.shields.io/badge/DevOps_Tool-kube--diff-6E5494?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/kube-diff)[![kube-events](https://img.shields.io/badge/DevOps_Tool-kube--events-6E5494?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/somaz94/kube-events)[![slack-qr-bot](https://img.shields.io/badge/DevOps_Tool-slack--qr--bot-6E5494?style=flat-square&logo=slack&logoColor=white)](https://github.com/somaz94/slack-qr-bot)[![static-file-server](https://img.shields.io/badge/DevOps_Tool-static--file--server-6E5494?style=flat-square&logo=go&logoColor=white)](https://github.com/somaz94/static-file-server)
-
-### Ansible Galaxy
-[![Ansible K8s IAC Tool](https://img.shields.io/badge/Ansible_Galaxy-K8s_IAC_Tool-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/repo/published/somaz94/ansible_k8s_iac_tool/)[![Ansible Kubectl Krew](https://img.shields.io/badge/Ansible_Galaxy-Kubectl_Krew-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_kubectl_krew/)[![Ansible User Management](https://img.shields.io/badge/Ansible_Galaxy-User_Management-EE0000?style=flat-square&logo=ansible&logoColor=white)](https://galaxy.ansible.com/ui/standalone/roles/somaz94/ansible_user_management/)
-
-### Chrome Extensions
-[![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
 
 <br/>
 
