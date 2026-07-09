@@ -169,5 +169,6 @@
   "terraform-docs/terraform-docs#947": { "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output" },
   "open-feature/go-sdk#522": { "summary": "Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix)" },
   "kubeshark/kubeshark#1949": { "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services" },
-  "stakater/Reloader#1181": { "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment" }
+  "stakater/Reloader#1181": { "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment" },
+  "terraform-google-modules/terraform-google-composer#203": { "summary": "Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled)" }
 }
