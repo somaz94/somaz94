@@ -33,6 +33,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 | [cicd-monitoring](https://github.com/somaz94/cicd-monitoring) | Production-ready CI/CD & monitoring stack for AWS/GCP/on-prem Kubernetes | ![Stars](https://img.shields.io/github/stars/somaz94/cicd-monitoring?style=flat-square&color=yellow) |
 | [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=flat-square&color=yellow) |
 | [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=flat-square&color=yellow) |
+| [kube-drift](https://github.com/somaz94/kube-drift) | Kubernetes operator that detects configuration drift between manifests and the live cluster on a schedule | ![Stars](https://img.shields.io/github/stars/somaz94/kube-drift?style=flat-square&color=yellow) |
 
 <br/>
 
