@@ -97,10 +97,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-70-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-70-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-107-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (176)</b></summary>
+<summary><b>View all contributions (177)</b></summary>
 
 <br/>
 
@@ -152,7 +152,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (99 · 26 merged)
+#### Standalone contributions (100 · 26 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -182,6 +182,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-google-modules/terraform-google-kubernetes-engine | [#2617](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/2617) | Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error) | 🔵 Review |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | 🔵 Review |
