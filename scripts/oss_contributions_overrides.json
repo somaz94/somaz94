@@ -142,6 +142,7 @@
   "terraform-aws-modules/terraform-aws-app-runner#20": { "summary": "Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute" },
   "terraform-aws-modules/terraform-aws-fsx#11": { "summary": "FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage" },
   "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
+  "terraform-google-modules/terraform-google-kubernetes-engine#2617": { "summary": "Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error)" },
   "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
   "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" },
   "inference-gateway/cli#713": { "summary": "Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races" },

@@ -97,10 +97,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-70-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-104-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-70-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (174)</b></summary>
+<summary><b>View all contributions (175)</b></summary>
 
 <br/>
 
@@ -152,7 +152,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (97 · 26 merged)
+#### Standalone contributions (98 · 26 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -182,6 +182,8 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| terraform-google-modules/terraform-google-kubernetes-engine | [#2617](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/2617) | Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error) | 🔵 Review |
+| element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | 🔵 Review |
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | 🔵 Review |
@@ -236,7 +238,6 @@ Contributions to external open-source projects.
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | 🔵 Review |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | 🔵 Review |
-| ClementTsang/bottom | [#2086](https://github.com/ClementTsang/bottom/pull/2086) | Add an opt-in natural sort config option for string table columns (closes #1147) | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
 | openobserve/openobserve-helm-chart | [#222](https://github.com/openobserve/openobserve-helm-chart/pull/222) | Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart | 🔵 Review |
