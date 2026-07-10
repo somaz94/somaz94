@@ -171,5 +171,6 @@
   "kubeshark/kubeshark#1949": { "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services" },
   "stakater/Reloader#1181": { "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment" },
   "terraform-google-modules/terraform-google-composer#203": { "summary": "Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled)" },
-  "temporalio/helm-charts#949": { "summary": "Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods" }
+  "temporalio/helm-charts#949": { "summary": "Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods" },
+  "open-telemetry/opentelemetry-helm-charts#2299": { "summary": "Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall`" }
 }
