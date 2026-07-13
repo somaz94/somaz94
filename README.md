@@ -97,7 +97,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-74-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-107-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-75-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (181)</b></summary>
@@ -153,11 +153,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (103 · 29 merged)
+#### Standalone contributions (103 · 30 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
+| valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | ✅ Merged |
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | ✅ Merged |
@@ -205,7 +206,6 @@ Contributions to external open-source projects.
 | kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9229](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9229) | Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046) | 🔵 Review |
-| valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
 | ory/k8s | [#888](https://github.com/ory/k8s/pull/888) | Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
