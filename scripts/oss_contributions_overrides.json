@@ -175,5 +175,6 @@
   "open-telemetry/opentelemetry-helm-charts#2299": { "summary": "Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall`" },
   "anchore/scan-action#726": { "summary": "Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file)" },
   "kubernetes-sigs/kubebuilder#5864": { "summary": "Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817)" },
-  "nocodb/nocodb#14272": { "summary": "Add opt-in Gateway API HTTPRoute support to the Helm chart" }
+  "nocodb/nocodb#14272": { "summary": "Add opt-in Gateway API HTTPRoute support to the Helm chart" },
+  "restatedev/sdk-go#161": { "summary": "Fix data race between Drain and concurrent Read on the request stream" }
 }
