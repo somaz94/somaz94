@@ -1,181 +1,553 @@
 {
-  "redpanda-data/helm-charts#1754": { "summary": "Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet)" },
-  "redpanda-data/helm-charts#1756": { "summary": "kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet)" },
-  "buildpacks/github-actions#428": { "summary": "Add pack-version-file input and default-on SHA256 download verification to the setup-pack action" },
-  "yannh/kubeconform#356": { "summary": "Avoid SIGSEGV panic on null-decoding schema" },
-  "meshery/meshery#19835": { "summary": "Fix typos, function names & license header" },
-  "meshery/meshery#19866": { "summary": "Fix export flag validation + tests" },
-  "apache/airflow#67675": { "summary": "Gateway API HTTPRoute for API server" },
-  "apache/gravitino#11308": { "summary": "Gateway API HTTPRoute in Helm charts" },
-  "apache/gravitino#11917": { "summary": "Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts" },
-  "apache/amoro#4243": { "summary": "Add Gateway API HTTPRoute support to the Amoro Helm chart" },
-  "1Password/op-scim-helm#171": { "summary": "Gateway API HTTPRoute support for the 1Password SCIM bridge chart" },
-  "aquasecurity/trivy#10770": { "summary": "Add `--color` flag for table output" },
-  "grafana/cloudcost-exporter#1006": { "summary": "Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter" },
-  "grafana/cloudcost-exporter#1051": { "summary": "Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls" },
-  "dependabot/dependabot-core#15199": { "summary": "Identify Dependabot commits by author name" },
-  "prometheus-community/helm-charts#6961": { "summary": "blackbox-exporter HTTPRoute support" },
-  "prometheus-community/helm-charts#6958": { "summary": "alertmanager HTTPRoute support" },
-  "prometheus-community/helm-charts#7022": { "summary": "Add Gateway API HTTPRoute support to the prometheus-json-exporter chart" },
-  "prometheus-community/helm-charts#7024": { "summary": "Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart" },
-  "prometheus-community/helm-charts#7025": { "summary": "Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart" },
-  "prometheus-community/helm-charts#7026": { "summary": "Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart" },
-  "prometheus-community/helm-charts#7027": { "summary": "Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart" },
-  "prometheus-community/helm-charts#7028": { "summary": "Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart" },
-  "prometheus-community/helm-charts#7029": { "summary": "Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart" },
-  "prometheus-community/helm-charts#7030": { "summary": "Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart" },
-  "prometheus-community/helm-charts#7031": { "summary": "Add Gateway API HTTPRoute support to the jiralert chart" },
-  "prometheus-community/helm-charts#7032": { "summary": "Add Gateway API HTTPRoute support to the prom-label-proxy chart" },
-  "jaegertracing/helm-charts#758": { "summary": "Query UI HTTPRoute support" },
-  "jaegertracing/helm-charts#761": { "summary": "Restore extraVolumes/extraVolumeMounts on the all-in-one deployment" },
-  "falcosecurity/charts#1026": { "summary": "falcosidekick HTTPRoute support" },
-  "percona/percona-helm-charts#862": { "summary": "pmm gRPC ClusterIP nodePort fix" },
-  "helm/helm-www#2129": { "summary": "Enable `@docusaurus/faster` build" },
-  "helm/chart-testing#841": { "summary": "Honor `--release-name` instead of generating one" },
-  "helm/chart-testing-action#210": { "summary": "Report a clear error when blob verification fails" },
-  "open-telemetry/opentelemetry-helm-charts#2246": { "summary": "collector Gateway API HTTPRoute support" },
-  "open-telemetry/opentelemetry-helm-charts#2258": { "summary": "Honor schedulerName in daemonset and statefulset collector modes" },
-  "argoproj/argo-helm#3914": { "summary": "argo-rollouts dashboard Gateway API HTTPRoute support" },
-  "losisin/helm-values-schema-json#355": { "summary": "Add `lint` subcommand", "category": "schema-json" },
-  "losisin/helm-values-schema-json#357": { "summary": "Deduplicate bundle flag registration via shared helper", "category": "schema-json" },
-  "losisin/helm-values-schema-json#354": { "summary": "Add `bundle` subcommand", "category": "schema-json" },
-  "losisin/helm-values-schema-json#359": { "summary": "Add `--bundle-cache-min` flag to override min schema cache duration", "category": "schema-json" },
-  "losisin/helm-values-schema-json#360": { "summary": "Add nullable schema annotation", "category": "schema-json" },
-  "twuni/docker-registry.helm#199": { "summary": "docker-registry chart Gateway API HTTPRoute support" },
-  "nginx/nginx-gateway-fabric#5392": { "summary": "Add GEP-713 Programmed status condition to custom policies" },
-  "nginx/nginx-gateway-fabric#5438": { "summary": "Refactor listener port-conflict resolver to remove a gocyclo exception" },
-  "nginx/nginx-gateway-fabric#5439": { "summary": "Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253)" },
-  "nginx/nginx-gateway-fabric#5440": { "summary": "Refactor secret deprovisioning to remove gocyclo lint debt (#5253)" },
-  "nginx/nginx-gateway-fabric#5441": { "summary": "Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253)" },
-  "nginx/nginx-gateway-fabric#5452": { "summary": "Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers" },
-  "nginx/nginx-gateway-fabric#5453": { "summary": "Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception" },
-  "nginx/nginx-gateway-fabric#5454": { "summary": "Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception" },
-  "nginx/nginx-gateway-fabric#5455": { "summary": "Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception" },
-  "nginx/nginx-gateway-fabric#5461": { "summary": "Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup" },
-  "FairwindsOps/polaris#1201": { "summary": "Add SARIF output format to audit CLI" },
-  "pajikos/home-assistant-helm-chart#178": { "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart" },
-  "firefly-iii/kubernetes#117": { "summary": "firefly-iii chart Gateway API HTTPRoute support" },
-  "Azure/setup-helm#281": { "summary": "Add `version-file` input to read the Helm version from a `.tool-versions` file" },
-  "hashicorp/terraform-provider-kubernetes#2905": { "summary": "Add `env_from_map` provider-defined function" },
-  "getmoto/moto#10062": { "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)", "category": "moto-aws" },
-  "getmoto/moto#10065": { "summary": "Add AppMesh VirtualGateway and GatewayRoute API support", "category": "moto-aws" },
-  "getmoto/moto#10067": { "summary": "Add Kinesis Firehose Iceberg destination support", "category": "moto-aws" },
-  "getmoto/moto#10068": { "summary": "Omit unset optional fields from Transfer describe responses", "category": "moto-aws" },
-  "danny-avila/LibreChat#13671": { "summary": "LibreChat chart Gateway API HTTPRoute support" },
-  "RocketChat/helm-charts#234": { "summary": "rocketchat chart Gateway API HTTPRoute support" },
-  "mattermost/mattermost-helm#522": { "summary": "mattermost-team-edition chart Gateway API HTTPRoute support" },
-  "vectordotdev/vector#25607": { "summary": "host_metrics temperature collector (sysinfo Components)" },
-  "cloudposse/github-action-setup-atmos#110": { "summary": "Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file" },
-  "astral-sh/ruff-action#379": { "summary": "Add `uv.lock` as a supported `version-file` format" },
-  "astral-sh/setup-uv#918": { "summary": "Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI" },
-  "actions/setup-dotnet#743": { "summary": "Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459)" },
-  "hashicorp/setup-terraform#561": { "summary": "Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556)" },
-  "opentofu/setup-opentofu#121": { "summary": "Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117)" },
-  "opentofu/setup-opentofu#131": { "summary": "Support asdf `.tool-versions` format in the `tofu_version_file` input" },
-  "extractions/setup-just#29": { "summary": "Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file" },
-  "terraform-linters/setup-tflint#448": { "summary": "Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file" },
-  "helm/kind-action#162": { "summary": "Add version_file input to load the kind version from an asdf .tool-versions or plain version file" },
-  "kiali/helm-charts#419": { "summary": "Add Gateway API HTTPRoute support to the kiali-server Helm chart" },
-  "sigstore/cosign-installer#242": { "summary": "Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file)" },
-  "losisin/helm-values-schema-json#365": { "summary": "Add shorthand for the const and default schema annotations to reuse the field's own YAML value", "category": "schema-json" },
-  "dexidp/dex#4831": { "summary": "Add EdDSA (Ed25519) signing algorithm support to the local token signer" },
-  "hashicorp/setup-packer#177": { "summary": "Add `version-file` input to read the Packer version from a `.tool-versions` file" },
-  "pgadmin-org/pgadmin4#10095": { "summary": "Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart", "merged": true },
-  "external-secrets/external-secrets#6481": { "summary": "Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart" },
-  "tj-actions/changed-files#2884": { "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)." },
-  "dragonflydb/dragonfly-operator#550": { "summary": "Add optional PodDisruptionBudget to the operator Helm chart" },
-  "openobserve/openobserve-helm-chart#222": { "summary": "Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart" },
-  "padok-team/burrito#927": { "summary": "Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart" },
-  "open-policy-agent/conftest#1354": { "summary": "Add per-test names to successful test cases in `conftest verify --output junit` output" },
-  "open-policy-agent/conftest#1355": { "summary": "Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315)" },
-  "ClementTsang/bottom#2086": { "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)" },
-  "mindersec/minder#6520": { "summary": "Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490)" },
-  "elastic/elasticsearch#151614": { "summary": "S3 snapshot repository: EKS Pod Identity credential support" },
-  "elastic/docs-content#7182": { "summary": "Documented EKS Pod Identity setup for the S3 snapshot repository" },
-  "open-telemetry/opentelemetry-collector-contrib#49146": { "summary": "Add opt-in TLS support to the memcached receiver" },
-  "pypa/pipx#1842": { "summary": "Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config" },
-  "vmware-tanzu/helm-charts#740": { "summary": "Add optional PodDisruptionBudget to the Velero Helm chart" },
-  "jenkins-infra/helm-charts#1972": { "summary": "Add an opt-in PodDisruptionBudget to the httpd Helm chart" },
-  "yokawasa/action-setup-kube-tools#98": { "summary": "Add a version-file (.tool-versions) input to pin tool versions from a file" },
-  "stern/stern#373": { "summary": "Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343)" },
-  "kedacore/charts#880": { "summary": "Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces)" },
-  "kedacore/charts#881": { "summary": "Make the KEDA operator gRPC metrics service port configurable (#511)" },
-  "kedacore/charts#882": { "summary": "Per-component Deployment labels/annotations for KEDA pods" },
-  "kudobuilder/kuttl#694": { "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)" },
-  "ray-project/kuberay#4934": { "summary": "Add optional PodDisruptionBudget to the ray-cluster Helm chart" },
-  "fluent/fluentd#5390": { "summary": "Add umask option to the <system> directive" },
-  "metallb/metallb#3076": { "summary": "Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade" },
-  "amacneil/dbmate#803": { "summary": "Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait`" },
-  "anchore/grype#3519": { "summary": "Add vulnerable version ranges to the CycloneDX output format (closes #3512)" },
-  "aquasecurity/setup-trivy#39": { "summary": "Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file" },
-  "requarks/wiki#8035": { "summary": "Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart" },
-  "longhorn/longhorn#13378": { "summary": "Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart" },
-  "kubernetes-sigs/descheduler#1885": { "summary": "Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode)" },
-  "kubernetes-sigs/descheduler#1890": { "summary": "Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart" },
-  "kubernetes-sigs/descheduler#1892": { "summary": "Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart" },
-  "kyverno/kyverno#16428": { "summary": "Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart" },
-  "guerzon/vaultwarden#234": { "summary": "Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec" },
-  "robinraju/release-downloader#952": { "summary": "Fix path traversal (CWE-22) when saving release assets" },
-  "kubernetes-sigs/headlamp#6148": { "summary": "Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend" },
-  "goauthentik/helm#483": { "summary": "Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting)" },
-  "argoproj/argo-helm#3943": { "summary": "Add envFrom to the argo-workflows controller and argo-server containers" },
-  "woodpecker-ci/helm#498": { "summary": "Add topologySpreadConstraints to the Woodpecker server (parity with the agent)" },
-  "VictoriaMetrics/helm-charts#3016": { "summary": "Add runtimeClassName option to pod specs across all VictoriaMetrics charts" },
-  "valkey-io/valkey-helm#195": { "summary": "Add optional topologySpreadConstraints to the valkey-operator chart Deployment" },
-  "valkey-io/valkey-helm#196": { "summary": "Add optional Prometheus ServiceMonitor to the valkey-operator chart" },
-  "valkey-io/valkey-helm#197": { "summary": "Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart" },
-  "valkey-io/valkey-helm#217": { "summary": "Add configurable health probes (startup/liveness/readiness) to the Valkey chart" },
-  "valkey-io/valkey-helm#218": { "summary": "Add optional priorityClassName to the valkey-operator Deployment" },
-  "kubereboot/charts#141": { "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet" },
-  "actions-rust-lang/setup-rust-toolchain#96": { "summary": "Add cache-targets passthrough to rust-cache" },
-  "google-github-actions/setup-gcloud#736": { "summary": "Add version_file input to resolve gcloud version from a file" },
-  "argoproj/argo-cd#28406": { "summary": "Persist Applications search bar text across navigation (view preferences)" },
-  "terraform-aws-modules/terraform-aws-elasticache#74": { "summary": "Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning" },
-  "terraform-aws-modules/terraform-aws-iam#651": { "summary": "Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649" },
-  "terraform-aws-modules/terraform-aws-eks#3726": { "summary": "Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724" },
-  "terraform-aws-modules/terraform-aws-eks#3729": { "summary": "Ignore server-side desired_capacity_type drift on self-managed node group ASG (fixes apply failure)" },
-  "terraform-aws-modules/terraform-aws-secrets-manager#26": { "summary": "Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24" },
-  "terraform-aws-modules/terraform-aws-eventbridge#203": { "summary": "Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201" },
-  "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": { "summary": "Restore broker log delivery for MSK Express brokers" },
-  "terraform-aws-modules/terraform-aws-lambda#761": { "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region" },
-  "terraform-aws-modules/terraform-aws-lambda#762": { "summary": "Clarify lambda_role is ignored when create_role is true (docs)" },
-  "terraform-aws-modules/terraform-aws-app-runner#20": { "summary": "Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute" },
-  "terraform-aws-modules/terraform-aws-fsx#11": { "summary": "FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage" },
-  "terraform-google-modules/terraform-google-bastion-host#246": { "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM" },
-  "terraform-google-modules/terraform-google-kubernetes-engine#2617": { "summary": "Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error)" },
-  "istio/istio#60723": { "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart" },
-  "opensearch-project/opensearch-k8s-operator#1441": { "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart" },
-  "inference-gateway/cli#713": { "summary": "Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races" },
-  "nextcloud/helm#866": { "summary": "Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect)" },
-  "nextcloud/helm#868": { "summary": "Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs" },
-  "kubernetes-sigs/kueue#12736": { "summary": "Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex)." },
-  "kubernetes-sigs/kueue#12797": { "summary": "Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort" },
-  "goharbor/harbor-helm#2386": { "summary": "Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route)" },
-  "Digitalist-Open-Cloud/matomo-kubernetes#71": { "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)" },
-  "BorisPolonsky/dify-helm#419": { "summary": "Add opt-in Gateway API HTTPRoute support to the Dify Helm chart" },
-  "terraform-aws-modules/terraform-aws-security-group#361": { "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README" },
-  "keephq/helm-charts#198": { "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)" },
-  "ory/k8s#888": { "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)" },
-  "supabase-community/supabase-kubernetes#214": { "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart" },
-  "prometheus-community/helm-charts#7060": { "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart" },
-  "open-telemetry/opentelemetry-go-contrib#9229": { "summary": "Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046)" },
-  "open-telemetry/opentelemetry-go-contrib#9238": { "summary": "Fix otelslog dropping error attributes nested inside a slog.Group" },
-  "community-charts/helm-charts#533": { "summary": "Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS" },
-  "community-charts/helm-charts#534": { "summary": "Add opt-in Gateway API HTTPRoute support to the n8n Helm chart" },
-  "community-charts/helm-charts#537": { "summary": "Opt-in Gateway API HTTPRoute for actualbudget chart" },
-  "fluxcd/flux2#5975": { "summary": "Add opt-in version-file input to the Flux CLI GitHub Action" },
-  "element-hq/ess-helm#1438": { "summary": "Add priorityClassName support to matrix-stack component workloads" },
-  "terraform-aws-modules/terraform-aws-dynamodb-table#123": { "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle" },
-  "terraform-docs/terraform-docs#947": { "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output" },
-  "open-feature/go-sdk#522": { "summary": "Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix)" },
-  "kubeshark/kubeshark#1949": { "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services" },
-  "stakater/Reloader#1181": { "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment" },
-  "terraform-google-modules/terraform-google-composer#203": { "summary": "Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled)" },
-  "temporalio/helm-charts#949": { "summary": "Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods" },
-  "open-telemetry/opentelemetry-helm-charts#2299": { "summary": "Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall`" },
-  "anchore/scan-action#726": { "summary": "Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file)" },
-  "kubernetes-sigs/kubebuilder#5864": { "summary": "Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817)" },
-  "nocodb/nocodb#14272": { "summary": "Add opt-in Gateway API HTTPRoute support to the Helm chart" },
-  "restatedev/sdk-go#161": { "summary": "Fix data race between Drain and concurrent Read on the request stream" },
-  "rancher/dynamiclistener#315": { "summary": "Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller" }
+  "redpanda-data/helm-charts#1754": {
+    "summary": "Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet)"
+  },
+  "redpanda-data/helm-charts#1756": {
+    "summary": "kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet)"
+  },
+  "buildpacks/github-actions#428": {
+    "summary": "Add pack-version-file input and default-on SHA256 download verification to the setup-pack action"
+  },
+  "yannh/kubeconform#356": {
+    "summary": "Avoid SIGSEGV panic on null-decoding schema"
+  },
+  "meshery/meshery#19835": {
+    "summary": "Fix typos, function names & license header"
+  },
+  "meshery/meshery#19866": {
+    "summary": "Fix export flag validation + tests"
+  },
+  "apache/airflow#67675": {
+    "summary": "Gateway API HTTPRoute for API server"
+  },
+  "apache/gravitino#11308": {
+    "summary": "Gateway API HTTPRoute in Helm charts"
+  },
+  "apache/gravitino#11917": {
+    "summary": "Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts"
+  },
+  "apache/amoro#4243": {
+    "summary": "Add Gateway API HTTPRoute support to the Amoro Helm chart"
+  },
+  "1Password/op-scim-helm#171": {
+    "summary": "Gateway API HTTPRoute support for the 1Password SCIM bridge chart"
+  },
+  "aquasecurity/trivy#10770": {
+    "summary": "Add `--color` flag for table output"
+  },
+  "grafana/cloudcost-exporter#1006": {
+    "summary": "Remove deprecated `bucket-projects` GCP flag from the Prometheus cloud-cost exporter"
+  },
+  "grafana/cloudcost-exporter#1051": {
+    "summary": "Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls"
+  },
+  "dependabot/dependabot-core#15199": {
+    "summary": "Identify Dependabot commits by author name"
+  },
+  "prometheus-community/helm-charts#6961": {
+    "summary": "blackbox-exporter HTTPRoute support"
+  },
+  "prometheus-community/helm-charts#6958": {
+    "summary": "alertmanager HTTPRoute support"
+  },
+  "prometheus-community/helm-charts#7022": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-json-exporter chart"
+  },
+  "prometheus-community/helm-charts#7024": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart"
+  },
+  "prometheus-community/helm-charts#7025": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart"
+  },
+  "prometheus-community/helm-charts#7026": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart"
+  },
+  "prometheus-community/helm-charts#7027": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart"
+  },
+  "prometheus-community/helm-charts#7028": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart"
+  },
+  "prometheus-community/helm-charts#7029": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart"
+  },
+  "prometheus-community/helm-charts#7030": {
+    "summary": "Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart"
+  },
+  "prometheus-community/helm-charts#7031": {
+    "summary": "Add Gateway API HTTPRoute support to the jiralert chart"
+  },
+  "prometheus-community/helm-charts#7032": {
+    "summary": "Add Gateway API HTTPRoute support to the prom-label-proxy chart"
+  },
+  "jaegertracing/helm-charts#758": {
+    "summary": "Query UI HTTPRoute support"
+  },
+  "jaegertracing/helm-charts#761": {
+    "summary": "Restore extraVolumes/extraVolumeMounts on the all-in-one deployment"
+  },
+  "falcosecurity/charts#1026": {
+    "summary": "falcosidekick HTTPRoute support"
+  },
+  "percona/percona-helm-charts#862": {
+    "summary": "pmm gRPC ClusterIP nodePort fix"
+  },
+  "helm/helm-www#2129": {
+    "summary": "Enable `@docusaurus/faster` build"
+  },
+  "helm/chart-testing#841": {
+    "summary": "Honor `--release-name` instead of generating one"
+  },
+  "helm/chart-testing-action#210": {
+    "summary": "Report a clear error when blob verification fails"
+  },
+  "open-telemetry/opentelemetry-helm-charts#2246": {
+    "summary": "collector Gateway API HTTPRoute support"
+  },
+  "open-telemetry/opentelemetry-helm-charts#2258": {
+    "summary": "Honor schedulerName in daemonset and statefulset collector modes"
+  },
+  "argoproj/argo-helm#3914": {
+    "summary": "argo-rollouts dashboard Gateway API HTTPRoute support"
+  },
+  "losisin/helm-values-schema-json#355": {
+    "summary": "Add `lint` subcommand",
+    "category": "schema-json"
+  },
+  "losisin/helm-values-schema-json#357": {
+    "summary": "Deduplicate bundle flag registration via shared helper",
+    "category": "schema-json"
+  },
+  "losisin/helm-values-schema-json#354": {
+    "summary": "Add `bundle` subcommand",
+    "category": "schema-json"
+  },
+  "losisin/helm-values-schema-json#359": {
+    "summary": "Add `--bundle-cache-min` flag to override min schema cache duration",
+    "category": "schema-json"
+  },
+  "losisin/helm-values-schema-json#360": {
+    "summary": "Add nullable schema annotation",
+    "category": "schema-json"
+  },
+  "twuni/docker-registry.helm#199": {
+    "summary": "docker-registry chart Gateway API HTTPRoute support"
+  },
+  "nginx/nginx-gateway-fabric#5392": {
+    "summary": "Add GEP-713 Programmed status condition to custom policies"
+  },
+  "nginx/nginx-gateway-fabric#5438": {
+    "summary": "Refactor listener port-conflict resolver to remove a gocyclo exception"
+  },
+  "nginx/nginx-gateway-fabric#5439": {
+    "summary": "Refactor TLS certificate reference resolver to reduce cyclomatic complexity (gocyclo tech-debt slice of #5253)"
+  },
+  "nginx/nginx-gateway-fabric#5440": {
+    "summary": "Refactor secret deprovisioning to remove gocyclo lint debt (#5253)"
+  },
+  "nginx/nginx-gateway-fabric#5441": {
+    "summary": "Refactor addBackendRefsToRules into helpers to drop the gocyclo nolint (#5253)"
+  },
+  "nginx/nginx-gateway-fabric#5452": {
+    "summary": "Refactor provisionNginx to remove the gocyclo lint exception by decomposing it into focused helpers"
+  },
+  "nginx/nginx-gateway-fabric#5453": {
+    "summary": "Simplify registerResourceInGatewayConfig by extracting a get-or-create helper to remove the gocyclo lint exception"
+  },
+  "nginx/nginx-gateway-fabric#5454": {
+    "summary": "Simplify getResourceVersionForObject by extracting a name-match helper to remove the gocyclo lint exception"
+  },
+  "nginx/nginx-gateway-fabric#5455": {
+    "summary": "Extract parent ref resolution from bindL7RouteToListeners to remove the gocyclo lint exception"
+  },
+  "nginx/nginx-gateway-fabric#5461": {
+    "summary": "Reduce cyclomatic complexity of the provisioner store's Gateway-resource lookup"
+  },
+  "FairwindsOps/polaris#1201": {
+    "summary": "Add SARIF output format to audit CLI"
+  },
+  "pajikos/home-assistant-helm-chart#178": {
+    "summary": "Add Gateway API HTTPRoute support to the home-assistant Helm chart"
+  },
+  "firefly-iii/kubernetes#117": {
+    "summary": "firefly-iii chart Gateway API HTTPRoute support"
+  },
+  "Azure/setup-helm#281": {
+    "summary": "Add `version-file` input to read the Helm version from a `.tool-versions` file"
+  },
+  "hashicorp/terraform-provider-kubernetes#2905": {
+    "summary": "Add `env_from_map` provider-defined function"
+  },
+  "getmoto/moto#10062": {
+    "summary": "Add EC2 snapshot tiering APIs (archive / describe-status / restore)",
+    "category": "moto-aws"
+  },
+  "getmoto/moto#10065": {
+    "summary": "Add AppMesh VirtualGateway and GatewayRoute API support",
+    "category": "moto-aws"
+  },
+  "getmoto/moto#10067": {
+    "summary": "Add Kinesis Firehose Iceberg destination support",
+    "category": "moto-aws"
+  },
+  "getmoto/moto#10068": {
+    "summary": "Omit unset optional fields from Transfer describe responses",
+    "category": "moto-aws"
+  },
+  "danny-avila/LibreChat#13671": {
+    "summary": "LibreChat chart Gateway API HTTPRoute support"
+  },
+  "RocketChat/helm-charts#234": {
+    "summary": "rocketchat chart Gateway API HTTPRoute support"
+  },
+  "mattermost/mattermost-helm#522": {
+    "summary": "mattermost-team-edition chart Gateway API HTTPRoute support"
+  },
+  "vectordotdev/vector#25607": {
+    "summary": "host_metrics temperature collector (sysinfo Components)"
+  },
+  "cloudposse/github-action-setup-atmos#110": {
+    "summary": "Add `atmos-version-file` input — resolve the Atmos version from a `.tool-versions`/plain version file"
+  },
+  "astral-sh/ruff-action#379": {
+    "summary": "Add `uv.lock` as a supported `version-file` format"
+  },
+  "astral-sh/setup-uv#918": {
+    "summary": "Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI"
+  },
+  "actions/setup-dotnet#743": {
+    "summary": "Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459)"
+  },
+  "hashicorp/setup-terraform#561": {
+    "summary": "Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556)"
+  },
+  "opentofu/setup-opentofu#121": {
+    "summary": "Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117)"
+  },
+  "opentofu/setup-opentofu#131": {
+    "summary": "Support asdf `.tool-versions` format in the `tofu_version_file` input"
+  },
+  "extractions/setup-just#29": {
+    "summary": "Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file"
+  },
+  "terraform-linters/setup-tflint#448": {
+    "summary": "Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file"
+  },
+  "helm/kind-action#162": {
+    "summary": "Add version_file input to load the kind version from an asdf .tool-versions or plain version file"
+  },
+  "kiali/helm-charts#419": {
+    "summary": "Add Gateway API HTTPRoute support to the kiali-server Helm chart"
+  },
+  "sigstore/cosign-installer#242": {
+    "summary": "Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file)"
+  },
+  "losisin/helm-values-schema-json#365": {
+    "summary": "Add shorthand for the const and default schema annotations to reuse the field's own YAML value",
+    "category": "schema-json"
+  },
+  "dexidp/dex#4831": {
+    "summary": "Add EdDSA (Ed25519) signing algorithm support to the local token signer"
+  },
+  "hashicorp/setup-packer#177": {
+    "summary": "Add `version-file` input to read the Packer version from a `.tool-versions` file"
+  },
+  "pgadmin-org/pgadmin4#10095": {
+    "summary": "Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart",
+    "merged": true
+  },
+  "external-secrets/external-secrets#6481": {
+    "summary": "Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart"
+  },
+  "tj-actions/changed-files#2884": {
+    "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)."
+  },
+  "dragonflydb/dragonfly-operator#550": {
+    "summary": "Add optional PodDisruptionBudget to the operator Helm chart"
+  },
+  "openobserve/openobserve-helm-chart#222": {
+    "summary": "Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart"
+  },
+  "padok-team/burrito#927": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart"
+  },
+  "open-policy-agent/conftest#1354": {
+    "summary": "Add per-test names to successful test cases in `conftest verify --output junit` output"
+  },
+  "open-policy-agent/conftest#1355": {
+    "summary": "Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315)"
+  },
+  "ClementTsang/bottom#2086": {
+    "summary": "Add an opt-in natural sort config option for string table columns (closes #1147)"
+  },
+  "mindersec/minder#6520": {
+    "summary": "Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490)"
+  },
+  "elastic/elasticsearch#151614": {
+    "summary": "S3 snapshot repository: EKS Pod Identity credential support"
+  },
+  "elastic/docs-content#7182": {
+    "summary": "Documented EKS Pod Identity setup for the S3 snapshot repository"
+  },
+  "open-telemetry/opentelemetry-collector-contrib#49146": {
+    "summary": "Add opt-in TLS support to the memcached receiver"
+  },
+  "pypa/pipx#1842": {
+    "summary": "Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config"
+  },
+  "vmware-tanzu/helm-charts#740": {
+    "summary": "Add optional PodDisruptionBudget to the Velero Helm chart"
+  },
+  "jenkins-infra/helm-charts#1972": {
+    "summary": "Add an opt-in PodDisruptionBudget to the httpd Helm chart"
+  },
+  "yokawasa/action-setup-kube-tools#98": {
+    "summary": "Add a version-file (.tool-versions) input to pin tool versions from a file"
+  },
+  "stern/stern#373": {
+    "summary": "Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343)"
+  },
+  "kedacore/charts#880": {
+    "summary": "Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces)"
+  },
+  "kedacore/charts#881": {
+    "summary": "Make the KEDA operator gRPC metrics service port configurable (#511)"
+  },
+  "kedacore/charts#882": {
+    "summary": "Per-component Deployment labels/annotations for KEDA pods"
+  },
+  "kudobuilder/kuttl#694": {
+    "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)"
+  },
+  "ray-project/kuberay#4934": {
+    "summary": "Add optional PodDisruptionBudget to the ray-cluster Helm chart"
+  },
+  "fluent/fluentd#5390": {
+    "summary": "Add umask option to the <system> directive"
+  },
+  "metallb/metallb#3076": {
+    "summary": "Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade"
+  },
+  "amacneil/dbmate#803": {
+    "summary": "Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait`"
+  },
+  "anchore/grype#3519": {
+    "summary": "Add vulnerable version ranges to the CycloneDX output format (closes #3512)"
+  },
+  "aquasecurity/setup-trivy#39": {
+    "summary": "Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file"
+  },
+  "requarks/wiki#8035": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart"
+  },
+  "longhorn/longhorn#13378": {
+    "summary": "Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart"
+  },
+  "kubernetes-sigs/descheduler#1885": {
+    "summary": "Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode)"
+  },
+  "kubernetes-sigs/descheduler#1890": {
+    "summary": "Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart"
+  },
+  "kubernetes-sigs/descheduler#1892": {
+    "summary": "Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart"
+  },
+  "kyverno/kyverno#16428": {
+    "summary": "Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart"
+  },
+  "guerzon/vaultwarden#234": {
+    "summary": "Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec"
+  },
+  "robinraju/release-downloader#952": {
+    "summary": "Fix path traversal (CWE-22) when saving release assets"
+  },
+  "kubernetes-sigs/headlamp#6148": {
+    "summary": "Replace the `any` return type of KubeObject.apiList with a typed value in the Headlamp Kubernetes dashboard frontend"
+  },
+  "goauthentik/helm#483": {
+    "summary": "Add server.automountServiceAccountToken to the authentik Helm chart (server-pod parity with the worker setting)"
+  },
+  "argoproj/argo-helm#3943": {
+    "summary": "Add envFrom to the argo-workflows controller and argo-server containers"
+  },
+  "woodpecker-ci/helm#498": {
+    "summary": "Add topologySpreadConstraints to the Woodpecker server (parity with the agent)"
+  },
+  "VictoriaMetrics/helm-charts#3016": {
+    "summary": "Add runtimeClassName option to pod specs across all VictoriaMetrics charts"
+  },
+  "valkey-io/valkey-helm#195": {
+    "summary": "Add optional topologySpreadConstraints to the valkey-operator chart Deployment"
+  },
+  "valkey-io/valkey-helm#196": {
+    "summary": "Add optional Prometheus ServiceMonitor to the valkey-operator chart"
+  },
+  "valkey-io/valkey-helm#197": {
+    "summary": "Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart"
+  },
+  "valkey-io/valkey-helm#217": {
+    "summary": "Add configurable health probes (startup/liveness/readiness) to the Valkey chart"
+  },
+  "valkey-io/valkey-helm#218": {
+    "summary": "Add optional priorityClassName to the valkey-operator Deployment"
+  },
+  "kubereboot/charts#141": {
+    "summary": "Add opt-in topologySpreadConstraints to the kured chart DaemonSet"
+  },
+  "actions-rust-lang/setup-rust-toolchain#96": {
+    "summary": "Add cache-targets passthrough to rust-cache"
+  },
+  "google-github-actions/setup-gcloud#736": {
+    "summary": "Add version_file input to resolve gcloud version from a file"
+  },
+  "argoproj/argo-cd#28406": {
+    "summary": "Persist Applications search bar text across navigation (view preferences)"
+  },
+  "terraform-aws-modules/terraform-aws-elasticache#74": {
+    "summary": "Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning"
+  },
+  "terraform-aws-modules/terraform-aws-iam#651": {
+    "summary": "Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649"
+  },
+  "terraform-aws-modules/terraform-aws-eks#3726": {
+    "summary": "Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724"
+  },
+  "terraform-aws-modules/terraform-aws-eks#3729": {
+    "summary": "Ignore server-side desired_capacity_type drift on self-managed node group ASG (fixes apply failure)"
+  },
+  "terraform-aws-modules/terraform-aws-secrets-manager#26": {
+    "summary": "Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24"
+  },
+  "terraform-aws-modules/terraform-aws-eventbridge#203": {
+    "summary": "Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201"
+  },
+  "terraform-aws-modules/terraform-aws-msk-kafka-cluster#69": {
+    "summary": "Restore broker log delivery for MSK Express brokers"
+  },
+  "terraform-aws-modules/terraform-aws-lambda#761": {
+    "summary": "Add region variable to alias submodule for AWS provider v6 resource-level region"
+  },
+  "terraform-aws-modules/terraform-aws-lambda#762": {
+    "summary": "Clarify lambda_role is ignored when create_role is true (docs)"
+  },
+  "terraform-aws-modules/terraform-aws-app-runner#20": {
+    "summary": "Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute"
+  },
+  "terraform-aws-modules/terraform-aws-fsx#11": {
+    "summary": "FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage"
+  },
+  "terraform-google-modules/terraform-google-bastion-host#246": {
+    "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM"
+  },
+  "terraform-google-modules/terraform-google-kubernetes-engine#2617": {
+    "summary": "Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error)"
+  },
+  "istio/istio#60723": {
+    "summary": "Add terminationGracePeriodSeconds option to the istiod Helm chart"
+  },
+  "opensearch-project/opensearch-k8s-operator#1441": {
+    "summary": "Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart"
+  },
+  "inference-gateway/cli#713": {
+    "summary": "Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races"
+  },
+  "nextcloud/helm#866": {
+    "summary": "Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect)"
+  },
+  "nextcloud/helm#868": {
+    "summary": "Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs"
+  },
+  "kubernetes-sigs/kueue#12736": {
+    "summary": "Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex)."
+  },
+  "kubernetes-sigs/kueue#12797": {
+    "summary": "Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort"
+  },
+  "goharbor/harbor-helm#2386": {
+    "summary": "Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route)"
+  },
+  "Digitalist-Open-Cloud/matomo-kubernetes#71": {
+    "summary": "Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker)"
+  },
+  "BorisPolonsky/dify-helm#419": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the Dify Helm chart"
+  },
+  "terraform-aws-modules/terraform-aws-security-group#361": {
+    "summary": "Document ICMP -1 semantics (type/code) for from_port/to_port in module README"
+  },
+  "keephq/helm-charts#198": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)"
+  },
+  "ory/k8s#888": {
+    "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)"
+  },
+  "supabase-community/supabase-kubernetes#214": {
+    "summary": "Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart"
+  },
+  "prometheus-community/helm-charts#7060": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart"
+  },
+  "open-telemetry/opentelemetry-go-contrib#9229": {
+    "summary": "Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046)"
+  },
+  "open-telemetry/opentelemetry-go-contrib#9238": {
+    "summary": "Fix otelslog dropping error attributes nested inside a slog.Group"
+  },
+  "community-charts/helm-charts#533": {
+    "summary": "Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS"
+  },
+  "community-charts/helm-charts#534": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the n8n Helm chart"
+  },
+  "community-charts/helm-charts#537": {
+    "summary": "Opt-in Gateway API HTTPRoute for actualbudget chart"
+  },
+  "fluxcd/flux2#5975": {
+    "summary": "Add opt-in version-file input to the Flux CLI GitHub Action"
+  },
+  "element-hq/ess-helm#1438": {
+    "summary": "Add priorityClassName support to matrix-stack component workloads"
+  },
+  "terraform-aws-modules/terraform-aws-dynamodb-table#123": {
+    "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle"
+  },
+  "terraform-docs/terraform-docs#947": {
+    "summary": "Render explicit null variable defaults as null (not \"\") in tfvars hcl output"
+  },
+  "open-feature/go-sdk#522": {
+    "summary": "Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix)"
+  },
+  "kubeshark/kubeshark#1949": {
+    "summary": "Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services"
+  },
+  "stakater/Reloader#1181": {
+    "summary": "Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment"
+  },
+  "terraform-google-modules/terraform-google-composer#203": {
+    "summary": "Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled)"
+  },
+  "temporalio/helm-charts#949": {
+    "summary": "Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods"
+  },
+  "open-telemetry/opentelemetry-helm-charts#2299": {
+    "summary": "Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall`"
+  },
+  "anchore/scan-action#726": {
+    "summary": "Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file)"
+  },
+  "kubernetes-sigs/kubebuilder#5864": {
+    "summary": "Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817)"
+  },
+  "nocodb/nocodb#14272": {
+    "summary": "Add opt-in Gateway API HTTPRoute support to the Helm chart"
+  },
+  "restatedev/sdk-go#161": {
+    "summary": "Fix data race between Drain and concurrent Read on the request stream"
+  },
+  "rancher/dynamiclistener#315": {
+    "summary": "Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller"
+  },
+  "prometheus-community/helm-charts#7108": {
+    "summary": "prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment"
+  }
 }
