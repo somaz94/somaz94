@@ -97,7 +97,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-80-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-82-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (185)</b></summary>
@@ -152,11 +152,13 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (108 · 33 merged)
+#### Standalone contributions (108 · 35 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
+| element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
 | valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | ✅ Merged |
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
@@ -189,7 +191,6 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | 🔵 Review |
@@ -199,7 +200,6 @@ Contributions to external open-source projects.
 | temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-google-modules/terraform-google-kubernetes-engine | [#2617](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/2617) | Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error) | 🔵 Review |
-| element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | 🔵 Review |
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | 🔵 Review |
