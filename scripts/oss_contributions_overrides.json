@@ -549,5 +549,8 @@
   },
   "prometheus-community/helm-charts#7108": {
     "summary": "prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment"
+  },
+  "carvel-dev/kapp-controller#1844": {
+    "summary": "Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency"
   }
 }
