@@ -97,14 +97,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-82-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-84-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (185)</b></summary>
+<summary><b>View all contributions (184)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (41 · 21 merged)
+#### Gateway API HTTPRoute support · Helm charts (40 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -136,7 +136,6 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | 🔵 Review |
 | keephq/helm-charts | [#198](https://github.com/keephq/helm-charts/pull/198) | Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183) | 🔵 Review |
 | BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | 🔵 Review |
-| Digitalist-Open-Cloud/matomo-kubernetes | [#71](https://github.com/Digitalist-Open-Cloud/matomo-kubernetes/pull/71) | Opt-in HTTPRoute (Gateway API) support for the Matomo Helm chart (dashboard + tracker) | 🔵 Review |
 | goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
@@ -152,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (108 · 35 merged)
+#### Standalone contributions (108 · 36 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -162,6 +161,7 @@ Contributions to external open-source projects.
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
 | valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | ✅ Merged |
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
+| valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | ✅ Merged |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
@@ -217,7 +217,6 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-security-group | [#361](https://github.com/terraform-aws-modules/terraform-aws-security-group/pull/361) | Document ICMP -1 semantics (type/code) for from_port/to_port in module README | 🔵 Review |
 | terraform-aws-modules/terraform-aws-app-runner | [#20](https://github.com/terraform-aws-modules/terraform-aws-app-runner/pull/20) | Fix AWS provider v6 deprecation warning by using aws_partition.partition instead of the deprecated .id attribute | 🔵 Review |
-| valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | 🔵 Review |
 | guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
@@ -267,11 +266,12 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (15 · 6 merged)
+#### GitHub Action `version-file` inputs (15 · 7 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | opentofu/setup-opentofu | [#131](https://github.com/opentofu/setup-opentofu/pull/131) | Support asdf `.tool-versions` format in the `tofu_version_file` input | ✅ Merged |
+| buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | ✅ Merged |
 | yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | ✅ Merged |
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
 | terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
@@ -280,7 +280,6 @@ Contributions to external open-source projects.
 | fluxcd/flux2 | [#5975](https://github.com/fluxcd/flux2/pull/5975) | Add opt-in version-file input to the Flux CLI GitHub Action | 🔵 Review |
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
-| buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
 | sigstore/cosign-installer | [#242](https://github.com/sigstore/cosign-installer/pull/242) | Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file) | 🔵 Review |
 | helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | 🔵 Review |
