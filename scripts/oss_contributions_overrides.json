@@ -259,6 +259,9 @@
   "external-secrets/external-secrets#6481": {
     "summary": "Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart"
   },
+  "external-secrets/external-secrets#6675": {
+    "summary": "Add opt-in schedulerName and runtimeClassName to the Helm chart pods"
+  },
   "tj-actions/changed-files#2884": {
     "summary": "Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator)."
   },
