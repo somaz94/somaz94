@@ -97,10 +97,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-84-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-84-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (184)</b></summary>
+<summary><b>View all contributions (185)</b></summary>
 
 <br/>
 
@@ -151,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (108 · 36 merged)
+#### Standalone contributions (109 · 36 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -191,6 +191,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| keephq/helm-charts | [#199](https://github.com/keephq/helm-charts/pull/199) | Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | 🔵 Review |

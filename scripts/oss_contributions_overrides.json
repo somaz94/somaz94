@@ -478,6 +478,9 @@
   "keephq/helm-charts#198": {
     "summary": "Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183)"
   },
+  "keephq/helm-charts#199": {
+    "summary": "Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart"
+  },
   "ory/k8s#888": {
     "summary": "Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester)"
   },
