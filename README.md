@@ -81,19 +81,19 @@ Contributions to external open-source projects.
 | Project | PR | Contribution |
 |---|---|---|
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute support for the API server |
-| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support |
-| falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick Gateway API HTTPRoute support |
-| jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment |
-| external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
-| yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema |
-| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the `time.Now()` fallback |
-| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the dashboard frontend |
-| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
-| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add a --dry-run flag to `pipx ensurepath` to preview PATH changes without writing shell config |
-| astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Read the pinned uv version from `uv.lock` for deterministic CI |
-| opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
+| kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent |
+| external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
+| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the dashboard frontend |
+| argoproj/argo-helm | [#3914](https://github.com/argoproj/argo-helm/pull/3914) | argo-rollouts dashboard Gateway API HTTPRoute support |
+| yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema |
+| astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Read the pinned uv version from `uv.lock` for deterministic CI |
+| jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment |
+| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the `time.Now()` fallback |
+| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add a --dry-run flag to `pipx ensurepath` to preview PATH changes without writing shell config |
+| falcosecurity/charts | [#1026](https://github.com/falcosecurity/charts/pull/1026) | falcosidekick Gateway API HTTPRoute support |
+| opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
 
 <!-- OSS:START -->
 
