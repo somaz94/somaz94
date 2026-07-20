@@ -436,6 +436,9 @@
   "terraform-aws-modules/terraform-aws-fsx#11": {
     "summary": "FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage"
   },
+  "terraform-aws-modules/terraform-aws-wafv2#10": {
+    "summary": "Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks"
+  },
   "terraform-google-modules/terraform-google-bastion-host#246": {
     "summary": "Add allow_stopping_for_update variable to the GCP bastion host VM"
   },

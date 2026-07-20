@@ -97,10 +97,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-84-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-86-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (186)</b></summary>
+<summary><b>View all contributions (187)</b></summary>
 
 <br/>
 
@@ -151,14 +151,16 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (110 · 36 merged)
+#### Standalone contributions (111 · 38 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
+| kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | ✅ Merged |
 | valkey-io/valkey-helm | [#218](https://github.com/valkey-io/valkey-helm/pull/218) | Add optional priorityClassName to the valkey-operator Deployment | ✅ Merged |
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
 | valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | ✅ Merged |
@@ -191,7 +193,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | 🔵 Review |
+| terraform-aws-modules/terraform-aws-wafv2 | [#10](https://github.com/terraform-aws-modules/terraform-aws-wafv2/pull/10) | Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks | 🔵 Review |
 | keephq/helm-charts | [#199](https://github.com/keephq/helm-charts/pull/199) | Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
@@ -211,7 +213,6 @@ Contributions to external open-source projects.
 | terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | terraform-aws-modules/terraform-aws-fsx | [#11](https://github.com/terraform-aws-modules/terraform-aws-fsx/pull/11) | FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage | 🔵 Review |
-| kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
 | open-telemetry/opentelemetry-go-contrib | [#9229](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9229) | Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046) | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
