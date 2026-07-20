@@ -511,6 +511,9 @@
   "element-hq/ess-helm#1438": {
     "summary": "Add priorityClassName support to matrix-stack component workloads"
   },
+  "element-hq/ess-helm#1461": {
+    "summary": "Add schedulerName and runtimeClassName support to matrix-stack component workloads"
+  },
   "terraform-aws-modules/terraform-aws-dynamodb-table#123": {
     "summary": "Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle"
   },
