@@ -567,5 +567,8 @@
   },
   "kubernetes-sigs/kubespray#13370": {
     "summary": "cilium: wire the scrape port variables into the Helm values template so they stop being no-ops"
+  },
+  "SlinkyProject/slurm-operator#241": {
+    "summary": "Fix token controller silently stopping JWT refresh (RequeueAfter <= 0 self-requeue) in the Slurm operator"
   }
 }
