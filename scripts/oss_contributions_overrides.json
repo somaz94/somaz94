@@ -570,5 +570,8 @@
   },
   "SlinkyProject/slurm-operator#241": {
     "summary": "Fix token controller silently stopping JWT refresh (RequeueAfter <= 0 self-requeue) in the Slurm operator"
+  },
+  "terraform-redhat/terraform-provider-rhcs#1273": {
+    "summary": "Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package)"
   }
 }
