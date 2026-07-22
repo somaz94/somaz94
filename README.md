@@ -97,7 +97,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-88-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-89-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (190)</b></summary>
@@ -151,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (114 · 40 merged)
+#### Standalone contributions (114 · 41 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -159,6 +159,7 @@ Contributions to external open-source projects.
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
+| kubernetes-sigs/kubebuilder | [#5864](https://github.com/kubernetes-sigs/kubebuilder/pull/5864) | Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817) | ✅ Merged |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | ✅ Merged |
@@ -202,7 +203,6 @@ Contributions to external open-source projects.
 | keephq/helm-charts | [#199](https://github.com/keephq/helm-charts/pull/199) | Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
-| kubernetes-sigs/kubebuilder | [#5864](https://github.com/kubernetes-sigs/kubebuilder/pull/5864) | Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817) | 🔵 Review |
 | anchore/scan-action | [#726](https://github.com/anchore/scan-action/pull/726) | Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file) | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2299](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2299) | Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall` | 🔵 Review |
 | temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | 🔵 Review |
