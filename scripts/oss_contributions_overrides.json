@@ -582,5 +582,8 @@
   },
   "groundhog2k/helm-charts#1521": {
     "summary": "Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar)"
+  },
+  "argoproj-labs/terraform-provider-argocd#912": {
+    "summary": "Add gitea labels filter to the application_set pull_request generator"
   }
 }
