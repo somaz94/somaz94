@@ -97,14 +97,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-88-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-89-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (189)</b></summary>
+<summary><b>View all contributions (191)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (39 · 20 merged)
+#### Gateway API HTTPRoute support · Helm charts (40 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -116,6 +116,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | ✅ Merged |
+| pgadmin-org/pgadmin4 | [#10095](https://github.com/pgadmin-org/pgadmin4/pull/10095) | Add opt-in Gateway API HTTPRoute template to the pgAdmin Helm chart | ✅ Merged |
 | apache/airflow | [#68552](https://github.com/apache/airflow/pull/68552) | Improve API server HTTPRoute config based on review feedback | ✅ Merged |
 | firefly-iii/kubernetes | [#117](https://github.com/firefly-iii/kubernetes/pull/117) | firefly-iii chart Gateway API HTTPRoute support | ✅ Merged |
 | pajikos/home-assistant-helm-chart | [#178](https://github.com/pajikos/home-assistant-helm-chart/pull/178) | Add Gateway API HTTPRoute support to the home-assistant Helm chart | ✅ Merged |
@@ -150,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (114 · 41 merged)
+#### Standalone contributions (115 · 41 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -195,6 +196,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
 | terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | 🔵 Review |
 | SlinkyProject/slurm-operator | [#241](https://github.com/SlinkyProject/slurm-operator/pull/241) | Fix token controller silently stopping JWT refresh (RequeueAfter <= 0 self-requeue) in the Slurm operator | 🔵 Review |
 | external-secrets/external-secrets | [#6675](https://github.com/external-secrets/external-secrets/pull/6675) | Add opt-in schedulerName and runtimeClassName to the Helm chart pods | 🔵 Review |

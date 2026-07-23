@@ -573,5 +573,8 @@
   },
   "terraform-redhat/terraform-provider-rhcs#1273": {
     "summary": "Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package)"
+  },
+  "integrations/terraform-provider-github#3570": {
+    "summary": "Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity)"
   }
 }
