@@ -576,5 +576,8 @@
   },
   "integrations/terraform-provider-github#3570": {
     "summary": "Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity)"
+  },
+  "clouddrove/smurf#473": {
+    "summary": "Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt"
   }
 }
