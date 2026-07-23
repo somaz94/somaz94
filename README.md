@@ -97,10 +97,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-89-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-89-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-104-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (192)</b></summary>
+<summary><b>View all contributions (193)</b></summary>
 
 <br/>
 
@@ -151,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (116 · 41 merged)
+#### Standalone contributions (117 · 41 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -196,6 +196,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | 🔵 Review |
 | clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | 🔵 Review |
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
 | terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | 🔵 Review |

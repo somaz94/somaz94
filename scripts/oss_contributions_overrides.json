@@ -579,5 +579,8 @@
   },
   "clouddrove/smurf#473": {
     "summary": "Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt"
+  },
+  "groundhog2k/helm-charts#1521": {
+    "summary": "Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar)"
   }
 }
