@@ -98,14 +98,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-96-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-96-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (195)</b></summary>
+<summary><b>View all contributions (191)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (40 · 21 merged)
+#### Gateway API HTTPRoute support · Helm charts (37 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -145,14 +145,11 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7022](https://github.com/prometheus-community/helm-charts/pull/7022) | Add Gateway API HTTPRoute support to the prometheus-json-exporter chart | 🔵 Review |
 | requarks/wiki | [#8035](https://github.com/requarks/wiki/pull/8035) | Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart | 🔵 Review |
-| mattermost/mattermost-helm | [#522](https://github.com/mattermost/mattermost-helm/pull/522) | mattermost-team-edition chart Gateway API HTTPRoute support | 🔵 Review |
 | RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
-| danny-avila/LibreChat | [#13671](https://github.com/danny-avila/LibreChat/pull/13671) | LibreChat chart Gateway API HTTPRoute support | 🔵 Review |
-| 1Password/op-scim-helm | [#171](https://github.com/1Password/op-scim-helm/pull/171) | Gateway API HTTPRoute support for the 1Password SCIM bridge chart | 🔵 Review |
 
 <br/>
 
-#### Standalone contributions (119 · 47 merged)
+#### Standalone contributions (118 · 47 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -208,7 +205,6 @@ Contributions to external open-source projects.
 | clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | 🔵 Review |
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
 | terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | 🔵 Review |
-| SlinkyProject/slurm-operator | [#241](https://github.com/SlinkyProject/slurm-operator/pull/241) | Fix token controller silently stopping JWT refresh (RequeueAfter <= 0 self-requeue) in the Slurm operator | 🔵 Review |
 | terraform-aws-modules/terraform-aws-wafv2 | [#10](https://github.com/terraform-aws-modules/terraform-aws-wafv2/pull/10) | Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks | 🔵 Review |
 | keephq/helm-charts | [#199](https://github.com/keephq/helm-charts/pull/199) | Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
