@@ -98,10 +98,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-96-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-96-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (191)</b></summary>
+<summary><b>View all contributions (192)</b></summary>
 
 <br/>
 
@@ -149,7 +149,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (118 · 47 merged)
+#### Standalone contributions (119 · 47 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -184,7 +184,7 @@ Contributions to external open-source projects.
 | redpanda-data/helm-charts | [#1754](https://github.com/redpanda-data/helm-charts/pull/1754) | Add opt-in topologySpreadConstraints to the kminion Helm chart (Deployment and DaemonSet) | ✅ Merged |
 | kubernetes-sigs/descheduler | [#1885](https://github.com/kubernetes-sigs/descheduler/pull/1885) | Add an opt-in PodDisruptionBudget to the descheduler Helm chart (Deployment mode) | ✅ Merged |
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | ✅ Merged |
-| fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add umask option to the `<system>` directive | ✅ Merged |
+| fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add umask option to the <system> directive | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
 | stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | ✅ Merged |
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | ✅ Merged |
@@ -200,6 +200,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| aws/karpenter-provider-aws | [#9454](https://github.com/aws/karpenter-provider-aws/pull/9454) | Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors | 🔵 Review |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | 🔵 Review |
 | groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | 🔵 Review |
 | clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | 🔵 Review |

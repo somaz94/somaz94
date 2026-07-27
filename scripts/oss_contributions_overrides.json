@@ -585,5 +585,8 @@
   },
   "argoproj-labs/terraform-provider-argocd#912": {
     "summary": "Add gitea labels filter to the application_set pull_request generator"
+  },
+  "aws/karpenter-provider-aws#9454": {
+    "summary": "Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors"
   }
 }
