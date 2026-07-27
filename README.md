@@ -98,7 +98,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-96-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-98-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (192)</b></summary>
@@ -149,17 +149,19 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (119 · 47 merged)
+#### Standalone contributions (119 · 49 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
+| argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
 | external-secrets/external-secrets | [#6675](https://github.com/external-secrets/external-secrets/pull/6675) | Add opt-in schedulerName and runtimeClassName to the Helm chart pods | ✅ Merged |
 | element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
 | kubernetes-sigs/kubebuilder | [#5864](https://github.com/kubernetes-sigs/kubebuilder/pull/5864) | Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817) | ✅ Merged |
+| temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | ✅ Merged |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
@@ -201,7 +203,6 @@ Contributions to external open-source projects.
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | aws/karpenter-provider-aws | [#9454](https://github.com/aws/karpenter-provider-aws/pull/9454) | Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors | 🔵 Review |
-| argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | 🔵 Review |
 | groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | 🔵 Review |
 | clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | 🔵 Review |
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
@@ -212,7 +213,6 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
 | anchore/scan-action | [#726](https://github.com/anchore/scan-action/pull/726) | Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file) | 🔵 Review |
 | open-telemetry/opentelemetry-helm-charts | [#2299](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2299) | Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall` | 🔵 Review |
-| temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-google-modules/terraform-google-kubernetes-engine | [#2617](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/2617) | Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error) | 🔵 Review |
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
