@@ -98,10 +98,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-98-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-102-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (190)</b></summary>
+<summary><b>View all contributions (187)</b></summary>
 
 <br/>
 
@@ -148,12 +148,14 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (118 · 49 merged)
+#### Standalone contributions (115 · 53 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
+| groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | ✅ Merged |
+| clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | ✅ Merged |
 | external-secrets/external-secrets | [#6675](https://github.com/external-secrets/external-secrets/pull/6675) | Add opt-in schedulerName and runtimeClassName to the Helm chart pods | ✅ Merged |
 | element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
@@ -172,6 +174,7 @@ Contributions to external open-source projects.
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | ✅ Merged |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
+| terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | ✅ Merged |
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | ✅ Merged |
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | ✅ Merged |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
@@ -191,6 +194,7 @@ Contributions to external open-source projects.
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | ✅ Merged |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | ✅ Merged |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add --dry-run flag to `pipx ensurepath` to preview PATH changes without modifying any shell config | ✅ Merged |
+| open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | ✅ Merged |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | ✅ Merged |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
@@ -202,8 +206,6 @@ Contributions to external open-source projects.
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | aws/karpenter-provider-aws | [#9454](https://github.com/aws/karpenter-provider-aws/pull/9454) | Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors | 🔵 Review |
-| groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | 🔵 Review |
-| clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | 🔵 Review |
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
 | terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-wafv2 | [#10](https://github.com/terraform-aws-modules/terraform-aws-wafv2/pull/10) | Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks | 🔵 Review |
@@ -235,13 +237,9 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-lambda | [#761](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/761) | Add region variable to alias submodule for AWS provider v6 resource-level region | 🔵 Review |
 | istio/istio | [#60723](https://github.com/istio/istio/pull/60723) | Add terminationGracePeriodSeconds option to the istiod Helm chart | 🔵 Review |
 | terraform-aws-modules/terraform-aws-eventbridge | [#203](https://github.com/terraform-aws-modules/terraform-aws-eventbridge/pull/203) | Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201 | 🔵 Review |
-| terraform-aws-modules/terraform-aws-eks | [#3729](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3729) | Ignore server-side desired_capacity_type drift on self-managed node group ASG (fixes apply failure) | 🔵 Review |
 | terraform-google-modules/terraform-google-bastion-host | [#246](https://github.com/terraform-google-modules/terraform-google-bastion-host/pull/246) | Add allow_stopping_for_update variable to the GCP bastion host VM | 🔵 Review |
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
-| terraform-aws-modules/terraform-aws-secrets-manager | [#26](https://github.com/terraform-aws-modules/terraform-aws-secrets-manager/pull/26) | Persist a custom staging label so external secret updates don't orphan the Terraform-tracked version (fixes ignore_secret_changes data-loss); fixes #24 | 🔵 Review |
-| terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
-| terraform-aws-modules/terraform-aws-elasticache | [#74](https://github.com/terraform-aws-modules/terraform-aws-elasticache/pull/74) | Lowercase the default ElastiCache user engine fallback to silence the AWS provider case-insensitive deprecation warning | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status and ServiceBGPStatus reconcile (#3063) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
@@ -254,7 +252,6 @@ Contributions to external open-source projects.
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
-| open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
 | dragonflydb/dragonfly-operator | [#550](https://github.com/dragonflydb/dragonfly-operator/pull/550) | Add optional PodDisruptionBudget to the operator Helm chart | 🔵 Review |
