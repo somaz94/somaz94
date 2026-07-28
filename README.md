@@ -98,14 +98,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-98-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-98-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (192)</b></summary>
+<summary><b>View all contributions (190)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (37 · 21 merged)
+#### Gateway API HTTPRoute support · Helm charts (36 · 21 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -145,11 +145,10 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7022](https://github.com/prometheus-community/helm-charts/pull/7022) | Add Gateway API HTTPRoute support to the prometheus-json-exporter chart | 🔵 Review |
 | requarks/wiki | [#8035](https://github.com/requarks/wiki/pull/8035) | Add opt-in Gateway API HTTPRoute support to the Wiki.js Helm chart | 🔵 Review |
-| RocketChat/helm-charts | [#234](https://github.com/RocketChat/helm-charts/pull/234) | rocketchat chart Gateway API HTTPRoute support | 🔵 Review |
 
 <br/>
 
-#### Standalone contributions (119 · 49 merged)
+#### Standalone contributions (118 · 49 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -258,7 +257,6 @@ Contributions to external open-source projects.
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
-| openobserve/openobserve-helm-chart | [#222](https://github.com/openobserve/openobserve-helm-chart/pull/222) | Add opt-in Prometheus Operator ServiceMonitor to the OpenObserve standalone Helm chart | 🔵 Review |
 | dragonflydb/dragonfly-operator | [#550](https://github.com/dragonflydb/dragonfly-operator/pull/550) | Add optional PodDisruptionBudget to the operator Helm chart | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
