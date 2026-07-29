@@ -588,5 +588,8 @@
   },
   "aws/karpenter-provider-aws#9454": {
     "summary": "Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors"
+  },
+  "prometheus-operator/prometheus-operator#8728": {
+    "summary": "Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0)"
   }
 }
