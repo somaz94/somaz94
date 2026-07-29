@@ -594,5 +594,8 @@
   },
   "prometheus-operator/prometheus-operator#8729": {
     "summary": "Add httpHeaders field to ServiceMonitor and PodMonitor endpoints for custom scrape HTTP headers (Prometheus >= 2.55.0)"
+  },
+  "gruntwork-io/terragrunt#6572": {
+    "summary": "Add overwrite_terragrunt_or_skip value for generate block if_exists, gated behind an experiment"
   }
 }
