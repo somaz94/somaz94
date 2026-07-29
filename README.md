@@ -200,7 +200,7 @@ Contributions to external open-source projects.
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | ✅ Merged |
 | open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | ✅ Merged |
-| vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | host_metrics temperature collector (sysinfo Components) | ✅ Merged |
+| vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
