@@ -98,10 +98,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-103-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-103-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (190)</b></summary>
+<summary><b>View all contributions (191)</b></summary>
 
 <br/>
 
@@ -148,7 +148,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (118 · 54 merged)
+#### Standalone contributions (119 · 54 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -206,6 +206,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
 | gruntwork-io/terragrunt | [#6572](https://github.com/gruntwork-io/terragrunt/pull/6572) | Add overwrite_terragrunt_or_skip value for generate block if_exists, gated behind an experiment | 🔵 Review |
 | prometheus-operator/prometheus-operator | [#8729](https://github.com/prometheus-operator/prometheus-operator/pull/8729) | Add httpHeaders field to ServiceMonitor and PodMonitor endpoints for custom scrape HTTP headers (Prometheus >= 2.55.0) | 🔵 Review |
 | prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) | 🔵 Review |

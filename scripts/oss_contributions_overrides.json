@@ -597,5 +597,8 @@
   },
   "gruntwork-io/terragrunt#6572": {
     "summary": "Add overwrite_terragrunt_or_skip value for generate block if_exists, gated behind an experiment"
+  },
+  "dorny/paths-filter#323": {
+    "summary": "Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job"
   }
 }
