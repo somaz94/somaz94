@@ -98,7 +98,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-104-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-106-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (191)</b></summary>
@@ -148,7 +148,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (119 · 55 merged)
+#### Standalone contributions (119 · 57 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -165,6 +165,8 @@ Contributions to external open-source projects.
 | temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | ✅ Merged |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | ✅ Merged |
+| open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | ✅ Merged |
+| terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9229](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9229) | Fix otelslog data race corrupting log attributes via shared kvBuffer (closes #9046) | ✅ Merged |
@@ -225,9 +227,7 @@ Contributions to external open-source projects.
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |
-| open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1892](https://github.com/kubernetes-sigs/descheduler/pull/1892) | Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart | 🔵 Review |
-| terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | terraform-aws-modules/terraform-aws-fsx | [#11](https://github.com/terraform-aws-modules/terraform-aws-fsx/pull/11) | FSx OpenZFS: add read_cache_configuration for INTELLIGENT_TIERING storage | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
