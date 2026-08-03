@@ -600,5 +600,8 @@
   },
   "dorny/paths-filter#323": {
     "summary": "Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job"
+  },
+  "reviewdog/action-shellcheck#102": {
+    "summary": "Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped"
   }
 }
