@@ -606,5 +606,8 @@
   },
   "denoland/setup-deno#133": {
     "summary": "Parse dvm's key=value .dvmrc format in the deno-version-file input"
+  },
+  "actions/stale#1357": {
+    "summary": "Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale"
   }
 }
