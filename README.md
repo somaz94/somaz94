@@ -68,6 +68,9 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 ### Chrome Extensions
 [![Dev Toolkit](https://img.shields.io/badge/Chrome_Extension-Dev_Toolkit-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/dev-toolkit/docgjoppdhbahapgbemfadlkgchnmecc)[![QRify](https://img.shields.io/badge/Chrome_Extension-QRify-2ea44f?style=flat-square&logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/qrify/lkencifnlcbcfjdpkooejabmgkmdgpee)
 
+### Claude Code Plugins
+[![census](https://img.shields.io/badge/Claude_Code_Plugin-census-D97757?style=flat-square&logo=claude&logoColor=white)](https://github.com/somaz94/claude-plugins/tree/main/plugins/census)
+
 <br/>
 
 ## Open Source Contributions
