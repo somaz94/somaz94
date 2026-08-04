@@ -603,5 +603,8 @@
   },
   "reviewdog/action-shellcheck#102": {
     "summary": "Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped"
+  },
+  "denoland/setup-deno#133": {
+    "summary": "Parse dvm's key=value .dvmrc format in the deno-version-file input"
   }
 }

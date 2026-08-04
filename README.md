@@ -101,10 +101,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-106-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-106-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (192)</b></summary>
+<summary><b>View all contributions (193)</b></summary>
 
 <br/>
 
@@ -250,7 +250,7 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
-| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion churn in ServiceL2Status and ServiceBGPStatus reconcile (#3063) | 🔵 Review |
+| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion errors in ServiceL2Status and ServiceBGPStatus reconcile | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
@@ -278,7 +278,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (15 · 8 merged)
+#### GitHub Action `version-file` inputs (16 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -290,6 +290,7 @@ Contributions to external open-source projects.
 | terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
+| denoland/setup-deno | [#133](https://github.com/denoland/setup-deno/pull/133) | Parse dvm's key=value .dvmrc format in the deno-version-file input | 🔵 Review |
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
