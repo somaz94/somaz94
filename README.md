@@ -112,8 +112,8 @@ Contributions to external open-source projects.
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
-| BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart (closes #398) | ✅ Merged |
 | nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | ✅ Merged |
+| BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | ✅ Merged |
 | nextcloud/helm | [#866](https://github.com/nextcloud/helm/pull/866) | Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect) | ✅ Merged |
 | prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
