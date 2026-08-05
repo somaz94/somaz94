@@ -102,10 +102,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-107-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-109-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-84-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (192)</b></summary>
+<summary><b>View all contributions (193)</b></summary>
 
 <br/>
 
@@ -152,7 +152,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (119 · 57 merged)
+#### Standalone contributions (120 · 59 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -166,6 +166,7 @@ Contributions to external open-source projects.
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
 | kubernetes-sigs/kubebuilder | [#5864](https://github.com/kubernetes-sigs/kubebuilder/pull/5864) | Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817) | ✅ Merged |
+| open-telemetry/opentelemetry-helm-charts | [#2299](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2299) | Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall` | ✅ Merged |
 | temporalio/helm-charts | [#949](https://github.com/temporalio/helm-charts/pull/949) | Add schedulerName/runtimeClassName/priorityClassName to Temporal server/web/admintools pods | ✅ Merged |
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | ✅ Merged |
@@ -186,6 +187,7 @@ Contributions to external open-source projects.
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | ✅ Merged |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
 | redpanda-data/helm-charts | [#1756](https://github.com/redpanda-data/helm-charts/pull/1756) | kminion chart: add opt-in extraEnvFrom for Secret/ConfigMap env injection (Deployment + DaemonSet) | ✅ Merged |
+| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion errors in ServiceL2Status and ServiceBGPStatus reconcile | ✅ Merged |
 | valkey-io/valkey-helm | [#195](https://github.com/valkey-io/valkey-helm/pull/195) | Add optional topologySpreadConstraints to the valkey-operator chart Deployment | ✅ Merged |
 | VictoriaMetrics/helm-charts | [#3016](https://github.com/VictoriaMetrics/helm-charts/pull/3016) | Add runtimeClassName option to pod specs across all VictoriaMetrics charts | ✅ Merged |
 | woodpecker-ci/helm | [#498](https://github.com/woodpecker-ci/helm/pull/498) | Add topologySpreadConstraints to the Woodpecker server (parity with the agent) | ✅ Merged |
@@ -213,6 +215,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add preferred type to retry nodeAntiAffinity. Fixes #13969 | 🔵 Review |
 | argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | 🔵 Review |
@@ -228,7 +231,6 @@ Contributions to external open-source projects.
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
 | prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
 | anchore/scan-action | [#726](https://github.com/anchore/scan-action/pull/726) | Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file) | 🔵 Review |
-| open-telemetry/opentelemetry-helm-charts | [#2299](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2299) | Add opt-in `crds.annotations` to the opentelemetry-operator chart so CRDs can carry `helm.sh/resource-policy: keep` and survive `helm uninstall` | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-google-modules/terraform-google-kubernetes-engine | [#2617](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/2617) | Fixed add_shadow_firewall_rules requiring add_cluster_firewall_rules (null cluster_subnet_cidr plan error) | 🔵 Review |
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | 🔵 Review |
@@ -250,7 +252,6 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
-| metallb/metallb | [#3079](https://github.com/metallb/metallb/pull/3079) | Avoid stale resourceVersion errors in ServiceL2Status and ServiceBGPStatus reconcile | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | robinraju/release-downloader | [#952](https://github.com/robinraju/release-downloader/pull/952) | Fix path traversal (CWE-22) when saving release assets | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
