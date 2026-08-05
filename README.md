@@ -85,17 +85,18 @@ Contributions to external open-source projects.
 |---|---|---|
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute support for the API server |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support |
+| kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | Wire the cilium scrape port variables into the Helm values template so they stop being no-ops |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
 | fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add `umask` option to the `<system>` directive |
+| fluxcd/flux2 | [#5975](https://github.com/fluxcd/flux2/pull/5975) | Add an opt-in `version-file` input to the Flux CLI GitHub Action |
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
 | kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the dashboard frontend |
+| stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in the JSON extraction template funcs |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator |
-| yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema |
-| mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the `time.Now()` fallback |
 | pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add a --dry-run flag to `pipx ensurepath` to preview PATH changes without writing shell config |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
 
