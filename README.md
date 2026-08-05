@@ -101,10 +101,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-107-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-84-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-107-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (191)</b></summary>
+<summary><b>View all contributions (192)</b></summary>
 
 <br/>
 
@@ -151,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (118 · 57 merged)
+#### Standalone contributions (119 · 57 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -212,6 +212,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | 🔵 Review |
 | dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
