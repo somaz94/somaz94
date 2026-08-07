@@ -612,5 +612,8 @@
   },
   "argoproj-labs/terraform-provider-argocd#920": {
     "summary": "Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set"
+  },
+  "tektoncd/pipeline#10548": {
+    "summary": "Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another"
   }
 }
