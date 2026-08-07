@@ -102,7 +102,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-109-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-111-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-83-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (194)</b></summary>
@@ -152,10 +152,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (121 · 59 merged)
+#### Standalone contributions (121 · 61 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | ✅ Merged |
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
 | groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | ✅ Merged |
@@ -180,6 +181,7 @@ Contributions to external open-source projects.
 | ory/k8s | [#888](https://github.com/ory/k8s/pull/888) | Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester) | ✅ Merged |
 | valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
+| guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | ✅ Merged |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | ✅ Merged |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
 | terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | ✅ Merged |
@@ -219,7 +221,6 @@ Contributions to external open-source projects.
 | argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add preferred type to retry nodeAntiAffinity. Fixes #13969 | 🔵 Review |
 | argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
-| reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | 🔵 Review |
 | dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
 | gruntwork-io/terragrunt | [#6572](https://github.com/gruntwork-io/terragrunt/pull/6572) | Add overwrite_terragrunt_or_skip value for generate block if_exists, gated behind an experiment | 🔵 Review |
 | prometheus-operator/prometheus-operator | [#8729](https://github.com/prometheus-operator/prometheus-operator/pull/8729) | Add httpHeaders field to ServiceMonitor and PodMonitor endpoints for custom scrape HTTP headers (Prometheus >= 2.55.0) | 🔵 Review |
@@ -243,7 +244,6 @@ Contributions to external open-source projects.
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-security-group | [#361](https://github.com/terraform-aws-modules/terraform-aws-security-group/pull/361) | Document ICMP -1 semantics (type/code) for from_port/to_port in module README | 🔵 Review |
-| guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn when secret files are excluded from the push | 🔵 Review |
