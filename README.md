@@ -102,10 +102,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-112-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-112-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (193)</b></summary>
+<summary><b>View all contributions (192)</b></summary>
 
 <br/>
 
@@ -151,7 +151,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (121 · 62 merged)
+#### Standalone contributions (120 · 62 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -260,7 +260,6 @@ Contributions to external open-source projects.
 | amacneil/dbmate | [#803](https://github.com/amacneil/dbmate/pull/803) | Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait` | 🔵 Review |
 | metallb/metallb | [#3076](https://github.com/metallb/metallb/pull/3076) | Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade | 🔵 Review |
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
-| vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
 | open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
 | open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
