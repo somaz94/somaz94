@@ -103,7 +103,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-113-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-116-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (193)</b></summary>
@@ -152,10 +152,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (121 · 63 merged)
+#### Standalone contributions (121 · 66 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | ✅ Merged |
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
@@ -183,6 +184,7 @@ Contributions to external open-source projects.
 | valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | ✅ Merged |
+| kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | ✅ Merged |
 | elastic/docs-content | [#7182](https://github.com/elastic/docs-content/pull/7182) | Documented EKS Pod Identity setup for the S3 snapshot repository | ✅ Merged |
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
 | terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | ✅ Merged |
@@ -210,6 +212,7 @@ Contributions to external open-source projects.
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver | ✅ Merged |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support | ✅ Merged |
 | mindersec/minder | [#6520](https://github.com/mindersec/minder/pull/6520) | Resolve OCI artifact created time from the image config instead of the time.Now() fallback (closes #6490) | ✅ Merged |
+| open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | ✅ Merged |
 | dragonflydb/dragonfly-operator | [#550](https://github.com/dragonflydb/dragonfly-operator/pull/550) | Add optional PodDisruptionBudget to the operator Helm chart | ✅ Merged |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scoped External Secrets Operator cert-controller ClusterRole to least-privilege (resourceNames-pinned write access) in the Helm chart | ✅ Merged |
 | opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default (closes #117) | ✅ Merged |
@@ -246,7 +249,6 @@ Contributions to external open-source projects.
 | terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-security-group | [#361](https://github.com/terraform-aws-modules/terraform-aws-security-group/pull/361) | Document ICMP -1 semantics (type/code) for from_port/to_port in module README | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
-| kubernetes-sigs/descheduler | [#1890](https://github.com/kubernetes-sigs/descheduler/pull/1890) | Add opt-in schedulerName and runtimeClassName to the descheduler Helm chart | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn when secret files are excluded from the push | 🔵 Review |
 | terraform-aws-modules/terraform-aws-lambda | [#761](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/761) | Add region variable to alias submodule for AWS provider v6 resource-level region | 🔵 Review |
 | istio/istio | [#60723](https://github.com/istio/istio/pull/60723) | Add terminationGracePeriodSeconds option to the istiod Helm chart | 🔵 Review |
@@ -263,8 +265,6 @@ Contributions to external open-source projects.
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
-| open-policy-agent/conftest | [#1355](https://github.com/open-policy-agent/conftest/pull/1355) | Add `--github-hide-passed` flag to skip passing files in the GitHub outputter (closes #1315) | 🔵 Review |
-| open-policy-agent/conftest | [#1354](https://github.com/open-policy-agent/conftest/pull/1354) | Add per-test names to successful test cases in `conftest verify --output junit` output | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
