@@ -615,5 +615,8 @@
   },
   "tektoncd/pipeline#10548": {
     "summary": "Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another"
+  },
+  "go-gitea/gitea#38863": {
+    "summary": "Stream bundle downloads instead of writing a repo-sized temp file to disk first"
   }
 }
