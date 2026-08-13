@@ -103,7 +103,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-116-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-117-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (193)</b></summary>
@@ -152,7 +152,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (121 · 66 merged)
+#### Standalone contributions (121 · 67 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -205,6 +205,7 @@ Contributions to external open-source projects.
 | anchore/grype | [#3519](https://github.com/anchore/grype/pull/3519) | Add vulnerable version ranges to the CycloneDX output format (closes #3512) | ✅ Merged |
 | fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add umask option to the <system> directive | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
+| kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | ✅ Merged |
 | stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in extractJSONParts/tryExtractJSONParts template funcs (closes #343) | ✅ Merged |
 | jenkins-infra/helm-charts | [#1972](https://github.com/jenkins-infra/helm-charts/pull/1972) | Add an opt-in PodDisruptionBudget to the httpd Helm chart | ✅ Merged |
 | vmware-tanzu/helm-charts | [#740](https://github.com/vmware-tanzu/helm-charts/pull/740) | Add optional PodDisruptionBudget to the Velero Helm chart | ✅ Merged |
@@ -264,7 +265,6 @@ Contributions to external open-source projects.
 | metallb/metallb | [#3076](https://github.com/metallb/metallb/pull/3076) | Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade | 🔵 Review |
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
-| kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
