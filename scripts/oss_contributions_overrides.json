@@ -627,5 +627,8 @@
   },
   "opencost/opencost#4003": {
     "summary": "Restore a green format-check on develop by gofmt-ing the public pricing httpclient"
+  },
+  "terraform-docs/terraform-docs#955": {
+    "summary": "Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL"
   }
 }
