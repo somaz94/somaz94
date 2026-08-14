@@ -624,5 +624,8 @@
   },
   "opencost/opencost#4002": {
     "summary": "Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost"
+  },
+  "opencost/opencost#4003": {
+    "summary": "Restore a green format-check on develop by gofmt-ing the public pricing httpclient"
   }
 }
