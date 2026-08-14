@@ -618,5 +618,11 @@
   },
   "go-gitea/gitea#38863": {
     "summary": "Stream bundle downloads instead of writing a repo-sized temp file to disk first"
+  },
+  "external-secrets/external-secrets#6830": {
+    "summary": "Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies"
+  },
+  "opencost/opencost#4002": {
+    "summary": "Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost"
   }
 }

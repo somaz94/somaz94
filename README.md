@@ -103,10 +103,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-117-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-117-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (193)</b></summary>
+<summary><b>View all contributions (195)</b></summary>
 
 <br/>
 
@@ -152,7 +152,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (121 · 67 merged)
+#### Standalone contributions (123 · 67 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -223,6 +223,8 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| opencost/opencost | [#4002](https://github.com/opencost/opencost/pull/4002) | Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost | 🔵 Review |
+| external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
 | tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another | 🔵 Review |
 | argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add preferred type to retry nodeAntiAffinity. Fixes #13969 | 🔵 Review |
 | argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | 🔵 Review |
