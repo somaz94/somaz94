@@ -103,10 +103,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-117-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-119-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (197)</b></summary>
+<summary><b>View all contributions (198)</b></summary>
 
 <br/>
 
@@ -152,16 +152,18 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (125 · 67 merged)
+#### Standalone contributions (126 · 69 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | ✅ Merged |
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
 | groundhog2k/helm-charts | [#1521](https://github.com/groundhog2k/helm-charts/pull/1521) | Add Prometheus metrics and ServiceMonitor support to the mongodb chart (mongodb_exporter sidecar) | ✅ Merged |
 | clouddrove/smurf | [#473](https://github.com/clouddrove/smurf/pull/473) | Return a non-zero exit code when `stf apply`/`destroy` is declined at the approval prompt | ✅ Merged |
+| terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | ✅ Merged |
 | external-secrets/external-secrets | [#6675](https://github.com/external-secrets/external-secrets/pull/6675) | Add opt-in schedulerName and runtimeClassName to the Helm chart pods | ✅ Merged |
 | element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
@@ -237,7 +239,6 @@ Contributions to external open-source projects.
 | prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) | 🔵 Review |
 | aws/karpenter-provider-aws | [#9454](https://github.com/aws/karpenter-provider-aws/pull/9454) | Surface EC2 request rejections (e.g. InvalidBlockDeviceMapping) on the EC2NodeClass validation condition instead of retrying them as authorization errors | 🔵 Review |
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
-| terraform-redhat/terraform-provider-rhcs | [#1273](https://github.com/terraform-redhat/terraform-provider-rhcs/pull/1273) | Drop the vestigial terraform-plugin-sdk/v2 direct dependency by reimplementing LogLevel() locally (adds first unit tests to the logging package) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-wafv2 | [#10](https://github.com/terraform-aws-modules/terraform-aws-wafv2/pull/10) | Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks | 🔵 Review |
 | keephq/helm-charts | [#199](https://github.com/keephq/helm-charts/pull/199) | Add opt-in PodDisruptionBudget support for HA components (backend/frontend/websocket) to the Keep Helm chart | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
