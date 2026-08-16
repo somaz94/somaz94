@@ -103,7 +103,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-119-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-120-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (198)</b></summary>
@@ -152,12 +152,13 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (126 · 69 merged)
+#### Standalone contributions (126 · 70 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
+| argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | ✅ Merged |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | ✅ Merged |
 | kubernetes-sigs/kueue | [#13428](https://github.com/kubernetes-sigs/kueue/pull/13428) | Automated cherry pick of #12797: Keep the sticky workload consistent during ClusterQueue heap and snapshot sorts | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator | ✅ Merged |
@@ -231,7 +232,6 @@ Contributions to external open-source projects.
 | external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
 | tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another | 🔵 Review |
 | argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add preferred type to retry nodeAntiAffinity. Fixes #13969 | 🔵 Review |
-| argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
 | dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
 | gruntwork-io/terragrunt | [#6572](https://github.com/gruntwork-io/terragrunt/pull/6572) | Add overwrite_terragrunt_or_skip value for generate block if_exists, gated behind an experiment | 🔵 Review |
