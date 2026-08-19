@@ -103,10 +103,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-121-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-121-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (198)</b></summary>
+<summary><b>View all contributions (197)</b></summary>
 
 <br/>
 
@@ -285,7 +285,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (16 · 8 merged)
+#### GitHub Action `version-file` inputs (15 · 8 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -301,7 +301,6 @@ Contributions to external open-source projects.
 | google-github-actions/setup-gcloud | [#736](https://github.com/google-github-actions/setup-gcloud/pull/736) | Add version_file input to resolve gcloud version from a file | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
-| sigstore/cosign-installer | [#242](https://github.com/sigstore/cosign-installer/pull/242) | Add cosign-release-file input (read the cosign version from an asdf .tool-versions / plain version file) | 🔵 Review |
 | helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | 🔵 Review |
 | extractions/setup-just | [#29](https://github.com/extractions/setup-just/pull/29) | Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file | 🔵 Review |
 | actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
