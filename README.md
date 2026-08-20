@@ -34,7 +34,7 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 | [kube-ctx](https://github.com/somaz94/kube-ctx) | Single-binary kubectx/kubens replacement with per-terminal context isolation, production guards, and a built-in fuzzy picker | ![Stars](https://img.shields.io/github/stars/somaz94/kube-ctx?style=flat-square&color=yellow) |
 | [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=flat-square&color=yellow) |
 | [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=flat-square&color=yellow) |
-| [kube-drift](https://github.com/somaz94/kube-drift) | Kubernetes operator that detects configuration drift between manifests and the live cluster on a schedule | ![Stars](https://img.shields.io/github/stars/somaz94/kube-drift?style=flat-square&color=yellow) |
+| [git-bridge](https://github.com/somaz94/git-bridge) | Multi-provider Git mirror: CodeCommit, GitLab, GitHub any-to-any with webhooks & SQS | ![Stars](https://img.shields.io/github/stars/somaz94/git-bridge?style=flat-square&color=yellow) |
 
 <br/>
 
