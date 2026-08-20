@@ -630,5 +630,8 @@
   },
   "terraform-docs/terraform-docs#955": {
     "summary": "Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL"
+  },
+  "zalando/skipper#4201": {
+    "summary": "Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses"
   }
 }
