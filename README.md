@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-121-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-122-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (198)</b></summary>
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (127 · 71 merged)
+#### Standalone contributions (127 · 72 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -182,6 +182,7 @@ Contributions to external open-source projects.
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | ✅ Merged |
 | open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | ✅ Merged |
+| kubernetes-sigs/descheduler | [#1892](https://github.com/kubernetes-sigs/descheduler/pull/1892) | Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart | ✅ Merged |
 | terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | ✅ Merged |
 | element-hq/ess-helm | [#1438](https://github.com/element-hq/ess-helm/pull/1438) | Add priorityClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kueue | [#12797](https://github.com/kubernetes-sigs/kueue/pull/12797) | Fix non-transitive ClusterQueue sort when the sticky workload changes mid-sort | ✅ Merged |
@@ -253,7 +254,6 @@ Contributions to external open-source projects.
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
 | apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |
-| kubernetes-sigs/descheduler | [#1892](https://github.com/kubernetes-sigs/descheduler/pull/1892) | Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
