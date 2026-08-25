@@ -28,13 +28,13 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 
 | Project | Description | Stars |
 |---------|------------|-------|
-| [compress-decompress](https://github.com/somaz94/compress-decompress) | GitHub Action for file compression/decompression | ![Stars](https://img.shields.io/github/stars/somaz94/compress-decompress?style=flat-square&color=yellow) |
-| [network-policy-generator](https://github.com/somaz94/network-policy-generator) | Kubernetes operator that generates NetworkPolicy from a CRD | ![Stars](https://img.shields.io/github/stars/somaz94/network-policy-generator?style=flat-square&color=yellow) |
-| [cicd-monitoring](https://github.com/somaz94/cicd-monitoring) | Production-ready CI/CD & monitoring stack for AWS/GCP/on-prem Kubernetes | ![Stars](https://img.shields.io/github/stars/somaz94/cicd-monitoring?style=flat-square&color=yellow) |
-| [kube-ctx](https://github.com/somaz94/kube-ctx) | Single-binary kubectx/kubens replacement with per-terminal context isolation, production guards, and a built-in fuzzy picker | ![Stars](https://img.shields.io/github/stars/somaz94/kube-ctx?style=flat-square&color=yellow) |
-| [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=flat-square&color=yellow) |
-| [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=flat-square&color=yellow) |
-| [git-bridge](https://github.com/somaz94/git-bridge) | Multi-provider Git mirror: CodeCommit, GitLab, GitHub any-to-any with webhooks & SQS | ![Stars](https://img.shields.io/github/stars/somaz94/git-bridge?style=flat-square&color=yellow) |
+| [compress-decompress](https://github.com/somaz94/compress-decompress) | GitHub Action for file compression/decompression | ![Stars](https://img.shields.io/github/stars/somaz94/compress-decompress?style=flat-square&color=FFC107) |
+| [network-policy-generator](https://github.com/somaz94/network-policy-generator) | Kubernetes operator that generates NetworkPolicy from a CRD | ![Stars](https://img.shields.io/github/stars/somaz94/network-policy-generator?style=flat-square&color=FFC107) |
+| [cicd-monitoring](https://github.com/somaz94/cicd-monitoring) | Production-ready CI/CD & monitoring stack for AWS/GCP/on-prem Kubernetes | ![Stars](https://img.shields.io/github/stars/somaz94/cicd-monitoring?style=flat-square&color=FFC107) |
+| [kube-ctx](https://github.com/somaz94/kube-ctx) | Single-binary kubectx/kubens replacement with per-terminal context isolation, production guards, and a built-in fuzzy picker | ![Stars](https://img.shields.io/github/stars/somaz94/kube-ctx?style=flat-square&color=FFC107) |
+| [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=flat-square&color=FFC107) |
+| [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=flat-square&color=FFC107) |
+| [git-bridge](https://github.com/somaz94/git-bridge) | Multi-provider Git mirror: CodeCommit, GitLab, GitHub any-to-any with webhooks & SQS | ![Stars](https://img.shields.io/github/stars/somaz94/git-bridge?style=flat-square&color=FFC107) |
 
 <br/>
 
