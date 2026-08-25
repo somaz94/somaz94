@@ -28,13 +28,13 @@ DevOps Engineer passionate about **Cloud Infrastructure**, **Kubernetes**, and *
 
 | Project | Description | Stars |
 |---------|------------|-------|
-| [compress-decompress](https://github.com/somaz94/compress-decompress) | GitHub Action for file compression/decompression | ![Stars](https://img.shields.io/github/stars/somaz94/compress-decompress?style=flat-square&color=FFC107) |
-| [network-policy-generator](https://github.com/somaz94/network-policy-generator) | Kubernetes operator that generates NetworkPolicy from a CRD | ![Stars](https://img.shields.io/github/stars/somaz94/network-policy-generator?style=flat-square&color=FFC107) |
-| [cicd-monitoring](https://github.com/somaz94/cicd-monitoring) | Production-ready CI/CD & monitoring stack for AWS/GCP/on-prem Kubernetes | ![Stars](https://img.shields.io/github/stars/somaz94/cicd-monitoring?style=flat-square&color=FFC107) |
-| [kube-ctx](https://github.com/somaz94/kube-ctx) | Single-binary kubectx/kubens replacement with per-terminal context isolation, production guards, and a built-in fuzzy picker | ![Stars](https://img.shields.io/github/stars/somaz94/kube-ctx?style=flat-square&color=FFC107) |
-| [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=flat-square&color=FFC107) |
-| [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=flat-square&color=FFC107) |
-| [git-bridge](https://github.com/somaz94/git-bridge) | Multi-provider Git mirror: CodeCommit, GitLab, GitHub any-to-any with webhooks & SQS | ![Stars](https://img.shields.io/github/stars/somaz94/git-bridge?style=flat-square&color=FFC107) |
+| [compress-decompress](https://github.com/somaz94/compress-decompress) | GitHub Action for file compression/decompression | ![Stars](https://img.shields.io/github/stars/somaz94/compress-decompress?style=social) |
+| [network-policy-generator](https://github.com/somaz94/network-policy-generator) | Kubernetes operator that generates NetworkPolicy from a CRD | ![Stars](https://img.shields.io/github/stars/somaz94/network-policy-generator?style=social) |
+| [cicd-monitoring](https://github.com/somaz94/cicd-monitoring) | Production-ready CI/CD & monitoring stack for AWS/GCP/on-prem Kubernetes | ![Stars](https://img.shields.io/github/stars/somaz94/cicd-monitoring?style=social) |
+| [kube-ctx](https://github.com/somaz94/kube-ctx) | Single-binary kubectx/kubens replacement with per-terminal context isolation, production guards, and a built-in fuzzy picker | ![Stars](https://img.shields.io/github/stars/somaz94/kube-ctx?style=social) |
+| [helios-lb](https://github.com/somaz94/helios-lb) | Kubernetes controller providing bare-metal LoadBalancer IP allocation (MetalLB-style) | ![Stars](https://img.shields.io/github/stars/somaz94/helios-lb?style=social) |
+| [k8s-namespace-sync](https://github.com/somaz94/k8s-namespace-sync) | Kubernetes controller that syncs Secrets/ConfigMaps across namespaces | ![Stars](https://img.shields.io/github/stars/somaz94/k8s-namespace-sync?style=social) |
+| [git-bridge](https://github.com/somaz94/git-bridge) | Multi-provider Git mirror: CodeCommit, GitLab, GitHub any-to-any with webhooks & SQS | ![Stars](https://img.shields.io/github/stars/somaz94/git-bridge?style=social) |
 
 <br/>
 
@@ -107,17 +107,18 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-122-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-76-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-123-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-74-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (198)</b></summary>
+<summary><b>View all contributions (197)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (35 · 22 merged)
+#### Gateway API HTTPRoute support · Helm charts (35 · 23 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | ✅ Merged |
 | nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | ✅ Merged |
 | BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | ✅ Merged |
 | nextcloud/helm | [#866](https://github.com/nextcloud/helm/pull/866) | Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect) | ✅ Merged |
@@ -144,7 +145,6 @@ Contributions to external open-source projects.
 | community-charts/helm-charts | [#537](https://github.com/community-charts/helm-charts/pull/537) | Opt-in Gateway API HTTPRoute for actualbudget chart | 🔵 Review |
 | community-charts/helm-charts | [#534](https://github.com/community-charts/helm-charts/pull/534) | Add opt-in Gateway API HTTPRoute support to the n8n Helm chart | 🔵 Review |
 | community-charts/helm-charts | [#533](https://github.com/community-charts/helm-charts/pull/533) | Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS | 🔵 Review |
-| prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | 🔵 Review |
 | keephq/helm-charts | [#198](https://github.com/keephq/helm-charts/pull/198) | Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183) | 🔵 Review |
 | goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (127 · 72 merged)
+#### Standalone contributions (126 · 72 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -234,7 +234,6 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | 🔵 Review |
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |
-| opencost/opencost | [#4003](https://github.com/opencost/opencost/pull/4003) | Restore a green format-check on develop by gofmt-ing the public pricing httpclient | 🔵 Review |
 | opencost/opencost | [#4002](https://github.com/opencost/opencost/pull/4002) | Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost | 🔵 Review |
 | external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
 | tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another | 🔵 Review |
