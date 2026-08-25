@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-123-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-74-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-125-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-72-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (197)</b></summary>
@@ -156,10 +156,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (126 · 72 merged)
+#### Standalone contributions (126 · 74 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | ✅ Merged |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | ✅ Merged |
@@ -181,6 +182,7 @@ Contributions to external open-source projects.
 | element-hq/ess-helm | [#1442](https://github.com/element-hq/ess-helm/pull/1442) | Add affinity support to component workloads | ✅ Merged |
 | stakater/Reloader | [#1181](https://github.com/stakater/Reloader/pull/1181) | Add runtimeClassName and schedulerName support to the Reloader Helm chart deployment | ✅ Merged |
 | open-telemetry/opentelemetry-go-contrib | [#9238](https://github.com/open-telemetry/opentelemetry-go-contrib/pull/9238) | Fix otelslog dropping error attributes nested inside a slog.Group | ✅ Merged |
+| apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | ✅ Merged |
 | open-feature/go-sdk | [#522](https://github.com/open-feature/go-sdk/pull/522) | Guard memprovider Resolve against a non-nil pointer to a nil ContextEvaluator func (panic fix) | ✅ Merged |
 | kubernetes-sigs/descheduler | [#1892](https://github.com/kubernetes-sigs/descheduler/pull/1892) | Added opt-in hostUsers (user-namespace sharing) to the descheduler Helm chart | ✅ Merged |
 | terraform-docs/terraform-docs | [#947](https://github.com/terraform-docs/terraform-docs/pull/947) | Render explicit null variable defaults as null (not "") in tfvars hcl output | ✅ Merged |
@@ -232,7 +234,6 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | 🔵 Review |
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |
 | opencost/opencost | [#4002](https://github.com/opencost/opencost/pull/4002) | Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost | 🔵 Review |
 | external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
@@ -252,7 +253,6 @@ Contributions to external open-source projects.
 | anchore/scan-action | [#726](https://github.com/anchore/scan-action/pull/726) | Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file) | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | kubeshark/kubeshark | [#1949](https://github.com/kubeshark/kubeshark/pull/1949) | Opt-in Prometheus Operator ServiceMonitor for the Helm chart's metrics services | 🔵 Review |
-| apache/gravitino | [#11917](https://github.com/apache/gravitino/pull/11917) | Add opt-in topologySpreadConstraints support to Gravitino/Iceberg-REST/Lance-REST Helm charts | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | 🔵 Review |
