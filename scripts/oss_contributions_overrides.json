@@ -636,5 +636,8 @@
   },
   "envoyproxy/gateway#9860": {
     "summary": "Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog"
+  },
+  "kubernetes-csi/external-resizer#610": {
+    "summary": "csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it"
   }
 }
