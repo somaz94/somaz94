@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-127-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-72-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-127-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-73-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (199)</b></summary>
+<summary><b>View all contributions (200)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (128 · 75 merged)
+#### Standalone contributions (129 · 75 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -235,6 +235,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| containerd/nerdctl | [#5174](https://github.com/containerd/nerdctl/pull/5174) | Only mark a container explicitly stopped when the signal actually stops it, so `nerdctl kill --signal=HUP` no longer disables a `--restart=always` policy | 🔵 Review |
 | kubernetes-csi/external-resizer | [#610](https://github.com/kubernetes-csi/external-resizer/pull/610) | csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it | 🔵 Review |
 | envoyproxy/gateway | [#9860](https://github.com/envoyproxy/gateway/pull/9860) | Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog | 🔵 Review |
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |

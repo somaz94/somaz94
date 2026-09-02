@@ -639,5 +639,8 @@
   },
   "kubernetes-csi/external-resizer#610": {
     "summary": "csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it"
+  },
+  "containerd/nerdctl#5174": {
+    "summary": "Only mark a container explicitly stopped when the signal actually stops it, so `nerdctl kill --signal=HUP` no longer disables a `--restart=always` policy"
   }
 }
