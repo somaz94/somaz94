@@ -642,5 +642,8 @@
   },
   "containerd/nerdctl#5174": {
     "summary": "Only mark a container explicitly stopped when the signal actually stops it, so `nerdctl kill --signal=HUP` no longer disables a `--restart=always` policy"
+  },
+  "kubernetes-sigs/kwok#1749": {
+    "summary": "Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward`"
   }
 }
