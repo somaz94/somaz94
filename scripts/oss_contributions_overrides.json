@@ -652,5 +652,8 @@
   "cilium/cilium#48540": {
     "category": "misc",
     "summary": "gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener"
+  },
+  "kubernetes-sigs/external-dns#6709": {
+    "summary": "Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6)"
   }
 }
