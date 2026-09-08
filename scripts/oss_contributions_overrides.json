@@ -645,5 +645,8 @@
   },
   "kubernetes-sigs/kwok#1749": {
     "summary": "Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward`"
+  },
+  "cert-manager/cert-manager#9305": {
+    "summary": "Reject Certificate renewal windows that can never be reached within the certificate lifetime, in the admission webhook"
   }
 }

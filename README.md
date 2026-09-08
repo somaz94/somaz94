@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-130-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-130-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-71-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (200)</b></summary>
+<summary><b>View all contributions (201)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (129 · 78 merged)
+#### Standalone contributions (130 · 78 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -238,6 +238,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| cert-manager/cert-manager | [#9305](https://github.com/cert-manager/cert-manager/pull/9305) | Reject Certificate renewal windows that can never be reached within the certificate lifetime, in the admission webhook | 🔵 Review |
 | containerd/nerdctl | [#5174](https://github.com/containerd/nerdctl/pull/5174) | Only mark a container explicitly stopped when the signal actually stops it, so `nerdctl kill --signal=HUP` no longer disables a `--restart=always` policy | 🔵 Review |
 | kubernetes-csi/external-resizer | [#610](https://github.com/kubernetes-csi/external-resizer/pull/610) | csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it | 🔵 Review |
 | envoyproxy/gateway | [#9860](https://github.com/envoyproxy/gateway/pull/9860) | Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog | 🔵 Review |
