@@ -655,5 +655,8 @@
   },
   "kubernetes-sigs/external-dns#6709": {
     "summary": "Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6)"
+  },
+  "kubevela/pkg#140": {
+    "summary": "Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value"
   }
 }
