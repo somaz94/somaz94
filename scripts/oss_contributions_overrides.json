@@ -648,5 +648,9 @@
   },
   "cert-manager/cert-manager#9305": {
     "summary": "Reject Certificate renewal windows that can never be reached within the certificate lifetime, in the admission webhook"
+  },
+  "cilium/cilium#48540": {
+    "category": "misc",
+    "summary": "gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener"
   }
 }
