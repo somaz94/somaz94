@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (201)</b></summary>
+<summary><b>View all contributions (202)</b></summary>
 
 <br/>
 
@@ -121,6 +121,7 @@ Contributions to external open-source projects.
 | prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | ✅ Merged |
 | nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | ✅ Merged |
 | BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | ✅ Merged |
+| goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | ✅ Merged |
 | nextcloud/helm | [#866](https://github.com/nextcloud/helm/pull/866) | Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect) | ✅ Merged |
 | prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
@@ -142,7 +143,6 @@ Contributions to external open-source projects.
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
-| goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | ✅ Merged |
 | nocodb/nocodb | [#14272](https://github.com/nocodb/nocodb/pull/14272) | Add opt-in Gateway API HTTPRoute support to the Helm chart | 🔵 Review |
 | community-charts/helm-charts | [#537](https://github.com/community-charts/helm-charts/pull/537) | Opt-in Gateway API HTTPRoute for actualbudget chart | 🔵 Review |
 | community-charts/helm-charts | [#534](https://github.com/community-charts/helm-charts/pull/534) | Add opt-in Gateway API HTTPRoute support to the n8n Helm chart | 🔵 Review |
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (131 · 79 merged)
+#### Standalone contributions (132 · 79 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -239,6 +239,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | 🔵 Review |
 | kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | 🔵 Review |
 | kubernetes-sigs/external-dns | [#6709](https://github.com/kubernetes-sigs/external-dns/pull/6709) | Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6) | 🔵 Review |
 | cilium/cilium | [#48540](https://github.com/cilium/cilium/pull/48540) | gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener | 🔵 Review |
