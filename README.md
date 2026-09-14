@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-71-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (202)</b></summary>
+<summary><b>View all contributions (203)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (132 · 79 merged)
+#### Standalone contributions (133 · 79 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -239,6 +239,7 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| tektoncd/cli | [#3245](https://github.com/tektoncd/cli/pull/3245) | Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection) | 🔵 Review |
 | cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | 🔵 Review |
 | kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | 🔵 Review |
 | kubernetes-sigs/external-dns | [#6709](https://github.com/kubernetes-sigs/external-dns/pull/6709) | Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6) | 🔵 Review |

@@ -661,5 +661,8 @@
   },
   "cert-manager/cert-manager#9353": {
     "summary": "Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond"
+  },
+  "tektoncd/cli#3245": {
+    "summary": "Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection)"
   }
 }
