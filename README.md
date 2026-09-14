@@ -107,14 +107,14 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-131-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-71-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (202)</b></summary>
 
 <br/>
 
-#### Gateway API HTTPRoute support · Helm charts (35 · 24 merged)
+#### Gateway API HTTPRoute support · Helm charts (35 · 25 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -142,12 +142,12 @@ Contributions to external open-source projects.
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
+| goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | ✅ Merged |
 | nocodb/nocodb | [#14272](https://github.com/nocodb/nocodb/pull/14272) | Add opt-in Gateway API HTTPRoute support to the Helm chart | 🔵 Review |
 | community-charts/helm-charts | [#537](https://github.com/community-charts/helm-charts/pull/537) | Opt-in Gateway API HTTPRoute for actualbudget chart | 🔵 Review |
 | community-charts/helm-charts | [#534](https://github.com/community-charts/helm-charts/pull/534) | Add opt-in Gateway API HTTPRoute support to the n8n Helm chart | 🔵 Review |
 | community-charts/helm-charts | [#533](https://github.com/community-charts/helm-charts/pull/533) | Opt-in Gateway API HTTPRoute for the MLflow chart, with hostnames auto-merged into the server security-middleware allowed-hosts/CORS | 🔵 Review |
 | keephq/helm-charts | [#198](https://github.com/keephq/helm-charts/pull/198) | Add opt-in Gateway API HTTPRoute support to the Keep Helm chart (closes #183) | 🔵 Review |
-| goharbor/harbor-helm | [#2386](https://github.com/goharbor/harbor-helm/pull/2386) | Fixed HTTPRoute rendering crash on empty default parentRefs/hosts in the Harbor Helm chart (Gateway API expose.type=route) | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
