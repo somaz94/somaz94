@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-133-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-134-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (203)</b></summary>
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (133 · 79 merged)
+#### Standalone contributions (133 · 80 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -219,6 +219,7 @@ Contributions to external open-source projects.
 | longhorn/longhorn | [#13378](https://github.com/longhorn/longhorn/pull/13378) | Add an opt-in PodDisruptionBudget to the Longhorn UI Deployment in the Helm chart | ✅ Merged |
 | kedacore/charts | [#881](https://github.com/kedacore/charts/pull/881) | Make the KEDA operator gRPC metrics service port configurable (#511) | ✅ Merged |
 | anchore/grype | [#3519](https://github.com/anchore/grype/pull/3519) | Add vulnerable version ranges to the CycloneDX output format (closes #3512) | ✅ Merged |
+| amacneil/dbmate | [#803](https://github.com/amacneil/dbmate/pull/803) | Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait` | ✅ Merged |
 | fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add umask option to the <system> directive | ✅ Merged |
 | kudobuilder/kuttl | [#694](https://github.com/kudobuilder/kuttl/pull/694) | Fix flaky integration test by randomizing namespace (prevents -count collision) | ✅ Merged |
 | kedacore/charts | [#880](https://github.com/kedacore/charts/pull/880) | Add an opt-in hostUsers field to the KEDA operator, metrics server and webhooks pods (user namespaces) | ✅ Merged |
@@ -278,7 +279,6 @@ Contributions to external open-source projects.
 | argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
-| amacneil/dbmate | [#803](https://github.com/amacneil/dbmate/pull/803) | Add `--wait-interval` flag and `DBMATE_WAIT_INTERVAL` env var to configure the delay between connection attempts for `--wait` | 🔵 Review |
 | metallb/metallb | [#3076](https://github.com/metallb/metallb/pull/3076) | Remove deprecated metallb.universe.tf managed annotation lingering on Services after upgrade | 🔵 Review |
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
