@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-132-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-71-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-133-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (203)</b></summary>
@@ -296,7 +296,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### GitHub Action `version-file` inputs (14 · 8 merged)
+#### GitHub Action `version-file` inputs (14 · 9 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -305,13 +305,13 @@ Contributions to external open-source projects.
 | buildpacks/github-actions | [#428](https://github.com/buildpacks/github-actions/pull/428) | Add pack-version-file input and default-on SHA256 download verification to the setup-pack action | ✅ Merged |
 | yokawasa/action-setup-kube-tools | [#98](https://github.com/yokawasa/action-setup-kube-tools/pull/98) | Add a version-file (.tool-versions) input to pin tool versions from a file | ✅ Merged |
 | astral-sh/setup-uv | [#918](https://github.com/astral-sh/setup-uv/pull/918) | Add `uv.lock` as a `version-file` source so the exact pinned uv version is installed for deterministic CI | ✅ Merged |
+| helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | ✅ Merged |
 | terraform-linters/setup-tflint | [#448](https://github.com/terraform-linters/setup-tflint/pull/448) | Add a `tflint_version_file` input to pin the TFLint version from an asdf/mise `.tool-versions` or plain version file | ✅ Merged |
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
 | denoland/setup-deno | [#133](https://github.com/denoland/setup-deno/pull/133) | Parse dvm's key=value .dvmrc format in the deno-version-file input | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
-| helm/kind-action | [#162](https://github.com/helm/kind-action/pull/162) | Add version_file input to load the kind version from an asdf .tool-versions or plain version file | 🔵 Review |
 | extractions/setup-just | [#29](https://github.com/extractions/setup-just/pull/29) | Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file | 🔵 Review |
 | actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
 
