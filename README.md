@@ -89,6 +89,9 @@ Contributions to external open-source projects.
 |---|---|---|
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute support for the API server |
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support |
+| go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first |
+| k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to the SANs before generating the apiserver serving certificate |
+| prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | Wire the cilium scrape port variables into the Helm values template so they stop being no-ops |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies |
@@ -99,11 +102,7 @@ Contributions to external open-source projects.
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fix a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
-| kubernetes-sigs/headlamp | [#6148](https://github.com/kubernetes-sigs/headlamp/pull/6148) | Replace the `any` return type of KubeObject.apiList with a typed value in the dashboard frontend |
-| stern/stern | [#373](https://github.com/stern/stern/pull/373) | Support nested-field extraction via dot notation in the JSON extraction template funcs |
-| argoproj-labs/terraform-provider-argocd | [#912](https://github.com/argoproj-labs/terraform-provider-argocd/pull/912) | Add gitea labels filter to the application_set pull_request generator |
-| pypa/pipx | [#1842](https://github.com/pypa/pipx/pull/1842) | Add a --dry-run flag to `pipx ensurepath` to preview PATH changes without writing shell config |
-| opentofu/setup-opentofu | [#121](https://github.com/opentofu/setup-opentofu/pull/121) | Verify the downloaded OpenTofu CLI against the release's published SHA256SUMS by default |
+| argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set |
 
 <!-- OSS:START -->
 
