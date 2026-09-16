@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-134-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-134-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-68-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (203)</b></summary>
+<summary><b>View all contributions (202)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (133 · 80 merged)
+#### Standalone contributions (132 · 80 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -283,7 +283,6 @@ Contributions to external open-source projects.
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add typed Retry-After HTTP header accessor | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
-| grafana/cloudcost-exporter | [#1051](https://github.com/grafana/cloudcost-exporter/pull/1051) | Opt-in leader election so multi-replica deployments make a single set of cloud provider API calls | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
 | hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
