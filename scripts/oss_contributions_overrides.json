@@ -664,5 +664,8 @@
   },
   "tektoncd/cli#3245": {
     "summary": "Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection)"
+  },
+  "rancher/cluster-api-provider-rke2#1047": {
+    "summary": "Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive"
   }
 }
