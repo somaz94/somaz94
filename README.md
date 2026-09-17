@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-136-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-138-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (206)</b></summary>
+<summary><b>View all contributions (207)</b></summary>
 
 <br/>
 
@@ -155,10 +155,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (136 · 82 merged)
+#### Standalone contributions (137 · 84 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip hooks in the --take-ownership ownership check (#782) | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
 | zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | ✅ Merged |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
@@ -237,6 +238,7 @@ Contributions to external open-source projects.
 | open-telemetry/opentelemetry-helm-charts | [#2258](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2258) | Honor schedulerName in daemonset and statefulset collector modes | ✅ Merged |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components | ✅ Merged |
 | jaegertracing/helm-charts | [#761](https://github.com/jaegertracing/helm-charts/pull/761) | Restore extraVolumes/extraVolumeMounts on the all-in-one deployment | ✅ Merged |
+| helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
@@ -290,7 +292,6 @@ Contributions to external open-source projects.
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
 | hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
-| helm/chart-testing-action | [#210](https://github.com/helm/chart-testing-action/pull/210) | Report a clear error when blob verification fails | 🔵 Review |
 | percona/percona-helm-charts | [#862](https://github.com/percona/percona-helm-charts/pull/862) | pmm gRPC ClusterIP nodePort fix | 🔵 Review |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 Review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
