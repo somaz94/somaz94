@@ -673,5 +673,8 @@
   },
   "mariadb-operator/mariadb-operator#1907": {
     "summary": "Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup"
+  },
+  "woodpecker-ci/woodpecker#7158": {
+    "summary": "Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout"
   }
 }

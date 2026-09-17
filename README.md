@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-136-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-136-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (205)</b></summary>
+<summary><b>View all contributions (206)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (135 · 82 merged)
+#### Standalone contributions (136 · 82 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -241,6 +241,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
 | k8ssandra/k8ssandra-operator | [#1795](https://github.com/k8ssandra/k8ssandra-operator/pull/1795) | Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC | 🔵 Review |
 | rancher/cluster-api-provider-rke2 | [#1047](https://github.com/rancher/cluster-api-provider-rke2/pull/1047) | Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive | 🔵 Review |
