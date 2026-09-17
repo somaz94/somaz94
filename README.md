@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-136-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-67-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-136-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-69-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (203)</b></summary>
+<summary><b>View all contributions (205)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (133 · 82 merged)
+#### Standalone contributions (135 · 82 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -241,6 +241,8 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
+| k8ssandra/k8ssandra-operator | [#1795](https://github.com/k8ssandra/k8ssandra-operator/pull/1795) | Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC | 🔵 Review |
 | rancher/cluster-api-provider-rke2 | [#1047](https://github.com/rancher/cluster-api-provider-rke2/pull/1047) | Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive | 🔵 Review |
 | tektoncd/cli | [#3245](https://github.com/tektoncd/cli/pull/3245) | Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection) | 🔵 Review |
 | cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | 🔵 Review |

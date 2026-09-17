@@ -667,5 +667,11 @@
   },
   "rancher/cluster-api-provider-rke2#1047": {
     "summary": "Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive"
+  },
+  "k8ssandra/k8ssandra-operator#1795": {
+    "summary": "Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC"
+  },
+  "mariadb-operator/mariadb-operator#1907": {
+    "summary": "Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup"
   }
 }
