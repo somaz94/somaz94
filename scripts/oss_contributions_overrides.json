@@ -682,5 +682,11 @@
   },
   "antrea-io/antrea#8436": {
     "summary": "Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords"
+  },
+  "projectcalico/calico#13979": {
+    "summary": "Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas"
+  },
+  "oras-project/oras#2174": {
+    "summary": "Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it"
   }
 }
