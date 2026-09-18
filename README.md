@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-138-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-70-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-138-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-73-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (208)</b></summary>
+<summary><b>View all contributions (211)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (138 · 84 merged)
+#### Standalone contributions (141 · 84 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -243,6 +243,9 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
+| oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | 🔵 Review |
+| projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |

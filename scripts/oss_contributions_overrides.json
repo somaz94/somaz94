@@ -688,5 +688,8 @@
   },
   "oras-project/oras#2174": {
     "summary": "Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it"
+  },
+  "moby/buildkit#7169": {
+    "summary": "Use the user's default group for a trailing colon in COPY --chown"
   }
 }
