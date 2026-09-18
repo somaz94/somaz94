@@ -676,5 +676,8 @@
   },
   "woodpecker-ci/woodpecker#7158": {
     "summary": "Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout"
+  },
+  "databus23/helm-diff#1074": {
+    "summary": "Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff"
   }
 }
