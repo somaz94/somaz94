@@ -106,7 +106,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-138-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-75-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-140-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-73-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (213)</b></summary>
@@ -155,15 +155,17 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (143 · 84 merged)
+#### Standalone contributions (143 · 86 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | ✅ Merged |
 | databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
 | zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | ✅ Merged |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
+| tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another | ✅ Merged |
 | argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set | ✅ Merged |
 | reviewdog/action-shellcheck | [#102](https://github.com/reviewdog/action-shellcheck/pull/102) | Fix word-splitting so shell file paths containing spaces are linted instead of silently skipped | ✅ Merged |
 | prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) | ✅ Merged |
@@ -247,7 +249,6 @@ Contributions to external open-source projects.
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | 🔵 Review |
 | moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
 | oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | 🔵 Review |
-| projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
@@ -265,7 +266,6 @@ Contributions to external open-source projects.
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |
 | opencost/opencost | [#4002](https://github.com/opencost/opencost/pull/4002) | Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost | 🔵 Review |
 | external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
-| tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another | 🔵 Review |
 | argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add preferred type to retry nodeAntiAffinity. Fixes #13969 | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
 | dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
