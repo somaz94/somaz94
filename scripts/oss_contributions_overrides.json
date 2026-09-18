@@ -679,5 +679,8 @@
   },
   "databus23/helm-diff#1074": {
     "summary": "Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff"
+  },
+  "antrea-io/antrea#8436": {
+    "summary": "Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords"
   }
 }
