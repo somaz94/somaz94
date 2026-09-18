@@ -691,5 +691,11 @@
   },
   "moby/buildkit#7169": {
     "summary": "Use the user's default group for a trailing colon in COPY --chown"
+  },
+  "nginx/nginx-gateway-fabric#5951": {
+    "summary": "Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules"
+  },
+  "nginx/nginx-gateway-fabric#5953": {
+    "summary": "Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list"
   }
 }
