@@ -697,5 +697,8 @@
   },
   "nginx/nginx-gateway-fabric#5953": {
     "summary": "Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list"
+  },
+  "open-telemetry/opentelemetry-operator#5628": {
+    "summary": "Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries"
   }
 }

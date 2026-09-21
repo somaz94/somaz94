@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-140-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-73-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-140-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-74-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (213)</b></summary>
+<summary><b>View all contributions (214)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (143 · 86 merged)
+#### Standalone contributions (144 · 86 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -245,6 +245,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | 🔵 Review |
 | moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
