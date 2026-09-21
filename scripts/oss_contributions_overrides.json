@@ -700,5 +700,8 @@
   },
   "open-telemetry/opentelemetry-operator#5628": {
     "summary": "Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries"
+  },
+  "argoproj-labs/gitops-promoter#2056": {
+    "summary": "Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes"
   }
 }
