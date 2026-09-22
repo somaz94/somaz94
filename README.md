@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-141-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-141-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (219)</b></summary>
+<summary><b>View all contributions (220)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (149 · 87 merged)
+#### Standalone contributions (150 · 87 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -246,6 +246,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| fluent/fluent-operator | [#2063](https://github.com/fluent/fluent-operator/pull/2063) | Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp | 🔵 Review |
 | dapr/cli | [#1710](https://github.com/dapr/cli/pull/1710) | Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars | 🔵 Review |
 | kubernetes-csi/external-snapshotter | [#1489](https://github.com/kubernetes-csi/external-snapshotter/pull/1489) | csi-snapshotter: stop the sidecar's own VolumeGroupSnapshotContent writes from bypassing the requeue backoff and flooding the driver with CreateVolumeGroupSnapshot calls | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |

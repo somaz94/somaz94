@@ -715,5 +715,8 @@
   },
   "dapr/cli#1710": {
     "summary": "Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars"
+  },
+  "fluent/fluent-operator#2063": {
+    "summary": "Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp"
   }
 }
