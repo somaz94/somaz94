@@ -724,5 +724,8 @@
   },
   "falcosecurity/falcosidekick#1446": {
     "summary": "Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor"
+  },
+  "anchore/syft#5321": {
+    "summary": "Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue"
   }
 }
