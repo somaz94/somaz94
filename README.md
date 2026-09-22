@@ -106,7 +106,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-140-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-75-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-141-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-74-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (215)</b></summary>
@@ -155,10 +155,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (145 · 86 merged)
+#### Standalone contributions (145 · 87 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | ✅ Merged |
 | projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | ✅ Merged |
 | databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
@@ -247,7 +248,6 @@ Contributions to external open-source projects.
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | argoproj-labs/gitops-promoter | [#2056](https://github.com/argoproj-labs/gitops-promoter/pull/2056) | Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes | 🔵 Review |
 | open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | 🔵 Review |
-| nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | 🔵 Review |
 | moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
 | oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | 🔵 Review |
