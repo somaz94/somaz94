@@ -92,12 +92,12 @@ Contributions to external open-source projects.
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to the SANs before generating the apiserver serving certificate |
 | prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) |
-| kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | Wire the cilium scrape port variables into the Helm values template so they stop being no-ops |
+| projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver |
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies |
 | getmoto/moto | [#10062](https://github.com/getmoto/moto/pull/10062) | Add EC2 snapshot tiering APIs (archive / describe-status / restore) |
 | anchore/grype | [#3519](https://github.com/anchore/grype/pull/3519) | Add vulnerable version ranges to the CycloneDX output format |
-| fluent/fluentd | [#5390](https://github.com/fluent/fluentd/pull/5390) | Add `umask` option to the `<system>` directive |
+| tektoncd/pipeline | [#10548](https://github.com/tektoncd/pipeline/pull/10548) | Filter ResolutionRequests by the resolver's own label selector on leader promotion, so one resolver no longer fails requests owned by another |
 | fluxcd/flux2 | [#5975](https://github.com/fluxcd/flux2/pull/5975) | Add an opt-in `version-file` input to the Flux CLI GitHub Action |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fix a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
