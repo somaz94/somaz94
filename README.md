@@ -106,7 +106,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-141-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-144-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (223)</b></summary>
@@ -155,11 +155,14 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (153 · 87 merged)
+#### Standalone contributions (153 · 90 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| falcosecurity/falcosidekick | [#1446](https://github.com/falcosecurity/falcosidekick/pull/1446) | Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor | ✅ Merged |
+| argoproj-labs/gitops-promoter | [#2056](https://github.com/argoproj-labs/gitops-promoter/pull/2056) | Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | ✅ Merged |
+| oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | ✅ Merged |
 | projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | ✅ Merged |
 | databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
@@ -247,18 +250,15 @@ Contributions to external open-source projects.
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
 | anchore/syft | [#5321](https://github.com/anchore/syft/pull/5321) | Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue | 🔵 Review |
-| falcosecurity/falcosidekick | [#1446](https://github.com/falcosecurity/falcosidekick/pull/1446) | Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor | 🔵 Review |
 | kubernetes-sigs/kustomize | [#6287](https://github.com/kubernetes-sigs/kustomize/pull/6287) | Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation | 🔵 Review |
 | fluent/fluent-operator | [#2063](https://github.com/fluent/fluent-operator/pull/2063) | Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp | 🔵 Review |
 | dapr/cli | [#1710](https://github.com/dapr/cli/pull/1710) | Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars | 🔵 Review |
 | kubernetes-csi/external-snapshotter | [#1489](https://github.com/kubernetes-csi/external-snapshotter/pull/1489) | csi-snapshotter: stop the sidecar's own VolumeGroupSnapshotContent writes from bypassing the requeue backoff and flooding the driver with CreateVolumeGroupSnapshot calls | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |
 | istio/istio | [#61851](https://github.com/istio/istio/pull/61851) | Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs | 🔵 Review |
-| argoproj-labs/gitops-promoter | [#2056](https://github.com/argoproj-labs/gitops-promoter/pull/2056) | Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes | 🔵 Review |
 | open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | 🔵 Review |
 | moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
-| oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
