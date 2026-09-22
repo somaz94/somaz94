@@ -721,5 +721,8 @@
   },
   "kubernetes-sigs/kustomize#6287": {
     "summary": "Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation"
+  },
+  "falcosecurity/falcosidekick#1446": {
+    "summary": "Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor"
   }
 }
