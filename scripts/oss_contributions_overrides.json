@@ -703,5 +703,17 @@
   },
   "argoproj-labs/gitops-promoter#2056": {
     "summary": "Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes"
+  },
+  "istio/istio#61851": {
+    "summary": "Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs"
+  },
+  "zalando/postgres-operator#3189": {
+    "summary": "Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned"
+  },
+  "kubernetes-csi/external-snapshotter#1489": {
+    "summary": "csi-snapshotter: stop the sidecar's own VolumeGroupSnapshotContent writes from bypassing the requeue backoff and flooding the driver with CreateVolumeGroupSnapshot calls"
+  },
+  "dapr/cli#1710": {
+    "summary": "Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars"
   }
 }
