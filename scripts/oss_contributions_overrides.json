@@ -718,5 +718,8 @@
   },
   "fluent/fluent-operator#2063": {
     "summary": "Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp"
+  },
+  "kubernetes-sigs/kustomize#6287": {
+    "summary": "Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation"
   }
 }
