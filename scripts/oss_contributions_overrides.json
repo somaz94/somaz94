@@ -727,5 +727,8 @@
   },
   "anchore/syft#5321": {
     "summary": "Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue"
+  },
+  "prometheus-community/helm-charts#7310": {
+    "summary": "Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready"
   }
 }
