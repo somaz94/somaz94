@@ -730,5 +730,8 @@
   },
   "prometheus-community/helm-charts#7310": {
     "summary": "Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready"
+  },
+  "abiosoft/colima#1642": {
+    "summary": "Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted"
   }
 }
