@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-77-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (225)</b></summary>
+<summary><b>View all contributions (224)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (155 · 93 merged)
+#### Standalone contributions (154 · 93 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -261,7 +261,6 @@ Contributions to external open-source projects.
 | istio/istio | [#61851](https://github.com/istio/istio/pull/61851) | Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs | 🔵 Review |
 | open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | 🔵 Review |
-| moby/buildkit | [#7169](https://github.com/moby/buildkit/pull/7169) | Use the user's default group for a trailing colon in COPY --chown | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
