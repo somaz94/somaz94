@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (226)</b></summary>
+<summary><b>View all contributions (227)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (156 · 93 merged)
+#### Standalone contributions (157 · 93 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -252,6 +252,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| slackhq/nebula | [#1902](https://github.com/slackhq/nebula/pull/1902) | Parse `tun.unsafe_routes` `mtu`, `metric` and gateway `weight` like `install`, so quoted values are honored and float, bool or empty ones no longer panic, also on SIGHUP reload | 🔵 Review |
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
 | grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | 🔵 Review |
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |

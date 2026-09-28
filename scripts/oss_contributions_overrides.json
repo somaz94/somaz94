@@ -742,5 +742,8 @@
   },
   "getsops/sops#2305": {
     "summary": "Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error"
+  },
+  "slackhq/nebula#1902": {
+    "summary": "Parse `tun.unsafe_routes` `mtu`, `metric` and gateway `weight` like `install`, so quoted values are honored and float, bool or empty ones no longer panic, also on SIGHUP reload"
   }
 }
