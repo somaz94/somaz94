@@ -739,5 +739,8 @@
   },
   "grpc-ecosystem/grpc-gateway#7419": {
     "summary": "Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary"
+  },
+  "getsops/sops#2305": {
+    "summary": "Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error"
   }
 }

@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-78-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-79-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (225)</b></summary>
+<summary><b>View all contributions (226)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (155 · 93 merged)
+#### Standalone contributions (156 · 93 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -252,6 +252,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
 | grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | 🔵 Review |
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
 | prometheus-community/helm-charts | [#7310](https://github.com/prometheus-community/helm-charts/pull/7310) | Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready | 🔵 Review |
