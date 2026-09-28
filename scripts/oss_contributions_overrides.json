@@ -736,5 +736,8 @@
   },
   "grafana/loki#24775": {
     "summary": "Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics"
+  },
+  "grpc-ecosystem/grpc-gateway#7419": {
+    "summary": "Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary"
   }
 }
