@@ -733,5 +733,8 @@
   },
   "abiosoft/colima#1642": {
     "summary": "Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted"
+  },
+  "grafana/loki#24775": {
+    "summary": "Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics"
   }
 }
