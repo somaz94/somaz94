@@ -751,5 +751,8 @@
   },
   "rclone/rclone#10000": {
     "summary": "Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use"
+  },
+  "tailscale/tailscale#21526": {
+    "summary": "Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts"
   }
 }
