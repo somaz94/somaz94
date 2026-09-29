@@ -748,5 +748,8 @@
   },
   "crowdsecurity/crowdsec#4712": {
     "summary": "Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist"
+  },
+  "rclone/rclone#10000": {
+    "summary": "Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use"
   }
 }
