@@ -106,7 +106,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-147-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-81-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-148-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-80-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (228)</b></summary>
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (158 · 93 merged)
+#### Standalone contributions (158 · 94 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -167,6 +167,7 @@ Contributions to external open-source projects.
 | oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | ✅ Merged |
 | projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | ✅ Merged |
 | databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff | ✅ Merged |
+| kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | ✅ Merged |
 | kubernetes-sigs/external-dns | [#6709](https://github.com/kubernetes-sigs/external-dns/pull/6709) | Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6) | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
 | zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | ✅ Merged |
@@ -273,7 +274,6 @@ Contributions to external open-source projects.
 | rancher/cluster-api-provider-rke2 | [#1047](https://github.com/rancher/cluster-api-provider-rke2/pull/1047) | Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive | 🔵 Review |
 | tektoncd/cli | [#3245](https://github.com/tektoncd/cli/pull/3245) | Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection) | 🔵 Review |
 | cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | 🔵 Review |
-| kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | 🔵 Review |
 | cilium/cilium | [#48540](https://github.com/cilium/cilium/pull/48540) | gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener | 🔵 Review |
 | cert-manager/cert-manager | [#9305](https://github.com/cert-manager/cert-manager/pull/9305) | Reject Certificate renewal windows that can never be reached within the certificate lifetime, in the admission webhook | 🔵 Review |
 | containerd/nerdctl | [#5174](https://github.com/containerd/nerdctl/pull/5174) | Only mark a container explicitly stopped when the signal actually stops it, so `nerdctl kill --signal=HUP` no longer disables a `--restart=always` policy | 🔵 Review |
