@@ -757,5 +757,8 @@
   },
   "pulumi/pulumi#24939": {
     "summary": "Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it"
+  },
+  "photoprism/photoprism#5872": {
+    "summary": "Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request"
   }
 }
