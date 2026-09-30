@@ -754,5 +754,8 @@
   },
   "tailscale/tailscale#21526": {
     "summary": "Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts"
+  },
+  "pulumi/pulumi#24939": {
+    "summary": "Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it"
   }
 }

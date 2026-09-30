@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-148-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-148-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-83-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (230)</b></summary>
+<summary><b>View all contributions (231)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (160 · 94 merged)
+#### Standalone contributions (161 · 94 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -253,6 +253,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
 | rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | 🔵 Review |
 | crowdsecurity/crowdsec | [#4712](https://github.com/crowdsecurity/crowdsec/pull/4712) | Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist | 🔵 Review |
