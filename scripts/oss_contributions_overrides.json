@@ -766,5 +766,8 @@
   },
   "go-gitea/gitea#39519": {
     "summary": "Stable repo list pagination with an id tiebreaker"
+  },
+  "trufflesecurity/trufflehog#5378": {
+    "summary": "Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit"
   }
 }
