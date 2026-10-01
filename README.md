@@ -106,10 +106,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-150-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-82-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-150-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-83-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (232)</b></summary>
+<summary><b>View all contributions (233)</b></summary>
 
 <br/>
 
@@ -155,7 +155,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (162 · 96 merged)
+#### Standalone contributions (163 · 96 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -255,6 +255,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | 🔵 Review |
 | photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
 | rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | 🔵 Review |

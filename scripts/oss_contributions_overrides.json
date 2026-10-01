@@ -760,5 +760,8 @@
   },
   "photoprism/photoprism#5872": {
     "summary": "Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request"
+  },
+  "lima-vm/lima#5554": {
+    "summary": "Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks"
   }
 }
