@@ -763,5 +763,8 @@
   },
   "lima-vm/lima#5554": {
     "summary": "Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks"
+  },
+  "go-gitea/gitea#39519": {
+    "summary": "Stable repo list pagination with an id tiebreaker"
   }
 }
