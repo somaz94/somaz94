@@ -91,6 +91,7 @@ Contributions to external open-source projects.
 | elastic/elasticsearch | [#151614](https://github.com/elastic/elasticsearch/pull/151614) | S3 snapshot repository: EKS Pod Identity credential support |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to the SANs before generating the apiserver serving certificate |
+| pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Lock the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone |
 | prometheus-operator/prometheus-operator | [#8728](https://github.com/prometheus-operator/prometheus-operator/pull/8728) | Add spec.retentionPercentage to the Prometheus CRD for percentage-based TSDB retention (Prometheus >= v3.11.0) |
 | projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas |
 | open-telemetry/opentelemetry-collector-contrib | [#49146](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/49146) | Add opt-in TLS support to the memcached receiver |
