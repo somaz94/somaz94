@@ -769,5 +769,8 @@
   },
   "trufflesecurity/trufflehog#5378": {
     "summary": "Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit"
+  },
+  "git-lfs/git-lfs#6356": {
+    "summary": "Pass `<transport>://<address>` remote helper URLs through unchanged, as Git does, instead of misreading them as SSH endpoints for a host named after the transport"
   }
 }
