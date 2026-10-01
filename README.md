@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-150-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-150-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (236)</b></summary>
+<summary><b>View all contributions (237)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (166 · 96 merged)
+#### Standalone contributions (167 · 96 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -256,6 +256,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| distribution/distribution | [#4995](https://github.com/distribution/distribution/pull/4995) | Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice | 🔵 Review |
 | git-lfs/git-lfs | [#6356](https://github.com/git-lfs/git-lfs/pull/6356) | Pass `<transport>://<address>` remote helper URLs through unchanged, as Git does, instead of misreading them as SSH endpoints for a host named after the transport | 🔵 Review |
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
