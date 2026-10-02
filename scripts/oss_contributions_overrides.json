@@ -781,5 +781,8 @@
   },
   "hashicorp/packer#13716": {
     "summary": "Keep `PACKER_GITHUB_API_TOKEN` on redirected requests, so installing a plugin whose GitHub repository was renamed or transferred no longer falls back to the anonymous rate limit and blocks the plugins installed after it"
+  },
+  "goss-org/goss#1136": {
+    "summary": "Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss"
   }
 }
