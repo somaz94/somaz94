@@ -778,5 +778,8 @@
   },
   "pulumi/pulumi#24986": {
     "summary": "Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0`"
+  },
+  "hashicorp/packer#13716": {
+    "summary": "Keep `PACKER_GITHUB_API_TOKEN` on redirected requests, so installing a plugin whose GitHub repository was renamed or transferred no longer falls back to the anonymous rate limit and blocks the plugins installed after it"
   }
 }
