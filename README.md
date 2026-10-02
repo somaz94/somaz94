@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-150-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-151-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (237)</b></summary>
+<summary><b>View all contributions (238)</b></summary>
 
 <br/>
 
@@ -156,10 +156,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (167 · 96 merged)
+#### Standalone contributions (168 · 97 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
 | pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it | ✅ Merged |
 | abiosoft/colima | [#1642](https://github.com/abiosoft/colima/pull/1642) | Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted | ✅ Merged |
 | anchore/syft | [#5321](https://github.com/anchore/syft/pull/5321) | Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue | ✅ Merged |
@@ -256,11 +257,11 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | 🔵 Review |
 | distribution/distribution | [#4995](https://github.com/distribution/distribution/pull/4995) | Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice | 🔵 Review |
 | git-lfs/git-lfs | [#6356](https://github.com/git-lfs/git-lfs/pull/6356) | Pass `<transport>://<address>` remote helper URLs through unchanged, as Git does, instead of misreading them as SSH endpoints for a host named after the transport | 🔵 Review |
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
-| lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | 🔵 Review |
 | photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
 | rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | 🔵 Review |

@@ -775,5 +775,8 @@
   },
   "distribution/distribution#4995": {
     "summary": "Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice"
+  },
+  "pulumi/pulumi#24986": {
+    "summary": "Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0`"
   }
 }
