@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-152-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-153-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (241)</b></summary>
+<summary><b>View all contributions (242)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (171 · 98 merged)
+#### Standalone contributions (172 · 99 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -166,6 +166,7 @@ Contributions to external open-source projects.
 | abiosoft/colima | [#1642](https://github.com/abiosoft/colima/pull/1642) | Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted | ✅ Merged |
 | anchore/syft | [#5321](https://github.com/anchore/syft/pull/5321) | Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue | ✅ Merged |
 | falcosecurity/falcosidekick | [#1446](https://github.com/falcosecurity/falcosidekick/pull/1446) | Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor | ✅ Merged |
+| fluent/fluent-operator | [#2063](https://github.com/fluent/fluent-operator/pull/2063) | Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp | ✅ Merged |
 | argoproj-labs/gitops-promoter | [#2056](https://github.com/argoproj-labs/gitops-promoter/pull/2056) | Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | ✅ Merged |
 | oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | ✅ Merged |
@@ -258,6 +259,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | 🔵 Review |
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |
 | goss-org/goss | [#1136](https://github.com/goss-org/goss/pull/1136) | Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss | 🔵 Review |
 | hashicorp/packer | [#13716](https://github.com/hashicorp/packer/pull/13716) | Keep `PACKER_GITHUB_API_TOKEN` on redirected requests, so installing a plugin whose GitHub repository was renamed or transferred no longer falls back to the anonymous rate limit and blocks the plugins installed after it | 🔵 Review |
@@ -275,7 +277,6 @@ Contributions to external open-source projects.
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
 | prometheus-community/helm-charts | [#7310](https://github.com/prometheus-community/helm-charts/pull/7310) | Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready | 🔵 Review |
 | kubernetes-sigs/kustomize | [#6287](https://github.com/kubernetes-sigs/kustomize/pull/6287) | Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation | 🔵 Review |
-| fluent/fluent-operator | [#2063](https://github.com/fluent/fluent-operator/pull/2063) | Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp | 🔵 Review |
 | dapr/cli | [#1710](https://github.com/dapr/cli/pull/1710) | Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars | 🔵 Review |
 | kubernetes-csi/external-snapshotter | [#1489](https://github.com/kubernetes-csi/external-snapshotter/pull/1489) | csi-snapshotter: stop the sidecar's own VolumeGroupSnapshotContent writes from bypassing the requeue backoff and flooding the driver with CreateVolumeGroupSnapshot calls | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |

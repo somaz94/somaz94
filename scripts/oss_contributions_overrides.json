@@ -787,5 +787,8 @@
   },
   "wailsapp/wails#6212": {
     "summary": "Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed"
+  },
+  "pulumi/pulumi#24995": {
+    "summary": "Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext"
   }
 }
