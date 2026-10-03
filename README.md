@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-153-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-154-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (242)</b></summary>
@@ -156,10 +156,11 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (172 · 99 merged)
+#### Standalone contributions (172 · 100 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | ✅ Merged |
 | lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
 | pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it | ✅ Merged |
 | crowdsecurity/crowdsec | [#4712](https://github.com/crowdsecurity/crowdsec/pull/4712) | Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist | ✅ Merged |
@@ -263,7 +264,6 @@ Contributions to external open-source projects.
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |
 | goss-org/goss | [#1136](https://github.com/goss-org/goss/pull/1136) | Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss | 🔵 Review |
 | hashicorp/packer | [#13716](https://github.com/hashicorp/packer/pull/13716) | Keep `PACKER_GITHUB_API_TOKEN` on redirected requests, so installing a plugin whose GitHub repository was renamed or transferred no longer falls back to the anonymous rate limit and blocks the plugins installed after it | 🔵 Review |
-| pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | 🔵 Review |
 | distribution/distribution | [#4995](https://github.com/distribution/distribution/pull/4995) | Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice | 🔵 Review |
 | git-lfs/git-lfs | [#6356](https://github.com/git-lfs/git-lfs/pull/6356) | Pass `<transport>://<address>` remote helper URLs through unchanged, as Git does, instead of misreading them as SSH endpoints for a host named after the transport | 🔵 Review |
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
