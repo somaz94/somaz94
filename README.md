@@ -107,7 +107,7 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-154-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-156-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
 
 <details>
 <summary><b>View all contributions (242)</b></summary>
@@ -156,14 +156,16 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (172 · 100 merged)
+#### Standalone contributions (172 · 102 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
 | pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | ✅ Merged |
 | lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
+| photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | ✅ Merged |
 | pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it | ✅ Merged |
 | crowdsecurity/crowdsec | [#4712](https://github.com/crowdsecurity/crowdsec/pull/4712) | Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist | ✅ Merged |
+| grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | ✅ Merged |
 | abiosoft/colima | [#1642](https://github.com/abiosoft/colima/pull/1642) | Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted | ✅ Merged |
 | anchore/syft | [#5321](https://github.com/anchore/syft/pull/5321) | Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue | ✅ Merged |
 | falcosecurity/falcosidekick | [#1446](https://github.com/falcosecurity/falcosidekick/pull/1446) | Close the syslog output connection after each event so every Falco alert no longer leaks a socket and file descriptor | ✅ Merged |
@@ -268,12 +270,10 @@ Contributions to external open-source projects.
 | git-lfs/git-lfs | [#6356](https://github.com/git-lfs/git-lfs/pull/6356) | Pass `<transport>://<address>` remote helper URLs through unchanged, as Git does, instead of misreading them as SSH endpoints for a host named after the transport | 🔵 Review |
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
-| photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
 | rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | 🔵 Review |
 | slackhq/nebula | [#1902](https://github.com/slackhq/nebula/pull/1902) | Parse `tun.unsafe_routes` `mtu`, `metric` and gateway `weight` like `install`, so quoted values are honored and float, bool or empty ones no longer panic, also on SIGHUP reload | 🔵 Review |
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
-| grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | 🔵 Review |
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
 | prometheus-community/helm-charts | [#7310](https://github.com/prometheus-community/helm-charts/pull/7310) | Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready | 🔵 Review |
 | kubernetes-sigs/kustomize | [#6287](https://github.com/kubernetes-sigs/kustomize/pull/6287) | Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation | 🔵 Review |
