@@ -806,5 +806,8 @@
   },
   "99designs/gqlgen#4360": {
     "summary": "Stop the websocket transport from sending `complete` when the connection context from `InitFunc` is cancelled, so a server shutdown no longer races the close frame and tells clients their subscriptions finished normally"
+  },
+  "abiosoft/colima#1645": {
+    "summary": "Make `colima restart` prepare its config the same way as `colima start`, so a partial read-only colima.yaml under `COLIMA_SAVE_CONFIG=0` no longer restarts the VM with a 0 GiB root disk and leaves it stopped"
   }
 }
