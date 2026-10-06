@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
-"""Regenerate the Open Source Contributions section of the profile README.
+"""Regenerate the Open Source Contributions catalog of the profile repo.
 
 Queries GitHub for every PR the profile owner has opened against EXTERNAL
-repositories (merged + still-open), renders a summary-count badge line plus a
-collapsible table, and replaces whatever sits between the OSS markers in
-README.md. Closed-unmerged PRs are intentionally excluded — the public profile
-shows positive signal only, and a closed PR simply drops off the table.
+repositories (merged + still-open) and writes three outputs:
+
+- OSS_CONTRIBUTIONS.md — the full catalog: count badges, a per-area summary
+  table, and one table per area.
+- data/oss-stats.json — the merged / review / total counts. The README badges
+  are shields.io dynamic badges that read this file, so a count change never
+  rewrites README.md.
+- README.md — only the block between the OSS markers: the dynamic badges and a
+  link to the catalog. The block is constant, so README.md changes only when
+  this template does, or when a hand-edit inside the markers is reverted.
+
+Closed-unmerged PRs are intentionally excluded — the public profile shows
+positive signal only, and a closed PR simply drops off the catalog.
 
 One exception: a PR a maintainer squash-merges under a fresh commit SHA stays
 CLOSED (not MERGED) on GitHub, so `gh search prs --merged` can't see it and it
@@ -18,8 +27,8 @@ from oss_contributions_overrides.json; any PR without an override falls back to
 a cleaned-up PR title.
 
 Usage:
-    python3 scripts/oss_contributions.py          # rewrite README.md in place
-    python3 scripts/oss_contributions.py --check   # exit 1 if it would change
+    python3 scripts/oss_contributions.py          # rewrite the outputs in place
+    python3 scripts/oss_contributions.py --check   # exit 1 if any would change
 """
 from __future__ import annotations
 
@@ -29,6 +38,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import urlencode
 
 AUTHOR = "somaz94"
 OWN_PREFIXES = ("somaz94/", "somaz-devops/")
@@ -36,13 +46,24 @@ OWN_PREFIXES = ("somaz94/", "somaz-devops/")
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 README = REPO_ROOT / "README.md"
+CATALOG = REPO_ROOT / "OSS_CONTRIBUTIONS.md"
+STATS = REPO_ROOT / "data" / "oss-stats.json"
 OVERRIDES = SCRIPT_DIR / "oss_contributions_overrides.json"
 
 MARKER_START = "<!-- OSS:START -->"
 MARKER_END = "<!-- OSS:END -->"
 
-MERGED_BADGE = "https://img.shields.io/badge/Merged-{n}-2EA44F?style=for-the-badge"
-REVIEW_BADGE = "https://img.shields.io/badge/Review-{n}-0969DA?style=for-the-badge"
+# README.md renders on the profile page as well as in the repo; absolute URLs
+# resolve the same in both.
+CATALOG_URL = f"https://github.com/{AUTHOR}/{AUTHOR}/blob/main/OSS_CONTRIBUTIONS.md"
+STATS_RAW_URL = f"https://raw.githubusercontent.com/{AUTHOR}/{AUTHOR}/main/data/oss-stats.json"
+
+MERGED_COLOR = "2EA44F"
+REVIEW_COLOR = "0969DA"
+
+# The search API stops at 1000 results, so a query that fills the limit has
+# been truncated — fail instead of silently dropping the oldest PRs.
+SEARCH_LIMIT = 1000
 
 # Peel a leading "[scope]" tag and/or a Conventional-Commit "type:" prefix off
 # a PR title when no curated override exists.
@@ -58,9 +79,9 @@ JSON_FIELDS = "number,title,url,repository,createdAt"
 # Ordered display sections. compress=True collapses still-in-review PRs to a
 # single "+N in review" line; merged PRs are always listed individually.
 # compress=False lists every PR as its own table row. Every section is currently
-# compress=False so each PR — merged or in-review — is a discrete row, which
-# keeps the table machine-reconcilable; the compress mechanism is retained for
-# any future campaign that grows large enough to warrant collapsing.
+# compress=False so each PR — merged or in-review — is a discrete row; the
+# compress mechanism is retained for any future campaign that grows large
+# enough to warrant collapsing.
 # A PR's section comes from its override "category"; if absent, the three
 # largest campaigns are inferred from the summary, else it lands in "misc".
 DEFAULT_CATEGORY = "misc"
@@ -82,12 +103,18 @@ def gh_search(*extra: str) -> list[dict]:
     cmd = [
         "gh", "search", "prs",
         "--author", AUTHOR,
-        "--limit", "200",
+        "--limit", str(SEARCH_LIMIT),
         "--json", JSON_FIELDS,
         *extra,
     ]
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-    return json.loads(result.stdout or "[]")
+    prs = json.loads(result.stdout or "[]")
+    if len(prs) >= SEARCH_LIMIT:
+        raise RuntimeError(
+            f"`gh search prs {' '.join(extra)}` hit the {SEARCH_LIMIT}-result cap, "
+            "so the list is truncated; split the query by creation date"
+        )
+    return prs
 
 
 def external(prs: list[dict]) -> list[dict]:
@@ -183,16 +210,32 @@ def group_by_category(
     return groups
 
 
+def anchor(heading: str) -> str:
+    """GitHub's heading slug: lowercase, punctuation dropped, spaces to hyphens."""
+    return re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-")
+
+
+def static_badge(label: str, n: int, color: str) -> str:
+    return f"https://img.shields.io/badge/{label}-{n}-{color}?style=for-the-badge"
+
+
+def dynamic_badge(label: str, key: str, color: str) -> str:
+    """A shields.io badge whose value is read from data/oss-stats.json at view time."""
+    query = urlencode({
+        "url": STATS_RAW_URL,
+        "query": f"$.{key}",
+        "label": label,
+        "color": color,
+        "style": "for-the-badge",
+    })
+    return f"https://img.shields.io/badge/dynamic/json?{query}"
+
+
 def section_lines(
     heading: str, compress: bool, group: dict[str, list], overrides: dict
 ) -> list[str]:
     merged, review = group["merged"], group["review"]
-    if not merged and not review:
-        return []
-
-    total = len(merged) + len(review)
-    suffix = f"{len(merged)} merged" if merged else "in review"
-    lines = [f"#### {heading} ({total} · {suffix})", ""]
+    lines = [f"## {heading}", ""]
 
     listed = [(pr, s, "✅ Merged") for pr, s in merged]
     if not compress:
@@ -210,41 +253,66 @@ def section_lines(
     return lines
 
 
-def render(merged: list[dict], review: list[dict], overrides: dict) -> str:
+def render_catalog(merged: list[dict], review: list[dict], overrides: dict) -> str:
     groups = group_by_category(merged, review, overrides)
+    present = [
+        (key, heading, compress)
+        for key, heading, compress in CATEGORIES
+        if groups[key]["merged"] or groups[key]["review"]
+    ]
     lines = [
+        "<!-- Generated by scripts/oss_contributions.py — do not edit by hand. "
+        "Curate summaries in scripts/oss_contributions_overrides.json. -->",
+        "",
+        "# Open Source Contributions",
+        "",
+        "Pull requests opened against external open-source projects, merged and "
+        "still in review. Closed-unmerged pull requests are not listed.",
+        "",
+        f"![Merged]({static_badge('Merged', len(merged), MERGED_COLOR)}) "
+        f"![Review]({static_badge('Review', len(review), REVIEW_COLOR)})",
+        "",
+        "| Area | Merged | Review | Total |",
+        "|---|---|---|---|",
+    ]
+    for key, heading, _ in present:
+        n_merged, n_review = len(groups[key]["merged"]), len(groups[key]["review"])
+        lines.append(
+            f"| [{heading}](#{anchor(heading)}) | {n_merged} | {n_review} | {n_merged + n_review} |"
+        )
+    lines.append("")
+    for key, heading, compress in present:
+        lines += ["<br/>", ""]
+        lines += section_lines(heading, compress, groups[key], overrides)
+    return "\n".join(lines).rstrip("\n") + "\n"
+
+
+def render_stats(merged: list[dict], review: list[dict]) -> str:
+    stats = {"merged": len(merged), "review": len(review), "total": len(merged) + len(review)}
+    return json.dumps(stats, indent=2) + "\n"
+
+
+def render_readme_block() -> str:
+    return "\n".join([
         MARKER_START,
         "",
-        f"![Merged]({MERGED_BADGE.format(n=len(merged))}) "
-        f"![Review]({REVIEW_BADGE.format(n=len(review))})",
+        f"![Merged]({dynamic_badge('Merged', 'merged', MERGED_COLOR)}) "
+        f"![Review]({dynamic_badge('Review', 'review', REVIEW_COLOR)})",
         "",
-        "<details>",
-        f"<summary><b>View all contributions ({len(merged) + len(review)})</b></summary>",
+        f"**[View all contributions →]({CATALOG_URL})**",
         "",
-        "<br/>",
-        "",
-    ]
-    rendered = [
-        sec
-        for key, heading, compress in CATEGORIES
-        if (sec := section_lines(heading, compress, groups[key], overrides))
-    ]
-    for i, sec in enumerate(rendered):
-        if i > 0:  # space each heading section from the previous one
-            lines += ["<br/>", ""]
-        lines += sec
-    lines += ["</details>", "", MARKER_END]
-    return "\n".join(lines)
+        MARKER_END,
+    ])
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--check",
         action="store_true",
-        help="exit 1 if README.md is out of date instead of rewriting it",
+        help="exit 1 if any output is out of date instead of rewriting it",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     overrides = json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
 
@@ -264,31 +332,38 @@ def main() -> int:
     merged.sort(key=lambda p: p["createdAt"], reverse=True)
     review.sort(key=lambda p: p["createdAt"], reverse=True)
 
-    block = render(merged, review, overrides)
-
-    text = README.read_text()
+    readme_text = README.read_text()
     pattern = re.compile(
         re.escape(MARKER_START) + r".*?" + re.escape(MARKER_END),
         re.DOTALL,
     )
-    if not pattern.search(text):
+    if not pattern.search(readme_text):
         print(
             f"error: markers {MARKER_START} / {MARKER_END} not found in {README}",
             file=sys.stderr,
         )
         return 2
 
-    new_text = pattern.sub(lambda _: block, text)
+    outputs = {
+        README: pattern.sub(lambda _: render_readme_block(), readme_text),
+        CATALOG: render_catalog(merged, review, overrides),
+        STATS: render_stats(merged, review),
+    }
+    stale = [p for p, text in outputs.items() if not p.exists() or p.read_text() != text]
+    counts = f"{len(merged)} merged, {len(review)} in review"
 
-    if new_text == text:
-        print(f"OSS section already up to date ({len(merged)} merged, {len(review)} in review).")
+    if not stale:
+        print(f"OSS outputs already up to date ({counts}).")
         return 0
+    names = ", ".join(str(p.relative_to(REPO_ROOT)) for p in stale)
     if args.check:
-        print("OSS section is OUT OF DATE (run without --check to update).", file=sys.stderr)
+        print(f"OUT OF DATE: {names} (run without --check to update).", file=sys.stderr)
         return 1
 
-    README.write_text(new_text)
-    print(f"Updated OSS section: {len(merged)} merged, {len(review)} in review.")
+    for path in stale:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(outputs[path])
+    print(f"Updated {names} ({counts}).")
     return 0
 
 

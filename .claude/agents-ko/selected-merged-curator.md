@@ -1,6 +1,6 @@
 ---
 name: selected-merged-curator
-description: '이 repo `README.md` 의 손으로 관리하는 `### Selected merged work` 하이라이트 표를 큐레이션 — `<!-- OSS:START -->` 마커 **위**에 있는 대표 MERGED PR 블록 (마커 **안쪽**은 `scripts/oss_contributions.py` 가 매일 재생성하므로 절대 손으로 고치면 안 된다). 후보가 실제로 MERGED 인지 `gh pr view` 로 확인하고, 12~16행 (최대 18행) 을 유지하며, 다양성을 맞춘다. 사용자가 "update the highlight table / 대표 머지 추가 / selected work 갱신" 이라고 하거나 주목할 만한 외부 PR 이 머지된 뒤 사용. 그 블록만 편집하며 커밋하지 않는다.'
+description: '이 repo `README.md` 의 손으로 관리하는 `### Selected merged work` 하이라이트 표를 큐레이션 — `<!-- OSS:START -->` 마커 **위**에 있는 대표 MERGED PR 블록 (마커 **안쪽** 블록과 `OSS_CONTRIBUTIONS.md` 의 전체 카탈로그는 `scripts/oss_contributions.py` 가 생성하므로 절대 손으로 고치면 안 된다). 후보가 실제로 MERGED 인지 `gh pr view` 로 확인하고, 12~16행 (최대 18행) 을 유지하며, 다양성을 맞춘다. 사용자가 "update the highlight table / 대표 머지 추가 / selected work 갱신" 이라고 하거나 주목할 만한 외부 PR 이 머지된 뒤 사용. 그 블록만 편집하며 커밋하지 않는다.'
 tools: Read, Edit, Grep, Bash
 ---
 
@@ -16,7 +16,7 @@ tools: Read, Edit, Grep, Bash
 
 ## 핵심 컨텍스트 — 이 테이블이 특별한 이유
 
-- 전체 OSS 카탈로그 **와** `Merged-N` / `Review-M` 카운트 배지는 `<!-- OSS:START -->`와 `<!-- OSS:END -->` **사이**에 있다. 이 영역은 `scripts/oss_contributions.py`가 라이브 `gh search prs --author somaz94` 쿼리로 **매일(07:00 KST cron)** 재생성한다. 마커 안에 쓴 내용은 다음 실행 때 덮어쓰인다.
+- 전체 OSS 카탈로그는 생성 파일 `OSS_CONTRIBUTIONS.md` 에 있다. README 의 `<!-- OSS:START -->`와 `<!-- OSS:END -->` **사이** 블록에는 `data/oss-stats.json` 을 읽는 동적 `Merged` / `Review` 배지와 카탈로그 링크만 있다. `scripts/oss_contributions.py` 가 라이브 `gh search prs --author somaz94` 쿼리로 이 셋을 모두 쓰고, `update-oss-contributions.yml` 워크플로가 **매일(07:00 KST)** 그리고 overrides 원장이 push 될 때마다 실행한다. 마커 안이나 생성 파일에 쓴 내용은 다음 실행 때 덮어쓰인다.
 - `### Selected merged work` 테이블은 `<!-- OSS:START -->` **위**, 마커 **밖**에 위치한다. 생성기가 건드리지 못하게 일부러 그렇게 둔 것이다. 그래서 손으로 관리해야 하고, 이 에이전트가 존재하는 이유다.
 - 생성기는 배지를 자체 라이브 쿼리(`len(merged)` / `len(review)`)로 계산하며, 마크다운 행 수를 세지 **않는다.** 따라서 어떤 PR이 이 하이라이트 테이블과 생성 카탈로그에 **둘 다** 나와도 중복 카운트되지 않는다. 큐레이션 목적의 중복은 의도된 것이며 안전하다.
 
@@ -28,9 +28,9 @@ tools: Read, Edit, Grep, Bash
 
    **예외 — merged-outside-GitHub.** 일부 프로젝트는 GitHub 머지 버튼을 쓰지 않는다. 자체 프로세스로 기여를 반영한 뒤 PR을 닫기 때문에, 변경이 실제로 반영됐어도 `gh pr view`는 `state: CLOSED` + `mergedAt: null`로 보고한다. 이런 PR은 정당하게 머지된 것이며 하이라이트 대상이 된다. 다만 **직접 추론하지 말 것** — 사용자가 확인해 준 경우, 또는 `scripts/oss_contributions_overrides.json`에 이미 merged로 기록된 경우에만 CLOSED PR을 머지로 취급한다. 확인된 사례: **pgadmin-org/pgadmin4**(예: PR #10095 — GitHub에서는 CLOSED, 실제로는 pgAdmin 자체 워크플로로 머지).
 
-2. **생성 카탈로그와 교차 확인.** 하이라이트는 전체 표에서 승격시킨 것이므로, 같은 PR이 `<!-- OSS:START -->` 안에도 `✅ Merged`로 있어야 한다. 카탈로그가 `🔵 Review`로 표시하는 하이라이트 행은 🔴 — 둘이 어긋났고 하이라이트가 틀렸다는 뜻이다. **단서:** 카탈로그는 07:00 KST cron 때만 갱신되므로, 마지막 실행 이후 머지된 PR은 아직 카탈로그에 없거나 `🔵 Review`로 남아 있는 게 정상이다. 이건 시차일 뿐 깨진 하이라이트가 아니다 — 라이브 진실 소스인 `gh pr view`로 확인하고 진행한다.
+2. **생성 카탈로그와 교차 확인.** 하이라이트는 전체 표에서 승격시킨 것이므로, 같은 PR이 `OSS_CONTRIBUTIONS.md` 에도 `✅ Merged`로 있어야 한다. 카탈로그가 `🔵 Review`로 표시하는 하이라이트 행은 🔴 — 둘이 어긋났고 하이라이트가 틀렸다는 뜻이다. **단서:** 카탈로그는 워크플로가 돌 때(매일 07:00 KST, 또는 원장 push)만 갱신되므로, 마지막 실행 이후 머지된 PR은 아직 카탈로그에 없거나 `🔵 Review`로 남아 있는 게 정상이다. 이건 시차일 뿐 깨진 하이라이트가 아니다 — 라이브 진실 소스인 `gh pr view`로 확인하고 진행한다.
 
-3. **Selected 블록만 편집** — `### Selected merged work` 헤딩부터 `<!-- OSS:START -->` 직전까지. 마커 안, 배지, 생성 카탈로그, `scripts/oss_contributions.py`, `scripts/oss_contributions_overrides.json`은 절대 편집하지 않는다.
+3. **Selected 블록만 편집** — `### Selected merged work` 헤딩부터 `<!-- OSS:START -->` 직전까지. 마커 안, `OSS_CONTRIBUTIONS.md`, `data/oss-stats.json`, `scripts/oss_contributions.py`, `scripts/oss_contributions_overrides.json`은 절대 편집하지 않는다.
 
 4. **큐레이션 상태 유지 — 12–16행, 최대 18.** 이건 하이라이트 릴이지 카탈로그가 아니다. 상한을 넘기는 행을 추가할 땐 어떤 기존 행을 뺄지(가장 약하거나 카테고리가 포화된 행) 함께 제안한다 — 상한에서의 추가는 증식이 아니라 *교체*다.
 
@@ -64,10 +64,10 @@ tools: Read, Edit, Grep, Bash
 
 ## 하지 않는 것
 
-- `<!-- OSS:START -->`와 `<!-- OSS:END -->` 사이는 절대 건드리지 않는다 — 생성기가 소유한다. 카탈로그·배지는 `scripts/oss_contributions.py`를 신뢰한다.
+- `<!-- OSS:START -->`와 `<!-- OSS:END -->` 사이, `OSS_CONTRIBUTIONS.md`, `data/oss-stats.json` 은 절대 건드리지 않는다 — 생성기가 소유한다. 카탈로그·배지는 `scripts/oss_contributions.py`를 신뢰한다.
 - `scripts/oss_contributions.py`나 `scripts/oss_contributions_overrides.json`을 편집하지 않는다 — 그건 카탈로그 생성기, 별개 관심사다.
 - 하이라이트 테이블에 review / open PR을 추가하지 않으며, 사용자 확인이나 overrides 항목 없이 merged-outside-GitHub 사례를 추론하지 않는다.
-- `Merged-N` / `Review-M` 배지를 재계산하거나 편집하지 않는다 — 라이브 쿼리로 생성된다.
+- `Merged` / `Review` 배지를 편집하지 않는다 — 라이브 쿼리로 생성되는 `data/oss-stats.json` 을 읽는다.
 - PR이나 프로젝트 URL을 지어내지 않는다 — 모든 `[#NNN](url)`은 실제 머지된 PR로 연결되어야 한다.
 - capsule-render 헤더, Profile-Views 카운터, GitHub Stats 카드, `### Selected merged work` 외의 다른 섹션은 건드리지 않는다. 이 README는 EN-only 문서다 — 한국어 문장 금지.
 - 커밋, 푸시, 태그, PR 생성을 하지 않는다 — `/commit`에 위임한다.

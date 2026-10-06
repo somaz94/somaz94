@@ -1,12 +1,19 @@
 name: Update OSS Contributions
 
-# Regenerates the "Open Source Contributions" section of README.md from live
-# GitHub data (merged + open PRs the owner opened against external repos).
+# Regenerates OSS_CONTRIBUTIONS.md and data/oss-stats.json from live GitHub data
+# (merged + open PRs the owner opened against external repos). README.md only
+# changes if its OSS marker block was hand-edited, since that block is constant.
 # Curated summaries live in scripts/oss_contributions_overrides.json.
 
 on:
   schedule:
     - cron: '0 22 * * *'   # 07:00 KST daily
+  # Humans push only the ledger or the generator; this job commits the outputs.
+  push:
+    branches: [main]
+    paths:
+      - scripts/oss_contributions.py
+      - scripts/oss_contributions_overrides.json
   workflow_dispatch:
 
 permissions:
@@ -22,19 +29,23 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Regenerate OSS contributions section
+      - name: Test generator
+        run: python3 -m unittest discover -s scripts
+
+      - name: Regenerate OSS contributions
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/oss_contributions.py
 
       - name: Commit and push if changed
         run: |
-          if [ -z "$(git status --porcelain README.md)" ]; then
-            echo "OSS section already up to date — nothing to commit."
+          OUTPUTS="README.md OSS_CONTRIBUTIONS.md data/oss-stats.json"
+          if [ -z "$(git status --porcelain $OUTPUTS)" ]; then
+            echo "OSS outputs already up to date — nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add $OUTPUTS
           git commit -m "docs: auto-update OSS contributions section"
           git push
