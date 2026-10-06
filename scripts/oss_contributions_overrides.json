@@ -809,5 +809,8 @@
   },
   "abiosoft/colima#1645": {
     "summary": "Make `colima restart` prepare its config the same way as `colima start`, so a partial read-only colima.yaml under `COLIMA_SAVE_CONFIG=0` no longer restarts the VM with a 0 GiB root disk and leaves it stopped"
+  },
+  "argoproj-labs/argocd-image-updater#1853": {
+    "summary": "Keep a Docker Hub image's explicit `docker.io/library/` prefix on write-back instead of shortening it to `docker.io/<name>`, so kustomize matches the manifest again and constrained refs like `docker.io/library/nginx:~1.0` match their live image"
   }
 }
