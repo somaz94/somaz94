@@ -790,5 +790,8 @@
   },
   "pulumi/pulumi#24995": {
     "summary": "Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext"
+  },
+  "fyne-io/fyne#6568": {
+    "summary": "Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0"
   }
 }

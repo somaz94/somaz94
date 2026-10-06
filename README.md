@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-84-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (242)</b></summary>
+<summary><b>View all contributions (243)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (172 · 104 merged)
+#### Standalone contributions (173 · 104 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -264,6 +264,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | 🔵 Review |
 | pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | 🔵 Review |
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |
 | goss-org/goss | [#1136](https://github.com/goss-org/goss/pull/1136) | Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss | 🔵 Review |
