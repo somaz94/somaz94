@@ -799,5 +799,9 @@
   },
   "kedacore/keda-docs#1894": {
     "summary": "Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId`"
+  },
+  "asdf-vm/asdf#2340": {
+    "category": "misc",
+    "summary": "Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install"
   }
 }
