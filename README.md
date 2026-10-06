@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-85-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (243)</b></summary>
+<summary><b>View all contributions (245)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (173 · 104 merged)
+#### Standalone contributions (175 · 104 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -264,6 +264,8 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kedacore/keda | [#8254](https://github.com/kedacore/keda/pull/8254) | Read the Azure Workload Identity client id from the scale target's service account annotation when `identityOwner: workload` is set, as aws already does, so a TriggerAuthentication no longer has to repeat each workload's `identityId` | 🔵 Review |
+| kedacore/keda-docs | [#1894](https://github.com/kedacore/keda-docs/pull/1894) | Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId` | 🔵 Review |
 | fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | 🔵 Review |
 | pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | 🔵 Review |
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |

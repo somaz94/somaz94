@@ -793,5 +793,11 @@
   },
   "fyne-io/fyne#6568": {
     "summary": "Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0"
+  },
+  "kedacore/keda#8254": {
+    "summary": "Read the Azure Workload Identity client id from the scale target's service account annotation when `identityOwner: workload` is set, as aws already does, so a TriggerAuthentication no longer has to repeat each workload's `identityId`"
+  },
+  "kedacore/keda-docs#1894": {
+    "summary": "Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId`"
   }
 }
