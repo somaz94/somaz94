@@ -803,5 +803,8 @@
   "asdf-vm/asdf#2340": {
     "category": "misc",
     "summary": "Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install"
+  },
+  "99designs/gqlgen#4360": {
+    "summary": "Stop the websocket transport from sending `complete` when the connection context from `InitFunc` is cancelled, so a server shutdown no longer races the close frame and tells clients their subscriptions finished normally"
   }
 }

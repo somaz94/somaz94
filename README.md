@@ -107,10 +107,10 @@ Contributions to external open-source projects.
 
 <!-- OSS:START -->
 
-![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-158-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
 
 <details>
-<summary><b>View all contributions (246)</b></summary>
+<summary><b>View all contributions (247)</b></summary>
 
 <br/>
 
@@ -156,7 +156,7 @@ Contributions to external open-source projects.
 
 <br/>
 
-#### Standalone contributions (176 · 104 merged)
+#### Standalone contributions (177 · 104 merged)
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
@@ -264,6 +264,7 @@ Contributions to external open-source projects.
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| 99designs/gqlgen | [#4360](https://github.com/99designs/gqlgen/pull/4360) | Stop the websocket transport from sending `complete` when the connection context from `InitFunc` is cancelled, so a server shutdown no longer races the close frame and tells clients their subscriptions finished normally | 🔵 Review |
 | asdf-vm/asdf | [#2340](https://github.com/asdf-vm/asdf/pull/2340) | Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install | 🔵 Review |
 | kedacore/keda | [#8254](https://github.com/kedacore/keda/pull/8254) | Read the Azure Workload Identity client id from the scale target's service account annotation when `identityOwner: workload` is set, as aws already does, so a TriggerAuthentication no longer has to repeat each workload's `identityId` | 🔵 Review |
 | kedacore/keda-docs | [#1894](https://github.com/kedacore/keda-docs/pull/1894) | Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId` | 🔵 Review |
