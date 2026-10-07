@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 106 | 77 | 183 |
+| [Standalone contributions](#standalone-contributions) | 106 | 78 | 184 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 5 | 14 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -169,6 +169,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | 🔵 Review |
 | Jguer/yay | [#2991](https://github.com/Jguer/yay/pull/2991) | Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported | 🔵 Review |
 | v2fly/v2ray-core | [#3840](https://github.com/v2fly/v2ray-core/pull/3840) | Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{"status": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted | 🔵 Review |
 | harness/harness | [#3729](https://github.com/harness/harness/pull/3729) | Reject devcontainer feature tar entries that escape the extraction directory (`../x`, `nested/../../x`, absolute paths) before the gitspace extractor writes anything, so a feature tarball can no longer write files outside it (path traversal) | 🔵 Review |
