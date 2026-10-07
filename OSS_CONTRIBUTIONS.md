@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-159-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-90-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 105 | 74 | 179 |
+| [Standalone contributions](#standalone-contributions) | 106 | 73 | 179 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 5 | 14 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -63,6 +63,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | ✅ Merged |
 | pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | ✅ Merged |
 | lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
 | photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | ✅ Merged |
@@ -174,7 +175,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | asdf-vm/asdf | [#2340](https://github.com/asdf-vm/asdf/pull/2340) | Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install | 🔵 Review |
 | kedacore/keda | [#8254](https://github.com/kedacore/keda/pull/8254) | Read the Azure Workload Identity client id from the scale target's service account annotation when `identityOwner: workload` is set, as aws already does, so a TriggerAuthentication no longer has to repeat each workload's `identityId` | 🔵 Review |
 | kedacore/keda-docs | [#1894](https://github.com/kedacore/keda-docs/pull/1894) | Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId` | 🔵 Review |
-| fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | 🔵 Review |
 | pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | 🔵 Review |
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |
 | goss-org/goss | [#1136](https://github.com/goss-org/goss/pull/1136) | Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss | 🔵 Review |
