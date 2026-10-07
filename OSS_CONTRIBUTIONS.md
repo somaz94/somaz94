@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 106 | 75 | 181 |
+| [Standalone contributions](#standalone-contributions) | 106 | 76 | 182 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 5 | 14 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -169,6 +169,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| v2fly/v2ray-core | [#3840](https://github.com/v2fly/v2ray-core/pull/3840) | Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{"status": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted | 🔵 Review |
 | harness/harness | [#3729](https://github.com/harness/harness/pull/3729) | Reject devcontainer feature tar entries that escape the extraction directory (`../x`, `nested/../../x`, absolute paths) before the gitspace extractor writes anything, so a feature tarball can no longer write files outside it (path traversal) | 🔵 Review |
 | fyne-io/fyne | [#6576](https://github.com/fyne-io/fyne/pull/6576) | Stop a multiline `Entry` from scrolling back to its cursor when it gains or loses focus, so scrolling away and clicking elsewhere keeps the scroll position and a click or tap into a scrolled, unfocused entry places the cursor where it lands | 🔵 Review |
 | argoproj-labs/argocd-image-updater | [#1853](https://github.com/argoproj-labs/argocd-image-updater/pull/1853) | Keep a Docker Hub image's explicit `docker.io/library/` prefix on write-back instead of shortening it to `docker.io/<name>`, so kustomize matches the manifest again and constrained refs like `docker.io/library/nginx:~1.0` match their live image | 🔵 Review |
