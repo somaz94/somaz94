@@ -815,5 +815,8 @@
   },
   "fyne-io/fyne#6576": {
     "summary": "Stop a multiline `Entry` from scrolling back to its cursor when it gains or loses focus, so scrolling away and clicking elsewhere keeps the scroll position and a click or tap into a scrolled, unfocused entry places the cursor where it lands"
+  },
+  "harness/harness#3729": {
+    "summary": "Reject devcontainer feature tar entries that escape the extraction directory (`../x`, `nested/../../x`, absolute paths) before the gitspace extractor writes anything, so a feature tarball can no longer write files outside it (path traversal)"
   }
 }
