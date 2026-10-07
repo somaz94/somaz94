@@ -818,5 +818,8 @@
   },
   "harness/harness#3729": {
     "summary": "Reject devcontainer feature tar entries that escape the extraction directory (`../x`, `nested/../../x`, absolute paths) before the gitspace extractor writes anything, so a feature tarball can no longer write files outside it (path traversal)"
+  },
+  "v2fly/v2ray-core#3840": {
+    "summary": "Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{\"status\": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted"
   }
 }
