@@ -824,5 +824,8 @@
   },
   "Jguer/yay#2991": {
     "summary": "Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported"
+  },
+  "TwiN/gatus#1845": {
+    "summary": "Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever"
   }
 }
