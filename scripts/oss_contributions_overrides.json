@@ -821,5 +821,8 @@
   },
   "v2fly/v2ray-core#3840": {
     "summary": "Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{\"status\": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted"
+  },
+  "Jguer/yay#2991": {
+    "summary": "Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported"
   }
 }
