@@ -812,5 +812,8 @@
   },
   "argoproj-labs/argocd-image-updater#1853": {
     "summary": "Keep a Docker Hub image's explicit `docker.io/library/` prefix on write-back instead of shortening it to `docker.io/<name>`, so kustomize matches the manifest again and constrained refs like `docker.io/library/nginx:~1.0` match their live image"
+  },
+  "fyne-io/fyne#6576": {
+    "summary": "Stop a multiline `Entry` from scrolling back to its cursor when it gains or loses focus, so scrolling away and clicking elsewhere keeps the scroll position and a click or tap into a scrolled, unfocused entry places the cursor where it lands"
   }
 }
