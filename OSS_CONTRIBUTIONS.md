@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-160-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 106 | 78 | 184 |
+| [Standalone contributions](#standalone-contributions) | 107 | 77 | 184 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 5 | 14 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -121,6 +121,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | kubernetes-sigs/kueue | [#12796](https://github.com/kubernetes-sigs/kueue/pull/12796) | Fix data race on stickyWorkload between Snapshot and RequeueIfNotPresent | ✅ Merged |
 | supabase-community/supabase-kubernetes | [#214](https://github.com/supabase-community/supabase-kubernetes/pull/214) | Add configurable Prometheus ServiceMonitor support to the Supabase Helm chart | ✅ Merged |
 | ory/k8s | [#888](https://github.com/ory/k8s/pull/888) | Completed the PodDisruptionBudget namespace fix across the remaining Ory Helm charts (kratos, hydra-maester, oathkeeper-maester) | ✅ Merged |
+| terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | ✅ Merged |
 | valkey-io/valkey-helm | [#217](https://github.com/valkey-io/valkey-helm/pull/217) | Add configurable health probes (startup/liveness/readiness) to the Valkey chart | ✅ Merged |
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fixed a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue (self-synchronizing mutex). | ✅ Merged |
 | guerzon/vaultwarden | [#234](https://github.com/guerzon/vaultwarden/pull/234) | Add opt-in topologySpreadConstraints to the vaultwarden Helm chart pod spec | ✅ Merged |
@@ -228,7 +229,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add skip schema validation toggle to Application parameters editor (#5111) | 🔵 Review |
-| terraform-aws-modules/terraform-aws-lambda | [#762](https://github.com/terraform-aws-modules/terraform-aws-lambda/pull/762) | Clarify lambda_role is ignored when create_role is true (docs) | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn when secret files are excluded from the push | 🔵 Review |
 | terraform-aws-modules/terraform-aws-eventbridge | [#203](https://github.com/terraform-aws-modules/terraform-aws-eventbridge/pull/203) | Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201 | 🔵 Review |
