@@ -830,5 +830,8 @@
   },
   "ThreeDotsLabs/watermill#701": {
     "summary": "Stop slog's `AddSource` from pointing every Watermill log record at the adapter's own line in `slog.go`: `SlogLoggerAdapter` now captures its caller's PC with `runtime.Callers` and hands a `slog.NewRecord` straight to the handler, the pattern the log/slog docs give for wrappers, so the `source` field shows the real call site"
+  },
+  "smallstep/certificates#2819": {
+    "summary": "Stop one orders list request from breaking every later ACME order for the account: once no order is pending, `updateAddOrderIDs` now saves the orders index as `[]` instead of nil, which MySQL and PostgreSQL stored as NULL and Badger and bbolt as an empty value, and an empty value already on disk is read as an empty list so the account recovers"
   }
 }
