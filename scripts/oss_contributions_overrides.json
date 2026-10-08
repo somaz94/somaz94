@@ -827,5 +827,8 @@
   },
   "TwiN/gatus#1845": {
     "summary": "Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever"
+  },
+  "ThreeDotsLabs/watermill#701": {
+    "summary": "Stop slog's `AddSource` from pointing every Watermill log record at the adapter's own line in `slog.go`: `SlogLoggerAdapter` now captures its caller's PC with `runtime.Callers` and hands a `slog.NewRecord` straight to the handler, the pattern the log/slog docs give for wrappers, so the `source` field shows the real call site"
   }
 }
