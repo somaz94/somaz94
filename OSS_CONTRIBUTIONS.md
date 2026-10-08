@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 107 | 77 | 184 |
+| [Standalone contributions](#standalone-contributions) | 107 | 78 | 185 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -170,6 +170,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| smallstep/certificates | [#2819](https://github.com/smallstep/certificates/pull/2819) | Stop one orders list request from breaking every later ACME order for the account: once no order is pending, `updateAddOrderIDs` now saves the orders index as `[]` instead of nil, which MySQL and PostgreSQL stored as NULL and Badger and bbolt as an empty value, and an empty value already on disk is read as an empty list so the account recovers | 🔵 Review |
 | ThreeDotsLabs/watermill | [#701](https://github.com/ThreeDotsLabs/watermill/pull/701) | Stop slog's `AddSource` from pointing every Watermill log record at the adapter's own line in `slog.go`: `SlogLoggerAdapter` now captures its caller's PC with `runtime.Callers` and hands a `slog.NewRecord` straight to the handler, the pattern the log/slog docs give for wrappers, so the `source` field shows the real call site | 🔵 Review |
 | TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | 🔵 Review |
 | Jguer/yay | [#2991](https://github.com/Jguer/yay/pull/2991) | Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported | 🔵 Review |
