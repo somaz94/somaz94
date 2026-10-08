@@ -4,13 +4,13 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
 | [Standalone contributions](#standalone-contributions) | 107 | 77 | 184 |
-| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 5 | 14 |
+| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
 | [moto AWS API mocks](#moto-aws-api-mocks) | 4 | 0 | 4 |
@@ -170,6 +170,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| ThreeDotsLabs/watermill | [#701](https://github.com/ThreeDotsLabs/watermill/pull/701) | Stop slog's `AddSource` from pointing every Watermill log record at the adapter's own line in `slog.go`: `SlogLoggerAdapter` now captures its caller's PC with `runtime.Callers` and hands a `slog.NewRecord` straight to the handler, the pattern the log/slog docs give for wrappers, so the `source` field shows the real call site | 🔵 Review |
 | TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | 🔵 Review |
 | Jguer/yay | [#2991](https://github.com/Jguer/yay/pull/2991) | Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported | 🔵 Review |
 | v2fly/v2ray-core | [#3840](https://github.com/v2fly/v2ray-core/pull/3840) | Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{"status": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted | 🔵 Review |
@@ -234,7 +235,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | terraform-aws-modules/terraform-aws-eventbridge | [#203](https://github.com/terraform-aws-modules/terraform-aws-eventbridge/pull/203) | Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
-| argoproj/argo-cd | [#28406](https://github.com/argoproj/argo-cd/pull/28406) | Persist Applications search bar text across navigation (view preferences) | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
 | ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
@@ -266,8 +266,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | denoland/setup-deno | [#133](https://github.com/denoland/setup-deno/pull/133) | Parse dvm's key=value .dvmrc format in the deno-version-file input | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 | hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
-| extractions/setup-just | [#29](https://github.com/extractions/setup-just/pull/29) | Add `just-version-file` input to resolve the version from a `.tool-versions`/plain file | 🔵 Review |
-| actions/setup-dotnet | [#743](https://github.com/actions/setup-dotnet/pull/743) | Add `dotnet-version-file` input — read the .NET SDK version from a .tool-versions / global.json file (closes #459) | 🔵 Review |
 
 <br/>
 
