@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-161-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-92-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-162-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 107 | 78 | 185 |
+| [Standalone contributions](#standalone-contributions) | 108 | 77 | 185 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -68,6 +68,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
 | photoprism/photoprism | [#5872](https://github.com/photoprism/photoprism/pull/5872) | Pass OpenAI-compatible model IDs through unchanged, so a colon in the ID (a GGUF quant suffix or an `ft:` fine-tune) is no longer read as a version separator and cut off before the request | ✅ Merged |
 | pulumi/pulumi | [#24939](https://github.com/pulumi/pulumi/pull/24939) | Take a file lock around the cleanup and clone or pull of the shared templates directory, so concurrent `pulumi new` runs no longer delete each other's in-progress clone or collide cloning into it | ✅ Merged |
+| rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | ✅ Merged |
 | crowdsecurity/crowdsec | [#4712](https://github.com/crowdsecurity/crowdsec/pull/4712) | Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist | ✅ Merged |
 | grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | ✅ Merged |
 | abiosoft/colima | [#1642](https://github.com/abiosoft/colima/pull/1642) | Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted | ✅ Merged |
@@ -192,7 +193,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
-| rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | 🔵 Review |
 | slackhq/nebula | [#1902](https://github.com/slackhq/nebula/pull/1902) | Parse `tun.unsafe_routes` `mtu`, `metric` and gateway `weight` like `install`, so quoted values are honored and float, bool or empty ones no longer panic, also on SIGHUP reload | 🔵 Review |
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
