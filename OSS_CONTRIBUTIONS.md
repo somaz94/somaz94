@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-162-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-163-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-90-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 108 | 77 | 185 |
+| [Standalone contributions](#standalone-contributions) | 109 | 76 | 185 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -77,6 +77,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | fluent/fluent-operator | [#2063](https://github.com/fluent/fluent-operator/pull/2063) | Add autoExtractTimestamp to the Fluent Bit Splunk output CRD so Splunk extracts event timestamps via HEC auto_extract_timestamp | ✅ Merged |
 | kubernetes-csi/external-snapshotter | [#1489](https://github.com/kubernetes-csi/external-snapshotter/pull/1489) | csi-snapshotter: stop the sidecar's own VolumeGroupSnapshotContent writes from bypassing the requeue backoff and flooding the driver with CreateVolumeGroupSnapshot calls | ✅ Merged |
 | argoproj-labs/gitops-promoter | [#2056](https://github.com/argoproj-labs/gitops-promoter/pull/2056) | Release the old Secret finalizer when an ScmProvider or ClusterScmProvider secretRef changes | ✅ Merged |
+| open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5953](https://github.com/nginx/nginx-gateway-fabric/pull/5953) | Fix a control plane panic on a BackendTLSPolicy with an empty caCertificateRefs list | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#5951](https://github.com/nginx/nginx-gateway-fabric/pull/5951) | Remove BackendTLSPolicy validation already enforced by the Gateway API CRD schema and CEL rules | ✅ Merged |
 | oras-project/oras | [#2174](https://github.com/oras-project/oras/pull/2174) | Drop an index's own child manifests from the referrers a registry without Referrers API support reports for it, so `oras cp -r` copies the root index instead of failing to tag it | ✅ Merged |
@@ -201,7 +202,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | dapr/cli | [#1710](https://github.com/dapr/cli/pull/1710) | Send the DAPR_API_TOKEN header on workflow gRPC calls so list, history, purge and rerun work against token-secured sidecars | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |
 | istio/istio | [#61851](https://github.com/istio/istio/pull/61851) | Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs | 🔵 Review |
-| open-telemetry/opentelemetry-operator | [#5628](https://github.com/open-telemetry/opentelemetry-operator/pull/5628) | Add imagePullSecrets to the OpenTelemetryCollector and TargetAllocator CRs so their pods can pull images from private registries | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
 | k8ssandra/k8ssandra-operator | [#1795](https://github.com/k8ssandra/k8ssandra-operator/pull/1795) | Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC | 🔵 Review |
