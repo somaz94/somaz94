@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-164-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-90-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-164-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-91-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 110 | 76 | 186 |
+| [Standalone contributions](#standalone-contributions) | 110 | 77 | 187 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -173,6 +173,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| eksctl-io/eksctl | [#8901](https://github.com/eksctl-io/eksctl/pull/8901) | Stop config files from silently dropping keys written with the wrong case, such as `capacityReservationId` or `NodeGroups`: `ParseConfig` now decodes with apimachinery's strict deserializer, which matches keys case-sensitively and rejects unknown and duplicate keys in one pass, replacing a `sigs.k8s.io/yaml` pre-check whose encoding/json step ignored case | 🔵 Review |
 | go-git/go-git | [#2522](https://github.com/go-git/go-git/pull/2522) | Stop `Log` with `All` and `LogOrderCommitterTime` from ordering commits only within each reference, by seeding one committer-time heap with HEAD and every reference tip the way `git log --all` does, so commits from orphan and side branches interleave by date instead of trailing behind as whole blocks | 🔵 Review |
 | allegro/bigcache | [#441](https://github.com/allegro/bigcache/pull/441) | Stop the first `Get` from panicking with "unaligned 64-bit atomic operation" on 386, arm and 32-bit mips by moving the shard counters into private `atomic.Int64` fields behind an unchanged public `Stats`, resetting them per field with `Store(0)` to fix a data race with `hit()`, and adding a `GOARCH=386 go test` CI step | 🔵 Review |
 | smallstep/certificates | [#2819](https://github.com/smallstep/certificates/pull/2819) | Stop one orders list request from breaking every later ACME order for the account: once no order is pending, `updateAddOrderIDs` now saves the orders index as `[]` instead of nil, which MySQL and PostgreSQL stored as NULL and Badger and bbolt as an empty value, and an empty value already on disk is read as an empty list so the account recovers | 🔵 Review |
