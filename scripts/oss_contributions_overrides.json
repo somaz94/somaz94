@@ -848,5 +848,8 @@
   },
   "abiosoft/colima#1652": {
     "summary": "Keep the k3s listen port with the runtime disk, so an instance deleted without `--data` and started again reuses the port its kept k3s state expects instead of crash-looping on a new random port"
+  },
+  "fyne-io/fyne#6600": {
+    "summary": "Show each tab's icon in the DocTabs \"all tabs\" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row"
   }
 }
