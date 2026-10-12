@@ -833,5 +833,8 @@
   },
   "smallstep/certificates#2819": {
     "summary": "Stop one orders list request from breaking every later ACME order for the account: once no order is pending, `updateAddOrderIDs` now saves the orders index as `[]` instead of nil, which MySQL and PostgreSQL stored as NULL and Badger and bbolt as an empty value, and an empty value already on disk is read as an empty list so the account recovers"
+  },
+  "allegro/bigcache#441": {
+    "summary": "Stop the first `Get` from panicking with \"unaligned 64-bit atomic operation\" on 386, arm and 32-bit mips by moving the shard counters into private `atomic.Int64` fields behind an unchanged public `Stats`, resetting them per field with `Store(0)` to fix a data race with `hit()`, and adding a `GOARCH=386 go test` CI step"
   }
 }
