@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-164-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-93-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-164-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-94-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 110 | 79 | 189 |
+| [Standalone contributions](#standalone-contributions) | 110 | 80 | 190 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -173,6 +173,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | 🔵 Review |
 | abiosoft/colima | [#1652](https://github.com/abiosoft/colima/pull/1652) | Keep the k3s listen port with the runtime disk, so an instance deleted without `--data` and started again reuses the port its kept k3s state expects instead of crash-looping on a new random port | 🔵 Review |
 | wailsapp/wails | [#6251](https://github.com/wailsapp/wails/pull/6251) | Stop the v2 macOS Open and Save file dialogs from aborting with NSInvalidArgumentException when a filter pattern such as `*.tar.gz` or `busted.exe` does not resolve to a UTType: an unresolved extension now falls back to its last component or is skipped, so the dialog opens instead of crashing the app | 🔵 Review |
 | eksctl-io/eksctl | [#8901](https://github.com/eksctl-io/eksctl/pull/8901) | Stop config files from silently dropping keys written with the wrong case, such as `capacityReservationId` or `NodeGroups`: `ParseConfig` now decodes with apimachinery's strict deserializer, which matches keys case-sensitively and rejects unknown and duplicate keys in one pass, replacing a `sigs.k8s.io/yaml` pre-check whose encoding/json step ignored case | 🔵 Review |
