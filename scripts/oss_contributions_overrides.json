@@ -842,5 +842,8 @@
   },
   "eksctl-io/eksctl#8901": {
     "summary": "Stop config files from silently dropping keys written with the wrong case, such as `capacityReservationId` or `NodeGroups`: `ParseConfig` now decodes with apimachinery's strict deserializer, which matches keys case-sensitively and rejects unknown and duplicate keys in one pass, replacing a `sigs.k8s.io/yaml` pre-check whose encoding/json step ignored case"
+  },
+  "wailsapp/wails#6251": {
+    "summary": "Stop the v2 macOS Open and Save file dialogs from aborting with NSInvalidArgumentException when a filter pattern such as `*.tar.gz` or `busted.exe` does not resolve to a UTType: an unresolved extension now falls back to its last component or is skipped, so the dialog opens instead of crashing the app"
   }
 }
