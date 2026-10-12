@@ -845,5 +845,8 @@
   },
   "wailsapp/wails#6251": {
     "summary": "Stop the v2 macOS Open and Save file dialogs from aborting with NSInvalidArgumentException when a filter pattern such as `*.tar.gz` or `busted.exe` does not resolve to a UTType: an unresolved extension now falls back to its last component or is skipped, so the dialog opens instead of crashing the app"
+  },
+  "abiosoft/colima#1652": {
+    "summary": "Keep the k3s listen port with the runtime disk, so an instance deleted without `--data` and started again reuses the port its kept k3s state expects instead of crash-looping on a new random port"
   }
 }
