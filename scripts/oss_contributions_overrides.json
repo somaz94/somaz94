@@ -836,5 +836,8 @@
   },
   "allegro/bigcache#441": {
     "summary": "Stop the first `Get` from panicking with \"unaligned 64-bit atomic operation\" on 386, arm and 32-bit mips by moving the shard counters into private `atomic.Int64` fields behind an unchanged public `Stats`, resetting them per field with `Store(0)` to fix a data race with `hit()`, and adding a `GOARCH=386 go test` CI step"
+  },
+  "go-git/go-git#2522": {
+    "summary": "Stop `Log` with `All` and `LogOrderCommitterTime` from ordering commits only within each reference, by seeding one committer-time heap with HEAD and every reference tip the way `git log --all` does, so commits from orphan and side branches interleave by date instead of trailing behind as whole blocks"
   }
 }
