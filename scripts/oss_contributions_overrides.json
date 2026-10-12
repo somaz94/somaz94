@@ -839,5 +839,8 @@
   },
   "go-git/go-git#2522": {
     "summary": "Stop `Log` with `All` and `LogOrderCommitterTime` from ordering commits only within each reference, by seeding one committer-time heap with HEAD and every reference tip the way `git log --all` does, so commits from orphan and side branches interleave by date instead of trailing behind as whole blocks"
+  },
+  "eksctl-io/eksctl#8901": {
+    "summary": "Stop config files from silently dropping keys written with the wrong case, such as `capacityReservationId` or `NodeGroups`: `ParseConfig` now decodes with apimachinery's strict deserializer, which matches keys case-sensitively and rejects unknown and duplicate keys in one pass, replacing a `sigs.k8s.io/yaml` pre-check whose encoding/json step ignored case"
   }
 }
