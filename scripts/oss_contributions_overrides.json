@@ -851,5 +851,17 @@
   },
   "fyne-io/fyne#6600": {
     "summary": "Show each tab's icon in the DocTabs \"all tabs\" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row"
+  },
+  "argoproj/argo-workflows#16610": {
+    "summary": "Add `type: Preferred` to `retryStrategy.affinity.nodeAntiAffinity`, which steers a retry off the hosts earlier attempts used with a weight-100 `preferredDuringSchedulingIgnoredDuringExecution` term instead of a required one, so once every eligible host has been tried, a retry can still be scheduled instead of staying pending, while `Required` remains the default"
+  },
+  "argoproj/argo-cd#28584": {
+    "summary": "Add a \"Skip Schema Validation\" checkbox to the Application Parameters editor that sends `validate=false` on save, the UI counterpart of `argocd app set --validate=false`, so a quick edit such as an image tag bump can skip server-side schema validation while the unchecked default behaves as before"
+  },
+  "fyrash/fyra-cli#1": {
+    "summary": "Warn on stderr about the secret files `fyra push` withholds by default (`.env*`, `.pem`, `.key`, `.p12`, `.pfx`, `.netrc`), listing only those not already in `.fyraignore`, so a sensitive file kept out of the deploy is reported instead of dropped silently and piped stdout stays clean"
+  },
+  "vapor/vapor#3475": {
+    "summary": "Add a typed `HTTPHeaders.retryAfter` accessor, a `Sendable` `RetryAfter` struct built with `.seconds(_:)` or `.date(_:)` that parses delay-seconds and the three HTTP-date formats `Expires` accepts, so the `Retry-After` on a 429 or 503 response is read and written as a typed value instead of a raw string"
   }
 }
