@@ -866,5 +866,9 @@
   },
   "hashicorp/packer#13723": {
     "summary": "Use overridden source name for packer_build_name in builders, provisioners and post-processors"
+  },
+  "argoproj/argo-cd#30188": {
+    "summary": "Prevent cluster cache lock starvation on unwatchable APIService events by ignoring unchanged Available conditions, stopping retries immediately when groups have no watchable kinds, and coalescing concurrent reconciles"
   }
 }
+
