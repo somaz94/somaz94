@@ -863,5 +863,8 @@
   },
   "vapor/vapor#3475": {
     "summary": "Add a typed `HTTPHeaders.retryAfter` accessor, a `Sendable` `RetryAfter` struct built with `.seconds(_:)` or `.date(_:)` that parses delay-seconds and the three HTTP-date formats `Expires` accepts, so the `Retry-After` on a 429 or 503 response is read and written as a typed value instead of a raw string"
+  },
+  "hashicorp/packer#13723": {
+    "summary": "Use overridden source name for packer_build_name in builders, provisioners and post-processors"
   }
 }
