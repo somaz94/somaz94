@@ -869,6 +869,9 @@
   },
   "argoproj/argo-cd#30188": {
     "summary": "Prevent cluster cache lock starvation on unwatchable APIService events by ignoring unchanged Available conditions, stopping retries immediately when groups have no watchable kinds, and coalescing concurrent reconciles"
+  },
+  "hashicorp/terraform-provider-aws#50463": {
+    "summary": "Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests"
   }
 }
 
