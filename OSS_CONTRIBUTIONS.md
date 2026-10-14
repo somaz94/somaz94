@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-165-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-165-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 111 | 81 | 192 |
+| [Standalone contributions](#standalone-contributions) | 111 | 82 | 193 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -174,6 +174,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | 🔵 Review |
 | argoproj/argo-cd | [#30188](https://github.com/argoproj/argo-cd/pull/30188) | Prevent cluster cache lock starvation on unwatchable APIService events by ignoring unchanged Available conditions, stopping retries immediately when groups have no watchable kinds, and coalescing concurrent reconciles | 🔵 Review |
 | hashicorp/packer | [#13723](https://github.com/hashicorp/packer/pull/13723) | Use overridden source name for packer_build_name in builders, provisioners and post-processors | 🔵 Review |
 | fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | 🔵 Review |
