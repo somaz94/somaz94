@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-165-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-166-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 111 | 82 | 193 |
+| [Standalone contributions](#standalone-contributions) | 112 | 81 | 193 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -63,6 +63,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | ✅ Merged |
 | fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | ✅ Merged |
 | pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | ✅ Merged |
 | distribution/distribution | [#4995](https://github.com/distribution/distribution/pull/4995) | Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice | ✅ Merged |
@@ -177,7 +178,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | 🔵 Review |
 | argoproj/argo-cd | [#30188](https://github.com/argoproj/argo-cd/pull/30188) | Prevent cluster cache lock starvation on unwatchable APIService events by ignoring unchanged Available conditions, stopping retries immediately when groups have no watchable kinds, and coalescing concurrent reconciles | 🔵 Review |
 | hashicorp/packer | [#13723](https://github.com/hashicorp/packer/pull/13723) | Use overridden source name for packer_build_name in builders, provisioners and post-processors | 🔵 Review |
-| fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | 🔵 Review |
 | abiosoft/colima | [#1652](https://github.com/abiosoft/colima/pull/1652) | Keep the k3s listen port with the runtime disk, so an instance deleted without `--data` and started again reuses the port its kept k3s state expects instead of crash-looping on a new random port | 🔵 Review |
 | wailsapp/wails | [#6251](https://github.com/wailsapp/wails/pull/6251) | Stop the v2 macOS Open and Save file dialogs from aborting with NSInvalidArgumentException when a filter pattern such as `*.tar.gz` or `busted.exe` does not resolve to a UTType: an unresolved extension now falls back to its last component or is skipped, so the dialog opens instead of crashing the app | 🔵 Review |
 | eksctl-io/eksctl | [#8901](https://github.com/eksctl-io/eksctl/pull/8901) | Stop config files from silently dropping keys written with the wrong case, such as `capacityReservationId` or `NodeGroups`: `ParseConfig` now decodes with apimachinery's strict deserializer, which matches keys case-sensitively and rejects unknown and duplicate keys in one pass, replacing a `sigs.k8s.io/yaml` pre-check whose encoding/json step ignored case | 🔵 Review |
