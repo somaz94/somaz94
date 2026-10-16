@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-166-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-166-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-98-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 112 | 83 | 195 |
+| [Standalone contributions](#standalone-contributions) | 112 | 84 | 196 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -175,6 +175,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| ipfs/kubo | [#11478](https://github.com/ipfs/kubo/pull/11478) | Fix `ipfs add --nocopy` silently copying data into the blockstore after `Experimental.FilestoreEnabled` or `Experimental.UrlstoreEnabled` is turned on with `ipfs config` while the daemon runs: `add` now errors and asks for a daemon restart when the repo has no FileManager, so a `--nocopy` add the running node cannot honor fails loudly instead of duplicating the file into the blockstore | 🔵 Review |
 | HyNetworks/hysteria | [#1704](https://github.com/HyNetworks/hysteria/pull/1704) | Fix ACL rules rejecting hyphenated outbound names: the rule line regex in `extras/outbounds/acl/parse.go` now accepts `[\w-]+` instead of `\w+` as the outbound name, so a rule like `New-turkey(geosite:cn)` that names an outbound the server config already accepts no longer fails with "invalid syntax" | 🔵 Review |
 | yorukot/superfile | [#1685](https://github.com/yorukot/superfile/pull/1685) | Stop file operation hotkeys from acting on the file panel while another panel has focus: paste, new-file, extract and compress in `mainKey` now run only when the file panel is focused, matching copy, cut, delete and rename, so Ctrl+V with the sidebar focused no longer pastes into the file panel | 🔵 Review |
 | hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | 🔵 Review |
