@@ -875,6 +875,9 @@
   },
   "yorukot/superfile#1685": {
     "summary": "Stop file operation hotkeys from acting on the file panel while another panel has focus: paste, new-file, extract and compress in `mainKey` now run only when the file panel is focused, matching copy, cut, delete and rename, so Ctrl+V with the sidebar focused no longer pastes into the file panel"
+  },
+  "HyNetworks/hysteria#1704": {
+    "summary": "Fix ACL rules rejecting hyphenated outbound names: the rule line regex in `extras/outbounds/acl/parse.go` now accepts `[\\w-]+` instead of `\\w+` as the outbound name, so a rule like `New-turkey(geosite:cn)` that names an outbound the server config already accepts no longer fails with \"invalid syntax\""
   }
 }
 
