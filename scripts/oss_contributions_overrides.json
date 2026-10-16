@@ -872,6 +872,9 @@
   },
   "hashicorp/terraform-provider-aws#50463": {
     "summary": "Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests"
+  },
+  "yorukot/superfile#1685": {
+    "summary": "Stop file operation hotkeys from acting on the file panel while another panel has focus: paste, new-file, extract and compress in `mainKey` now run only when the file panel is focused, matching copy, cut, delete and rename, so Ctrl+V with the sidebar focused no longer pastes into the file panel"
   }
 }
 
