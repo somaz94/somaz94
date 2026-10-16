@@ -878,6 +878,9 @@
   },
   "HyNetworks/hysteria#1704": {
     "summary": "Fix ACL rules rejecting hyphenated outbound names: the rule line regex in `extras/outbounds/acl/parse.go` now accepts `[\\w-]+` instead of `\\w+` as the outbound name, so a rule like `New-turkey(geosite:cn)` that names an outbound the server config already accepts no longer fails with \"invalid syntax\""
+  },
+  "ipfs/kubo#11478": {
+    "summary": "Fix `ipfs add --nocopy` silently copying data into the blockstore after `Experimental.FilestoreEnabled` or `Experimental.UrlstoreEnabled` is turned on with `ipfs config` while the daemon runs: `add` now errors and asks for a daemon restart when the repo has no FileManager, so a `--nocopy` add the running node cannot honor fails loudly instead of duplicating the file into the blockstore"
   }
 }
 
