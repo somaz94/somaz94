@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-166-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-166-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 112 | 81 | 193 |
+| [Standalone contributions](#standalone-contributions) | 112 | 83 | 195 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -175,6 +175,8 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| HyNetworks/hysteria | [#1704](https://github.com/HyNetworks/hysteria/pull/1704) | Fix ACL rules rejecting hyphenated outbound names: the rule line regex in `extras/outbounds/acl/parse.go` now accepts `[\w-]+` instead of `\w+` as the outbound name, so a rule like `New-turkey(geosite:cn)` that names an outbound the server config already accepts no longer fails with "invalid syntax" | 🔵 Review |
+| yorukot/superfile | [#1685](https://github.com/yorukot/superfile/pull/1685) | Stop file operation hotkeys from acting on the file panel while another panel has focus: paste, new-file, extract and compress in `mainKey` now run only when the file panel is focused, matching copy, cut, delete and rename, so Ctrl+V with the sidebar focused no longer pastes into the file panel | 🔵 Review |
 | hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | 🔵 Review |
 | argoproj/argo-cd | [#30188](https://github.com/argoproj/argo-cd/pull/30188) | Prevent cluster cache lock starvation on unwatchable APIService events by ignoring unchanged Available conditions, stopping retries immediately when groups have no watchable kinds, and coalescing concurrent reconciles | 🔵 Review |
 | hashicorp/packer | [#13723](https://github.com/hashicorp/packer/pull/13723) | Use overridden source name for packer_build_name in builders, provisioners and post-processors | 🔵 Review |
