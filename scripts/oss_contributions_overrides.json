@@ -884,6 +884,9 @@
   },
   "99designs/gqlgen#4389": {
     "summary": "Fix `CollectFields` returning a field twice when a query selects it through two interfaces the same object implements, as in `posts { awards { id name } ... on PostInterface2 { awards { __typename } } }`: the collector now merges same-key entries whose definitions are both interfaces the resolved object satisfies, so the response keeps every requested subfield instead of only the selection set written last"
+  },
+  "0xERR0R/blocky#2311": {
+    "summary": "Fix DNSSEC validation returning SERVFAIL for wildcard answers reached through a CNAME: `validateWildcardProof` in `resolver/dnssec/wildcard.go` now checks the NSEC/NSEC3 proof against the expanded owner name (the CNAME target) instead of the original query name, so `www.vice.com` pointing to `savageplatform.go-vip.net` (served from `*.go-vip.net`) validates instead of being marked Bogus"
   }
 }
 
