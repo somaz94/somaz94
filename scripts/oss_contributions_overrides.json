@@ -881,6 +881,9 @@
   },
   "ipfs/kubo#11478": {
     "summary": "Fix `ipfs add --nocopy` silently copying data into the blockstore after `Experimental.FilestoreEnabled` or `Experimental.UrlstoreEnabled` is turned on with `ipfs config` while the daemon runs: `add` now errors and asks for a daemon restart when the repo has no FileManager, so a `--nocopy` add the running node cannot honor fails loudly instead of duplicating the file into the blockstore"
+  },
+  "99designs/gqlgen#4389": {
+    "summary": "Fix `CollectFields` returning a field twice when a query selects it through two interfaces the same object implements, as in `posts { awards { id name } ... on PostInterface2 { awards { __typename } } }`: the collector now merges same-key entries whose definitions are both interfaces the resolved object satisfies, so the response keeps every requested subfield instead of only the selection set written last"
   }
 }
 
