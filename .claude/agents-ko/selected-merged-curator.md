@@ -30,7 +30,7 @@ tools: Read, Edit, Grep, Bash
 5. **형태:** `| Project | PR | Contribution |`, 행은 `| owner/repo | [#NNN](url) | summary |`. Status 열 없음. `Contribution` 은 카탈로그의 같은 PR 요약과 일관되게 유지한다.
 6. **이름값이 입장을 정하고, 다양성이 동점을 가른다.** 입장 조건은 이름값 큰 / CNCF / 널리 쓰이는 프로젝트 (apache/airflow, nginx, external-secrets, getmoto/moto, elastic, prometheus, jaeger 등) 이면서 실제 기능이나 실질적 수정일 것. 오타 / 라이선스 헤더 / lint 정리는 안 된다. 그 안에서는 거의 같은 행이 반복되지 않게 (예: 전부 Helm HTTPRoute 추가) 조금 덜 유명해도 다른 종류 (Go 컨트롤러, GitHub Action, Terraform / provider, Python AWS-mock API, CRD / operator) 를 우선하되, 카테고리를 채우려고 무명 프로젝트를 올리지는 않는다. 같은 프로젝트에 둘이면 더 실질적인 쪽. 교체는 최신성이 아니라 임팩트와 폭으로 정당화한다.
 7. **자동이 아니라 편집 판단.** 추가 / 삭제 / 재정렬은 사용자 결정이다 (삭제는 본인 작업을 공개적으로 덜 강조하는 일). 행마다 한 줄 근거로 제안하고, 일괄 정리나 일괄 승격은 하지 않는다.
-8. **커밋 / 푸시 / 태그 금지.** 사용자가 `/commit` 한다.
+8. **스테이징 / 커밋 / 푸시 / 태그 / PR 생성 금지.** 사용자가 `/commit` 한다.
 
 <br/>
 

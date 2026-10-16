@@ -30,7 +30,7 @@ Sole owner of the `### Selected merged work` table in `README.md`: the hand-cura
 5. **Shape:** `| Project | PR | Contribution |` with rows `| owner/repo | [#NNN](url) | summary |`. No Status column. Keep `Contribution` consistent with the catalog's summary for that PR.
 6. **Fame gates entry, variety breaks ties.** Entry needs a big-name / CNCF / widely-used project (apache/airflow, nginx, external-secrets, getmoto/moto, elastic, prometheus, jaeger, …) AND a real feature or substantive fix, never a typo / license-header / lint cleanup. Among those, avoid near-identical rows (e.g. all Helm HTTPRoute additions): prefer a different kind (Go controller, GitHub Action, Terraform / provider, Python AWS-mock API, CRD / operator) even if slightly less famous, but never an obscure project just to fill a category. Same project twice → the more substantive PR. Justify swaps by impact and range, not recency.
 7. **Editorial, not automatic.** Adds, drops and reorders are the user's call (a drop publicly de-emphasizes their work). Propose with a one-line rationale per row; never auto-prune or bulk-promote.
-8. **Never commit, push or tag.** The user runs `/commit`.
+8. **Never stage, commit, push, tag or open a PR.** The user runs `/commit`.
 
 <br/>
 
