@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 115 | 83 | 198 |
+| [Standalone contributions](#standalone-contributions) | 115 | 82 | 197 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -209,7 +209,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | trufflesecurity/trufflehog | [#5378](https://github.com/trufflesecurity/trufflehog/pull/5378) | Strip the calling hook's repo-local Git variables from the `git clone` TruffleHog runs, so a pre-commit hook running `trufflehog git file://.` no longer turns `git commit -a` into an empty commit | 🔵 Review |
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
-| slackhq/nebula | [#1902](https://github.com/slackhq/nebula/pull/1902) | Parse `tun.unsafe_routes` `mtu`, `metric` and gateway `weight` like `install`, so quoted values are honored and float, bool or empty ones no longer panic, also on SIGHUP reload | 🔵 Review |
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
 | grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
 | prometheus-community/helm-charts | [#7310](https://github.com/prometheus-community/helm-charts/pull/7310) | Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready | 🔵 Review |
