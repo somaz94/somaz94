@@ -896,6 +896,9 @@
   },
   "ccfos/nightingale#3437": {
     "summary": "Fix script notify channels receiving a literal `\\n` instead of line breaks: `RenderEventForChannel` in `models/message_tpl.go` now renders plain text for the script, wecomapp, feishuapp and smtp channels, whose providers encode the message themselves, while HTTP channels keep the JSON escaping their request bodies need"
+  },
+  "gogf/gf#4926": {
+    "summary": "Fix `TransactionWithOptions` failing with \"unsupported propagation behavior\" when `TxOptions.Propagation` is left empty: `database/gdb/gdb_core_transaction.go` now falls back to `DefaultTxOptions` (`PropagationNested`) the way `Transaction` does, so a caller can set only `ReadOnly` or `Isolation`, and the sqlite and sqlitecgo tests that pinned the old error are updated"
   }
 }
 
