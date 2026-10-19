@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 115 | 82 | 197 |
+| [Standalone contributions](#standalone-contributions) | 115 | 83 | 198 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -178,6 +178,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| OpenListTeam/OpenList | [#3209](https://github.com/OpenListTeam/OpenList/pull/3209) | Fix `/api/fs/list` returning `provider: "unknown"` for every storage since #1532 moved the storage lookup under the write permission check: `FsList` in `server/handles/fsread.go` now looks the storage up for every list request, so `provider` carries the storage driver name again, while the direct upload tools stay limited to users who can write content at the path | 🔵 Review |
 | 0xERR0R/blocky | [#2311](https://github.com/0xERR0R/blocky/pull/2311) | Fix DNSSEC validation returning SERVFAIL for wildcard answers reached through a CNAME: `validateWildcardProof` in `resolver/dnssec/wildcard.go` now checks the NSEC/NSEC3 proof against the expanded owner name (the CNAME target) instead of the original query name, so `www.vice.com` pointing to `savageplatform.go-vip.net` (served from `*.go-vip.net`) validates instead of being marked Bogus | 🔵 Review |
 | 99designs/gqlgen | [#4389](https://github.com/99designs/gqlgen/pull/4389) | Fix `CollectFields` returning a field twice when a query selects it through two interfaces the same object implements, as in `posts { awards { id name } ... on PostInterface2 { awards { __typename } } }`: the collector now merges same-key entries whose definitions are both interfaces the resolved object satisfies, so the response keeps every requested subfield instead of only the selection set written last | 🔵 Review |
 | ipfs/kubo | [#11478](https://github.com/ipfs/kubo/pull/11478) | Fix `ipfs add --nocopy` silently copying data into the blockstore after `Experimental.FilestoreEnabled` or `Experimental.UrlstoreEnabled` is turned on with `ipfs config` while the daemon runs: `add` now errors and asks for a daemon restart when the repo has no FileManager, so a `--nocopy` add the running node cannot honor fails loudly instead of duplicating the file into the blockstore | 🔵 Review |
