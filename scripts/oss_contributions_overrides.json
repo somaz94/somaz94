@@ -890,6 +890,9 @@
   },
   "OpenListTeam/OpenList#3209": {
     "summary": "Fix `/api/fs/list` returning `provider: \"unknown\"` for every storage since #1532 moved the storage lookup under the write permission check: `FsList` in `server/handles/fsread.go` now looks the storage up for every list request, so `provider` carries the storage driver name again, while the direct upload tools stay limited to users who can write content at the path"
+  },
+  "elastic/beats#53857": {
+    "summary": "Apply the dns processor success_cache and failure_cache settings that were ignored since 8.11, and stop the success cache following failure_cache.enabled"
   }
 }
 
