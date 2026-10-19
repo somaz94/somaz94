@@ -893,6 +893,9 @@
   },
   "elastic/beats#53857": {
     "summary": "Apply the dns processor success_cache and failure_cache settings that were ignored since 8.11, and stop the success cache following failure_cache.enabled"
+  },
+  "ccfos/nightingale#3437": {
+    "summary": "Fix script notify channels receiving a literal `\\n` instead of line breaks: `RenderEventForChannel` in `models/message_tpl.go` now renders plain text for the script, wecomapp, feishuapp and smtp channels, whose providers encode the message themselves, while HTTP channels keep the JSON escaping their request bodies need"
   }
 }
 
