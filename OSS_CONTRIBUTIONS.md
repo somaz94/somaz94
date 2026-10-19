@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 115 | 86 | 201 |
+| [Standalone contributions](#standalone-contributions) | 115 | 87 | 202 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -178,6 +178,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| OT-CONTAINER-KIT/redis-operator | [#1945](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1945) | Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied | 🔵 Review |
 | gogf/gf | [#4926](https://github.com/gogf/gf/pull/4926) | Fix `TransactionWithOptions` failing with "unsupported propagation behavior" when `TxOptions.Propagation` is left empty: `database/gdb/gdb_core_transaction.go` now falls back to `DefaultTxOptions` (`PropagationNested`) the way `Transaction` does, so a caller can set only `ReadOnly` or `Isolation`, and the sqlite and sqlitecgo tests that pinned the old error are updated | 🔵 Review |
 | ccfos/nightingale | [#3437](https://github.com/ccfos/nightingale/pull/3437) | Fix script notify channels receiving a literal `\n` instead of line breaks: `RenderEventForChannel` in `models/message_tpl.go` now renders plain text for the script, wecomapp, feishuapp and smtp channels, whose providers encode the message themselves, while HTTP channels keep the JSON escaping their request bodies need | 🔵 Review |
 | elastic/beats | [#53857](https://github.com/elastic/beats/pull/53857) | Apply the dns processor success_cache and failure_cache settings that were ignored since 8.11, and stop the success cache following failure_cache.enabled | 🔵 Review |
