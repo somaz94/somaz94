@@ -103,7 +103,7 @@ Contributions to external open-source projects.
 | kubernetes-sigs/kueue | [#12736](https://github.com/kubernetes-sigs/kueue/pull/12736) | Fix a data race on the ClusterQueue sticky workload between the Visibility API snapshot and preemption requeue |
 | external-secrets/external-secrets | [#6481](https://github.com/external-secrets/external-secrets/pull/6481) | Scope the ESO cert-controller ClusterRole to least-privilege in the Helm chart |
 | vectordotdev/vector | [#25607](https://github.com/vectordotdev/vector/pull/25607) | Add a host_metrics temperature collector via sysinfo Components |
-| argoproj-labs/terraform-provider-argocd | [#920](https://github.com/argoproj-labs/terraform-provider-argocd/pull/920) | Restore project role policy validation lost in the plugin-framework migration, sourcing the allowed resources from Argo CD's exported project-scoped set |
+| hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests |
 
 <!-- OSS:START -->
 
