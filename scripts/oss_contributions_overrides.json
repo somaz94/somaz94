@@ -900,6 +900,9 @@
   "gogf/gf#4926": {
     "summary": "Fix `TransactionWithOptions` failing with \"unsupported propagation behavior\" when `TxOptions.Propagation` is left empty: `database/gdb/gdb_core_transaction.go` now falls back to `DefaultTxOptions` (`PropagationNested`) the way `Transaction` does, so a caller can set only `ReadOnly` or `Isolation`, and the sqlite and sqlitecgo tests that pinned the old error are updated"
   },
+  "gogf/gf#4927": {
+    "summary": "Fix a data race when two servers register routes and start in different goroutines: the package-level `preBindItems` slice in `net/ghttp/ghttp_server_router_group.go` is now guarded by a mutex, with routes bound outside the lock, and `Test_Issue4128` fails under `-race` without the fix"
+  },
   "OT-CONTAINER-KIT/redis-operator#1945": {
     "summary": "Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied"
   }
