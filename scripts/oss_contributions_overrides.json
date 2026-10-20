@@ -905,6 +905,9 @@
   },
   "OT-CONTAINER-KIT/redis-operator#1945": {
     "summary": "Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied"
+  },
+  "clastix/kamaji#1373": {
+    "summary": "Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it"
   }
 }
 
