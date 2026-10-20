@@ -911,6 +911,9 @@
   },
   "nginx/nginx-prometheus-exporter#1371": {
     "summary": "Stop one missing unix socket from marking every scrape target down: collectors shared a single `http.Transport` and `registerCollector` overwrote its `DialContext` for each unix socket target, so all collectors dialed the last socket and `nginx_up` went to 0 everywhere; each collector now gets its own cloned transport, fixing #1358, and a regression test covers it"
+  },
+  "turbot/steampipe#5071": {
+    "summary": "Stop one bad config file from freezing connection syncing: `loadConfig` failed the whole load on any malformed `.spc` file, undecodable block, or duplicated plugin or options block, so the connection watcher never reached `RefreshConnections`; each file is now parsed on its own and dropped with a warning, block failures skip just that block, and the load still errors when nothing else defines config so existing schemas are kept, fixing #5039, with regression tests on the loader and the watcher path"
   }
 }
 
