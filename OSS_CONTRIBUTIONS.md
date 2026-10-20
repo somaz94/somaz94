@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-104-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 115 | 89 | 204 |
+| [Standalone contributions](#standalone-contributions) | 115 | 90 | 205 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -178,6 +178,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| nginx/nginx-prometheus-exporter | [#1371](https://github.com/nginx/nginx-prometheus-exporter/pull/1371) | Stop one missing unix socket from marking every scrape target down: collectors shared a single `http.Transport` and `registerCollector` overwrote its `DialContext` for each unix socket target, so all collectors dialed the last socket and `nginx_up` went to 0 everywhere; each collector now gets its own cloned transport, fixing #1358, and a regression test covers it | 🔵 Review |
 | clastix/kamaji | [#1373](https://github.com/clastix/kamaji/pull/1373) | Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it | 🔵 Review |
 | gogf/gf | [#4927](https://github.com/gogf/gf/pull/4927) | Fix a data race when two servers register routes and start in different goroutines: the package-level `preBindItems` slice in `net/ghttp/ghttp_server_router_group.go` is now guarded by a mutex, with routes bound outside the lock, and `Test_Issue4128` fails under `-race` without the fix | 🔵 Review |
 | OT-CONTAINER-KIT/redis-operator | [#1945](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1945) | Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied | 🔵 Review |
