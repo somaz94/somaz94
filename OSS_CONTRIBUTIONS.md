@@ -256,7 +256,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
-| ray-project/kuberay | [#4934](https://github.com/ray-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
+| kuberay-project/kuberay | [#4934](https://github.com/kuberay-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add a typed `HTTPHeaders.retryAfter` accessor, a `Sendable` `RetryAfter` struct built with `.seconds(_:)` or `.date(_:)` that parses delay-seconds and the three HTTP-date formats `Expires` accepts, so the `Retry-After` on a 429 or 503 response is read and written as a typed value instead of a raw string | 🔵 Review |
 | tj-actions/changed-files | [#2884](https://github.com/tj-actions/changed-files/pull/2884) | Hardened README to recommend injection-safe consumption of the changed-files list (JSON + bash array + `--` separator). | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
