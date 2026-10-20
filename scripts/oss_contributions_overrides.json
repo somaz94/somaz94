@@ -908,6 +908,9 @@
   },
   "clastix/kamaji#1373": {
     "summary": "Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it"
+  },
+  "nginx/nginx-prometheus-exporter#1371": {
+    "summary": "Stop one missing unix socket from marking every scrape target down: collectors shared a single `http.Transport` and `registerCollector` overwrote its `DialContext` for each unix socket target, so all collectors dialed the last socket and `nginx_up` went to 0 everywhere; each collector now gets its own cloned transport, fixing #1358, and a regression test covers it"
   }
 }
 
