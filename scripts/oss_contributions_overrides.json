@@ -917,6 +917,9 @@
   },
   "dapr/docs#5407": {
     "summary": "Document the Consul name resolution options `selfDeregister` and `useCache` that the component already reads, correct the stale claim that Dapr never deregisters services, and distinguish the in-memory `useCache` from `queryOptions.useCache`, closing #4797"
+  },
+  "dapr/components-contrib#4679": {
+    "summary": "List the Consul name resolution configuration keys the component actually reads: `metadata.yaml` now uses the real nested paths (`client.*`, `queryOptions.*`) that `parseConfig` reads, drops the never-read `authenticationProfiles` block, and fixes the required flags and the `tags` example, closing #4678"
   }
 }
 
