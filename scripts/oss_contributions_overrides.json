@@ -914,6 +914,9 @@
   },
   "turbot/steampipe#5071": {
     "summary": "Stop one bad config file from freezing connection syncing: `loadConfig` failed the whole load on any malformed `.spc` file, undecodable block, or duplicated plugin or options block, so the connection watcher never reached `RefreshConnections`; each file is now parsed on its own and dropped with a warning, block failures skip just that block, and the load still errors when nothing else defines config so existing schemas are kept, fixing #5039, with regression tests on the loader and the watcher path"
+  },
+  "dapr/docs#5407": {
+    "summary": "Document the Consul name resolution options `selfDeregister` and `useCache` that the component already reads, correct the stale claim that Dapr never deregisters services, and distinguish the in-memory `useCache` from `queryOptions.useCache`, closing #4797"
   }
 }
 
