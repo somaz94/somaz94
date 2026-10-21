@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-170-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-170-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-107-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 116 | 92 | 208 |
+| [Standalone contributions](#standalone-contributions) | 116 | 93 | 209 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -179,6 +179,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| openimsdk/open-im-server | [#3824](https://github.com/openimsdk/open-im-server/pull/3824) | Honor the `failedContinue` webhook option for before callbacks again: since the 3.7.0 refactor it was parsed but ignored, so an unreachable receiver or a non-JSON response failed the operation; such callbacks now continue when the option is set, while rejections returned by the receiver still propagate, fixing #3808 | 🔵 Review |
 | dapr/components-contrib | [#4679](https://github.com/dapr/components-contrib/pull/4679) | List the Consul name resolution configuration keys the component actually reads: `metadata.yaml` now uses the real nested paths (`client.*`, `queryOptions.*`) that `parseConfig` reads, drops the never-read `authenticationProfiles` block, and fixes the required flags and the `tags` example, closing #4678 | 🔵 Review |
 | dapr/docs | [#5407](https://github.com/dapr/docs/pull/5407) | Document the Consul name resolution options `selfDeregister` and `useCache` that the component already reads, correct the stale claim that Dapr never deregisters services, and distinguish the in-memory `useCache` from `queryOptions.useCache`, closing #4797 | 🔵 Review |
 | turbot/steampipe | [#5071](https://github.com/turbot/steampipe/pull/5071) | Stop one bad config file from freezing connection syncing: `loadConfig` failed the whole load on any malformed `.spc` file, undecodable block, or duplicated plugin or options block, so the connection watcher never reached `RefreshConnections`; each file is now parsed on its own and dropped with a warning, block failures skip just that block, and the load still errors when nothing else defines config so existing schemas are kept, fixing #5039, with regression tests on the loader and the watcher path | 🔵 Review |
