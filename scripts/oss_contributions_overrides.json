@@ -920,6 +920,9 @@
   },
   "dapr/components-contrib#4679": {
     "summary": "List the Consul name resolution configuration keys the component actually reads: `metadata.yaml` now uses the real nested paths (`client.*`, `queryOptions.*`) that `parseConfig` reads, drops the never-read `authenticationProfiles` block, and fixes the required flags and the `tags` example, closing #4678"
+  },
+  "openimsdk/open-im-server#3824": {
+    "summary": "Honor the `failedContinue` webhook option for before callbacks again: since the 3.7.0 refactor it was parsed but ignored, so an unreachable receiver or a non-JSON response failed the operation; such callbacks now continue when the option is set, while rejections returned by the receiver still propagate, fixing #3808"
   }
 }
 
