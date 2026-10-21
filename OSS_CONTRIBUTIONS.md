@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-169-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-107-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-170-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 115 | 93 | 208 |
+| [Standalone contributions](#standalone-contributions) | 116 | 92 | 208 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -63,6 +63,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| clastix/kamaji | [#1373](https://github.com/clastix/kamaji/pull/1373) | Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it | ✅ Merged |
 | hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | ✅ Merged |
 | fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | ✅ Merged |
 | TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | ✅ Merged |
@@ -182,7 +183,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | dapr/docs | [#5407](https://github.com/dapr/docs/pull/5407) | Document the Consul name resolution options `selfDeregister` and `useCache` that the component already reads, correct the stale claim that Dapr never deregisters services, and distinguish the in-memory `useCache` from `queryOptions.useCache`, closing #4797 | 🔵 Review |
 | turbot/steampipe | [#5071](https://github.com/turbot/steampipe/pull/5071) | Stop one bad config file from freezing connection syncing: `loadConfig` failed the whole load on any malformed `.spc` file, undecodable block, or duplicated plugin or options block, so the connection watcher never reached `RefreshConnections`; each file is now parsed on its own and dropped with a warning, block failures skip just that block, and the load still errors when nothing else defines config so existing schemas are kept, fixing #5039, with regression tests on the loader and the watcher path | 🔵 Review |
 | nginx/nginx-prometheus-exporter | [#1371](https://github.com/nginx/nginx-prometheus-exporter/pull/1371) | Stop one missing unix socket from marking every scrape target down: collectors shared a single `http.Transport` and `registerCollector` overwrote its `DialContext` for each unix socket target, so all collectors dialed the last socket and `nginx_up` went to 0 everywhere; each collector now gets its own cloned transport, fixing #1358, and a regression test covers it | 🔵 Review |
-| clastix/kamaji | [#1373](https://github.com/clastix/kamaji/pull/1373) | Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it | 🔵 Review |
 | gogf/gf | [#4927](https://github.com/gogf/gf/pull/4927) | Fix a data race when two servers register routes and start in different goroutines: the package-level `preBindItems` slice in `net/ghttp/ghttp_server_router_group.go` is now guarded by a mutex, with routes bound outside the lock, and `Test_Issue4128` fails under `-race` without the fix | 🔵 Review |
 | OT-CONTAINER-KIT/redis-operator | [#1945](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1945) | Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied | 🔵 Review |
 | gogf/gf | [#4926](https://github.com/gogf/gf/pull/4926) | Fix `TransactionWithOptions` failing with "unsupported propagation behavior" when `TxOptions.Propagation` is left empty: `database/gdb/gdb_core_transaction.go` now falls back to `DefaultTxOptions` (`PropagationNested`) the way `Transaction` does, so a caller can set only `ReadOnly` or `Isolation`, and the sqlite and sqlitecgo tests that pinned the old error are updated | 🔵 Review |
