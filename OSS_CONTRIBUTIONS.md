@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-174-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-98-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-174-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 6 | 31 |
-| [Standalone contributions](#standalone-contributions) | 120 | 88 | 208 |
+| [Standalone contributions](#standalone-contributions) | 120 | 89 | 209 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -179,6 +179,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| trpc-group/trpc-agent-go | [#2689](https://github.com/trpc-group/trpc-agent-go/pull/2689) | Give a child agent forked with `HistoryScopeParentBranch` its parent's session summary in the default prefix branch filter mode: the summary lookup checked only the exact branch key and its descendants, so the child got the parent branch's full raw history without the summary; it now falls back to the nearest ancestor summary and its boundary, so the child sees the same history window as the parent, fixing #2685, and a regression test covers it | 🔵 Review |
 | prometheus-community/helm-charts | [#7400](https://github.com/prometheus-community/helm-charts/pull/7400) | Add opt-in podLabels, priorityClassName and topologySpreadConstraints to the alertmanager-snmp-notifier chart, plus its first helm-unittest suite | 🔵 Review |
 | openimsdk/open-im-server | [#3824](https://github.com/openimsdk/open-im-server/pull/3824) | Honor the `failedContinue` webhook option for before callbacks again: since the 3.7.0 refactor it was parsed but ignored, so an unreachable receiver or a non-JSON response failed the operation; such callbacks now continue when the option is set, while rejections returned by the receiver still propagate, fixing #3808 | 🔵 Review |
 | dapr/components-contrib | [#4679](https://github.com/dapr/components-contrib/pull/4679) | List the Consul name resolution configuration keys the component actually reads: `metadata.yaml` now uses the real nested paths (`client.*`, `queryOptions.*`) that `parseConfig` reads, drops the never-read `authenticationProfiles` block, and fixes the required flags and the `tags` example, closing #4678 | 🔵 Review |
