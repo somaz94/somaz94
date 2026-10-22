@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-170-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-107-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-171-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 10 | 35 |
-| [Standalone contributions](#standalone-contributions) | 116 | 93 | 209 |
+| [Standalone contributions](#standalone-contributions) | 117 | 92 | 209 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -69,6 +69,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | ✅ Merged |
 | 99designs/gqlgen | [#4360](https://github.com/99designs/gqlgen/pull/4360) | Stop the websocket transport from sending `complete` when the connection context from `InitFunc` is cancelled, so a server shutdown no longer races the close frame and tells clients their subscriptions finished normally | ✅ Merged |
 | fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | ✅ Merged |
+| pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | ✅ Merged |
 | pulumi/pulumi | [#24986](https://github.com/pulumi/pulumi/pull/24986) | Fall back to the unprefixed version tag when a Git-sourced plugin has no `v` tag, so `pulumi package` and `pulumi plugin install` can download plugins from repositories that tag releases as plain `1.0.0` | ✅ Merged |
 | distribution/distribution | [#4995](https://github.com/distribution/distribution/pull/4995) | Return 400 NAME_INVALID instead of 500 UNKNOWN for repository names longer than 255 characters, and stop the registry dispatcher's early returns from writing the error response twice | ✅ Merged |
 | lima-vm/lima | [#5554](https://github.com/lima-vm/lima/pull/5554) | Let the krunkit driver take over a disk lock left behind by the same instance, as vz and qemu already do, so an instance that stopped uncleanly can start again with its additional disks | ✅ Merged |
@@ -213,7 +214,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | asdf-vm/asdf | [#2340](https://github.com/asdf-vm/asdf/pull/2340) | Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install | 🔵 Review |
 | kedacore/keda | [#8254](https://github.com/kedacore/keda/pull/8254) | Read the Azure Workload Identity client id from the scale target's service account annotation when `identityOwner: workload` is set, as aws already does, so a TriggerAuthentication no longer has to repeat each workload's `identityId` | 🔵 Review |
 | kedacore/keda-docs | [#1894](https://github.com/kedacore/keda-docs/pull/1894) | Document Azure Workload Identity's `identityOwner: workload`, which takes the client id from the scale target's service account, still needs a federated credential for the KEDA operator and cannot be combined with `identityId` | 🔵 Review |
-| pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | 🔵 Review |
 | wailsapp/wails | [#6212](https://github.com/wailsapp/wails/pull/6212) | Mark dependencies that only the local check finds as installed in the v2 `wails doctor` on Linux, so npm is no longer reported missing when the package manager does not list it, for example in a container image with the apt lists removed | 🔵 Review |
 | goss-org/goss | [#1136](https://github.com/goss-org/goss/pull/1136) | Stop a `not` around an `or` from panicking when no child matched, so a missing gjson path or an erroring child such as `have-key` against a string reports the failure instead of crashing goss | 🔵 Review |
 | hashicorp/packer | [#13716](https://github.com/hashicorp/packer/pull/13716) | Keep `PACKER_GITHUB_API_TOKEN` on redirected requests, so installing a plugin whose GitHub repository was renamed or transferred no longer falls back to the anonymous rate limit and blocks the plugins installed after it | 🔵 Review |
