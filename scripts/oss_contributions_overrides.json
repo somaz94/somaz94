@@ -926,5 +926,8 @@
   },
   "prometheus-community/helm-charts#7400": {
     "summary": "Add opt-in podLabels, priorityClassName and topologySpreadConstraints to the alertmanager-snmp-notifier chart, plus its first helm-unittest suite"
+  },
+  "trpc-group/trpc-agent-go#2689": {
+    "summary": "Give a child agent forked with `HistoryScopeParentBranch` its parent's session summary in the default prefix branch filter mode: the summary lookup checked only the exact branch key and its descendants, so the child got the parent branch's full raw history without the summary; it now falls back to the nearest ancestor summary and its boundary, so the child sees the same history window as the parent, fixing #2685, and a regression test covers it"
   }
 }
