@@ -923,6 +923,8 @@
   },
   "openimsdk/open-im-server#3824": {
     "summary": "Honor the `failedContinue` webhook option for before callbacks again: since the 3.7.0 refactor it was parsed but ignored, so an unreachable receiver or a non-JSON response failed the operation; such callbacks now continue when the option is set, while rejections returned by the receiver still propagate, fixing #3808"
+  },
+  "prometheus-community/helm-charts#7400": {
+    "summary": "Add opt-in podLabels, priorityClassName and topologySpreadConstraints to the alertmanager-snmp-notifier chart, plus its first helm-unittest suite"
   }
 }
-
