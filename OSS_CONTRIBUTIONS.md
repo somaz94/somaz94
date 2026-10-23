@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-175-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-176-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 6 | 31 |
-| [Standalone contributions](#standalone-contributions) | 121 | 91 | 212 |
+| [Standalone contributions](#standalone-contributions) | 122 | 91 | 213 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -59,6 +59,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| eugenioenko/ttt | [#1116](https://github.com/eugenioenko/ttt/pull/1116) | Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests | ✅ Merged |
 | cncf/gitdm | [#1295](https://github.com/cncf/gitdm/pull/1295) | Add affiliation for somaz94 | ✅ Merged |
 | clastix/kamaji | [#1373](https://github.com/clastix/kamaji/pull/1373) | Stop a PostgreSQL database switch from retargeting the root connection: the switch closure in `internal/datastore/postgresql.go` now copies `*pg.Options` before setting `Database` instead of writing through the shared pointer, so a root-pool redial no longer lands in the tenant database and makes `DeleteDB`'s `DROP DATABASE` fail with `55006`; a regression test covers it | ✅ Merged |
 | gogf/gf | [#4927](https://github.com/gogf/gf/pull/4927) | Fix a data race when two servers register routes and start in different goroutines: the package-level `preBindItems` slice in `net/ghttp/ghttp_server_router_group.go` is now guarded by a mutex, with routes bound outside the lock, and `Test_Issue4128` fails under `-race` without the fix | ✅ Merged |
@@ -180,7 +181,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
-| eugenioenko/ttt | [#1116](https://github.com/eugenioenko/ttt/pull/1116) | Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests | 🔵 Review |
+| k8snetworkplumbingwg/multus-cni | [#1573](https://github.com/k8snetworkplumbingwg/multus-cni/pull/1573) | Stop the thick-plugin daemon from leaking a log file descriptor per CNI request: `SetLogOptions` and `SetLogFile` in `pkg/logging/logging.go`, called by `LoadNetConf` on every request, each replaced the package-level lumberjack logger without closing the old one; both now go through `replaceLogger`, which keeps an unchanged logger and closes a replaced one, fixing #1568, with a regression spec that counts open descriptors | 🔵 Review |
 | clastix/kamaji | [#1390](https://github.com/clastix/kamaji/pull/1390) | Keep MySQL TLS settings from leaking between DataStores: `NewMySQLConnection` in `internal/datastore/mysql.go` registered its TLS config with the driver under one process-global key shared by every DataStore, so the last one registered won for all of them; it now sets the TLS config on `mysql.Config` and opens through `NewConnector` and `sql.OpenDB`, fixing #1222, and a regression test covers it | 🔵 Review |
 | trpc-group/trpc-agent-go | [#2689](https://github.com/trpc-group/trpc-agent-go/pull/2689) | Give a child agent forked with `HistoryScopeParentBranch` its parent's session summary in the default prefix branch filter mode: the summary lookup checked only the exact branch key and its descendants, so the child got the parent branch's full raw history without the summary; it now falls back to the nearest ancestor summary and its boundary, so the child sees the same history window as the parent, fixing #2685, and a regression test covers it | 🔵 Review |
 | prometheus-community/helm-charts | [#7400](https://github.com/prometheus-community/helm-charts/pull/7400) | Add opt-in podLabels, priorityClassName and topologySpreadConstraints to the alertmanager-snmp-notifier chart, plus its first helm-unittest suite | 🔵 Review |
