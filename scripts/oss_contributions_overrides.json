@@ -935,5 +935,8 @@
   },
   "eugenioenko/ttt#1116": {
     "summary": "Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests"
+  },
+  "k8snetworkplumbingwg/multus-cni#1573": {
+    "summary": "Stop the thick-plugin daemon from leaking a log file descriptor per CNI request: `SetLogOptions` and `SetLogFile` in `pkg/logging/logging.go`, called by `LoadNetConf` on every request, each replaced the package-level lumberjack logger without closing the old one; both now go through `replaceLogger`, which keeps an unchanged logger and closes a replaced one, fixing #1568, with a regression spec that counts open descriptors"
   }
 }
