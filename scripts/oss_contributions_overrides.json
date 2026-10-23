@@ -932,5 +932,8 @@
   },
   "clastix/kamaji#1390": {
     "summary": "Keep MySQL TLS settings from leaking between DataStores: `NewMySQLConnection` in `internal/datastore/mysql.go` registered its TLS config with the driver under one process-global key shared by every DataStore, so the last one registered won for all of them; it now sets the TLS config on `mysql.Config` and opens through `NewConnector` and `sql.OpenDB`, fixing #1222, and a regression test covers it"
+  },
+  "eugenioenko/ttt#1116": {
+    "summary": "Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests"
   }
 }
