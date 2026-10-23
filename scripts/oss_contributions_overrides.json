@@ -938,5 +938,8 @@
   },
   "k8snetworkplumbingwg/multus-cni#1573": {
     "summary": "Stop the thick-plugin daemon from leaking a log file descriptor per CNI request: `SetLogOptions` and `SetLogFile` in `pkg/logging/logging.go`, called by `LoadNetConf` on every request, each replaced the package-level lumberjack logger without closing the old one; both now go through `replaceLogger`, which keeps an unchanged logger and closes a replaced one, fixing #1568, with a regression spec that counts open descriptors"
+  },
+  "distribution/distribution#5045": {
+    "summary": "List unpaginated tags with one directory read: since the tag pagination rework, an unpaginated `tags/list` request went through `tagStore.List` and `driver.Walk`, which drivers without a native Walk (filesystem, gcs, azure) serve with one Stat per tag, so 100,000 tags meant 100,000 Stat calls and a 3.1.2 slowdown of up to 30 minutes; `List` now reads the tags directory once via `All()` for unpaginated requests and keeps the paginated Walk, fixing #5038, with a regression test that counts Stat calls"
   }
 }
