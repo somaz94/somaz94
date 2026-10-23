@@ -929,5 +929,8 @@
   },
   "trpc-group/trpc-agent-go#2689": {
     "summary": "Give a child agent forked with `HistoryScopeParentBranch` its parent's session summary in the default prefix branch filter mode: the summary lookup checked only the exact branch key and its descendants, so the child got the parent branch's full raw history without the summary; it now falls back to the nearest ancestor summary and its boundary, so the child sees the same history window as the parent, fixing #2685, and a regression test covers it"
+  },
+  "clastix/kamaji#1390": {
+    "summary": "Keep MySQL TLS settings from leaking between DataStores: `NewMySQLConnection` in `internal/datastore/mysql.go` registered its TLS config with the driver under one process-global key shared by every DataStore, so the last one registered won for all of them; it now sets the TLS config on `mysql.Config` and opens through `NewConnector` and `sql.OpenDB`, fixing #1222, and a regression test covers it"
   }
 }
