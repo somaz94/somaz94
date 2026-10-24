@@ -4,11 +4,11 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-177-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-178-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
-| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 25 | 6 | 31 |
+| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
 | [Standalone contributions](#standalone-contributions) | 123 | 92 | 215 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
@@ -30,6 +30,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7022](https://github.com/prometheus-community/helm-charts/pull/7022) | Add Gateway API HTTPRoute support to the prometheus-json-exporter chart | ✅ Merged |
 | padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | ✅ Merged |
@@ -49,7 +50,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | nocodb/nocodb | [#14272](https://github.com/nocodb/nocodb/pull/14272) | Add opt-in Gateway API HTTPRoute support to the Helm chart | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 
