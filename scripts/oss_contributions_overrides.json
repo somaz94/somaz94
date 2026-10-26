@@ -947,5 +947,8 @@
   },
   "dolthub/dolt#12208": {
     "summary": "Stop `DOLT_CONFLICTS_RESOLVE('--theirs')` from panicking with `malformed tuple` when a conflict's row is absent on both sides: on a keyless table where both branches update the same row, or a keyed row deleted from the working set before resolving, `resolveProllyConflicts` in `go/libraries/doltcore/sqle/dprocedures/dolt_conflicts_resolve.go` passed the empty row to the secondary index writer, so any table with a secondary index hit the panic; it now skips such conflicts, fixing #12165, with three enginetest ScriptTests"
+  },
+  "dolthub/dolt#12209": {
+    "summary": "Make the `dolt_log()` table function honor `--all`: `go/libraries/doltcore/sqle/dtablefunctions/dolt_log.go` parsed the flag but ignored it and returned only HEAD's history; it now starts from the heads of every local and remote branch, as the CLI's `dolt log --all` does, deduplicated by hash, keeps the HEAD decoration, and rejects a range together with `--all`, fixing #12157, with an enginetest ScriptTest and a bats test for remote branches"
   }
 }
