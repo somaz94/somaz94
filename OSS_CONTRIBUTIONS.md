@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-178-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-104-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-178-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 123 | 95 | 218 |
+| [Standalone contributions](#standalone-contributions) | 123 | 96 | 219 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -182,6 +182,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| k3s-io/k3s | [#14904](https://github.com/k3s-io/k3s/pull/14904) | Close idle client connections on the supervisor: the `http.Server` that serves 6443 in `pkg/cluster/https.go` set no `IdleTimeout`, so a client that went away without a FIN left its connection and goroutines on the server until restart (one reported server held 25,468 such connections at 4.8 GB RSS); it now uses 90 seconds, the value kube-apiserver uses, which net/http also applies to the auto-configured HTTP/2 server, for #14901 | 🔵 Review |
 | dolthub/dolt | [#12209](https://github.com/dolthub/dolt/pull/12209) | Make the `dolt_log()` table function honor `--all`: `go/libraries/doltcore/sqle/dtablefunctions/dolt_log.go` parsed the flag but ignored it and returned only HEAD's history; it now starts from the heads of every local and remote branch, as the CLI's `dolt log --all` does, deduplicated by hash, keeps the HEAD decoration, and rejects a range together with `--all`, fixing #12157, with an enginetest ScriptTest and a bats test for remote branches | 🔵 Review |
 | dolthub/dolt | [#12208](https://github.com/dolthub/dolt/pull/12208) | Stop `DOLT_CONFLICTS_RESOLVE('--theirs')` from panicking with `malformed tuple` when a conflict's row is absent on both sides: on a keyless table where both branches update the same row, or a keyed row deleted from the working set before resolving, `resolveProllyConflicts` in `go/libraries/doltcore/sqle/dprocedures/dolt_conflicts_resolve.go` passed the empty row to the secondary index writer, so any table with a secondary index hit the panic; it now skips such conflicts, fixing #12165, with three enginetest ScriptTests | 🔵 Review |
 | kubernetes-sigs/external-dns | [#6845](https://github.com/kubernetes-sigs/external-dns/pull/6845) | Keep duplicate endpoints independent of informer order | 🔵 Review |
