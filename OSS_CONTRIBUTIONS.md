@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-178-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-178-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-103-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 123 | 92 | 215 |
+| [Standalone contributions](#standalone-contributions) | 123 | 94 | 217 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -182,6 +182,8 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| dolthub/dolt | [#12208](https://github.com/dolthub/dolt/pull/12208) | Stop `DOLT_CONFLICTS_RESOLVE('--theirs')` from panicking with `malformed tuple` when a conflict's row is absent on both sides: on a keyless table where both branches update the same row, or a keyed row deleted from the working set before resolving, `resolveProllyConflicts` in `go/libraries/doltcore/sqle/dprocedures/dolt_conflicts_resolve.go` passed the empty row to the secondary index writer, so any table with a secondary index hit the panic; it now skips such conflicts, fixing #12165, with three enginetest ScriptTests | 🔵 Review |
+| kubernetes-sigs/external-dns | [#6845](https://github.com/kubernetes-sigs/external-dns/pull/6845) | Keep duplicate endpoints independent of informer order | 🔵 Review |
 | crowdsecurity/crowdsec | [#4775](https://github.com/crowdsecurity/crowdsec/pull/4775) | Accept a bouncer whose auto-created row a concurrent request inserted: when two first requests from a bouncer on a new IP raced, both tried to create the `name@ip` row in `pkg/apiserver/middlewares/v1/api_key.go`, and the loser's unique-constraint error made `authPlain` and `authTLS` answer 403 for a valid key; `CreateBouncer` in `pkg/database/bouncers.go` now returns a typed `BouncerExistsError` and both paths re-read the row the other request created, still rejecting a row of another key or auth type, fixing #4774, with table tests that use an ent hook to force the race | 🔵 Review |
 | distribution/distribution | [#5045](https://github.com/distribution/distribution/pull/5045) | List unpaginated tags with one directory read: since the tag pagination rework, an unpaginated `tags/list` request went through `tagStore.List` and `driver.Walk`, which drivers without a native Walk (filesystem, gcs, azure) serve with one Stat per tag, so 100,000 tags meant 100,000 Stat calls and a 3.1.2 slowdown of up to 30 minutes; `List` now reads the tags directory once via `All()` for unpaginated requests and keeps the paginated Walk, fixing #5038, with a regression test that counts Stat calls | 🔵 Review |
 | k8snetworkplumbingwg/multus-cni | [#1573](https://github.com/k8snetworkplumbingwg/multus-cni/pull/1573) | Stop the thick-plugin daemon from leaking a log file descriptor per CNI request: `SetLogOptions` and `SetLogFile` in `pkg/logging/logging.go`, called by `LoadNetConf` on every request, each replaced the package-level lumberjack logger without closing the old one; both now go through `replaceLogger`, which keeps an unchanged logger and closes a replaced one, fixing #1568, with a regression spec that counts open descriptors | 🔵 Review |
