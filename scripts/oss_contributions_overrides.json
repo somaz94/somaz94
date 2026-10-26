@@ -950,5 +950,8 @@
   },
   "dolthub/dolt#12209": {
     "summary": "Make the `dolt_log()` table function honor `--all`: `go/libraries/doltcore/sqle/dtablefunctions/dolt_log.go` parsed the flag but ignored it and returned only HEAD's history; it now starts from the heads of every local and remote branch, as the CLI's `dolt log --all` does, deduplicated by hash, keeps the HEAD decoration, and rejects a range together with `--all`, fixing #12157, with an enginetest ScriptTest and a bats test for remote branches"
+  },
+  "k3s-io/k3s#14904": {
+    "summary": "Close idle client connections on the supervisor: the `http.Server` that serves 6443 in `pkg/cluster/https.go` set no `IdleTimeout`, so a client that went away without a FIN left its connection and goroutines on the server until restart (one reported server held 25,468 such connections at 4.8 GB RSS); it now uses 90 seconds, the value kube-apiserver uses, which net/http also applies to the auto-configured HTTP/2 server, for #14901"
   }
 }
