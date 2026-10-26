@@ -944,5 +944,8 @@
   },
   "crowdsecurity/crowdsec#4775": {
     "summary": "Accept a bouncer whose auto-created row a concurrent request inserted: when two first requests from a bouncer on a new IP raced, both tried to create the `name@ip` row in `pkg/apiserver/middlewares/v1/api_key.go`, and the loser's unique-constraint error made `authPlain` and `authTLS` answer 403 for a valid key; `CreateBouncer` in `pkg/database/bouncers.go` now returns a typed `BouncerExistsError` and both paths re-read the row the other request created, still rejecting a row of another key or auth type, fixing #4774, with table tests that use an ent hook to force the race"
+  },
+  "dolthub/dolt#12208": {
+    "summary": "Stop `DOLT_CONFLICTS_RESOLVE('--theirs')` from panicking with `malformed tuple` when a conflict's row is absent on both sides: on a keyless table where both branches update the same row, or a keyed row deleted from the working set before resolving, `resolveProllyConflicts` in `go/libraries/doltcore/sqle/dprocedures/dolt_conflicts_resolve.go` passed the empty row to the secondary index writer, so any table with a secondary index hit the panic; it now skips such conflicts, fixing #12165, with three enginetest ScriptTests"
   }
 }
