@@ -956,5 +956,8 @@
   },
   "go-gitea/gitea#40025": {
     "summary": "Let organizations fork a repo they own when `ALLOW_FORK_INTO_SAME_OWNER` is enabled, as users already could"
+  },
+  "gonum/gonum#2131": {
+    "summary": "Zero C in `Dsyrk` (and the generated `Ssyrk`) for the Lower/Trans case when beta is zero: it was the one branch that scaled C by beta instead, so a NaN or Inf already in C leaked into the result even though BLAS leaves C unreferenced then; six NaN/-Inf table cases mirror the ones added for `Dsyr2k`, fixing #2129"
   }
 }
