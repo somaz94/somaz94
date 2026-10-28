@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-181-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-105-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-181-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 126 | 96 | 222 |
+| [Standalone contributions](#standalone-contributions) | 126 | 97 | 223 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -185,6 +185,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| qax-os/excelize | [#2465](https://github.com/qax-os/excelize/pull/2465) | Fix a data race in `GetMergeCells`: `mergeOverlapCells` rewrote the worksheet's merged-cell list without holding the worksheet lock, so concurrent `AddPictureFromBytes` calls with `AutoFit` panicked; the overlap merge and the ref copy now run under the lock, and cell values are read after unlocking to avoid a self-deadlock with `GetCellValue`, fixing #2464, with a race-detector regression test | 🔵 Review |
 | traefik/traefik | [#14156](https://github.com/traefik/traefik/pull/14156) | Match `HostRegexp` against a host with a trailing dot: `Host` already retried a fully qualified host such as `app.localhost.` without its trailing dot, but `HostRegexp` in `pkg/muxer/http/matcher.go` did not, so the request fell through to a lower-priority router and skipped the matched router's middlewares such as `basicAuth`; `HostRegexp` now retries the match with one trailing dot removed, fixing #14150, with new `TestHostRegexpMatcher` cases | 🔵 Review |
 | gonum/gonum | [#2131](https://github.com/gonum/gonum/pull/2131) | Zero C in `Dsyrk` (and the generated `Ssyrk`) for the Lower/Trans case when beta is zero: it was the one branch that scaled C by beta instead, so a NaN or Inf already in C leaked into the result even though BLAS leaves C unreferenced then; six NaN/-Inf table cases mirror the ones added for `Dsyr2k`, fixing #2129 | 🔵 Review |
 | go-gitea/gitea | [#40025](https://github.com/go-gitea/gitea/pull/40025) | Let organizations fork a repo they own when `ALLOW_FORK_INTO_SAME_OWNER` is enabled, as users already could | 🔵 Review |
