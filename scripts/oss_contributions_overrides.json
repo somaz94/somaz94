@@ -965,5 +965,8 @@
   },
   "qax-os/excelize#2465": {
     "summary": "Fix a data race in `GetMergeCells`: `mergeOverlapCells` rewrote the worksheet's merged-cell list without holding the worksheet lock, so concurrent `AddPictureFromBytes` calls with `AutoFit` panicked; the overlap merge and the ref copy now run under the lock, and cell values are read after unlocking to avoid a self-deadlock with `GetCellValue`, fixing #2464, with a race-detector regression test"
+  },
+  "volcano-sh/volcano#6182": {
+    "summary": "Skip infeasible HyperNodes before the `maxDomains` cap in gang reclaim and preempt: since v1.16.0 `gangreclaim` and `gangpreempt` tried only the first `maxDomains` (default 8) HyperNodes sorted by name, so a job restricted, for example by nodegroup affinity, to a HyperNode sorting past the eighth never got an eviction attempt and stayed Pending; HyperNodes where no pending task passes the preemption predicates are now dropped before they count toward the cap, fixing #6169"
   }
 }
