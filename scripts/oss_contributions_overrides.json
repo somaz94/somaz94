@@ -968,5 +968,8 @@
   },
   "volcano-sh/volcano#6182": {
     "summary": "Skip infeasible HyperNodes before the `maxDomains` cap in gang reclaim and preempt: since v1.16.0 `gangreclaim` and `gangpreempt` tried only the first `maxDomains` (default 8) HyperNodes sorted by name, so a job restricted, for example by nodegroup affinity, to a HyperNode sorting past the eighth never got an eviction attempt and stayed Pending; HyperNodes where no pending task passes the preemption predicates are now dropped before they count toward the cap, fixing #6169"
+  },
+  "goreleaser/nfpm#1169": {
+    "summary": "Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168"
   }
 }
