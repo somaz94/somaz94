@@ -977,5 +977,8 @@
   },
   "cozystack/cozystack#5148": {
     "summary": "Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125"
+  },
+  "kubernetes-sigs/kro#1488": {
+    "summary": "Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487"
   }
 }
