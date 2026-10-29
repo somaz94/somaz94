@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-110-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 127 | 100 | 227 |
+| [Standalone contributions](#standalone-contributions) | 127 | 101 | 228 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -186,6 +186,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kubernetes-sigs/kro | [#1488](https://github.com/kubernetes-sigs/kro/pull/1488) | Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487 | 🔵 Review |
 | cozystack/cozystack | [#5148](https://github.com/cozystack/cozystack/pull/5148) | Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125 | 🔵 Review |
 | opencost/opencost | [#4153](https://github.com/opencost/opencost/pull/4153) | Match Azure instance types case-insensitively in pricing lookups: AKS keeps the VM size casing a node pool was created with, so a node labelled `standard_d4s_v3` missed the `Standard_D4s_v3` rate card key and the case-sensitive `armSkuName eq` Retail Prices filter and fell back to default pricing; node and meter keys are now lower-cased on both sides and the retail filter uses `tolower(armSkuName)`, fixing #4151 | 🔵 Review |
 | goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | 🔵 Review |
