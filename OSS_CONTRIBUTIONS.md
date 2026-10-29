@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-108-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 127 | 99 | 226 |
+| [Standalone contributions](#standalone-contributions) | 127 | 100 | 227 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -186,6 +186,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| cozystack/cozystack | [#5148](https://github.com/cozystack/cozystack/pull/5148) | Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125 | 🔵 Review |
 | opencost/opencost | [#4153](https://github.com/opencost/opencost/pull/4153) | Match Azure instance types case-insensitively in pricing lookups: AKS keeps the VM size casing a node pool was created with, so a node labelled `standard_d4s_v3` missed the `Standard_D4s_v3` rate card key and the case-sensitive `armSkuName eq` Retail Prices filter and fell back to default pricing; node and meter keys are now lower-cased on both sides and the retail filter uses `tolower(armSkuName)`, fixing #4151 | 🔵 Review |
 | goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | 🔵 Review |
 | volcano-sh/volcano | [#6182](https://github.com/volcano-sh/volcano/pull/6182) | Skip infeasible HyperNodes before the `maxDomains` cap in gang reclaim and preempt: since v1.16.0 `gangreclaim` and `gangpreempt` tried only the first `maxDomains` (default 8) HyperNodes sorted by name, so a job restricted, for example by nodegroup affinity, to a HyperNode sorting past the eighth never got an eviction attempt and stayed Pending; HyperNodes where no pending task passes the preemption predicates are now dropped before they count toward the cap, fixing #6169 | 🔵 Review |
