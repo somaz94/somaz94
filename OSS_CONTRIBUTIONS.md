@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-111-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-112-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 127 | 102 | 229 |
+| [Standalone contributions](#standalone-contributions) | 127 | 103 | 230 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -186,6 +186,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#6182](https://github.com/nginx/nginx-gateway-fabric/pull/6182) | Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181 | 🔵 Review |
 | pipe-cd/pipecd | [#7549](https://github.com/pipe-cd/pipecd/pull/7549) | Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the "no role found in claims" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538 | 🔵 Review |
 | kubernetes-sigs/kro | [#1488](https://github.com/kubernetes-sigs/kro/pull/1488) | Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487 | 🔵 Review |
 | cozystack/cozystack | [#5148](https://github.com/cozystack/cozystack/pull/5148) | Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125 | 🔵 Review |
