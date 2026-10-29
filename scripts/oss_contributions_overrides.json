@@ -980,5 +980,8 @@
   },
   "kubernetes-sigs/kro#1488": {
     "summary": "Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487"
+  },
+  "pipe-cd/pipecd#7549": {
+    "summary": "Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the \"no role found in claims\" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538"
   }
 }
