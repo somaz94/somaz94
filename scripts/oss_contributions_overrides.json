@@ -983,5 +983,8 @@
   },
   "pipe-cd/pipecd#7549": {
     "summary": "Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the \"no role found in claims\" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538"
+  },
+  "nginx/nginx-gateway-fabric#6182": {
+    "summary": "Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181"
   }
 }
