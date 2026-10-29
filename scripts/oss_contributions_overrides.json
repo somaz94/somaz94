@@ -971,5 +971,8 @@
   },
   "goreleaser/nfpm#1169": {
     "summary": "Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168"
+  },
+  "opencost/opencost#4153": {
+    "summary": "Match Azure instance types case-insensitively in pricing lookups: AKS keeps the VM size casing a node pool was created with, so a node labelled `standard_d4s_v3` missed the `Standard_D4s_v3` rate card key and the case-sensitive `armSkuName eq` Retail Prices filter and fell back to default pricing; node and meter keys are now lower-cased on both sides and the retail filter uses `tolower(armSkuName)`, fixing #4151"
   }
 }
