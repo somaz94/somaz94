@@ -974,5 +974,8 @@
   },
   "opencost/opencost#4153": {
     "summary": "Match Azure instance types case-insensitively in pricing lookups: AKS keeps the VM size casing a node pool was created with, so a node labelled `standard_d4s_v3` missed the `Standard_D4s_v3` rate card key and the case-sensitive `armSkuName eq` Retail Prices filter and fell back to default pricing; node and meter keys are now lower-cased on both sides and the retail filter uses `tolower(armSkuName)`, fixing #4151"
+  },
+  "cozystack/cozystack#5148": {
+    "summary": "Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125"
   }
 }
