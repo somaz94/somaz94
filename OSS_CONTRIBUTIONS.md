@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-182-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-112-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-185-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
-| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 26 | 5 | 31 |
-| [Standalone contributions](#standalone-contributions) | 127 | 103 | 230 |
+| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 28 | 3 | 31 |
+| [Standalone contributions](#standalone-contributions) | 128 | 102 | 230 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -21,6 +21,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| nocodb/nocodb | [#14272](https://github.com/nocodb/nocodb/pull/14272) | Add opt-in Gateway API HTTPRoute support to the Helm chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7060](https://github.com/prometheus-community/helm-charts/pull/7060) | Add opt-in Gateway API HTTPRoute support to the alertmanager-snmp-notifier chart | ✅ Merged |
 | nextcloud/helm | [#868](https://github.com/nextcloud/helm/pull/868) | Fixed Argo CD drift on the generated HTTPRoute by rendering explicit group/kind in backendRefs | ✅ Merged |
 | BorisPolonsky/dify-helm | [#419](https://github.com/BorisPolonsky/dify-helm/pull/419) | Add opt-in Gateway API HTTPRoute support to the Dify Helm chart | ✅ Merged |
@@ -31,6 +32,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7022](https://github.com/prometheus-community/helm-charts/pull/7022) | Add Gateway API HTTPRoute support to the prometheus-json-exporter chart | ✅ Merged |
 | padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | ✅ Merged |
@@ -47,10 +49,8 @@ Pull requests opened against external open-source projects, merged and still in 
 | apache/gravitino | [#11308](https://github.com/apache/gravitino/pull/11308) | Gateway API HTTPRoute in Helm charts | ✅ Merged |
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
-| nocodb/nocodb | [#14272](https://github.com/nocodb/nocodb/pull/14272) | Add opt-in Gateway API HTTPRoute support to the Helm chart | 🔵 Review |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 
 <br/>
@@ -83,6 +83,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | rclone/rclone | [#10000](https://github.com/rclone/rclone/pull/10000) | Shut down the rc and metrics servers in the parent before `rclone mount --daemon` daemonizes, so the daemon child can bind the same `--rc` address instead of exiting with address already in use | ✅ Merged |
 | crowdsecurity/crowdsec | [#4712](https://github.com/crowdsecurity/crowdsec/pull/4712) | Drop the Prometheus series of machines and bouncers deleted with cscli on the LAPI flush tick, so heartbeat alerts stop firing for clients that no longer exist | ✅ Merged |
 | grpc-ecosystem/grpc-gateway | [#7419](https://github.com/grpc-ecosystem/grpc-gateway/pull/7419) | Normalize CRLF line endings in proto comments so both OpenAPI generators split the summary from the description instead of making the whole comment the summary | ✅ Merged |
+| grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | ✅ Merged |
 | abiosoft/colima | [#1642](https://github.com/abiosoft/colima/pull/1642) | Recover from HTTP 416 when resuming a cached download so an interrupted `colima start` no longer fails until the cache is deleted | ✅ Merged |
 | prometheus-community/helm-charts | [#7310](https://github.com/prometheus-community/helm-charts/pull/7310) | Point the couchdb-exporter probes at /status, since image v28 answers / with 404 and the pod never became ready | ✅ Merged |
 | anchore/syft | [#5321](https://github.com/anchore/syft/pull/5321) | Fix a crash when cataloging ELF files with a truncated dynamic section by reading dynamic tags through debug/elf DynValue | ✅ Merged |
@@ -242,7 +243,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | go-gitea/gitea | [#39519](https://github.com/go-gitea/gitea/pull/39519) | Stable repo list pagination with an id tiebreaker | 🔵 Review |
 | tailscale/tailscale | [#21526](https://github.com/tailscale/tailscale/pull/21526) | Reject a `tailscale set --relay-server-port` value that magicsock is already bound to, so the edit fails with an error instead of leaving a peer relay that silently never starts | 🔵 Review |
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
-| grafana/loki | [#24775](https://github.com/grafana/loki/pull/24775) | Stop counting a compaction run canceled by shutdown or compactor handover as a failure in the compaction and retention operation metrics | 🔵 Review |
 | kubernetes-sigs/kustomize | [#6287](https://github.com/kubernetes-sigs/kustomize/pull/6287) | Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |
 | istio/istio | [#61851](https://github.com/istio/istio/pull/61851) | Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs | 🔵 Review |
