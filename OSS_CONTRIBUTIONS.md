@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-185-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-186-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 28 | 3 | 31 |
-| [Standalone contributions](#standalone-contributions) | 128 | 102 | 230 |
+| [Standalone contributions](#standalone-contributions) | 129 | 102 | 231 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -186,7 +186,9 @@ Pull requests opened against external open-source projects, merged and still in 
 | nginx/nginx-gateway-fabric | [#5392](https://github.com/nginx/nginx-gateway-fabric/pull/5392) | Add GEP-713 Programmed status condition to custom policies | ✅ Merged |
 | helm/chart-testing | [#841](https://github.com/helm/chart-testing/pull/841) | Honor `--release-name` instead of generating one | ✅ Merged |
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
+| meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| nginx/nginx-gateway-fabric | [#6193](https://github.com/nginx/nginx-gateway-fabric/pull/6193) | Fix the data plane never getting config when a webhook rewrites the nginx image: since 2.8.0 the control plane compared the connecting Pod's nginx image with the expected image as an exact string, so a mutating webhook that rewrites Pod images, such as Zarf or a registry mirror, blocked config forever; the provisioner in `internal/controller/provisioner/objects.go` now records the template's nginx image, after patches, in a `gateway.nginx.org/nginx-image` pod template annotation, and the validator in `internal/controller/nginx/agent/command.go` compares that instead, keeping the upgrade-race protection from #5927, fixing #6190 | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#6182](https://github.com/nginx/nginx-gateway-fabric/pull/6182) | Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181 | 🔵 Review |
 | pipe-cd/pipecd | [#7549](https://github.com/pipe-cd/pipecd/pull/7549) | Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the "no role found in claims" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538 | 🔵 Review |
 | kubernetes-sigs/kro | [#1488](https://github.com/kubernetes-sigs/kro/pull/1488) | Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487 | 🔵 Review |
@@ -286,7 +288,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
 | hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
 | percona/percona-helm-charts | [#862](https://github.com/percona/percona-helm-charts/pull/862) | pmm gRPC ClusterIP nodePort fix | 🔵 Review |
-| meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | 🔵 Review |
 | dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
 
