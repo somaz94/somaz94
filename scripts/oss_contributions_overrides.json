@@ -986,5 +986,8 @@
   },
   "nginx/nginx-gateway-fabric#6182": {
     "summary": "Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181"
+  },
+  "nginx/nginx-gateway-fabric#6193": {
+    "summary": "Fix the data plane never getting config when a webhook rewrites the nginx image: since 2.8.0 the control plane compared the connecting Pod's nginx image with the expected image as an exact string, so a mutating webhook that rewrites Pod images, such as Zarf or a registry mirror, blocked config forever; the provisioner in `internal/controller/provisioner/objects.go` now records the template's nginx image, after patches, in a `gateway.nginx.org/nginx-image` pod template annotation, and the validator in `internal/controller/nginx/agent/command.go` compares that instead, keeping the upgrade-race protection from #5927, fixing #6190"
   }
 }
