@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-186-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-109-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-188-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
-| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 28 | 3 | 31 |
-| [Standalone contributions](#standalone-contributions) | 129 | 102 | 231 |
+| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 29 | 2 | 31 |
+| [Standalone contributions](#standalone-contributions) | 130 | 100 | 230 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -29,6 +29,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | nextcloud/helm | [#866](https://github.com/nextcloud/helm/pull/866) | Add CalDAV/CardDAV service-discovery redirects to the Gateway API HTTPRoute (fix backendRefs conflict with RequestRedirect) | ✅ Merged |
 | prometheus-community/helm-charts | [#7032](https://github.com/prometheus-community/helm-charts/pull/7032) | Add Gateway API HTTPRoute support to the prom-label-proxy chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7031](https://github.com/prometheus-community/helm-charts/pull/7031) | Add Gateway API HTTPRoute support to the jiralert chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7029](https://github.com/prometheus-community/helm-charts/pull/7029) | Add Gateway API HTTPRoute support to the prometheus-pingmesh-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | ✅ Merged |
@@ -50,7 +51,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7030](https://github.com/prometheus-community/helm-charts/pull/7030) | Add Gateway API HTTPRoute support to the prometheus-yet-another-cloudwatch-exporter chart | 🔵 Review |
 | prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 
 <br/>
@@ -59,6 +59,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| go-gitea/gitea | [#40025](https://github.com/go-gitea/gitea/pull/40025) | Let organizations fork a repo they own when `ALLOW_FORK_INTO_SAME_OWNER` is enabled, as users already could | ✅ Merged |
 | k3s-io/k3s | [#14904](https://github.com/k3s-io/k3s/pull/14904) | Close idle client connections on the supervisor: the `http.Server` that serves 6443 in `pkg/cluster/https.go` set no `IdleTimeout`, so a client that went away without a FIN left its connection and goroutines on the server until restart (one reported server held 25,468 such connections at 4.8 GB RSS); it now uses 90 seconds, the value kube-apiserver uses, which net/http also applies to the auto-configured HTTP/2 server, for #14901 | ✅ Merged |
 | eugenioenko/ttt | [#1116](https://github.com/eugenioenko/ttt/pull/1116) | Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests | ✅ Merged |
 | clastix/kamaji | [#1390](https://github.com/clastix/kamaji/pull/1390) | Keep MySQL TLS settings from leaking between DataStores: `NewMySQLConnection` in `internal/datastore/mysql.go` registered its TLS config with the driver under one process-global key shared by every DataStore, so the last one registered won for all of them; it now sets the TLS config on `mysql.Config` and opens through `NewConnector` and `sql.OpenDB`, fixing #1222, and a regression test covers it | ✅ Merged |
@@ -197,9 +198,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | 🔵 Review |
 | volcano-sh/volcano | [#6182](https://github.com/volcano-sh/volcano/pull/6182) | Skip infeasible HyperNodes before the `maxDomains` cap in gang reclaim and preempt: since v1.16.0 `gangreclaim` and `gangpreempt` tried only the first `maxDomains` (default 8) HyperNodes sorted by name, so a job restricted, for example by nodegroup affinity, to a HyperNode sorting past the eighth never got an eviction attempt and stayed Pending; HyperNodes where no pending task passes the preemption predicates are now dropped before they count toward the cap, fixing #6169 | 🔵 Review |
 | qax-os/excelize | [#2465](https://github.com/qax-os/excelize/pull/2465) | Fix a data race in `GetMergeCells`: `mergeOverlapCells` rewrote the worksheet's merged-cell list without holding the worksheet lock, so concurrent `AddPictureFromBytes` calls with `AutoFit` panicked; the overlap merge and the ref copy now run under the lock, and cell values are read after unlocking to avoid a self-deadlock with `GetCellValue`, fixing #2464, with a race-detector regression test | 🔵 Review |
-| traefik/traefik | [#14156](https://github.com/traefik/traefik/pull/14156) | Match `HostRegexp` against a host with a trailing dot: `Host` already retried a fully qualified host such as `app.localhost.` without its trailing dot, but `HostRegexp` in `pkg/muxer/http/matcher.go` did not, so the request fell through to a lower-priority router and skipped the matched router's middlewares such as `basicAuth`; `HostRegexp` now retries the match with one trailing dot removed, fixing #14150, with new `TestHostRegexpMatcher` cases | 🔵 Review |
 | gonum/gonum | [#2131](https://github.com/gonum/gonum/pull/2131) | Zero C in `Dsyrk` (and the generated `Ssyrk`) for the Lower/Trans case when beta is zero: it was the one branch that scaled C by beta instead, so a NaN or Inf already in C leaked into the result even though BLAS leaves C unreferenced then; six NaN/-Inf table cases mirror the ones added for `Dsyr2k`, fixing #2129 | 🔵 Review |
-| go-gitea/gitea | [#40025](https://github.com/go-gitea/gitea/pull/40025) | Let organizations fork a repo they own when `ALLOW_FORK_INTO_SAME_OWNER` is enabled, as users already could | 🔵 Review |
 | dolthub/dolt | [#12209](https://github.com/dolthub/dolt/pull/12209) | Make the `dolt_log()` table function honor `--all`: `go/libraries/doltcore/sqle/dtablefunctions/dolt_log.go` parsed the flag but ignored it and returned only HEAD's history; it now starts from the heads of every local and remote branch, as the CLI's `dolt log --all` does, deduplicated by hash, keeps the HEAD decoration, and rejects a range together with `--all`, fixing #12157, with an enginetest ScriptTest and a bats test for remote branches | 🔵 Review |
 | dolthub/dolt | [#12208](https://github.com/dolthub/dolt/pull/12208) | Stop `DOLT_CONFLICTS_RESOLVE('--theirs')` from panicking with `malformed tuple` when a conflict's row is absent on both sides: on a keyless table where both branches update the same row, or a keyed row deleted from the working set before resolving, `resolveProllyConflicts` in `go/libraries/doltcore/sqle/dprocedures/dolt_conflicts_resolve.go` passed the empty row to the secondary index writer, so any table with a secondary index hit the panic; it now skips such conflicts, fixing #12165, with three enginetest ScriptTests | 🔵 Review |
 | kubernetes-sigs/external-dns | [#6845](https://github.com/kubernetes-sigs/external-dns/pull/6845) | Keep duplicate endpoints independent of informer order | 🔵 Review |
