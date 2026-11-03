@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-191-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-191-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-98-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 132 | 93 | 225 |
+| [Standalone contributions](#standalone-contributions) | 132 | 94 | 226 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 2 | 11 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -191,6 +191,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| miniflux/v2 | [#4615](https://github.com/miniflux/v2/pull/4615) | Accept UTF-16 RSS and Atom feeds: the XML declaration of a UTF-16 document cannot be read as ASCII, so `encoding/xml` failed with `encoding "utf-16" declared but Decoder.CharsetReader is nil`, `DetectFeedFormat` dropped that error, and the feed could not be added or refreshed, rejected as an unknown format; `NewXMLDecoder` in `internal/reader/xml/decoder.go` now converts UTF-16 to UTF-8 before decoding, recognizing it from the BOM or, without one, from the leading `<`, while a stray BOM or NUL in front of a UTF-8 document still parses as before, fixing #4613 | 🔵 Review |
 | gonum/gonum | [#2133](https://github.com/gonum/gonum/pull/2133) | A+C: add somaz | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#6193](https://github.com/nginx/nginx-gateway-fabric/pull/6193) | Fix the data plane never getting config when a webhook rewrites the nginx image: since 2.8.0 the control plane compared the connecting Pod's nginx image with the expected image as an exact string, so a mutating webhook that rewrites Pod images, such as Zarf or a registry mirror, blocked config forever; the provisioner in `internal/controller/provisioner/objects.go` now records the template's nginx image, after patches, in a `gateway.nginx.org/nginx-image` pod template annotation, and the validator in `internal/controller/nginx/agent/command.go` compares that instead, keeping the upgrade-race protection from #5927, fixing #6190 | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#6182](https://github.com/nginx/nginx-gateway-fabric/pull/6182) | Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181 | 🔵 Review |
