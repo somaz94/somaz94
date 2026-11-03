@@ -4,13 +4,13 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-188-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-106-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-191-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
-| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 29 | 2 | 31 |
-| [Standalone contributions](#standalone-contributions) | 130 | 100 | 230 |
-| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 3 | 12 |
+| [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
+| [Standalone contributions](#standalone-contributions) | 132 | 93 | 225 |
+| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 2 | 11 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
 | [moto AWS API mocks](#moto-aws-api-mocks) | 4 | 0 | 4 |
@@ -34,6 +34,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | prometheus-community/helm-charts | [#7028](https://github.com/prometheus-community/helm-charts/pull/7028) | Add Gateway API HTTPRoute support to the prometheus-fastly-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7027](https://github.com/prometheus-community/helm-charts/pull/7027) | Add Gateway API HTTPRoute support to the prometheus-couchdb-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7026](https://github.com/prometheus-community/helm-charts/pull/7026) | Add Gateway API HTTPRoute support to the prometheus-cloudwatch-exporter chart | ✅ Merged |
+| prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7024](https://github.com/prometheus-community/helm-charts/pull/7024) | Add Gateway API HTTPRoute support to the prometheus-snmp-exporter chart | ✅ Merged |
 | prometheus-community/helm-charts | [#7022](https://github.com/prometheus-community/helm-charts/pull/7022) | Add Gateway API HTTPRoute support to the prometheus-json-exporter chart | ✅ Merged |
 | padok-team/burrito | [#927](https://github.com/padok-team/burrito/pull/927) | Add opt-in Gateway API HTTPRoute support to the Burrito Helm chart | ✅ Merged |
@@ -51,7 +52,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | prometheus-community/helm-charts | [#6958](https://github.com/prometheus-community/helm-charts/pull/6958) | alertmanager HTTPRoute support | ✅ Merged |
 | apache/airflow | [#67675](https://github.com/apache/airflow/pull/67675) | Gateway API HTTPRoute for API server | ✅ Merged |
 | opensearch-project/opensearch-k8s-operator | [#1441](https://github.com/opensearch-project/opensearch-k8s-operator/pull/1441) | Add Gateway API HTTPRoute support to the opensearch-cluster Helm chart | 🔵 Review |
-| prometheus-community/helm-charts | [#7025](https://github.com/prometheus-community/helm-charts/pull/7025) | Add Gateway API HTTPRoute support to the prometheus-statsd-exporter chart | 🔵 Review |
 
 <br/>
 
@@ -59,6 +59,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | ✅ Merged |
 | go-gitea/gitea | [#40025](https://github.com/go-gitea/gitea/pull/40025) | Let organizations fork a repo they own when `ALLOW_FORK_INTO_SAME_OWNER` is enabled, as users already could | ✅ Merged |
 | k3s-io/k3s | [#14904](https://github.com/k3s-io/k3s/pull/14904) | Close idle client connections on the supervisor: the `http.Server` that serves 6443 in `pkg/cluster/https.go` set no `IdleTimeout`, so a client that went away without a FIN left its connection and goroutines on the server until restart (one reported server held 25,468 such connections at 4.8 GB RSS); it now uses 90 seconds, the value kube-apiserver uses, which net/http also applies to the auto-configured HTTP/2 server, for #14901 | ✅ Merged |
 | eugenioenko/ttt | [#1116](https://github.com/eugenioenko/ttt/pull/1116) | Draw fullwidth titles and badges at their display width: `TitleWidget` in `internal/widgets/title.go` drew the bold title one column per rune and placed the badge by rune count, so fullwidth titles dropped every other character and fullwidth badges were clipped; it now measures with `textwidth.String` and advances by `textwidth.Rune`, closing #1064, with regression tests | ✅ Merged |
@@ -103,6 +104,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | ✅ Merged |
 | kubernetes-sigs/external-dns | [#6709](https://github.com/kubernetes-sigs/external-dns/pull/6709) | Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6) | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
+| envoyproxy/gateway | [#9860](https://github.com/envoyproxy/gateway/pull/9860) | Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog | ✅ Merged |
 | zalando/skipper | [#4201](https://github.com/zalando/skipper/pull/4201) | Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses | ✅ Merged |
 | k3s-io/k3s | [#14516](https://github.com/k3s-io/k3s/pull/14516) | Add advertise-address to SANs before generating apiserver cert | ✅ Merged |
 | go-gitea/gitea | [#38863](https://github.com/go-gitea/gitea/pull/38863) | Stream bundle downloads instead of writing a repo-sized temp file to disk first | ✅ Merged |
@@ -189,13 +191,13 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| gonum/gonum | [#2133](https://github.com/gonum/gonum/pull/2133) | A+C: add somaz | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#6193](https://github.com/nginx/nginx-gateway-fabric/pull/6193) | Fix the data plane never getting config when a webhook rewrites the nginx image: since 2.8.0 the control plane compared the connecting Pod's nginx image with the expected image as an exact string, so a mutating webhook that rewrites Pod images, such as Zarf or a registry mirror, blocked config forever; the provisioner in `internal/controller/provisioner/objects.go` now records the template's nginx image, after patches, in a `gateway.nginx.org/nginx-image` pod template annotation, and the validator in `internal/controller/nginx/agent/command.go` compares that instead, keeping the upgrade-race protection from #5927, fixing #6190 | 🔵 Review |
 | nginx/nginx-gateway-fabric | [#6182](https://github.com/nginx/nginx-gateway-fabric/pull/6182) | Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181 | 🔵 Review |
 | pipe-cd/pipecd | [#7549](https://github.com/pipe-cd/pipecd/pull/7549) | Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the "no role found in claims" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538 | 🔵 Review |
 | kubernetes-sigs/kro | [#1488](https://github.com/kubernetes-sigs/kro/pull/1488) | Compare ResourceGraphDefinition schema defaults by value: a float default written as `1.0`, `-2.0` or `1e3` made the RGD controller patch the generated CRD on every reconcile, because `defaultsEqual` compared the default byte for byte while the API server stores it normalized (`1`, `-2`, `1000`), and each patch bumped the CRD generation and queued the next reconcile; both sides are now normalized the way the API server stores a default, decoded with apimachinery's `util/json`, which keeps whole numbers as int64, and marshalled again, so equivalent values match while integers beyond float64 precision still count as a change, fixing #1487 | 🔵 Review |
 | cozystack/cozystack | [#5148](https://github.com/cozystack/cozystack/pull/5148) | Skip a child tenant apex the wildcard certificate already covers: in DNS-01 mode a child one label below its parent (`ci.mgmt.example.com` under `mgmt.example.com`) was added to the parent Gateway's wildcard Certificate next to `*.mgmt.example.com`, and Let's Encrypt refused the whole order as redundant, leaving the parent Gateway without a certificate; a child apex is now listed only when no single-label wildcard in the same Certificate covers it, matching Boulder's check, fixing #5125 | 🔵 Review |
 | opencost/opencost | [#4153](https://github.com/opencost/opencost/pull/4153) | Match Azure instance types case-insensitively in pricing lookups: AKS keeps the VM size casing a node pool was created with, so a node labelled `standard_d4s_v3` missed the `Standard_D4s_v3` rate card key and the case-sensitive `armSkuName eq` Retail Prices filter and fell back to default pricing; node and meter keys are now lower-cased on both sides and the retail filter uses `tolower(armSkuName)`, fixing #4151 | 🔵 Review |
-| goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | 🔵 Review |
 | volcano-sh/volcano | [#6182](https://github.com/volcano-sh/volcano/pull/6182) | Skip infeasible HyperNodes before the `maxDomains` cap in gang reclaim and preempt: since v1.16.0 `gangreclaim` and `gangpreempt` tried only the first `maxDomains` (default 8) HyperNodes sorted by name, so a job restricted, for example by nodegroup affinity, to a HyperNode sorting past the eighth never got an eviction attempt and stayed Pending; HyperNodes where no pending task passes the preemption predicates are now dropped before they count toward the cap, fixing #6169 | 🔵 Review |
 | qax-os/excelize | [#2465](https://github.com/qax-os/excelize/pull/2465) | Fix a data race in `GetMergeCells`: `mergeOverlapCells` rewrote the worksheet's merged-cell list without holding the worksheet lock, so concurrent `AddPictureFromBytes` calls with `AutoFit` panicked; the overlap merge and the ref copy now run under the lock, and cell values are read after unlocking to avoid a self-deadlock with `GetCellValue`, fixing #2464, with a race-detector regression test | 🔵 Review |
 | gonum/gonum | [#2131](https://github.com/gonum/gonum/pull/2131) | Zero C in `Dsyrk` (and the generated `Ssyrk`) for the Lower/Trans case when beta is zero: it was the one branch that scaled C by beta instead, so a NaN or Inf already in C leaked into the result even though BLAS leaves C unreferenced then; six NaN/-Inf table cases mirror the ones added for `Dsyr2k`, fixing #2129 | 🔵 Review |
@@ -256,10 +258,8 @@ Pull requests opened against external open-source projects, merged and still in 
 | cilium/cilium | [#48540](https://github.com/cilium/cilium/pull/48540) | gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener | 🔵 Review |
 | cert-manager/cert-manager | [#9305](https://github.com/cert-manager/cert-manager/pull/9305) | Reject Certificate renewal windows that can never be reached within the certificate lifetime, in the admission webhook | 🔵 Review |
 | kubernetes-csi/external-resizer | [#610](https://github.com/kubernetes-csi/external-resizer/pull/610) | csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it | 🔵 Review |
-| envoyproxy/gateway | [#9860](https://github.com/envoyproxy/gateway/pull/9860) | Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog | 🔵 Review |
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |
 | opencost/opencost | [#4002](https://github.com/opencost/opencost/pull/4002) | Cost native sidecar containers (restartPolicy: Always init containers) instead of omitting them from pod cost | 🔵 Review |
-| external-secrets/external-secrets | [#6830](https://github.com/external-secrets/external-secrets/pull/6830) | Oracle provider: return NoSecretErr on a missing vault secret so ExternalSecret deletionPolicy applies | 🔵 Review |
 | argoproj/argo-workflows | [#16610](https://github.com/argoproj/argo-workflows/pull/16610) | Add `type: Preferred` to `retryStrategy.affinity.nodeAntiAffinity`, which steers a retry off the hosts earlier attempts used with a weight-100 `preferredDuringSchedulingIgnoredDuringExecution` term instead of a required one, so once every eligible host has been tried, a retry can still be scheduled instead of staying pending, while `Required` remains the default | 🔵 Review |
 | actions/stale | [#1357](https://github.com/actions/stale/pull/1357) | Add opt-in exempt-issues-with-open-linked-pr so issues with a closing PR aren't marked stale | 🔵 Review |
 | dorny/paths-filter | [#323](https://github.com/dorny/paths-filter/pull/323) | Scope the merge-base commit count to the base and head refs so a broken unrelated ref cannot fail the job | 🔵 Review |
@@ -276,7 +276,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | argoproj/argo-cd | [#28584](https://github.com/argoproj/argo-cd/pull/28584) | Add a "Skip Schema Validation" checkbox to the Application Parameters editor that sends `validate=false` on save, the UI counterpart of `argocd app set --validate=false`, so a quick edit such as an image tag bump can skip server-side schema validation while the unchecked default behaves as before | 🔵 Review |
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn on stderr about the secret files `fyra push` withholds by default (`.env*`, `.pem`, `.key`, `.p12`, `.pfx`, `.netrc`), listing only those not already in `.fyraignore`, so a sensitive file kept out of the deploy is reported instead of dropped silently and piped stdout stays clean | 🔵 Review |
-| terraform-aws-modules/terraform-aws-eventbridge | [#203](https://github.com/terraform-aws-modules/terraform-aws-eventbridge/pull/203) | Gate the EventBridge log delivery source on configured log delivery (fixes orphan aws_cloudwatch_log_delivery_source); fixes #201 | 🔵 Review |
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
 | terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
@@ -284,10 +283,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | kuberay-project/kuberay | [#4934](https://github.com/kuberay-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to ray-cluster Helm chart | 🔵 Review |
 | vapor/vapor | [#3475](https://github.com/vapor/vapor/pull/3475) | Add a typed `HTTPHeaders.retryAfter` accessor, a `Sendable` `RetryAfter` struct built with `.seconds(_:)` or `.date(_:)` that parses delay-seconds and the three HTTP-date formats `Expires` accepts, so the `Retry-After` on a 429 or 503 response is read and written as a typed value instead of a raw string | 🔵 Review |
 | dexidp/dex | [#4831](https://github.com/dexidp/dex/pull/4831) | Add EdDSA (Ed25519) signing algorithm support to the local token signer | 🔵 Review |
-| hashicorp/setup-terraform | [#561](https://github.com/hashicorp/setup-terraform/pull/561) | Verify the downloaded Terraform CLI against HashiCorp's signed SHA256SUMS before install (closes #556) | 🔵 Review |
-| hashicorp/terraform-provider-kubernetes | [#2905](https://github.com/hashicorp/terraform-provider-kubernetes/pull/2905) | Add `env_from_map` provider-defined function | 🔵 Review |
-| percona/percona-helm-charts | [#862](https://github.com/percona/percona-helm-charts/pull/862) | pmm gRPC ClusterIP nodePort fix | 🔵 Review |
-| dependabot/dependabot-core | [#15199](https://github.com/dependabot/dependabot-core/pull/15199) | Identify Dependabot commits by author name | 🔵 Review |
 | aquasecurity/trivy | [#10770](https://github.com/aquasecurity/trivy/pull/10770) | Add `--color` flag for table output | 🔵 Review |
 
 <br/>
@@ -307,7 +302,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
 | denoland/setup-deno | [#133](https://github.com/denoland/setup-deno/pull/133) | Parse dvm's key=value .dvmrc format in the deno-version-file input | 🔵 Review |
 | aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
-| hashicorp/setup-packer | [#177](https://github.com/hashicorp/setup-packer/pull/177) | Add `version-file` input to read the Packer version from a `.tool-versions` file | 🔵 Review |
 
 <br/>
 
