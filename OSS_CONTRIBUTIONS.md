@@ -4,13 +4,13 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-191-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-98-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-193-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 132 | 94 | 226 |
-| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 2 | 11 |
+| [Standalone contributions](#standalone-contributions) | 134 | 92 | 226 |
+| [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
 | [moto AWS API mocks](#moto-aws-api-mocks) | 4 | 0 | 4 |
@@ -74,6 +74,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | hashicorp/terraform-provider-aws | [#50463](https://github.com/hashicorp/terraform-provider-aws/pull/50463) | Fix aws_prometheus_scraper update failure on scrapers with a CloudWatch destination by omitting unchanged destination from update requests | ✅ Merged |
 | fyne-io/fyne | [#6600](https://github.com/fyne-io/fyne/pull/6600) | Show each tab's icon in the DocTabs "all tabs" menu and the AppTabs overflow menu, so a tab that has only an icon no longer appears there as an empty row | ✅ Merged |
 | TwiN/gatus | [#1845](https://github.com/TwiN/gatus/pull/1845) | Stop a silent websocket endpoint from halting all monitoring: `client.QueryWebSocket` now applies the `client.timeout` deadline to the write and the read as well as the dial, since gorilla/websocket clears it after the handshake, so an endpoint that never replies fails with an i/o timeout instead of holding a watchdog `monitoringSemaphore` slot forever | ✅ Merged |
+| fyne-io/fyne | [#6576](https://github.com/fyne-io/fyne/pull/6576) | Stop a multiline `Entry` from scrolling back to its cursor when it gains or loses focus, so scrolling away and clicking elsewhere keeps the scroll position and a click or tap into a scrolled, unfocused entry places the cursor where it lands | ✅ Merged |
 | 99designs/gqlgen | [#4360](https://github.com/99designs/gqlgen/pull/4360) | Stop the websocket transport from sending `complete` when the connection context from `InitFunc` is cancelled, so a server shutdown no longer races the close frame and tells clients their subscriptions finished normally | ✅ Merged |
 | fyne-io/fyne | [#6568](https://github.com/fyne-io/fyne/pull/6568) | Apply the pending cursor move before the GLFW driver calls the window drop callback, so `SetOnDropped` receives the actual drop point instead of the stale position it has reported since Fyne 2.8.0 | ✅ Merged |
 | pulumi/pulumi | [#24995](https://github.com/pulumi/pulumi/pull/24995) | Redact secret values as `[secret]` in invalid input diagnostics unless `--show-secrets` is passed, so a provider Check failure, the `pulumi import` warning or a Construct or Call input error no longer prints them in plaintext | ✅ Merged |
@@ -120,6 +121,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | external-secrets/external-secrets | [#6675](https://github.com/external-secrets/external-secrets/pull/6675) | Add opt-in schedulerName and runtimeClassName to the Helm chart pods | ✅ Merged |
 | element-hq/ess-helm | [#1461](https://github.com/element-hq/ess-helm/pull/1461) | Add schedulerName and runtimeClassName support to matrix-stack component workloads | ✅ Merged |
 | kubernetes-sigs/kubespray | [#13370](https://github.com/kubernetes-sigs/kubespray/pull/13370) | cilium: wire the scrape port variables into the Helm values template so they stop being no-ops | ✅ Merged |
+| prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | ✅ Merged |
 | rancher/dynamiclistener | [#315](https://github.com/rancher/dynamiclistener/pull/315) | Guard the queuedSecret field with a mutex to fix a data race in the Kubernetes storage controller | ✅ Merged |
 | restatedev/sdk-go | [#161](https://github.com/restatedev/sdk-go/pull/161) | Fix data race between Drain and concurrent Read on the request stream | ✅ Merged |
 | kubernetes-sigs/kubebuilder | [#5864](https://github.com/kubernetes-sigs/kubebuilder/pull/5864) | Authenticate pinact with GITHUB_TOKEN in the workflow-lint CI job to avoid GitHub API rate limits (#5817) | ✅ Merged |
@@ -233,7 +235,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | Jguer/yay | [#2991](https://github.com/Jguer/yay/pull/2991) | Stop `yay -Syu` from warning about missing AUR debug packages for split packages: `CalculateMissing` now also matches a `<x>-debug` package against the pkgbase of the installed AUR packages, so `immich-debug` next to `immich-cli` (pkgbase `immich`) is no longer reported | 🔵 Review |
 | v2fly/v2ray-core | [#3840](https://github.com/v2fly/v2ray-core/pull/3840) | Stop the v2jsonpb config loader from panicking on an unknown field name: its field lookups now return nil instead of an empty wrapper, so protojson reports the field as unknown, a stdin config such as `{"status": {}}` falls through to the next loader instead of crashing, and proto field names like `receiver_settings` are accepted | 🔵 Review |
 | harness/harness | [#3729](https://github.com/harness/harness/pull/3729) | Reject devcontainer feature tar entries that escape the extraction directory (`../x`, `nested/../../x`, absolute paths) before the gitspace extractor writes anything, so a feature tarball can no longer write files outside it (path traversal) | 🔵 Review |
-| fyne-io/fyne | [#6576](https://github.com/fyne-io/fyne/pull/6576) | Stop a multiline `Entry` from scrolling back to its cursor when it gains or loses focus, so scrolling away and clicking elsewhere keeps the scroll position and a click or tap into a scrolled, unfocused entry places the cursor where it lands | 🔵 Review |
 | argoproj-labs/argocd-image-updater | [#1853](https://github.com/argoproj-labs/argocd-image-updater/pull/1853) | Keep a Docker Hub image's explicit `docker.io/library/` prefix on write-back instead of shortening it to `docker.io/<name>`, so kustomize matches the manifest again and constrained refs like `docker.io/library/nginx:~1.0` match their live image | 🔵 Review |
 | abiosoft/colima | [#1645](https://github.com/abiosoft/colima/pull/1645) | Make `colima restart` prepare its config the same way as `colima start`, so a partial read-only colima.yaml under `COLIMA_SAVE_CONFIG=0` no longer restarts the VM with a 0 GiB root disk and leaves it stopped | 🔵 Review |
 | asdf-vm/asdf | [#2340](https://github.com/asdf-vm/asdf/pull/2340) | Skip `system` and `path:` versions in a bare `asdf install` instead of exiting 1, and keep installing the versions listed after them, so a `.tool-versions` entry like `postgres system` no longer fails the whole install | 🔵 Review |
@@ -270,7 +271,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | integrations/terraform-provider-github | [#3570](https://github.com/integrations/terraform-provider-github/pull/3570) | Include explicitly-configured false booleans on github_organization_settings create (fixes GetOk false/unset ambiguity) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-wafv2 | [#10](https://github.com/terraform-aws-modules/terraform-aws-wafv2/pull/10) | Fix ip_set_forwarded_ip_config being dropped in nested WAFv2 statement blocks | 🔵 Review |
 | carvel-dev/kapp-controller | [#1844](https://github.com/carvel-dev/kapp-controller/pull/1844) | Fix concurrent map iteration/write panic in AppRefTracker under high reconciliation concurrency | 🔵 Review |
-| prometheus-community/helm-charts | [#7108](https://github.com/prometheus-community/helm-charts/pull/7108) | prometheus-adapter chart: add optional schedulerName and runtimeClassName to the Deployment | 🔵 Review |
 | anchore/scan-action | [#726](https://github.com/anchore/scan-action/pull/726) | Add glob pattern support to the scan-action `sbom` input (expands to exactly one SBOM file) | 🔵 Review |
 | terraform-google-modules/terraform-google-composer | [#203](https://github.com/terraform-google-modules/terraform-google-composer/pull/203) | Fixed cloud_data_lineage_integration=false being a no-op (nullable var so it can be explicitly disabled) | 🔵 Review |
 | terraform-aws-modules/terraform-aws-dynamodb-table | [#123](https://github.com/terraform-aws-modules/terraform-aws-dynamodb-table/pull/123) | Add opt-in standalone GSI management (aws_dynamodb_global_secondary_index) for independent index lifecycle | 🔵 Review |
@@ -302,7 +302,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | astral-sh/ruff-action | [#379](https://github.com/astral-sh/ruff-action/pull/379) | Add `uv.lock` as a supported `version-file` format | ✅ Merged |
 | Azure/setup-helm | [#281](https://github.com/Azure/setup-helm/pull/281) | Add `version-file` input to read the Helm version from a `.tool-versions` file | ✅ Merged |
 | denoland/setup-deno | [#133](https://github.com/denoland/setup-deno/pull/133) | Parse dvm's key=value .dvmrc format in the deno-version-file input | 🔵 Review |
-| aquasecurity/setup-trivy | [#39](https://github.com/aquasecurity/setup-trivy/pull/39) | Add a `version-file` input to read the Trivy version from a `.tool-versions` / plain version file | 🔵 Review |
 
 <br/>
 
