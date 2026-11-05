@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-194-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-194-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 135 | 92 | 227 |
+| [Standalone contributions](#standalone-contributions) | 135 | 93 | 228 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -194,6 +194,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| revive-lint/revive | [#1954](https://github.com/revive-lint/revive/pull/1954) | Make `max-control-nesting` count `for ... range` loops: the walker in `rule/max_control_nesting.go` handled `*ast.ForStmt` but not `*ast.RangeStmt`, so a nest of range loops was never reported while the same nest written with three-clause `for` loops was; range loops now count as a nesting level, with a fixture case that fails without the change, fixing #1953 | 🔵 Review |
 | plotly/plotly.py | [#5870](https://github.com/plotly/plotly.py/pull/5870) | Fix timezone-aware `DatetimeIndex` converting to an object array: `copy_to_readonly_numpy_array` in `_plotly_utils/basevalidators.py` passed the index to `np.array` unchanged, so it became an object array of Timestamps that were deep-copied and encoded one at a time, making figure creation and `to_json()` about 15x and 44x slower than the same index after the fix in a local benchmark; the validator now drops the time zone first, matching the Series path in both speed and JSON output, which no longer carries the UTC offset, fixing #5864 | 🔵 Review |
 | miniflux/v2 | [#4615](https://github.com/miniflux/v2/pull/4615) | Accept UTF-16 RSS and Atom feeds: the XML declaration of a UTF-16 document cannot be read as ASCII, so `encoding/xml` failed with `encoding "utf-16" declared but Decoder.CharsetReader is nil`, `DetectFeedFormat` dropped that error, and the feed could not be added or refreshed, rejected as an unknown format; `NewXMLDecoder` in `internal/reader/xml/decoder.go` now converts UTF-16 to UTF-8 before decoding, recognizing it from the BOM or, without one, from the leading `<`, while a stray BOM or NUL in front of a UTF-8 document still parses as before, fixing #4613 | 🔵 Review |
 | gonum/gonum | [#2133](https://github.com/gonum/gonum/pull/2133) | A+C: add somaz | 🔵 Review |
