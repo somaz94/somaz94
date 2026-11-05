@@ -1007,5 +1007,8 @@
   },
   "getarcaneapp/arcane#4658": {
     "summary": "Keep container stats samples past the freshness window: the stats cache evicted samples after the same 5 seconds used as the freshness limit, so on the UI's 7 second refresh the CPU baseline was always gone and every CPU-sorted list waited for Docker's two-sample stats call; samples now stay cached for a minute while freshness is still checked at 5 seconds, taking repeat CPU-sorted requests on 20 containers from about 4.1s to under 0.25s, fixing #4657"
+  },
+  "prowler-cloud/prowler#13267": {
+    "summary": "Use CIDR containment in the OCI default security list check: `network_default_security_list_restricts_traffic` decided whether an ingress source was inside the VCN with a string prefix test, so `10.0.0.0/8` passed for a `10.0.0.0/16` VCN while a `/24` subnet inside it failed; the check now tests `ipaddress` `subnet_of` against each VCN CIDR block of the same IP version, fixing #13266"
   }
 }
