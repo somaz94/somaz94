@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-194-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-194-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 135 | 96 | 231 |
+| [Standalone contributions](#standalone-contributions) | 135 | 97 | 232 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -194,6 +194,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| remsky/Kokoro-FastAPI | [#587](https://github.com/remsky/Kokoro-FastAPI/pull/587) | Write the real RIFF and data chunk sizes into non-streamed WAV responses: the streaming writer leaves the 0xFFFFFFFF placeholder because a stream cannot know its length, and the non-stream path joined those chunks unchanged, so Python's `wave` read a one-sentence file as about 25 hours; `generate_audio` now patches both sizes once the chunks are joined, walking past ffmpeg's LIST chunk to find `data`, fixing #586 | 🔵 Review |
 | Tencent/WeKnora | [#5170](https://github.com/Tencent/WeKnora/pull/5170) | Count wiki pages whose `in_links` is JSON null as orphans on PostgreSQL: `CountOrphans` matched only SQL NULL or `'[]'`, so pages stored with a nil link slice (written as JSON `null`) were missing from `stats.orphan_count` while lint counted them; the predicate now also accepts `'null'::JSONB`, since `jsonb_array_length` raises on JSON null, fixing #5160 | 🔵 Review |
 | prowler-cloud/prowler | [#13267](https://github.com/prowler-cloud/prowler/pull/13267) | Use CIDR containment in the OCI default security list check: `network_default_security_list_restricts_traffic` decided whether an ingress source was inside the VCN with a string prefix test, so `10.0.0.0/8` passed for a `10.0.0.0/16` VCN while a `/24` subnet inside it failed; the check now tests `ipaddress` `subnet_of` against each VCN CIDR block of the same IP version, fixing #13266 | 🔵 Review |
 | getarcaneapp/arcane | [#4658](https://github.com/getarcaneapp/arcane/pull/4658) | Keep container stats samples past the freshness window: the stats cache evicted samples after the same 5 seconds used as the freshness limit, so on the UI's 7 second refresh the CPU baseline was always gone and every CPU-sorted list waited for Docker's two-sample stats call; samples now stay cached for a minute while freshness is still checked at 5 seconds, taking repeat CPU-sorted requests on 20 containers from about 4.1s to under 0.25s, fixing #4657 | 🔵 Review |
