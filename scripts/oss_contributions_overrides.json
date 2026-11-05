@@ -1004,5 +1004,8 @@
   },
   "gonum/gonum#2133": {
     "summary": "Add the author to `AUTHORS` and `CONTRIBUTORS`, as the maintainer asked on #2131"
+  },
+  "getarcaneapp/arcane#4658": {
+    "summary": "Keep container stats samples past the freshness window: the stats cache evicted samples after the same 5 seconds used as the freshness limit, so on the UI's 7 second refresh the CPU baseline was always gone and every CPU-sorted list waited for Docker's two-sample stats call; samples now stay cached for a minute while freshness is still checked at 5 seconds, taking repeat CPU-sorted requests on 20 containers from about 4.1s to under 0.25s, fixing #4657"
   }
 }
