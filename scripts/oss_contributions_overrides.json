@@ -1013,5 +1013,8 @@
   },
   "Tencent/WeKnora#5170": {
     "summary": "Count wiki pages whose `in_links` is JSON null as orphans on PostgreSQL: `CountOrphans` matched only SQL NULL or `'[]'`, so pages stored with a nil link slice (written as JSON `null`) were missing from `stats.orphan_count` while lint counted them; the predicate now also accepts `'null'::JSONB`, since `jsonb_array_length` raises on JSON null, fixing #5160"
+  },
+  "remsky/Kokoro-FastAPI#587": {
+    "summary": "Write the real RIFF and data chunk sizes into non-streamed WAV responses: the streaming writer leaves the 0xFFFFFFFF placeholder because a stream cannot know its length, and the non-stream path joined those chunks unchanged, so Python's `wave` read a one-sentence file as about 25 hours; `generate_audio` now patches both sizes once the chunks are joined, walking past ffmpeg's LIST chunk to find `data`, fixing #586"
   }
 }
