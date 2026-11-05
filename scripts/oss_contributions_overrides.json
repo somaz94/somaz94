@@ -322,7 +322,7 @@
   "kudobuilder/kuttl#694": {
     "summary": "Fix flaky integration test by randomizing namespace (prevents -count collision)"
   },
-  "ray-project/kuberay#4934": {
+  "kuberay-project/kuberay#4934": {
     "summary": "Add optional PodDisruptionBudget to the ray-cluster Helm chart"
   },
   "fluent/fluentd#5390": {
@@ -635,7 +635,7 @@
     "summary": "Add an optional response status condition to the logBody filter, so a request body can be logged only for failing responses"
   },
   "envoyproxy/gateway#9860": {
-    "summary": "Fix the always-zero watchable_depth control-plane gauge by recording the coalesced update backlog"
+    "summary": "Remove the always-zero watchable_depth gauge as a breaking cleanup and move the Grafana dashboards' template variables to watchable_subscribe_total"
   },
   "kubernetes-csi/external-resizer#610": {
     "summary": "csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it"
@@ -998,5 +998,11 @@
   },
   "revive-lint/revive#1954": {
     "summary": "Make `max-control-nesting` count `for ... range` loops: the walker in `rule/max_control_nesting.go` handled `*ast.ForStmt` but not `*ast.RangeStmt`, so a nest of range loops was never reported while the same nest written with three-clause `for` loops was; range loops now count as a nesting level, with a fixture case that fails without the change, fixing #1953"
+  },
+  "kubernetes-sigs/external-dns#6845": {
+    "summary": "Keep duplicate endpoints independent of informer order: `MergeEndpoints` and `dedupSource` kept the first endpoint, and that order changes between syncs, so four Ingresses sharing a host returned all four resource labels over 200 `Endpoints()` calls; both now keep the endpoint with the lowest `resource` label, in `dedupSource` only between endpoints of the same resource kind, refs #6829"
+  },
+  "gonum/gonum#2133": {
+    "summary": "Add the author to `AUTHORS` and `CONTRIBUTORS`, as the maintainer asked on #2131"
   }
 }
