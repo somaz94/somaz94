@@ -1010,5 +1010,8 @@
   },
   "prowler-cloud/prowler#13267": {
     "summary": "Use CIDR containment in the OCI default security list check: `network_default_security_list_restricts_traffic` decided whether an ingress source was inside the VCN with a string prefix test, so `10.0.0.0/8` passed for a `10.0.0.0/16` VCN while a `/24` subnet inside it failed; the check now tests `ipaddress` `subnet_of` against each VCN CIDR block of the same IP version, fixing #13266"
+  },
+  "Tencent/WeKnora#5170": {
+    "summary": "Count wiki pages whose `in_links` is JSON null as orphans on PostgreSQL: `CountOrphans` matched only SQL NULL or `'[]'`, so pages stored with a nil link slice (written as JSON `null`) were missing from `stats.orphan_count` while lint counted them; the predicate now also accepts `'null'::JSONB`, since `jsonb_array_length` raises on JSON null, fixing #5160"
   }
 }
