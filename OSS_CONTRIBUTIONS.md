@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-195-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-195-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 136 | 97 | 233 |
+| [Standalone contributions](#standalone-contributions) | 136 | 99 | 235 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -195,6 +195,9 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| updatecli/updatecli | [#11239](https://github.com/updatecli/updatecli/pull/11239) | Return an error when `updatecli pipeline prepare` fails: it and the deprecated `updatecli prepare` logged the Prepare error but exited 0 while `diff` and `apply` exited 1; `run()` now returns the error, with a regression test, fixing #11232 | 🔵 Review |
+| ishantanu/awesome-kubectl-plugins | [#48](https://github.com/ishantanu/awesome-kubectl-plugins/pull/48) | Add kubectl diff2 | 🔵 Review |
+| rootsongjc/awesome-cloud-native | [#206](https://github.com/rootsongjc/awesome-cloud-native/pull/206) | Add k8s-namespace-sync to Configuration & Policy Automation | 🔵 Review |
 | concourse/concourse | [#9784](https://github.com/concourse/concourse/pull/9784) | Add `--team` to `fly rerun-build`: the command did not accept the flag and always reran the build in the target's default team; it now loads the named team the way `trigger-job` does, with an integration test, fixing #9783 | 🔵 Review |
 | remsky/Kokoro-FastAPI | [#587](https://github.com/remsky/Kokoro-FastAPI/pull/587) | Write the real RIFF and data chunk sizes into non-streamed WAV responses: the streaming writer leaves the 0xFFFFFFFF placeholder because a stream cannot know its length, and the non-stream path joined those chunks unchanged, so Python's `wave` read a one-sentence file as about 25 hours; `generate_audio` now patches both sizes once the chunks are joined, walking past ffmpeg's LIST chunk to find `data`, fixing #586 | 🔵 Review |
 | Tencent/WeKnora | [#5170](https://github.com/Tencent/WeKnora/pull/5170) | Count wiki pages whose `in_links` is JSON null as orphans on PostgreSQL: `CountOrphans` matched only SQL NULL or `'[]'`, so pages stored with a nil link slice (written as JSON `null`) were missing from `stats.orphan_count` while lint counted them; the predicate now also accepts `'null'::JSONB`, since `jsonb_array_length` raises on JSON null, fixing #5160 | 🔵 Review |
@@ -257,7 +260,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | getsops/sops | [#2305](https://github.com/getsops/sops/pull/2305) | Skip files that match no destination rule in `sops publish --recursive` instead of aborting the walk, and give empty or invalid destination rules their own error | 🔵 Review |
 | kubernetes-sigs/kustomize | [#6287](https://github.com/kubernetes-sigs/kustomize/pull/6287) | Stop `kustomize edit` from duplicating `#` lines inside YAML block scalars by tracking block scalar indentation | 🔵 Review |
 | zalando/postgres-operator | [#3189](https://github.com/zalando/postgres-operator/pull/3189) | Delete cluster services with background propagation so the replica service's EndpointSlices are not orphaned | 🔵 Review |
-| istio/istio | [#61851](https://github.com/istio/istio/pull/61851) | Honor verifyCertificateHash and verifyCertificateSpki on file-mounted Gateway and Sidecar server certs | 🔵 Review |
 | antrea-io/antrea | [#8436](https://github.com/antrea-io/antrea/pull/8436) | Escape user-supplied L7 NetworkPolicy `host` / `path` / `sni` patterns in generated Suricata rules, so a quote or semicolon can no longer close `content:` early and inject extra rule keywords | 🔵 Review |
 | mariadb-operator/mariadb-operator | [#1907](https://github.com/mariadb-operator/mariadb-operator/pull/1907) | Enforce the PhysicalBackup `timeout` through the Job's `activeDeadlineSeconds` so timed out backups are reported as failed instead of `Success`, and never bootstrap replicas from a failed backup | 🔵 Review |
 | k8ssandra/k8ssandra-operator | [#1795](https://github.com/k8ssandra/k8ssandra-operator/pull/1795) | Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC | 🔵 Review |
