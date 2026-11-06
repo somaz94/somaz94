@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-195-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-196-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-102-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 136 | 99 | 235 |
+| [Standalone contributions](#standalone-contributions) | 137 | 99 | 236 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -59,6 +59,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| rootsongjc/awesome-cloud-native | [#206](https://github.com/rootsongjc/awesome-cloud-native/pull/206) | Add k8s-namespace-sync to Configuration & Policy Automation | ✅ Merged |
 | getarcaneapp/arcane | [#4658](https://github.com/getarcaneapp/arcane/pull/4658) | Keep container stats samples past the freshness window: the stats cache evicted samples after the same 5 seconds used as the freshness limit, so on the UI's 7 second refresh the CPU baseline was always gone and every CPU-sorted list waited for Docker's two-sample stats call; samples now stay cached for a minute while freshness is still checked at 5 seconds, taking repeat CPU-sorted requests on 20 containers from about 4.1s to under 0.25s, fixing #4657 | ✅ Merged |
 | nginx/nginx-gateway-fabric | [#6182](https://github.com/nginx/nginx-gateway-fabric/pull/6182) | Fix TLSRoute with `sectionName` getting no stream server when listeners share a hostname across ports: listener isolation in `internal/controller/state/graph/route_common.go` skipped the port comparison for L4 routes, so a TLSRoute bound by `sectionName` to one of several TLS listeners using the same hostname on different ports lost that hostname to its sibling listeners and got no stream server; L4 routes now compare the port too, the unused `isL4Route` parameter is removed, and `TestIsolateL4Listeners` gains a regression case, fixing #6181 | ✅ Merged |
 | goreleaser/nfpm | [#1169](https://github.com/goreleaser/nfpm/pull/1169) | Use the configured `mtime` for APK install scripts: `.pre-install`, `.post-install` and the other scripts were written with the source file's modification time, so a configured `mtime` or `SOURCE_DATE_EPOCH` did not reach them and APK packages were not reproducible; the script writer now uses the configured time and falls back to the source mtime only when none is set, as data files already do, fixing #1168 | ✅ Merged |
@@ -195,9 +196,9 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| stefanprodan/timoni | [#676](https://github.com/stefanprodan/timoni/pull/676) | Remove the stdin temp file left in TMPDIR by `bundle apply/build/vet` and `runtime build` (:= shadowing) | 🔵 Review |
 | updatecli/updatecli | [#11239](https://github.com/updatecli/updatecli/pull/11239) | Return an error when `updatecli pipeline prepare` fails: it and the deprecated `updatecli prepare` logged the Prepare error but exited 0 while `diff` and `apply` exited 1; `run()` now returns the error, with a regression test, fixing #11232 | 🔵 Review |
 | ishantanu/awesome-kubectl-plugins | [#48](https://github.com/ishantanu/awesome-kubectl-plugins/pull/48) | Add kubectl diff2 | 🔵 Review |
-| rootsongjc/awesome-cloud-native | [#206](https://github.com/rootsongjc/awesome-cloud-native/pull/206) | Add k8s-namespace-sync to Configuration & Policy Automation | 🔵 Review |
 | concourse/concourse | [#9784](https://github.com/concourse/concourse/pull/9784) | Add `--team` to `fly rerun-build`: the command did not accept the flag and always reran the build in the target's default team; it now loads the named team the way `trigger-job` does, with an integration test, fixing #9783 | 🔵 Review |
 | remsky/Kokoro-FastAPI | [#587](https://github.com/remsky/Kokoro-FastAPI/pull/587) | Write the real RIFF and data chunk sizes into non-streamed WAV responses: the streaming writer leaves the 0xFFFFFFFF placeholder because a stream cannot know its length, and the non-stream path joined those chunks unchanged, so Python's `wave` read a one-sentence file as about 25 hours; `generate_audio` now patches both sizes once the chunks are joined, walking past ffmpeg's LIST chunk to find `data`, fixing #586 | 🔵 Review |
 | Tencent/WeKnora | [#5170](https://github.com/Tencent/WeKnora/pull/5170) | Count wiki pages whose `in_links` is JSON null as orphans on PostgreSQL: `CountOrphans` matched only SQL NULL or `'[]'`, so pages stored with a nil link slice (written as JSON `null`) were missing from `stats.orphan_count` while lint counted them; the predicate now also accepts `'null'::JSONB`, since `jsonb_array_length` raises on JSON null, fixing #5160 | 🔵 Review |
