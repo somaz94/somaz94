@@ -1016,5 +1016,8 @@
   },
   "remsky/Kokoro-FastAPI#587": {
     "summary": "Write the real RIFF and data chunk sizes into non-streamed WAV responses: the streaming writer leaves the 0xFFFFFFFF placeholder because a stream cannot know its length, and the non-stream path joined those chunks unchanged, so Python's `wave` read a one-sentence file as about 25 hours; `generate_audio` now patches both sizes once the chunks are joined, walking past ffmpeg's LIST chunk to find `data`, fixing #586"
+  },
+  "concourse/concourse#9784": {
+    "summary": "Add `--team` to `fly rerun-build`: the command did not accept the flag and always reran the build in the target's default team; it now loads the named team the way `trigger-job` does, with an integration test, fixing #9783"
   }
 }
