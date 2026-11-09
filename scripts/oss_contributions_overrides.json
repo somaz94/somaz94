@@ -1031,5 +1031,8 @@
   },
   "backube/volsync#2211": {
     "summary": "Send the service account token from the Helm chart's ServiceMonitor so Prometheus scrapes no longer fail with 401 after metrics auth, fixing #2198"
+  },
+  "google/go-containerregistry#2503": {
+    "summary": "Make the filesystem layer cache write to a temp file and rename once fully read, so a concurrent Get never sees or deletes a partly written layer, fixing #2501"
   }
 }
