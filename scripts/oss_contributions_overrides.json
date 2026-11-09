@@ -1028,5 +1028,8 @@
   },
   "juju/juju#23771": {
     "summary": "Keep `juju debug-log --tail` streams alive across logsink.log rotation by polling instead of hpcloud/tail's shared inotify watcher, fixing #23745"
+  },
+  "backube/volsync#2211": {
+    "summary": "Send the service account token from the Helm chart's ServiceMonitor so Prometheus scrapes no longer fail with 401 after metrics auth, fixing #2198"
   }
 }
