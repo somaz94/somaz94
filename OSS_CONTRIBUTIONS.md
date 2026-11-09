@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-198-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-198-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-101-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 139 | 97 | 236 |
+| [Standalone contributions](#standalone-contributions) | 139 | 98 | 237 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -198,6 +198,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| backube/volsync | [#2211](https://github.com/backube/volsync/pull/2211) | Send the service account token from the Helm chart's ServiceMonitor so Prometheus scrapes no longer fail with 401 after metrics auth, fixing #2198 | 🔵 Review |
 | juju/juju | [#23771](https://github.com/juju/juju/pull/23771) | Keep `juju debug-log --tail` streams alive across logsink.log rotation by polling instead of hpcloud/tail's shared inotify watcher, fixing #23745 | 🔵 Review |
 | stefanprodan/timoni | [#676](https://github.com/stefanprodan/timoni/pull/676) | Remove the stdin temp file left in TMPDIR by `bundle apply/build/vet` and `runtime build` (:= shadowing) | 🔵 Review |
 | ishantanu/awesome-kubectl-plugins | [#48](https://github.com/ishantanu/awesome-kubectl-plugins/pull/48) | Add kubectl diff2 | 🔵 Review |
