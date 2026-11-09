@@ -1025,5 +1025,8 @@
   },
   "stefanprodan/timoni#676": {
     "summary": "Remove the stdin temp file left in TMPDIR by `bundle apply/build/vet` and `runtime build` (:= shadowing)"
+  },
+  "juju/juju#23771": {
+    "summary": "Keep `juju debug-log --tail` streams alive across logsink.log rotation by polling instead of hpcloud/tail's shared inotify watcher, fixing #23745"
   }
 }
