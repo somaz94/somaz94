@@ -1034,5 +1034,8 @@
   },
   "google/go-containerregistry#2503": {
     "summary": "Make the filesystem layer cache write to a temp file and rename once fully read, so a concurrent Get never sees or deletes a partly written layer, fixing #2501"
+  },
+  "kimdre/doco-cd#2175": {
+    "summary": "Make Swarm mode image pruning remove the exact images a deployment replaced on every node by image ID, which a node-wide `docker image prune` missed because the old task's stopped container still used them, fixing #2168"
   }
 }
