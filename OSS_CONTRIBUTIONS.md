@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-201-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-201-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 142 | 96 | 238 |
+| [Standalone contributions](#standalone-contributions) | 142 | 97 | 239 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -201,6 +201,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| kimdre/doco-cd | [#2175](https://github.com/kimdre/doco-cd/pull/2175) | Make Swarm mode image pruning remove the exact images a deployment replaced on every node by image ID, which a node-wide `docker image prune` missed because the old task's stopped container still used them, fixing #2168 | 🔵 Review |
 | google/go-containerregistry | [#2503](https://github.com/google/go-containerregistry/pull/2503) | Make the filesystem layer cache write to a temp file and rename once fully read, so a concurrent Get never sees or deletes a partly written layer, fixing #2501 | 🔵 Review |
 | backube/volsync | [#2211](https://github.com/backube/volsync/pull/2211) | Send the service account token from the Helm chart's ServiceMonitor so Prometheus scrapes no longer fail with 401 after metrics auth, fixing #2198 | 🔵 Review |
 | juju/juju | [#23771](https://github.com/juju/juju/pull/23771) | Keep `juju debug-log --tail` streams alive across logsink.log rotation by polling instead of hpcloud/tail's shared inotify watcher, fixing #23745 | 🔵 Review |
