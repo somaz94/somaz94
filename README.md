@@ -88,7 +88,7 @@ Contributions to external open-source projects.
 ### Recognition
 
 - **NGINX Gateway Fabric 2.7**: credited as a community contributor in the [release announcement](https://blog.nginx.org/blog/nginx-gateway-fabric-2-7-gateway-api-1-6-conformance-external-authentication-and-fewer-snippets) for the GEP-713 `Programmed` policy status condition and 11 controller refactors, and thanked publicly by the F5/NGINX Community Team
-- **NGINX Gateway Fabric 2.8**: thanked publicly by the F5/NGINX Community Team again, at KubeCon + CloudNativeCon NA 2026 for a BackendTLSPolicy control-plane panic fix and validation cleanup ([release notes](https://github.com/nginx/nginx-gateway-fabric/releases/tag/v2.8.0))
+- **NGINX Gateway Fabric 2.8**: credited as a community contributor in the [release announcement](https://blog.nginx.org/blog/nginx-gateway-fabric-2-8-ip-allow-and-deny-lists-passive-health-checks-and-cookie-based-session-persistence) for a BackendTLSPolicy control-plane panic fix and validation cleanup, and thanked publicly by the F5/NGINX Community Team again at KubeCon + CloudNativeCon NA 2026 ([release notes](https://github.com/nginx/nginx-gateway-fabric/releases/tag/v2.8.0))
 
 <br/>
 
