@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-203-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-99-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-203-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 144 | 96 | 240 |
+| [Standalone contributions](#standalone-contributions) | 144 | 97 | 241 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -203,6 +203,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| aptly-dev/aptly | [#1665](https://github.com/aptly-dev/aptly/pull/1665) | Stop `aptly mirror update` from re-downloading every package of SHA512-only indexes (Ubuntu 26.10) by reusing the previous update's pool path and checksums when name, size and SHA512 match, which also makes `-skip-existing-packages` work again, fixing #1664 | 🔵 Review |
 | pomerium/pomerium | [#7007](https://github.com/pomerium/pomerium/pull/7007) | Compute Pomerium's cgroup memory saturation for Envoy's overload manager from the working set (usage minus `inactive_file`), so reclaimable page cache no longer latches `stop_accepting_connections` at the memory limit, and keep the monitor running after a failed read, fixing #7001 | 🔵 Review |
 | kimdre/doco-cd | [#2175](https://github.com/kimdre/doco-cd/pull/2175) | Make Swarm mode image pruning remove the exact images a deployment replaced on every node by image ID, which a node-wide `docker image prune` missed because the old task's stopped container still used them, fixing #2168 | 🔵 Review |
 | google/go-containerregistry | [#2503](https://github.com/google/go-containerregistry/pull/2503) | Make the filesystem layer cache write to a temp file and rename once fully read, so a concurrent Get never sees or deletes a partly written layer, fixing #2501 | 🔵 Review |
