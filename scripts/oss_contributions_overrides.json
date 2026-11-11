@@ -1040,5 +1040,8 @@
   },
   "pomerium/pomerium#7007": {
     "summary": "Compute Pomerium's cgroup memory saturation for Envoy's overload manager from the working set (usage minus `inactive_file`), so reclaimable page cache no longer latches `stop_accepting_connections` at the memory limit, and keep the monitor running after a failed read, fixing #7001"
+  },
+  "aptly-dev/aptly#1665": {
+    "summary": "Stop `aptly mirror update` from re-downloading every package of SHA512-only indexes (Ubuntu 26.10) by reusing the previous update's pool path and checksums when name, size and SHA512 match, which also makes `-skip-existing-packages` work again, fixing #1664"
   }
 }
