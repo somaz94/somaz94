@@ -1049,5 +1049,8 @@
   },
   "mikefarah/yq#2978": {
     "summary": "Make the Lua encoder (`-o lua`) put a space after `--` for YAML line comments that start with a Lua long bracket (`#[[`, `#[=[`), so they stay line comments instead of opening a block comment that swallowed the following table entries or left the chunk unloadable, fixing #2977"
+  },
+  "skypilot-org/skypilot#11357": {
+    "summary": "Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328"
   }
 }
