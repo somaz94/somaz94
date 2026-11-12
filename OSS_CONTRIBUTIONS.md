@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-205-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-206-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-100-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 146 | 97 | 243 |
+| [Standalone contributions](#standalone-contributions) | 147 | 97 | 244 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -59,6 +59,7 @@ Pull requests opened against external open-source projects, merged and still in 
 
 | Project | PR | Contribution | Status |
 |---|---|---|---|
+| fabiolb/fabio | [#1126](https://github.com/fabiolb/fabio/pull/1126) | Give each HTTP proxy its own `maps.Clone` of `proxy.DefaultProtectHeaders` before writing the configured request ID, client IP and TLS header names, so starting several HTTP/HTTPS listeners in parallel no longer crashes with `fatal error: concurrent map writes`, fixing #1125 | ✅ Merged |
 | updatecli/updatecli | [#11239](https://github.com/updatecli/updatecli/pull/11239) | Return an error when `updatecli pipeline prepare` fails: it and the deprecated `updatecli prepare` logged the Prepare error but exited 0 while `diff` and `apply` exited 1; `run()` now returns the error, with a regression test, fixing #11232 | ✅ Merged |
 | rootsongjc/awesome-cloud-native | [#206](https://github.com/rootsongjc/awesome-cloud-native/pull/206) | Add k8s-namespace-sync to Configuration & Policy Automation | ✅ Merged |
 | concourse/concourse | [#9784](https://github.com/concourse/concourse/pull/9784) | Add `--team` to `fly rerun-build`: the command did not accept the flag and always reran the build in the target's default team; it now loads the named team the way `trigger-job` does, with an integration test, fixing #9783 | ✅ Merged |
@@ -205,8 +206,8 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| skypilot-org/skypilot | [#11357](https://github.com/skypilot-org/skypilot/pull/11357) | Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328 | 🔵 Review |
 | mikefarah/yq | [#2978](https://github.com/mikefarah/yq/pull/2978) | Make the Lua encoder (`-o lua`) put a space after `--` for YAML line comments that start with a Lua long bracket (`#[[`, `#[=[`), so they stay line comments instead of opening a block comment that swallowed the following table entries or left the chunk unloadable, fixing #2977 | 🔵 Review |
-| fabiolb/fabio | [#1126](https://github.com/fabiolb/fabio/pull/1126) | Give each HTTP proxy its own `maps.Clone` of `proxy.DefaultProtectHeaders` before writing the configured request ID, client IP and TLS header names, so starting several HTTP/HTTPS listeners in parallel no longer crashes with `fatal error: concurrent map writes`, fixing #1125 | 🔵 Review |
 | aptly-dev/aptly | [#1665](https://github.com/aptly-dev/aptly/pull/1665) | Stop `aptly mirror update` from re-downloading every package of SHA512-only indexes (Ubuntu 26.10) by reusing the previous update's pool path and checksums when name, size and SHA512 match, which also makes `-skip-existing-packages` work again, fixing #1664 | 🔵 Review |
 | pomerium/pomerium | [#7007](https://github.com/pomerium/pomerium/pull/7007) | Compute Pomerium's cgroup memory saturation for Envoy's overload manager from the working set (usage minus `inactive_file`), so reclaimable page cache no longer latches `stop_accepting_connections` at the memory limit, and keep the monitor running after a failed read, fixing #7001 | 🔵 Review |
 | kimdre/doco-cd | [#2175](https://github.com/kimdre/doco-cd/pull/2175) | Make Swarm mode image pruning remove the exact images a deployment replaced on every node by image ID, which a node-wide `docker image prune` missed because the old task's stopped container still used them, fixing #2168 | 🔵 Review |
