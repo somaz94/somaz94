@@ -1046,5 +1046,8 @@
   },
   "fabiolb/fabio#1126": {
     "summary": "Give each HTTP proxy its own `maps.Clone` of `proxy.DefaultProtectHeaders` before writing the configured request ID, client IP and TLS header names, so starting several HTTP/HTTPS listeners in parallel no longer crashes with `fatal error: concurrent map writes`, fixing #1125"
+  },
+  "mikefarah/yq#2978": {
+    "summary": "Make the Lua encoder (`-o lua`) put a space after `--` for YAML line comments that start with a Lua long bracket (`#[[`, `#[=[`), so they stay line comments instead of opening a block comment that swallowed the following table entries or left the chunk unloadable, fixing #2977"
   }
 }
