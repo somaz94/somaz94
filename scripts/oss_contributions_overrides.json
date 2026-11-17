@@ -1061,5 +1061,8 @@
   },
   "pingcap/tidb#73303": {
     "summary": "Make `ALTER TABLE ... ADD PARTITION PARTITIONS <N>` on HASH and KEY partitioned tables check the new partition count before `buildHashPartitionDefinitions` allocates it, and check `spec.Num` before adding it to the current count, so a huge count no longer OOM-kills tidb-server and `PARTITIONS 18446744073709551615` no longer wraps the `uint64` sum to 1 and returns success without running a DDL job, fixing #73294"
+  },
+  "anchore/syft#5592": {
+    "summary": "Make the Go binary cataloger fall back to the repository root (`host/owner/repo`, github.com and bitbucket.org only) when `extractVersionFromLDFlags` finds no `main.` variable or variable under the main module path, so the official Docker CLI, which builds without `go.mod` and gets a main module crafted from `github.com/docker/cli/cmd/docker` while its release sets `github.com/docker/cli/cli/version.Version`, no longer reports version `UNKNOWN` and the Docker CLI 29.9.3 binary reports `v29.9.3`, fixing #5590"
   }
 }
