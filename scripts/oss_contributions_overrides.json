@@ -1058,5 +1058,8 @@
   },
   "jaegertracing/jaeger#10210": {
     "summary": "Make `internal/sqlquery.Compile` refuse statements longer than 16 KiB (the statement-length limit RFC 0019 §8 lists) with the package's positioned `*Error` before handing the `sql` input of the MCP `find_spans` / `find_traces` tools to the recursive ClickHouse SQL parser, so a deeply nested `WHERE` no longer overflows the goroutine stack and kills the process with a fatal error no `recover` can catch, fixing #10202"
+  },
+  "pingcap/tidb#73303": {
+    "summary": "Make `ALTER TABLE ... ADD PARTITION PARTITIONS <N>` on HASH and KEY partitioned tables check the new partition count before `buildHashPartitionDefinitions` allocates it, and check `spec.Num` before adding it to the current count, so a huge count no longer OOM-kills tidb-server and `PARTITIONS 18446744073709551615` no longer wraps the `uint64` sum to 1 and returns success without running a DDL job, fixing #73294"
   }
 }
