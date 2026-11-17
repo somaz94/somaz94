@@ -1055,5 +1055,8 @@
   },
   "grafana/mcp-grafana#1627": {
     "summary": "Make `alerting_manage_routing` `get_notification_policies` fetch the policy tree through the raw alerting client and parse each Alertmanager string matcher (`severity=\"critical\"`) with Alertmanager's fallback parser into `models.Matcher`, so trees whose routes use `matchers` no longer fail with an unmarshal error against the generated client's `models.Route`, UTF-8 and dotted label names work, and the tool still returns `*models.Route`, fixing #1614"
+  },
+  "jaegertracing/jaeger#10210": {
+    "summary": "Make `internal/sqlquery.Compile` refuse statements longer than 16 KiB (the statement-length limit RFC 0019 §8 lists) with the package's positioned `*Error` before handing the `sql` input of the MCP `find_spans` / `find_traces` tools to the recursive ClickHouse SQL parser, so a deeply nested `WHERE` no longer overflows the goroutine stack and kills the process with a fatal error no `recover` can catch, fixing #10202"
   }
 }
