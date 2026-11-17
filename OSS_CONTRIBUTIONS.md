@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-209-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-210-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 150 | 93 | 243 |
+| [Standalone contributions](#standalone-contributions) | 151 | 92 | 243 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -168,6 +168,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | inference-gateway/cli | [#713](https://github.com/inference-gateway/cli/pull/713) | Guard Tree tool gitignore cache and screenshot rate-limit against concurrent-map data races | ✅ Merged |
 | istio/istio | [#60723](https://github.com/istio/istio/pull/60723) | Add terminationGracePeriodSeconds option to the istiod Helm chart | ✅ Merged |
 | terraform-aws-modules/terraform-aws-eks | [#3726](https://github.com/terraform-aws-modules/terraform-aws-eks/pull/3726) | Fix the FAQ example so case 2 sets `attach_cluster_primary_security_group = false` (the two opposite remedies previously showed the same example); fixes #3724 | ✅ Merged |
+| terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | ✅ Merged |
 | valkey-io/valkey-helm | [#197](https://github.com/valkey-io/valkey-helm/pull/197) | Add aggregated admin/editor/viewer ClusterRoles to the valkey-operator chart | ✅ Merged |
 | valkey-io/valkey-helm | [#196](https://github.com/valkey-io/valkey-helm/pull/196) | Add optional Prometheus ServiceMonitor to the valkey-operator chart | ✅ Merged |
 | actions-rust-lang/setup-rust-toolchain | [#96](https://github.com/actions-rust-lang/setup-rust-toolchain/pull/96) | Add cache-targets passthrough to rust-cache | ✅ Merged |
@@ -209,6 +210,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| grafana/mcp-grafana | [#1627](https://github.com/grafana/mcp-grafana/pull/1627) | Decode string matchers in the notification policy tree | 🔵 Review |
 | skypilot-org/skypilot | [#11357](https://github.com/skypilot-org/skypilot/pull/11357) | Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328 | 🔵 Review |
 | mikefarah/yq | [#2978](https://github.com/mikefarah/yq/pull/2978) | Make the Lua encoder (`-o lua`) put a space after `--` for YAML line comments that start with a Lua long bracket (`#[[`, `#[=[`), so they stay line comments instead of opening a block comment that swallowed the following table entries or left the chunk unloadable, fixing #2977 | 🔵 Review |
 | aptly-dev/aptly | [#1665](https://github.com/aptly-dev/aptly/pull/1665) | Stop `aptly mirror update` from re-downloading every package of SHA512-only indexes (Ubuntu 26.10) by reusing the previous update's pool path and checksums when name, size and SHA512 match, which also makes `-skip-existing-packages` work again, fixing #1664 | 🔵 Review |
@@ -237,7 +239,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | dapr/docs | [#5407](https://github.com/dapr/docs/pull/5407) | Document the Consul name resolution options `selfDeregister` and `useCache` that the component already reads, correct the stale claim that Dapr never deregisters services, and distinguish the in-memory `useCache` from `queryOptions.useCache`, closing #4797 | 🔵 Review |
 | nginx/nginx-prometheus-exporter | [#1371](https://github.com/nginx/nginx-prometheus-exporter/pull/1371) | Stop one missing unix socket from marking every scrape target down: collectors shared a single `http.Transport` and `registerCollector` overwrote its `DialContext` for each unix socket target, so all collectors dialed the last socket and `nginx_up` went to 0 everywhere; each collector now gets its own cloned transport, fixing #1358, and a regression test covers it | 🔵 Review |
 | OT-CONTAINER-KIT/redis-operator | [#1945](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1945) | Stop the RedisReplication embedded sentinel Service and StatefulSet from being updated on every reconcile: the common reconcilers in `internal/controller/common/{service,statefulset}` now compare with the k8s-objectmatcher three-way patch and a last-applied annotation, as `internal/k8sutils` already does, instead of `equality.Semantic.DeepEqual`, so API-server defaults no longer count as drift while changed and removed fields are still applied | 🔵 Review |
-| ccfos/nightingale | [#3437](https://github.com/ccfos/nightingale/pull/3437) | Fix script notify channels receiving a literal `\n` instead of line breaks: `RenderEventForChannel` in `models/message_tpl.go` now renders plain text for the script, wecomapp, feishuapp and smtp channels, whose providers encode the message themselves, while HTTP channels keep the JSON escaping their request bodies need | 🔵 Review |
 | elastic/beats | [#53857](https://github.com/elastic/beats/pull/53857) | Apply the dns processor success_cache and failure_cache settings that were ignored since 8.11, and stop the success cache following failure_cache.enabled | 🔵 Review |
 | 99designs/gqlgen | [#4389](https://github.com/99designs/gqlgen/pull/4389) | Fix `CollectFields` returning a field twice when a query selects it through two interfaces the same object implements, as in `posts { awards { id name } ... on PostInterface2 { awards { __typename } } }`: the collector now merges same-key entries whose definitions are both interfaces the resolved object satisfies, so the response keeps every requested subfield instead of only the selection set written last | 🔵 Review |
 | ipfs/kubo | [#11478](https://github.com/ipfs/kubo/pull/11478) | Fix `ipfs add --nocopy` silently copying data into the blockstore after `Experimental.FilestoreEnabled` or `Experimental.UrlstoreEnabled` is turned on with `ipfs config` while the daemon runs: `add` now errors and asks for a daemon restart when the repo has no FileManager, so a `--nocopy` add the running node cannot honor fails loudly instead of duplicating the file into the blockstore | 🔵 Review |
@@ -295,7 +296,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | kyverno/kyverno | [#16428](https://github.com/kyverno/kyverno/pull/16428) | Add opt-in schedulerName and runtimeClassName to the Kyverno controller Helm chart | 🔵 Review |
 | fyrash/fyra-cli | [#1](https://github.com/fyrash/fyra-cli/pull/1) | Warn on stderr about the secret files `fyra push` withholds by default (`.env*`, `.pem`, `.key`, `.p12`, `.pfx`, `.netrc`), listing only those not already in `.fyraignore`, so a sensitive file kept out of the deploy is reported instead of dropped silently and piped stdout stays clean | 🔵 Review |
 | terraform-aws-modules/terraform-aws-msk-kafka-cluster | [#69](https://github.com/terraform-aws-modules/terraform-aws-msk-kafka-cluster/pull/69) | Restore broker log delivery for MSK Express brokers | 🔵 Review |
-| terraform-aws-modules/terraform-aws-iam | [#651](https://github.com/terraform-aws-modules/terraform-aws-iam/pull/651) | Add opt-in `ebs_csi_volume_tagging` variable so the EBS CSI driver can tag existing volumes (enables VolumeAttributesClass); fixes #649 | 🔵 Review |
 | kubereboot/charts | [#141](https://github.com/kubereboot/charts/pull/141) | Add opt-in topologySpreadConstraints to the kured chart DaemonSet | 🔵 Review |
 | kedacore/charts | [#882](https://github.com/kedacore/charts/pull/882) | Per-component Deployment labels/annotations for KEDA pods | 🔵 Review |
 | kuberay-project/kuberay | [#4934](https://github.com/kuberay-project/kuberay/pull/4934) | Add optional PodDisruptionBudget to the ray-cluster Helm chart | 🔵 Review |
