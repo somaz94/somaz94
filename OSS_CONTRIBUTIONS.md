@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-210-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-210-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 151 | 93 | 244 |
+| [Standalone contributions](#standalone-contributions) | 151 | 94 | 245 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -210,6 +210,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| pingcap/tidb | [#73303](https://github.com/pingcap/tidb/pull/73303) | Make `ALTER TABLE ... ADD PARTITION PARTITIONS <N>` on HASH and KEY partitioned tables check the new partition count before `buildHashPartitionDefinitions` allocates it, and check `spec.Num` before adding it to the current count, so a huge count no longer OOM-kills tidb-server and `PARTITIONS 18446744073709551615` no longer wraps the `uint64` sum to 1 and returns success without running a DDL job, fixing #73294 | 🔵 Review |
 | jaegertracing/jaeger | [#10210](https://github.com/jaegertracing/jaeger/pull/10210) | Make `internal/sqlquery.Compile` refuse statements longer than 16 KiB (the statement-length limit RFC 0019 §8 lists) with the package's positioned `*Error` before handing the `sql` input of the MCP `find_spans` / `find_traces` tools to the recursive ClickHouse SQL parser, so a deeply nested `WHERE` no longer overflows the goroutine stack and kills the process with a fatal error no `recover` can catch, fixing #10202 | 🔵 Review |
 | grafana/mcp-grafana | [#1627](https://github.com/grafana/mcp-grafana/pull/1627) | Make `alerting_manage_routing` `get_notification_policies` fetch the policy tree through the raw alerting client and parse each Alertmanager string matcher (`severity="critical"`) with Alertmanager's fallback parser into `models.Matcher`, so trees whose routes use `matchers` no longer fail with an unmarshal error against the generated client's `models.Route`, UTF-8 and dotted label names work, and the tool still returns `*models.Route`, fixing #1614 | 🔵 Review |
 | skypilot-org/skypilot | [#11357](https://github.com/skypilot-org/skypilot/pull/11357) | Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328 | 🔵 Review |
