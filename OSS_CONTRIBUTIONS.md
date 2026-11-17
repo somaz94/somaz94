@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-210-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-95-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-210-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-96-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 151 | 92 | 243 |
+| [Standalone contributions](#standalone-contributions) | 151 | 93 | 244 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -210,6 +210,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| jaegertracing/jaeger | [#10210](https://github.com/jaegertracing/jaeger/pull/10210) | Make `internal/sqlquery.Compile` refuse statements longer than 16 KiB (the statement-length limit RFC 0019 §8 lists) with the package's positioned `*Error` before handing the `sql` input of the MCP `find_spans` / `find_traces` tools to the recursive ClickHouse SQL parser, so a deeply nested `WHERE` no longer overflows the goroutine stack and kills the process with a fatal error no `recover` can catch, fixing #10202 | 🔵 Review |
 | grafana/mcp-grafana | [#1627](https://github.com/grafana/mcp-grafana/pull/1627) | Make `alerting_manage_routing` `get_notification_policies` fetch the policy tree through the raw alerting client and parse each Alertmanager string matcher (`severity="critical"`) with Alertmanager's fallback parser into `models.Matcher`, so trees whose routes use `matchers` no longer fail with an unmarshal error against the generated client's `models.Route`, UTF-8 and dotted label names work, and the tool still returns `*models.Route`, fixing #1614 | 🔵 Review |
 | skypilot-org/skypilot | [#11357](https://github.com/skypilot-org/skypilot/pull/11357) | Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328 | 🔵 Review |
 | mikefarah/yq | [#2978](https://github.com/mikefarah/yq/pull/2978) | Make the Lua encoder (`-o lua`) put a space after `--` for YAML line comments that start with a Lua long bracket (`#[[`, `#[=[`), so they stay line comments instead of opening a block comment that swallowed the following table entries or left the chunk unloadable, fixing #2977 | 🔵 Review |
