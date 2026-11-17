@@ -1052,5 +1052,8 @@
   },
   "skypilot-org/skypilot#11357": {
     "summary": "Pass `--project` to the `gcloud compute firewall-rules create allow-ssh-ingress-from-iap` call that `setup_gcp_authentication()` runs under GCP OS Login, so the IAP SSH ingress rule lands in the project SkyPilot launches the cluster into instead of gcloud's active project, fixing #11328"
+  },
+  "grafana/mcp-grafana#1627": {
+    "summary": "Make `alerting_manage_routing` `get_notification_policies` fetch the policy tree through the raw alerting client and parse each Alertmanager string matcher (`severity=\"critical\"`) with Alertmanager's fallback parser into `models.Matcher`, so trees whose routes use `matchers` no longer fail with an unmarshal error against the generated client's `models.Route`, UTF-8 and dotted label names work, and the tool still returns `*models.Route`, fixing #1614"
   }
 }
