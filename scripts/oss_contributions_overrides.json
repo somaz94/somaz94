@@ -1064,5 +1064,8 @@
   },
   "anchore/syft#5592": {
     "summary": "Make the Go binary cataloger fall back to the repository root (`host/owner/repo`, github.com and bitbucket.org only) when `extractVersionFromLDFlags` finds no `main.` variable or variable under the main module path, so the official Docker CLI, which builds without `go.mod` and gets a main module crafted from `github.com/docker/cli/cmd/docker` while its release sets `github.com/docker/cli/cli/version.Version`, no longer reports version `UNKNOWN` and the Docker CLI 29.9.3 binary reports `v29.9.3`, fixing #5590"
+  },
+  "gopasspw/gopass#3705": {
+    "summary": "Make `(*root.Store).Fsck` resolve the path with `MountPoint` and check only that mount, skipping the root store when `--store` is set or the path belongs to a mount, so `gopass fsck --store=<mount> --decrypt` no longer decrypts and re-encrypts the root store, `gopass fsck sub/foo` no longer also checks `foo` in the root store, `gopass fsck sub` no longer checks nothing, and an unknown `--store` or a path outside it returns an error, fixing #3703"
   }
 }
