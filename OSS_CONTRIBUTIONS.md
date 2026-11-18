@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-211-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-97-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-211-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-98-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 152 | 94 | 246 |
+| [Standalone contributions](#standalone-contributions) | 152 | 95 | 247 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -211,6 +211,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| gopasspw/gopass | [#3705](https://github.com/gopasspw/gopass/pull/3705) | Make `(*root.Store).Fsck` resolve the path with `MountPoint` and check only that mount, skipping the root store when `--store` is set or the path belongs to a mount, so `gopass fsck --store=<mount> --decrypt` no longer decrypts and re-encrypts the root store, `gopass fsck sub/foo` no longer also checks `foo` in the root store, `gopass fsck sub` no longer checks nothing, and an unknown `--store` or a path outside it returns an error, fixing #3703 | 🔵 Review |
 | anchore/syft | [#5592](https://github.com/anchore/syft/pull/5592) | Make the Go binary cataloger fall back to the repository root (`host/owner/repo`, github.com and bitbucket.org only) when `extractVersionFromLDFlags` finds no `main.` variable or variable under the main module path, so the official Docker CLI, which builds without `go.mod` and gets a main module crafted from `github.com/docker/cli/cmd/docker` while its release sets `github.com/docker/cli/cli/version.Version`, no longer reports version `UNKNOWN` and the Docker CLI 29.9.3 binary reports `v29.9.3`, fixing #5590 | 🔵 Review |
 | pingcap/tidb | [#73303](https://github.com/pingcap/tidb/pull/73303) | Make `ALTER TABLE ... ADD PARTITION PARTITIONS <N>` on HASH and KEY partitioned tables check the new partition count before `buildHashPartitionDefinitions` allocates it, and check `spec.Num` before adding it to the current count, so a huge count no longer OOM-kills tidb-server and `PARTITIONS 18446744073709551615` no longer wraps the `uint64` sum to 1 and returns success without running a DDL job, fixing #73294 | 🔵 Review |
 | jaegertracing/jaeger | [#10210](https://github.com/jaegertracing/jaeger/pull/10210) | Make `internal/sqlquery.Compile` refuse statements longer than 16 KiB (the statement-length limit RFC 0019 §8 lists) with the package's positioned `*Error` before handing the `sql` input of the MCP `find_spans` / `find_traces` tools to the recursive ClickHouse SQL parser, so a deeply nested `WHERE` no longer overflows the goroutine stack and kills the process with a fatal error no `recover` can catch, fixing #10202 | 🔵 Review |
