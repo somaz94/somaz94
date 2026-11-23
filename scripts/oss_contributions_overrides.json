@@ -1070,5 +1070,8 @@
   },
   "anacrolix/torrent#1236": {
     "summary": "Make `metainfo.parseEncodedV1Infohash` return an error for a 32-character base32 btih carrying `=` padding instead of decoding 16 to 19 bytes and hitting `panic(n)`, so a padded magnet link no longer crashes `ParseMagnetUri`, `ParseMagnetV2Uri` and `Client.AddMagnet`, fixing #1231"
+  },
+  "prometheus-community/helm-charts#7630": {
+    "summary": "Make the alertmanager-snmp-notifier liveness and readiness probes configurable, with defaults pointed at /health instead of the HTML index page"
   }
 }
