@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-223-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-223-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 164 | 83 | 247 |
+| [Standalone contributions](#standalone-contributions) | 164 | 84 | 248 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -223,6 +223,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| stacklok/toolhive | [#7296](https://github.com/stacklok/toolhive/pull/7296) | Make the streamable proxy replay its cached MCP `initialize` handshake to the new process, then send `notifications/initialized` and refresh the cache, when the stdio transport re-attaches after the backend pod is replaced, so strict Go-SDK MCP servers no longer reject every request after a backend restart, fixing mode 2 of #6974 | 🔵 Review |
 | prometheus-community/helm-charts | [#7630](https://github.com/prometheus-community/helm-charts/pull/7630) | Make the alertmanager-snmp-notifier liveness and readiness probes configurable, with defaults pointed at /health instead of the HTML index page | 🔵 Review |
 | anchore/syft | [#5592](https://github.com/anchore/syft/pull/5592) | Make the Go binary cataloger fall back to the repository root (`host/owner/repo`, github.com and bitbucket.org only) when `extractVersionFromLDFlags` finds no `main.` variable or variable under the main module path, so the official Docker CLI, which builds without `go.mod` and gets a main module crafted from `github.com/docker/cli/cmd/docker` while its release sets `github.com/docker/cli/cli/version.Version`, no longer reports version `UNKNOWN` and the Docker CLI 29.9.3 binary reports `v29.9.3`, fixing #5590 | 🔵 Review |
 | pingcap/tidb | [#73303](https://github.com/pingcap/tidb/pull/73303) | Make `ALTER TABLE ... ADD PARTITION PARTITIONS <N>` on HASH and KEY partitioned tables check the new partition count before `buildHashPartitionDefinitions` allocates it, and check `spec.Num` before adding it to the current count, so a huge count no longer OOM-kills tidb-server and `PARTITIONS 18446744073709551615` no longer wraps the `uint64` sum to 1 and returns success without running a DDL job, fixing #73294 | 🔵 Review |
