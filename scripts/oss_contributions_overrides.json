@@ -1074,5 +1074,8 @@
   },
   "prometheus-community/helm-charts#7630": {
     "summary": "Make the alertmanager-snmp-notifier liveness and readiness probes configurable, with defaults pointed at /health instead of the HTML index page"
+  },
+  "stacklok/toolhive#7296": {
+    "summary": "Make the streamable proxy replay its cached MCP `initialize` handshake to the new process, then send `notifications/initialized` and refresh the cache, when the stdio transport re-attaches after the backend pod is replaced, so strict Go-SDK MCP servers no longer reject every request after a backend restart, fixing mode 2 of #6974"
   }
 }
