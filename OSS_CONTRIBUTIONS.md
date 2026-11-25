@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-222-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-87-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-223-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-86-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 163 | 84 | 247 |
+| [Standalone contributions](#standalone-contributions) | 164 | 83 | 247 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -64,6 +64,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | grafana/mcp-grafana | [#1627](https://github.com/grafana/mcp-grafana/pull/1627) | Make `alerting_manage_routing` `get_notification_policies` fetch the policy tree through the raw alerting client and parse each Alertmanager string matcher (`severity="critical"`) with Alertmanager's fallback parser into `models.Matcher`, so trees whose routes use `matchers` no longer fail with an unmarshal error against the generated client's `models.Route`, UTF-8 and dotted label names work, and the tool still returns `*models.Route`, fixing #1614 | ✅ Merged |
 | fabiolb/fabio | [#1126](https://github.com/fabiolb/fabio/pull/1126) | Give each HTTP proxy its own `maps.Clone` of `proxy.DefaultProtectHeaders` before writing the configured request ID, client IP and TLS header names, so starting several HTTP/HTTPS listeners in parallel no longer crashes with `fatal error: concurrent map writes`, fixing #1125 | ✅ Merged |
 | kimdre/doco-cd | [#2175](https://github.com/kimdre/doco-cd/pull/2175) | Make Swarm mode image pruning remove the exact images a deployment replaced on every node by image ID, which a node-wide `docker image prune` missed because the old task's stopped container still used them, fixing #2168 | ✅ Merged |
+| stefanprodan/timoni | [#676](https://github.com/stefanprodan/timoni/pull/676) | Remove the stdin temp file left in TMPDIR by `bundle apply/build/vet` and `runtime build` (:= shadowing) | ✅ Merged |
 | updatecli/updatecli | [#11239](https://github.com/updatecli/updatecli/pull/11239) | Return an error when `updatecli pipeline prepare` fails: it and the deprecated `updatecli prepare` logged the Prepare error but exited 0 while `diff` and `apply` exited 1; `run()` now returns the error, with a regression test, fixing #11232 | ✅ Merged |
 | rootsongjc/awesome-cloud-native | [#206](https://github.com/rootsongjc/awesome-cloud-native/pull/206) | Add k8s-namespace-sync to Configuration & Policy Automation | ✅ Merged |
 | concourse/concourse | [#9784](https://github.com/concourse/concourse/pull/9784) | Add `--team` to `fly rerun-build`: the command did not accept the flag and always reran the build in the target's default team; it now loads the named team the way `trigger-job` does, with an integration test, fixing #9783 | ✅ Merged |
@@ -231,7 +232,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | google/go-containerregistry | [#2503](https://github.com/google/go-containerregistry/pull/2503) | Make the filesystem layer cache write to a temp file and rename once fully read, so a concurrent Get never sees or deletes a partly written layer, fixing #2501 | 🔵 Review |
 | backube/volsync | [#2211](https://github.com/backube/volsync/pull/2211) | Send the service account token from the Helm chart's ServiceMonitor so Prometheus scrapes no longer fail with 401 after metrics auth, fixing #2198 | 🔵 Review |
 | juju/juju | [#23771](https://github.com/juju/juju/pull/23771) | Keep `juju debug-log --tail` streams alive across logsink.log rotation by polling instead of hpcloud/tail's shared inotify watcher, fixing #23745 | 🔵 Review |
-| stefanprodan/timoni | [#676](https://github.com/stefanprodan/timoni/pull/676) | Remove the stdin temp file left in TMPDIR by `bundle apply/build/vet` and `runtime build` (:= shadowing) | 🔵 Review |
 | ishantanu/awesome-kubectl-plugins | [#48](https://github.com/ishantanu/awesome-kubectl-plugins/pull/48) | Add kubectl diff2 | 🔵 Review |
 | plotly/plotly.py | [#5870](https://github.com/plotly/plotly.py/pull/5870) | Fix timezone-aware `DatetimeIndex` converting to an object array: `copy_to_readonly_numpy_array` in `_plotly_utils/basevalidators.py` passed the index to `np.array` unchanged, so it became an object array of Timestamps that were deep-copied and encoded one at a time, making figure creation and `to_json()` about 15x and 44x slower than the same index after the fix in a local benchmark; the validator now drops the time zone first, matching the Series path in both speed and JSON output, which no longer carries the UTC offset, fixing #5864 | 🔵 Review |
 | pipe-cd/pipecd | [#7549](https://github.com/pipe-cd/pipecd/pull/7549) | Apply `AllowStrayAsViewer` when OIDC claims match no built-in role: in `pkg/oauth/oidc` `decideRole`, the stray-as-viewer fallback and the "no role found in claims" error were keyed on the raw claim values instead of the filtered built-in roles, so a user whose groups claim held only non-matching values, such as GitLab group paths, logged in with an empty role list and hit `PermissionDenied` on every call; both checks now use the filtered list, matching the GitHub provider, fixing #7538 | 🔵 Review |
