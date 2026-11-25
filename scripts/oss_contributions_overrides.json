@@ -1077,5 +1077,8 @@
   },
   "stacklok/toolhive#7296": {
     "summary": "Make the streamable proxy replay its cached MCP `initialize` handshake to the new process, then send `notifications/initialized` and refresh the cache, when the stdio transport re-attaches after the backend pod is replaced, so strict Go-SDK MCP servers no longer reject every request after a backend restart, fixing mode 2 of #6974"
+  },
+  "grafana/alloy#7783": {
+    "summary": "Make `ComponentToPromRelabelConfigs` reuse the Prometheus default regex pointer for `keepequal` / `dropequal` rules, which Prometheus validates by pointer comparison, so a `rule` with either action in `prometheus.operator.*` no longer makes every ServiceMonitor and PodMonitor fail to reconcile, fixing #7781"
   }
 }
