@@ -1080,5 +1080,8 @@
   },
   "grafana/alloy#7783": {
     "summary": "Make `ComponentToPromRelabelConfigs` reuse the Prometheus default regex pointer for `keepequal` / `dropequal` rules, which Prometheus validates by pointer comparison, so a `rule` with either action in `prometheus.operator.*` no longer makes every ServiceMonitor and PodMonitor fail to reconcile, fixing #7781"
+  },
+  "cert-manager/cert-manager#9658": {
+    "summary": "Make the ACME HTTP-01 self check treat a NOERROR reply with an empty answer and neither AA nor RA set as a failed nameserver, so failover moves on to the next configured DNS server instead of stopping at a non-recursive, non-authoritative one, a follow-up to #9353"
   }
 }
