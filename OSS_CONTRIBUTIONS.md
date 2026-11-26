@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-223-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-224-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 164 | 85 | 249 |
+| [Standalone contributions](#standalone-contributions) | 165 | 85 | 250 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -131,6 +131,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | projectcalico/calico | [#13979](https://github.com/projectcalico/calico/pull/13979) | Accept the full 4-byte AS number range (RFC 4893) in the BGPConfiguration, BGPPeer and BGPFilter CRD schemas | ✅ Merged |
 | databus23/helm-diff | [#1074](https://github.com/databus23/helm-diff/pull/1074) | Skip Helm hooks in the `--take-ownership` ownership check, so unchanged hooks stop showing up as ownership changes and a leftover test hook no longer fails the diff | ✅ Merged |
 | woodpecker-ci/woodpecker | [#7158](https://github.com/woodpecker-ci/woodpecker/pull/7158) | Wait for the pod informer's cache sync before WaitStep's deleted-pod guard in the Kubernetes backend, so a service pod deleted at teardown no longer hangs the workflow until its timeout | ✅ Merged |
+| cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | ✅ Merged |
 | kubevela/pkg | [#140](https://github.com/kubevela/pkg/pull/140) | Stop the cuex function-call error from printing an empty path and leaking a cue/format failure in place of the value | ✅ Merged |
 | kubernetes-sigs/external-dns | [#6709](https://github.com/kubernetes-sigs/external-dns/pull/6709) | Reduce ApplyChanges cyclomatic complexity in the Exoscale provider (26 to 6) | ✅ Merged |
 | kubernetes-sigs/kwok | [#1749](https://github.com/kubernetes-sigs/kwok/pull/1749) | Buffer net.Tunnel's copy-result channel so both goroutines can exit, instead of leaking up to two per interrupted `kubectl exec` / `kubectl port-forward` | ✅ Merged |
@@ -223,6 +224,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| cert-manager/cert-manager | [#9658](https://github.com/cert-manager/cert-manager/pull/9658) | Make the ACME HTTP-01 self check treat a NOERROR reply with an empty answer and neither AA nor RA set as a failed nameserver, so failover moves on to the next configured DNS server instead of stopping at a non-recursive, non-authoritative one, a follow-up to #9353 | 🔵 Review |
 | grafana/alloy | [#7783](https://github.com/grafana/alloy/pull/7783) | Make `ComponentToPromRelabelConfigs` reuse the Prometheus default regex pointer for `keepequal` / `dropequal` rules, which Prometheus validates by pointer comparison, so a `rule` with either action in `prometheus.operator.*` no longer makes every ServiceMonitor and PodMonitor fail to reconcile, fixing #7781 | 🔵 Review |
 | stacklok/toolhive | [#7296](https://github.com/stacklok/toolhive/pull/7296) | Make the streamable proxy replay its cached MCP `initialize` handshake to the new process, then send `notifications/initialized` and refresh the cache, when the stdio transport re-attaches after the backend pod is replaced, so strict Go-SDK MCP servers no longer reject every request after a backend restart, fixing mode 2 of #6974 | 🔵 Review |
 | prometheus-community/helm-charts | [#7630](https://github.com/prometheus-community/helm-charts/pull/7630) | Make the alertmanager-snmp-notifier liveness and readiness probes configurable, with defaults pointed at /health instead of the HTML index page | 🔵 Review |
@@ -281,7 +283,6 @@ Pull requests opened against external open-source projects, merged and still in 
 | k8ssandra/k8ssandra-operator | [#1795](https://github.com/k8ssandra/k8ssandra-operator/pull/1795) | Use a non-controller owner reference for telemetry ServiceMonitors so they can be created on OpenShift without `cassandradatacenters/finalizers` RBAC | 🔵 Review |
 | rancher/cluster-api-provider-rke2 | [#1047](https://github.com/rancher/cluster-api-provider-rke2/pull/1047) | Keep the node's configured SELinux mode during Ignition bootstrap instead of forcing enforcing after `setenforce 0`, so permissive nodes (Flatcar default) stay permissive | 🔵 Review |
 | tektoncd/cli | [#3245](https://github.com/tektoncd/cli/pull/3245) | Make tkn task/pipeline sign add only the signature annotation instead of rewriting the whole YAML document (also stops the invalid resources: {} injection) | 🔵 Review |
-| cert-manager/cert-manager | [#9353](https://github.com/cert-manager/cert-manager/pull/9353) | Fail over to the next configured DNS server when an ACME HTTP-01 self-check nameserver does not respond | 🔵 Review |
 | cilium/cilium | [#48540](https://github.com/cilium/cilium/pull/48540) | gateway-api: stop the X-Forwarded-Proto guard from silently disabling an HTTPRoute RequestRedirect whose scheme matches the listener | 🔵 Review |
 | kubernetes-csi/external-resizer | [#610](https://github.com/kubernetes-csi/external-resizer/pull/610) | csi-resizer: report a VolumeAttributesClass the driver cannot apply as an event on the PVC, instead of silently ignoring it | 🔵 Review |
 | terraform-docs/terraform-docs | [#955](https://github.com/terraform-docs/terraform-docs/pull/955) | Link built-in provider resources (terraform_data, terraform_remote_state) to the Terraform language docs instead of a dead registry URL | 🔵 Review |
