@@ -1083,5 +1083,8 @@
   },
   "cert-manager/cert-manager#9658": {
     "summary": "Make the ACME HTTP-01 self check treat a NOERROR reply with an empty answer and neither AA nor RA set as a failed nameserver, so failover moves on to the next configured DNS server instead of stopping at a non-recursive, non-authoritative one, a follow-up to #9353"
+  },
+  "grafana/alloy#7808": {
+    "summary": "Make the `remotecfg` service log a failed collector registration instead of returning it, and retry it on each poll, so Alloy starts from its cached remote configuration instead of exiting when the server is unreachable, a regression since v1.8.0, fixing #7792"
   }
 }
