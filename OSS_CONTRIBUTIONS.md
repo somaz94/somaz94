@@ -4,12 +4,12 @@
 
 Pull requests opened against external open-source projects, merged and still in review. Closed-unmerged pull requests are not listed.
 
-![Merged](https://img.shields.io/badge/Merged-224-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-88-0969DA?style=for-the-badge)
+![Merged](https://img.shields.io/badge/Merged-224-2EA44F?style=for-the-badge) ![Review](https://img.shields.io/badge/Review-89-0969DA?style=for-the-badge)
 
 | Area | Merged | Review | Total |
 |---|---|---|---|
 | [Gateway API HTTPRoute support · Helm charts](#gateway-api-httproute-support--helm-charts) | 30 | 1 | 31 |
-| [Standalone contributions](#standalone-contributions) | 165 | 85 | 250 |
+| [Standalone contributions](#standalone-contributions) | 165 | 86 | 251 |
 | [GitHub Action `version-file` inputs](#github-action-version-file-inputs) | 9 | 1 | 10 |
 | [nginx-gateway-fabric cyclomatic-complexity refactors · #5253](#nginx-gateway-fabric-cyclomatic-complexity-refactors--5253) | 11 | 0 | 11 |
 | [helm-values-schema-json features](#helm-values-schema-json-features) | 5 | 1 | 6 |
@@ -224,6 +224,7 @@ Pull requests opened against external open-source projects, merged and still in 
 | yannh/kubeconform | [#356](https://github.com/yannh/kubeconform/pull/356) | Avoid SIGSEGV panic on null-decoding schema | ✅ Merged |
 | meshery/meshery | [#19866](https://github.com/meshery/meshery/pull/19866) | Fix export flag validation + tests | ✅ Merged |
 | meshery/meshery | [#19835](https://github.com/meshery/meshery/pull/19835) | Fix typos, function names & license header | ✅ Merged |
+| grafana/alloy | [#7808](https://github.com/grafana/alloy/pull/7808) | Make the `remotecfg` service log a failed collector registration instead of returning it, and retry it on each poll, so Alloy starts from its cached remote configuration instead of exiting when the server is unreachable, a regression since v1.8.0, fixing #7792 | 🔵 Review |
 | cert-manager/cert-manager | [#9658](https://github.com/cert-manager/cert-manager/pull/9658) | Make the ACME HTTP-01 self check treat a NOERROR reply with an empty answer and neither AA nor RA set as a failed nameserver, so failover moves on to the next configured DNS server instead of stopping at a non-recursive, non-authoritative one, a follow-up to #9353 | 🔵 Review |
 | grafana/alloy | [#7783](https://github.com/grafana/alloy/pull/7783) | Make `ComponentToPromRelabelConfigs` reuse the Prometheus default regex pointer for `keepequal` / `dropequal` rules, which Prometheus validates by pointer comparison, so a `rule` with either action in `prometheus.operator.*` no longer makes every ServiceMonitor and PodMonitor fail to reconcile, fixing #7781 | 🔵 Review |
 | stacklok/toolhive | [#7296](https://github.com/stacklok/toolhive/pull/7296) | Make the streamable proxy replay its cached MCP `initialize` handshake to the new process, then send `notifications/initialized` and refresh the cache, when the stdio transport re-attaches after the backend pod is replaced, so strict Go-SDK MCP servers no longer reject every request after a backend restart, fixing mode 2 of #6974 | 🔵 Review |
